@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>diy on Webdevelopment-En-Meer</title><link>https://blog.geheimesite.nl/tags/diy/</link><description>Read the latest diy on Webdevelopment-En-Meer</description><generator>Hugo -- gohugo.io</generator><language>nl-nl</language><lastBuildDate>Wed, 08 Dec 2021 11:15:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/tags/diy/index.xml" rel="self" type="application/rss+xml"/><item><title>Hoe zit het eigenlijk met die DIY telefoon?</title><link>https://blog.geheimesite.nl/2021/12/hoe-zit-het-eigenlijk-met-die-diy.html</link><pubDate>Wed, 08 Dec 2021 11:15:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/12/hoe-zit-het-eigenlijk-met-die-diy.html</guid><description>Een aantal maanden geleden heb ik heel enthousiast een post gepubliceerd over hoe ik een telefoon wilde maken. En ik wil nog steeds een telefoon maken. Maar mijn beeld van hoe moeilijk dat zal zijn is nu wel wat realistischer geworden. Want voor het bouwen van een telefoon heb je vrij veel kennis nodig ben ik nu achter.
+Sommigen van jullie zullen misschien het Dunning–Kruger effect1 kennen. Voor de lezers die het niet kennen: het betekent eigenlijk gewoon dat hoe meer je weet, hoe beter je je realiseert dat je vrij weinig weet (en hoeveel meer er dus te leren valt).</description><content:encoded><![CDATA[ <p>Een aantal maanden geleden heb ik heel enthousiast een post gepubliceerd over hoe ik een telefoon wilde maken. En ik wil nog steeds een telefoon maken. Maar mijn beeld van hoe moeilijk dat zal zijn is nu wel wat realistischer geworden. Want voor het bouwen van een telefoon heb je vrij veel kennis nodig ben ik nu achter.</p>
+<p>Sommigen van jullie zullen misschien het <a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning–Kruger effect</a><a href="#1">1</a> kennen. Voor de lezers die het niet kennen: het betekent eigenlijk gewoon dat hoe meer je weet, hoe beter je je realiseert dat je vrij weinig weet (en hoeveel meer er dus te leren valt). De grafiek hieronder laat het mooi zien:</p>
+<p><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiQtWButbc0kiJ1y-PpysnaOP2mK5rAEenoT3sOFOi8DKvLPNhR6OIH-IChr9HYNEsI-amz8jErYGMxQWH1e2o6v31xEZ9t47FzzRkoVLsFxEa0FSn72npI9JyK_puQTuPgcUyumXPJfwnGzc7-mjzhJDfHlJkAQ2y1MjD7XugCrhOpgvxnZCbbY-Cvzw=s800"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEiQtWButbc0kiJ1y-PpysnaOP2mK5rAEenoT3sOFOi8DKvLPNhR6OIH-IChr9HYNEsI-amz8jErYGMxQWH1e2o6v31xEZ9t47FzzRkoVLsFxEa0FSn72npI9JyK_puQTuPgcUyumXPJfwnGzc7-mjzhJDfHlJkAQ2y1MjD7XugCrhOpgvxnZCbbY-Cvzw=s320" alt=""></a></p>
+<p>Ik zat zeg maar toen ik dit project starte helemaal aan de linkerkant, en nu zit ik wat meer richting het midden. Mijn idee was: ik pak een Raspberry Pi, slap er een 4G chip en mobile OS op en ik ben ready to go! Maar helaas is niks minder waar. Ik had nog niet echt nagedacht over het scherm, de batterij, hoe op te laden, volumeknoppen, sluimerknop, behuizing en bovenal de daadwerkelijke integratie van de software.</p>
+<p>Ik heb nog steeds alle intenties om met dit project verder te gaan, maar in een wat slomer tempo. Ik heb ook nog andere projecten, school en werk, en moet mijn tijd dus goed verdelen. Ik ga, zoals ik in de eerste post al zei, beginnen met het bouwen van een kleine tablet. Dat is nu het doel. Of ik het haal en wanneer dan is nog te bekijken.</p>
+<p>- Robin</p>
+<p>1 Een mooi artikel over het Dunning-Kruger effect: <a href="https://ardalis.com/the-more-you-know-the-more-you-realize-you-dont-know/">https://ardalis.com/the-more-you-know-the-more-you-realize-you-dont-know</a> <a href="#top1">↩</a></p>
+ ]]></content:encoded></item><item><title>Mogelijke besturingssystemen voor mijn DIY telefoon</title><link>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</link><pubDate>Sun, 09 May 2021 05:51:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</guid><description>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&amp;rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten. Een mobile shell is de interface waarin je apps draaien (homescherm, launcher, notificatiecentrum, lockscreen)
+Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![CDATA[ <p>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten. </p>
+<p>Een mobile shell is de interface waarin je apps draaien (homescherm, launcher, notificatiecentrum, lockscreen)</p>
+<p>Dit zijn tot nu toe de meest belovende opties:</p>
+<h3 id="ubuntu-touch--lomiri">Ubuntu Touch / Lomiri</h3>
+<p>Ubuntu Touch is een versie van Ubuntu die origineel is gemaakt door Canonical (het bedrijf dat ook Ubuntu maakt) maar is later overgenomen door UBports. Het is een soort uitgepakte versie van Ubuntu die geschikt is voor touchscreens en ARM apparaten. Ubuntu Touch gebruikt Lomiri, de opvolger van Unity8, als desktop environment. Het is ook mogelijk om Lomiri in postmarketOS (pmOS) te gebruiken. Ik heb Ubuntu Touch op de Raspberry Pi geprobeerd, maar het was vrij sloom.</p>
+<p><a href="https://1.bp.blogspot.com/-JaSfZsHiDto/YA1dT1C2ILI/AAAAAAAAKFM/iNYPRP66AMQcCKwBkt_7bqK-OKV0Vd4IgCLcBGAsYHQ/s1600/background_Ubuntu%2BTouch.jpg"><img src="https://1.bp.blogspot.com/-JaSfZsHiDto/YA1dT1C2ILI/AAAAAAAAKFM/iNYPRP66AMQcCKwBkt_7bqK-OKV0Vd4IgCLcBGAsYHQ/w640-h238/background_Ubuntu%2BTouch.jpg" alt=""></a></p>
+<p>Lomiri op verschillende apparaten (<a href="https://ubports.com/">https://ubports.com/</a>)</p>
+<h3 id="kde-plasma-mobile">KDE Plasma Mobile</h3>
+<p>Plasma Mobile is een mobiele versie van de populaire Plasma Desktop van KDE. Net als de rest van deze shells kan dit ook in pmOS worden geinstalleerd. Als je het bovenop Raspbian wil installeren kan dat ook. Ik heb het zelf nog niet werkend gekregen omdat de packages niet in de repo&rsquo;s te vinden zijn en de wiki page outdated is, maar als je het zelf wil proberen kan je de documentatie hier vinden: <a href="https://community.kde.org/Raspberry_Pi">https://community.kde.org/Raspberry_Pi</a></p>
+<p>Plasma Mobile heeft goede intergratie met de KDE Plasma desktop (mijn Desktop Environment) via KDE Connect. Plasma Mobile is nog onder ontwikkeling, en nog niet echt productie-ready.</p>
+<p><img src="https://1.bp.blogspot.com/-CUTohcLYffQ/YJfaWdfA9JI/AAAAAAAAKyo/QGhG06jX6AUGMwgZqU2Fu7RpjGDi-WkBgCLcBGAsYHQ/w640-h416/2021-05-09-144907_691x449_scrot.png" alt=""></p>
+<p>KDE Plasma Shell en apps (<a href="https://www.plasma-mobile.org/screenshots">https://www.plasma-mobile.org/screenshots</a>)</p>
+<h3 id="heading"></h3>
+<p>Phosh</p>
+<p>Dit is een open-source Wayland shell voor Gnome. Phosh is wat <a href="https://puri.sm/">Purism</a> gebruikt in hun PureOS voor de Liberem 5. Je kan Phosh ook installeren in pmOS. Phosh is nog wel in ontwikkeling, dus kan wat instabiel zijn.</p>
+<p>Phosh gebruikt libhandy om desktop apps goed te laten werken op een telefoonscherm.</p>
+<p>Aangezien Phosh op GNOME gebaseerd is kan het wel laggen. Zo ver ik kon vinden is het nog niet mogelijk om Phosh op een Raspberry Pi te krijgen.</p>
+<p><a href="https://1.bp.blogspot.com/-LDLGMIgGBi0/YA1drwxJBvI/AAAAAAAAKFY/BUh1PxoxEGEATiIumeAImpR_l7C6TgZFQCLcBGAsYHQ/s972/phosh-1.png"><img src="https://1.bp.blogspot.com/-LDLGMIgGBi0/YA1drwxJBvI/AAAAAAAAKFY/BUh1PxoxEGEATiIumeAImpR_l7C6TgZFQCLcBGAsYHQ/w640-h424/phosh-1.png" alt=""></a></p>
+<p>Phosh Shell (<a href="https://puri.sm/posts/phosh-overview">https://puri.sm/posts/phosh-overview</a>)</p>
+<h3 id="android-of-chromiumos">Android of ChromiumOS</h3>
+<p>In de doelen voor dit project staat dat ik geen Android wil gebruiken, omdat ik dan nog steeds van Google afhankelijk ben. (en dan had ik net zo goed een Android telefoon kunnen kopen)</p>
+<p>Maar het is echter misschien voor anderen handig om te weten dat zowel Android (LineageOS) en ChromiumOS (fydeOS) voor de Raspberry Pi en andere SBCs beschikbaar zijn. Daarnaast zijn er nog andere Android ROMS zoals /e/ die als doel hebben Android te degooglen</p>
+<h3 id="zelf-een-linux-distro-maken">Zelf een Linux distro maken</h3>
+<p>Ik zou Manjaro ARM kunnen downloaden en dan zelf de nodige onderdelen voor een mobiele distro kunnen installeren (libhandy, een shell, virtual keyboard, drivers). Ik zou dan wel moeten uitzoeken hoe dat precies moet.</p>
+<p>Voor nu ziet postmarketOS er het meest belovend uit omdat het veel verschillende shells ondersteunt.</p>
+<p>- Robin</p>
+ ]]></content:encoded></item><item><title>Ik wil zelf een telefoon maken</title><link>https://blog.geheimesite.nl/2021/01/ik-wil-zelf-een-telefoon-maken.html</link><pubDate>Sat, 23 Jan 2021 02:32:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/ik-wil-zelf-een-telefoon-maken.html</guid><description>Misschien een beetje raar, maar ik heb besloten dat ik zelf een telefoon wil maken. Ik wil een telefoon waar ik alles mee kan doen, en die ik daar niet voor hoef te rooten of jailbreaken. Ik wil een telefoon die makkelijk uit te breiden is. Ik wil een telefoon die makkelijk te upgraden is. En dus ga ik zelf een smartphone maken.
+ Ik heb de volgende voorwaarden voor de telefoon:</description><content:encoded><![CDATA[ <p>Misschien een beetje raar, maar ik heb besloten dat ik zelf een telefoon wil maken. Ik wil een telefoon waar ik alles mee kan doen, en die ik daar niet voor hoef te rooten of jailbreaken. Ik wil een telefoon die makkelijk uit te breiden is. Ik wil een telefoon die makkelijk te upgraden is. En dus ga ik zelf een smartphone maken.</p>
+<p> Ik heb de volgende voorwaarden voor de telefoon:</p>
+<ul>
+<li>
+<p><strong>Hardware</strong></p>
+</li>
+<li>
+<p>Off the Shelf parts: Ik wil onderdelen gebruiken die gewoon zo in de winkel te verkrijgen zijn. Geen solderen en custom PCB&rsquo;s</p>
+</li>
+<li>
+<p>Moet verschillende SBC&rsquo;s (single board computers) ondersteunen.  </p>
+</li>
+<li>
+<p>Moet een goed touchscreen of andere makkelijke manier van input hebben</p>
+</li>
+<li>
+<p>Moet een goed systeem voor opladen hebben (zoals piSupply piJuice)</p>
+</li>
+<li>
+<p>Moet in mijn zak passen: maximale dikte is 4 iPhones op elkaar</p>
+</li>
+<li>
+<p><strong>Software</strong></p>
+</li>
+<li>
+<p>Open Source besturingssysteem: draait geen Android of een fork daarvan. Draait een linux distro zoals Ubuntu Touch, Sailfish OS of KDE Plasma mobile. Misschien maak ik wel mijn eigen linux distro voor dit project.</p>
+</li>
+<li>
+<p> Er moeten apps zoals Spotify, Firefox en Signal beschikbaar zijn.</p>
+</li>
+<li>
+<p><strong>Connectiviteit</strong></p>
+</li>
+<li>
+<p>Moet kunnen verbinden met Bluethoot speakers, toetsenborden en andere accessoires</p>
+</li>
+<li>
+<p>Moet kunnen verbinden met 5Ghz Wifi netwerken</p>
+</li>
+<li>
+<p>Moet kunnen verbinden met het internet via 4G</p>
+</li>
+<li>
+<p>Moet kunnen bellen en SMSen met een SIM-card</p>
+</li>
+</ul>
+<p>Stappen om dit project realiteit te maken:</p>
+<ul>
+<li>Maak een simpele telefoon met batterij, scherm en wifi</li>
+<li>Voeg de GSM module toe</li>
+<li>Maak een behuizing</li>
+</ul>
+<p>Verder hoop ik de totaalprijs onder de €200 te houden. Hij wordt waarschijnlijk niet sneller dan een iPhone 6s, dus hij moet ook niet duurder zijn.</p>
+<p>Dus, ik hoop dat ik zoiets voor elkaar kan krijgen. Nu nog sparen **:) **</p>
+<p>** -Robin**</p>
+ ]]></content:encoded></item><item><title>De Frambo - DIY Raspberry Pi spelcomputer.</title><link>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</link><pubDate>Thu, 13 Aug 2020 11:43:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</guid><description>Ik blijf het knap vinden hoe je dit allemaal weet&amp;hellip; Joke Visker - Aug 5, 2020Ik blijf het knap vinden hoe je dit allemaal weet en maakt!</description><content:encoded><![CDATA[ <h4 id="ik-blijf-het-knap-vinden-hoe-je-dit-allemaal-weet">Ik blijf het knap vinden hoe je dit allemaal weet&hellip;</h4>
+<p><a href="https://www.blogger.com/profile/06179183056635105746" title="noreply@blogger.com">Joke Visker</a> - <!-- raw HTML omitted -->Aug 5, 2020<!-- raw HTML omitted --></p>
+<p>Ik blijf het knap vinden hoe je dit allemaal weet en maakt!</p>
+<!-- raw HTML omitted -->
+ ]]></content:encoded></item><item><title>De Frambo - DIY Raspberry Pi spelcomputer.</title><link>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</link><pubDate>Thu, 13 Aug 2020 11:43:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</guid><description>Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.</description><content:encoded><![CDATA[ <p> Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.</p>
+<p><a href="https://1.bp.blogspot.com/-0ICW-dRPf9U/XzWHR20bleI/AAAAAAAAIQA/fJFBHZsx-DgMz5ExeC5oxX741qQVUvoJgCLcBGAsYHQ/s2048/284A3823-C070-4D52-922F-08FD8AF2B7E8.jpeg"><img src="https://1.bp.blogspot.com/-0ICW-dRPf9U/XzWHR20bleI/AAAAAAAAIQA/fJFBHZsx-DgMz5ExeC5oxX741qQVUvoJgCLcBGAsYHQ/w328-h184/284A3823-C070-4D52-922F-08FD8AF2B7E8.jpeg" alt=""></a></p>
+<p>Maar hoe heb ik hem gebouwd? Dat leg ik uit in de video hieronder.</p>
+<p>- Robin</p>
+ ]]></content:encoded></item><item><title>Dualboot een Raspberry Pi met RetroPie, Raspbian en Kodi</title><link>https://blog.geheimesite.nl/2020/06/dualboot-een-raspberry-pi-met-retropie.html</link><pubDate>Mon, 22 Jun 2020 06:10:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/06/dualboot-een-raspberry-pi-met-retropie.html</guid><description>Ik ben bezig om een Raspberry Pi Powerd tablet / Nintendo Switch te maken. Toen ik aan de software kant bezig was, had ik er in eerste instantie voor gekozen om meerdere keren Raspbian te installeren met BerryBoot, en dan op een van die versies Kodi te installeren, op een andere RetroPie, en op de laatste niks.
+Ik kwam er alleen vandaag achter dat je in RetroPie via het Setup menu Kodi, en de Pixel desktop kan installeren.</description><content:encoded><![CDATA[ <p>Ik ben bezig om een Raspberry Pi Powerd tablet / Nintendo Switch te maken. Toen ik aan de software kant bezig was, had ik er in eerste instantie voor gekozen om meerdere keren Raspbian te installeren met BerryBoot, en dan op een van die versies Kodi te installeren, op een andere RetroPie, en op de laatste niks.</p>
+<p>Ik kwam er alleen vandaag achter dat je in RetroPie via het Setup menu Kodi, en de Pixel desktop kan installeren.</p>
+<p><a href="https://1.bp.blogspot.com/-5h9D9iFXFbw/XvJNeKoS2iI/AAAAAAAAHrA/fdKGTdKYWC4zO6Xfq8lV58nlXLVETWSEQCK4BGAsYHg/s520/RetroPieWebsiteLogo.png"><img src="https://1.bp.blogspot.com/-5h9D9iFXFbw/XvJNeKoS2iI/AAAAAAAAHrA/fdKGTdKYWC4zO6Xfq8lV58nlXLVETWSEQCK4BGAsYHg/w400-h108/RetroPieWebsiteLogo.png" alt=""></a></p>
+<p>Vandaag ga ik je uitleggen hoe je Kodi en de Pixel desktop (de standaard Raspbian desktop) naast RetroPie kan installeren.</p>
+<p>Eerst wat achtergrondinformatie. RetroPie is software waarmee je games van de NES, SNES, Gameboy, Commodore, Atari etc kan spelen op een Raspberry Pi. Kodi is software waarmee je video&rsquo;s kan bekijken (een media center) en de Pixel desktop is een interface waarmee je programma&rsquo;s kan openen (net als Gnome of KDE). RetroPie en Kodi zijn programma&rsquo;s. Raspbian is een besturingssysteem. RetroPie en Kodi worden normaal gedownload als een pre-configured image, waardoor de meeste mensen denken dat het ook besturingssystemen zijn. Maar omdat het programma&rsquo;s zijn, kan je ze allemaal tegelijk op 1 image draaien, waardoor je veel meer opslagruimte over houd.</p>
+<p>In deze tutorial ga ik dus uitleggen hoe dat moet</p>
+<p><strong>Stap 1</strong></p>
+<p>Ga naar <a href="http://retropie.org.uk">retropie.org.uk</a> en klik op download. Scroll naar beneden en klik op het op welke versie van de Pi je hebt. Download dit image.</p>
+<p><strong>Stap 2</strong></p>
+<p>Download de de <a href="https://www.sdcard.org/downloads/formatter/">SD card formatter</a> en <a href="https://rufus.ie/">Rufus</a></p>
+<p><strong>Stap 3</strong></p>
+<p>Format je SD kaartje met de SD card formatter, en open Rufus.</p>
+<p>Kies in Rufus je SD kaartje uit het dropdown menu, en klik op select. Navigeer naar de plek waar je je RetroPie image hebt opgeslagen. Klik daarna op START. Wacht tot Rufus klaar is, en klik op CLOSE</p>
+<p><strong>Stap 4</strong></p>
+<p>Stop je SD kaartje in de Pi, en start hem op. Volg de RetroPie setup totdat je in het games select menu bent. Klik op RetroPie (dat is de enige optie) Scroll naar beneden tot je bij RetroPie-Setup komt. Klik deze optie aan. Je wordt een blauw scherm in gebracht. Klik hier op Manage packages</p>
+<p><a href="https://1.bp.blogspot.com/-Gnp_oOt8vZ4/XvJOA0v7aiI/AAAAAAAAHrU/K3xCPYwJnHASmkJlKxuRqnQ2OtqGeUQKgCK4BGAsYHg/s1325/Annotation%2B2020-06-23%2B204612.png"><img src="https://1.bp.blogspot.com/-Gnp_oOt8vZ4/XvJOA0v7aiI/AAAAAAAAHrU/K3xCPYwJnHASmkJlKxuRqnQ2OtqGeUQKgCK4BGAsYHg/w625-h364/Annotation%2B2020-06-23%2B204612.png" alt=""></a></p>
+<p>**Stap 5</p>
+<p><a href="https://1.bp.blogspot.com/-8wgELVtv-ks/XvJOQxRdxCI/AAAAAAAAHro/JeVTqy4lUwgoI2nMomwBkJGila7EW0ZswCK4BGAsYHg/s625/Thumbnail-symbol-transparent.png"><img src="https://1.bp.blogspot.com/-8wgELVtv-ks/XvJOQxRdxCI/AAAAAAAAHro/JeVTqy4lUwgoI2nMomwBkJGila7EW0ZswCK4BGAsYHg/w131-h131/Thumbnail-symbol-transparent.png" alt=""></a></p>
+<p>**</p>
+<p>Klik nu op Optional packages, en scroll naar beneden tot je Kodi ziet. Klik erop en klik op install</p>
+<p>Dit kan even duren, afhankelijk van je internetverbinding</p>
+<p><strong>Stap 6</strong></p>
+<p>Als het klaar is, ga je terug naar het startscherm van de RetroPie-Setup (waar je eerst op Manage Packages moest klikken) Klik nu op Exit</p>
+<p><strong>Stap 7</strong></p>
+<p>Klik op START op je controller, en klik op QUIT. Klik nu op RESTART SYSTEM</p>
+<p><strong>Stap 8</strong></p>
+<p>Als je Pi is geherstart, ga je weer naar de RetroPie-Setup. Ga dit keer naar Configuration/tools</p>
+<p>Klik op Raspian related tools en daarna op install Pixel desktop.</p>
+<p><a href="https://1.bp.blogspot.com/-2r2STLP_2fY/XvJOls_oneI/AAAAAAAAHr8/kR8wXJ7Hkswz1MUf1CsiDMotc4_Rg8i8wCK4BGAsYHg/s1920/pi3-10.jpg"><img src="https://1.bp.blogspot.com/-2r2STLP_2fY/XvJOls_oneI/AAAAAAAAHr8/kR8wXJ7Hkswz1MUf1CsiDMotc4_Rg8i8wCK4BGAsYHg/w625-h351/pi3-10.jpg" alt=""></a></p>
+<p><strong>Stap 9</strong></p>
+<p>Wacht tot de Pi klaar is. Waarschijnlijk moet je eerst een paar keer op OK klikken.</p>
+<p><strong>Stap 10</strong></p>
+<p>Herstart je Pi zoals in stap 6</p>
+<p><strong>Stap 11</strong></p>
+<p>Als het goed is is er een knopje ports verschenen op het games select menu. Klik hierop, en vanuit hier zou je Kodi of de Pixel desktop moeten kunnen starten!</p>
+<p>Goedzo, je hebt successvol je Raspberry Pi gedualboot met RetroPie, Kodi en de Pixel desktop!</p>
+<p>- Robin</p>
+ ]]></content:encoded></item><item><title>Leuk: een zelfgemaakte beamer</title><link>https://blog.geheimesite.nl/2020/03/leuk-een-zelfgemaakte-beamer.html</link><pubDate>Mon, 02 Mar 2020 06:13:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/03/leuk-een-zelfgemaakte-beamer.html</guid><description>Hoi,
+Ik was laatst op YouTube aan het scrollen, toen ik ineens een coole video zag: hoe zelf een projector maakt om het scherm van je smartphone op de muur te projecteren. Ik vond het wel cool, dus ik ben er mee aan de slag gegaan. En dit was het resultaat:
+Het is een simpel concept. Je hebt een doos. Je hebt een vergrootglas. Je hebt een smartphone. Je maakt een gat in de doos, met de grootte van het vergrootglas.</description><content:encoded><![CDATA[ <p>Hoi,<br>
+Ik was laatst op YouTube aan het scrollen, toen ik ineens een coole video zag: hoe zelf een projector maakt om het scherm van je smartphone op de muur te projecteren. Ik vond het wel cool, dus ik ben er mee aan de slag gegaan. En dit was het resultaat:</p>
+<p><a href="https://1.bp.blogspot.com/-xW4DAzDerrI/Xl0UFsfgQcI/AAAAAAAAGig/eXohU8WUXVYF2q2uR87AewzfDbqEU4qwgCLcBGAsYHQ/s1600/BE52BB18-C78A-46EF-BAFF-75A1F879251B.jpeg"><img src="https://1.bp.blogspot.com/-xW4DAzDerrI/Xl0UFsfgQcI/AAAAAAAAGig/eXohU8WUXVYF2q2uR87AewzfDbqEU4qwgCLcBGAsYHQ/s320/BE52BB18-C78A-46EF-BAFF-75A1F879251B.jpeg" alt=""></a><a href="https://1.bp.blogspot.com/-M_BXMxqwUJk/Xl0UFhiUndI/AAAAAAAAGiY/5HPx6qFwELodp-tNoNoHzk2zqEYOzAB2wCLcBGAsYHQ/s1600/03D406C8-5F5A-41C6-AB75-A2C778095DCF.jpeg"><img src="https://1.bp.blogspot.com/-M_BXMxqwUJk/Xl0UFhiUndI/AAAAAAAAGiY/5HPx6qFwELodp-tNoNoHzk2zqEYOzAB2wCLcBGAsYHQ/s320/03D406C8-5F5A-41C6-AB75-A2C778095DCF.jpeg" alt=""></a></p>
+<p>Het is een simpel concept. Je hebt een doos. Je hebt een vergrootglas. Je hebt een smartphone. Je maakt een gat in de doos, met de grootte van het vergrootglas. Daarna monteer je het vergrootglas erin, wacht tot het avond is, en je zet je telefoon erin. En dan heb je &hellip;&hellip;&hellip;. een wazig beeld. Om dat op te lossen, verschuif je de telefoon in de doos, totdat het beeld scherp is. Alleen staat het dan ondersteboven&hellip;. Om dat op te lossen zet je de rotatievergrendeling op je telefoon aan, en zet je hem ondersteboven in de doos. Tada, je hebt een projector!</p>
+<p>Er is alleen 1 nadeel: het moet donker zijn&hellip;<br>
+En nog een nadeel: het beeld is in spiegelbeeld.<br>
+Maar het is wel een leuk project om een keer te maken.</p>
+<p>Dit was het weer,<br>
+Robin</p>
+ ]]></content:encoded></item></channel></rss>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>brackets on Webdevelopment-En-Meer</title><link>https://blog.geheimesite.nl/tags/brackets/</link><description>Read the latest brackets on Webdevelopment-En-Meer</description><generator>Hugo -- gohugo.io</generator><language>nl-nl</language><lastBuildDate>Wed, 27 Nov 2019 07:29:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/tags/brackets/index.xml" rel="self" type="application/rss+xml"/><item><title>Brackets installeren</title><link>https://blog.geheimesite.nl/2019/11/brackets-installeren.html</link><pubDate>Wed, 27 Nov 2019 07:29:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2019/11/brackets-installeren.html</guid><description>Ik ben momenteel bezig met het maken van tutorials over het coderen van simpele programma&amp;rsquo;s, spelletjes, websites, en veel meer. Voor al die dingen heb je een code-editor nodig. Daarom is hier een stappenplan, voor het installeren van mijn favoriete code-editor: Brackets
+Opmerking: in principe kun je ook programmeren in een tekstverwerkers zoals Kladblok (Windows), TextEdit (macOS) of gedig (Linux). Het hebben van een goede code-editor is gewoon erg fijn&amp;hellip; PS: gebruik in ieder geval NOOIT Word of een soortgelijke tekstverwerker als code-editor.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-2DNqGXtkLhc/XTwKyJ5_KTI/AAAAAAAABn0/uFlT9gGlTREsfVTdIIfXMrs85mV_XKMtACPcBGAYYCw/s1600/brackets-seeklogo.com.png"><img src="https://1.bp.blogspot.com/-2DNqGXtkLhc/XTwKyJ5_KTI/AAAAAAAABn0/uFlT9gGlTREsfVTdIIfXMrs85mV_XKMtACPcBGAYYCw/s200/brackets-seeklogo.com.png" alt=""></a>Ik ben momenteel bezig met het maken van tutorials over het coderen van simpele programma&rsquo;s, spelletjes, websites, en veel meer. Voor al die dingen heb je een code-editor nodig. Daarom is hier een stappenplan, voor het installeren van mijn favoriete code-editor: <a href="https://webdevelopment-en-meer.blogspot.com/2019/07/beste-code-editor-brackets.html">Brackets</a></p>
+<p><em>Opmerking: in principe kun je ook programmeren in een tekstverwerkers zoals Kladblok (Windows), TextEdit (macOS) of  gedig (Linux). Het hebben van een goede code-editor is gewoon erg fijn&hellip; PS: gebruik in ieder geval NOOIT Word of een soortgelijke tekstverwerker als code-editor. Dan zal de code niet werken</em><br>
+<strong>Stap 1: Brackets downloaden</strong><br>
+Ga naar <a href="http://www.brackets.io/">www.brackets.io</a> in je webbrowser, en klik op &ldquo;Download Brackets&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s1600/screenshot%2B3.1.png"><img src="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s640/screenshot%2B3.1.png" alt=""></a></p>
+<p><strong>Stap 2: Brackets installeren</strong><br>
+Open het installatiebestand op dezelfde manier, zoals je ook het installatiebestand van de Python software hebt geopend, en klik op &ldquo;Next&rdquo;, en dan op &ldquo;Install&rdquo;. Als de installatie voltooit is, klik je op &ldquo;Finish&rdquo;</p>
+<p><strong>Stap 3: Brackets openen</strong><br>
+Nu je Brackets hebt gedownload, kun je het openen vanuit je startmenu. Klik op je startmenu. (Dat windows icoontje, linksonder op het scherm). Open Brackets. Als je het voor de eerste keer opent zie je dit:</p>
+<p><a href="https://1.bp.blogspot.com/-DfyHyDA02Qw/Xd1GPMnAQSI/AAAAAAAABx8/2SCubHwaggIEwubsC4IahhnR7HKvXCFbQCLcBGAsYHQ/s1600/brackets.png"><img src="https://1.bp.blogspot.com/-DfyHyDA02Qw/Xd1GPMnAQSI/AAAAAAAABx8/2SCubHwaggIEwubsC4IahhnR7HKvXCFbQCLcBGAsYHQ/s640/brackets.png" alt=""></a></p>
+ ]]></content:encoded></item><item><title>Beginnen met Python</title><link>https://blog.geheimesite.nl/2019/11/beginnen-met-python.html</link><pubDate>Tue, 26 Nov 2019 07:08:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2019/11/beginnen-met-python.html</guid><description>Een tutorial over het installeren van Python, en het opzetten van een programmeeromgeving
+In mijn klas zitten een paar kinderen die willen leren hoe Python werkt. Daarom maak ik een tutorial over hoe je Python installeert, gebruikt, en activeert. Eerst vertel ik wat achtergrond informatie over Python.
+Python is een programmeer/scripttaal, gemaakt in de jaren 90 van de vorige eeuw.
+Het is ontworpen door Guido van Rossum. De taal is mede gebaseerd op inzichten van professor Lambert Meertens die een taal genaamd ABC had ontworpen, bedoeld als alternatief voor BASIC, maar dan met geavanceerde datastructuren.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-EfXyKY9MH9M/Xd0_8wyq0uI/AAAAAAAABxE/WMFlvfNyEpkzIBvR2FqoQsmckApbsXDXgCLcBGAsYHQ/s1600/python-logo%25402x.png"><img src="https://1.bp.blogspot.com/-EfXyKY9MH9M/Xd0_8wyq0uI/AAAAAAAABxE/WMFlvfNyEpkzIBvR2FqoQsmckApbsXDXgCLcBGAsYHQ/s320/python-logo%25402x.png" alt=""></a><br>
+<strong>Een tutorial over het installeren van Python, en het opzetten van een programmeeromgeving</strong><br>
+In mijn klas zitten een paar kinderen die willen leren hoe Python werkt. Daarom maak ik een tutorial over hoe je Python installeert, gebruikt, en activeert. Eerst vertel ik wat achtergrond informatie over Python.</p>
+<p>Python is een programmeer/scripttaal, gemaakt in de jaren 90 van de vorige eeuw.<br>
+Het is ontworpen door Guido van Rossum. De taal is mede gebaseerd op inzichten van professor Lambert Meertens die een taal genaamd ABC had ontworpen, bedoeld als alternatief voor BASIC, maar dan met geavanceerde datastructuren.</p>
+<p>De ontwikkeling van Python wordt momenteel geleid door Python Software Foundation<br>
+Python Software Foundation heeft een site waar je de software kunt downloaden, en waar de nodige documentatie staat. De site vind je hier:<br>
+<a href="https://www.python.org/">https://www.python.org/</a></p>
+<p><strong>Maar hoe installeer je Python nou?</strong><br>
+Om Python te gebruiken heb je software nodig. Die kun je downloaden en installeren via de (zelfgemaakte) handleiding hieronder.</p>
+<p><em>Opmerking: Mijn laptop staat ingesteld op Engels, omdat ik dat fijner vind, en dan Cortana kan gebruiken. Het kan dus zijn, dat bij jou de menu&rsquo;s er anders uitzien dan hier beschreven staat.</em></p>
+<p><strong>1. Download de software</strong><br>
+Ga naar <a href="http://www.python.org/">www.python.org</a> in je favoriete webbrowser. Klik op de knop <a href="https://www.python.org/downloads/">Downloads</a> in het menu.</p>
+<p><a href="https://1.bp.blogspot.com/-_-3ahkTxBCQ/Xd08gCyLjVI/AAAAAAAABwk/r01jjimAE9wtDrZGJO3_YmC1olzLlDDdgCEwYBhgL/s1600/screenshot1.png"><img src="https://1.bp.blogspot.com/-_-3ahkTxBCQ/Xd08gCyLjVI/AAAAAAAABwk/r01jjimAE9wtDrZGJO3_YmC1olzLlDDdgCEwYBhgL/s640/screenshot1.png" alt=""></a></p>
+<p>Je ziet een webpagina met de kop &ldquo;Download the latest version for Windows&rdquo;. Check eerste je besturingssysteem. Ben je op Windows 10, Windows 8.1/8.2 of Windows 7, dan zit je goed. Klik dan gewoon op de knop &ldquo;Download Python&rdquo;. Zit je op een mac, of linux PC? Klik dan op de hyperlinks eronder.</p>
+<p><a href="https://1.bp.blogspot.com/-D4PN0Zbot0k/Xd08gFYVphI/AAAAAAAABwo/DuBfb4xQDe8kWQPkoDzE8Sk69a-m4LT9wCEwYBhgL/s1600/scrrenshot2.png"><img src="https://1.bp.blogspot.com/-D4PN0Zbot0k/Xd08gFYVphI/AAAAAAAABwo/DuBfb4xQDe8kWQPkoDzE8Sk69a-m4LT9wCEwYBhgL/s640/scrrenshot2.png" alt=""></a></p>
+<p><strong>2. Installeren</strong><br>
+Navigeer naar de Downloads map op je computer, en klik op het bestand dat je zojuist hebt gedownload.</p>
+<p><a href="https://1.bp.blogspot.com/-_KuJNmBWZg8/Xd0_lqs9xtI/AAAAAAAABw8/v5_r3iH3S4YPBFzpGVJ7tg9YrKkThbtMgCLcBGAsYHQ/s1600/screenshot3.png"><img src="https://1.bp.blogspot.com/-_KuJNmBWZg8/Xd0_lqs9xtI/AAAAAAAABw8/v5_r3iH3S4YPBFzpGVJ7tg9YrKkThbtMgCLcBGAsYHQ/s640/screenshot3.png" alt=""></a></p>
+<p>Klik op het bestand en open het. Als het goed is zou er zich nu een installatie programma moeten openen, dat er zo uitziet.</p>
+<p><a href="https://1.bp.blogspot.com/-fNsNkAtbbkU/Xd0_Llv2X1I/AAAAAAAABw0/Y_2ML2jY0-0z9ExdC779kwxA5O8dtk7iQCLcBGAsYHQ/s1600/screenshot4.png"><img src="https://1.bp.blogspot.com/-fNsNkAtbbkU/Xd0_Llv2X1I/AAAAAAAABw0/Y_2ML2jY0-0z9ExdC779kwxA5O8dtk7iQCLcBGAsYHQ/s640/screenshot4.png" alt=""></a></p>
+<p>Klik op &ldquo;Install Now&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-6e31yrv_fas/Xd0_ySmv8XI/AAAAAAAABxA/6E0nHLHgYrM6L8okkxZ94yr5Nim6r8dyACLcBGAsYHQ/s1600/screenshot4.png"><img src="https://1.bp.blogspot.com/-6e31yrv_fas/Xd0_ySmv8XI/AAAAAAAABxA/6E0nHLHgYrM6L8okkxZ94yr5Nim6r8dyACLcBGAsYHQ/s640/screenshot4.png" alt=""></a></p>
+<p>Dit is een <a href="https://www.reviversoft.com/nl/file-extensions/exe">.exe</a> bestand. Dit betekent dat net een uitvoerbaar programma is. Waarschijnlijk zal Windows je een beveiligings melding geven. Voer dan je Administrator wachtwoord in, en klik op OK. Als het goed is zou het installatieproces nu moeten starten.</p>
+<p><a href="https://1.bp.blogspot.com/-YPSUOSNFj_A/Xd1AsOhc54I/AAAAAAAABxU/ODhJETPMwM8u4DO-fI98mpzE-zkjzdtSgCLcBGAsYHQ/s1600/scrrenshot5.png"><img src="https://1.bp.blogspot.com/-YPSUOSNFj_A/Xd1AsOhc54I/AAAAAAAABxU/ODhJETPMwM8u4DO-fI98mpzE-zkjzdtSgCLcBGAsYHQ/s640/scrrenshot5.png" alt=""></a></p>
+<p>Als de installatie voltooit is, klik je op &ldquo;Close&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-3Xgl5mM0VYY/Xd1BJbwf6dI/AAAAAAAABxc/DGSJglPecpUjtwQ6Imf66AtkGSk8kQ2owCLcBGAsYHQ/s1600/screenshot6.png"><img src="https://1.bp.blogspot.com/-3Xgl5mM0VYY/Xd1BJbwf6dI/AAAAAAAABxc/DGSJglPecpUjtwQ6Imf66AtkGSk8kQ2owCLcBGAsYHQ/s640/screenshot6.png" alt=""></a></p>
+<p><strong>3. Je programmeeromgeving opzetten</strong><br>
+Je hebt nu de benodigde software, en zou aan de slag kunnen gaan. Maar de IDE (Integrated Development Environment) die in de Python software zit ingebouwd is niet heel fijn om mee te werken. Daarom heb ik een aparte code-editor, waarin ik ook met andere talen zoals HTML, CSS, PHP, JavaScript, en C++ kan werken. De code-editor die ik gebruik, heet Brackets. Zie daarover meer in mijn <a href="https://webdevelopment-en-meer.blogspot.com/2019/07/beste-code-editor-brackets.html">blogpost over Brackets</a>. Hier onder zie je een klein overzicht over hoe je Brackets installeert.</p>
+<p><strong>3.1 Download Brackets</strong><br>
+Ga naar <a href="http://www.brackets.io">www.brackets.io</a> in je webbrowser, en klik op &ldquo;Download Brackets&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s1600/screenshot%2B3.1.png"><img src="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s640/screenshot%2B3.1.png" alt=""></a></p>
+<p>Open het installatiebestand op dezelfde manier, zoals je ook het installatiebestand van de Python software hebt geopend, en klik op &ldquo;Next&rdquo;, en dan op &ldquo;Install&rdquo;. Als de installatie voltooit is, klik je op &ldquo;Finish&rdquo;</p>
+<p><strong>3.2 Maak je klaar voor lancering</strong><br>
+Nu je Brackets hebt gedownload, kun je het openen vanuit je startmenu. Klik op je startmenu. (Dat windows icoontje, linksonder op het scherm). Open Brackets. Als je het voor de eerste keer opent zie je dit:</p>
+<p><a href="https://1.bp.blogspot.com/-DfyHyDA02Qw/Xd1GPMnAQSI/AAAAAAAABx8/2SCubHwaggIEwubsC4IahhnR7HKvXCFbQCLcBGAsYHQ/s1600/brackets.png"><img src="https://1.bp.blogspot.com/-DfyHyDA02Qw/Xd1GPMnAQSI/AAAAAAAABx8/2SCubHwaggIEwubsC4IahhnR7HKvXCFbQCLcBGAsYHQ/s640/brackets.png" alt=""></a></p>
+<p>Er moeten nu een paar dingen gebeuren. Maak eerst de tekst wat groter, anders zie je helemaal niks, omdat het zo klein is. Hiervoor gebruik je de toetscombinatie CTRL en +.</p>
+<p>Maak nu een map aan, op je bureaublad, en noem het geef het een leuke naam. (Dit wordt je projectmap, waarin je python programma dat jij gaat coderen komt te staan)</p>
+<p>Ga terug naar Brackets, en klik op het pijltje naast &ldquo;Getting Started&rdquo;. Er komt een dropdownmenu tevoorschijn. Klik op &ldquo;Open folder&rdquo;.</p>
+<p><a href="https://1.bp.blogspot.com/-MOjptWMZEVQ/Xd1Ik_GJUzI/AAAAAAAAByI/U9x9unOw7lkaXzwgzLjamFyRF-IzBM3ewCLcBGAsYHQ/s1600/brackets2.PNG"><img src="https://1.bp.blogspot.com/-MOjptWMZEVQ/Xd1Ik_GJUzI/AAAAAAAAByI/U9x9unOw7lkaXzwgzLjamFyRF-IzBM3ewCLcBGAsYHQ/s640/brackets2.PNG" alt=""></a></p>
+<p>Navigeer naar je projectmap (De map die je net hebt aangemaakt) en klik op &ldquo;Select folder&rdquo;.</p>
+<p><a href="https://1.bp.blogspot.com/-f0OlJYKsxtw/Xd1I3UQjKAI/AAAAAAAAByQ/VGGx4dSDOMMiXTWs719DxFrWlWfM-vunQCLcBGAsYHQ/s1600/brackets3.png"><img src="https://1.bp.blogspot.com/-f0OlJYKsxtw/Xd1I3UQjKAI/AAAAAAAAByQ/VGGx4dSDOMMiXTWs719DxFrWlWfM-vunQCLcBGAsYHQ/s640/brackets3.png" alt=""></a></p>
+<p>Nu je je projectmap hebt geopend, kun je beginnen met het coderen van je Python programma.<br>
+Je moet hiervoor nu nog 1 ding doen, en dat is bestandsnaam-extensies aanzetten. Dit doe je door in de Windows Verkenner op &ldquo;View&rdquo; (&ldquo;Beeld&rdquo; op een in het Nederlands ingestelde PC), en klik je op &ldquo;Filename extensions&rdquo; (&ldquo;Bestandsnaam extensies&rdquo; op een in het Nederlands ingestelde PC).</p>
+<p><a href="https://1.bp.blogspot.com/-MTbba20crAI/Xd1MiSYGE3I/AAAAAAAAByc/RhnwYHx5TIYdgFs5QFIaAmv-Uj6jZ8LhACLcBGAsYHQ/s1600/we.png"><img src="https://1.bp.blogspot.com/-MTbba20crAI/Xd1MiSYGE3I/AAAAAAAAByc/RhnwYHx5TIYdgFs5QFIaAmv-Uj6jZ8LhACLcBGAsYHQ/s640/we.png" alt=""></a></p>
+<p>Maak nu je programma aan. Hiervoor klik je op het dropdownmenu &ldquo;File&rdquo; (Waarschijnlijk &ldquo;Bestand&rdquo; op een in het Nederlands ingestelde PC) en klik op &ldquo;New&rdquo; (Waarschijnlijk &ldquo;Nieuw&rdquo; op een in het Nederlands ingestelde PC).</p>
+<p>Typ nu:</p>
+<pre tabindex="0"><code>  
+print(&#34;Hello, World!&#34;)  
+</code></pre><p>Of laat de Fibonacci Reeks zien met:</p>
+<pre tabindex="0"><code>  
+# Python 3: Fibonacci series up to n  
+ def fib(n):  
+     a, b = 0, 1  
+     while a &lt; n:  
+         print(a, end=&#39; &#39;)  
+         a, b = b, a+b  
+     print()  
+ fib(1000)  
+</code></pre><p>Sla het bestand op met <em>CTRL+S</em>. Geef het een naam, maar zorg ervoor, dat je eindigd met .py (dit staat voor Python, nu weet de computer dat het een Python programma is)</p>
+<p><strong>4. Maar hoe bekijk ik mijn programma nou?</strong><br>
+Je wilt het programma nu wel kunnen aanzetten, maar hoe moet dat zonder de Python IDE?<br>
+Daarvoor open je Windows Verkenner, en navigeer je naar je projectmap, en klik op de adresbalk (zie plaatje) en typ &ldquo;cmd&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-tmQ9y5U5mRw/Xd1OlcFHCgI/AAAAAAAAByo/Kp_Ds3xBNmAiwwc_a6FkRr6NLOdctqYggCLcBGAsYHQ/s1600/balk1.png"><img src="https://1.bp.blogspot.com/-tmQ9y5U5mRw/Xd1OlcFHCgI/AAAAAAAAByo/Kp_Ds3xBNmAiwwc_a6FkRr6NLOdctqYggCLcBGAsYHQ/s640/balk1.png" alt=""></a></p>
+<p><a href="https://1.bp.blogspot.com/-V2i19SahPk8/Xd1Oldzl0jI/AAAAAAAABys/buaXtwxNSGUToyh2Wty3S9Sey3q8FOLFgCLcBGAsYHQ/s1600/balk2.png"><img src="https://1.bp.blogspot.com/-V2i19SahPk8/Xd1Oldzl0jI/AAAAAAAABys/buaXtwxNSGUToyh2Wty3S9Sey3q8FOLFgCLcBGAsYHQ/s640/balk2.png" alt=""></a></p>
+<p>Er wordt nu een zwart ding geopend. Waarschijnlijk heb je het weleens gezien, het heet het command prompt. Je kunt er commando&rsquo;s in invoeren. Je kunt daarmee je computer kapot maken, maar wat wij ermee gaan doen, is gewoon veilig.</p>
+<p><a href="https://1.bp.blogspot.com/-1T2i4uyvU1Q/Xd1PZmgG_0I/AAAAAAAABy8/ZHHPs8q3rE8vu9smm5D3oLAa1T0uBVH7ACLcBGAsYHQ/s1600/cdm1.png"><img src="https://1.bp.blogspot.com/-1T2i4uyvU1Q/Xd1PZmgG_0I/AAAAAAAABy8/ZHHPs8q3rE8vu9smm5D3oLAa1T0uBVH7ACLcBGAsYHQ/s640/cdm1.png" alt=""></a></p>
+<p><strong>4.2</strong><br>
+Typ in: <code>py _bestandnaam_.py</code><br>
+Vervang <em>bestandnaam</em> door de naam van jouw programma dat je net hebt gemaakt.</p>
+<p>Als alles werk, zou je nu de Fabonacci Reeks, of Hello World moeten zien.</p>
+<p><a href="https://1.bp.blogspot.com/-YwF2-ZY2jAs/Xd1T48ZFWaI/AAAAAAAABzQ/D-Xr65dHBww-vrm0LLg1sY1s5qYl97HFgCLcBGAsYHQ/s1600/cdm3.png"><img src="https://1.bp.blogspot.com/-YwF2-ZY2jAs/Xd1T48ZFWaI/AAAAAAAABzQ/D-Xr65dHBww-vrm0LLg1sY1s5qYl97HFgCLcBGAsYHQ/s640/cdm3.png" alt=""></a></p>
+<p><strong>4.3</strong><br>
+Wil je je programma aanpassen? Herschrijf, of pas de code in Brackets aan, en voer opnieuw stap 4.2 uit!</p>
+<p>Dit was mijn tutorial over het installeren en activeren van Python. Wil je meer weten? Stel je vragen dan in de comments.</p>
+<p>Veel codeer plezier,<br>
+Robin</p>
+<p>**Bronnen: **<br>
+<a href="https://www.python.org/">https://www.python.org/</a><br>
+<a href="https://nl.wikipedia.org/wiki/Python_(programmeertaal)">https://nl.wikipedia.org/wiki/Python_(programmeertaal)</a><br>
+<a href="https://www.w3schools.com/python/python_intro.asp">https://www.w3schools.com/python/python_intro.asp</a></p>
+ ]]></content:encoded></item><item><title>Beste code-editor: Brackets</title><link>https://blog.geheimesite.nl/2019/07/beste-code-editor-brackets.html</link><pubDate>Sat, 27 Jul 2019 01:54:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2019/07/beste-code-editor-brackets.html</guid><description>Hey, zoals je waarschijnlijk wel weet, als je op mijn blog komt, houd ik van programmeren. Vandaag, wil ik jullie mijn favoriete code-editor laten zien: Brackets
+Brackets is een code-editor / IDE gemaakt door Adobe. Ze gebruiken Code Mirror om de code te kunnen highlighten. Brackets bevat een inline editor, om css en kleuren te kunnen bewerken. Dat doe je, door een element, of kleur te selecteren, en op CTRL + E te drukken.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-2DNqGXtkLhc/XTwKyJ5_KTI/AAAAAAAABnw/9hfCNpf4P6cleEU1H34LuwqdsYfKgRMMwCLcBGAs/s1600/brackets-seeklogo.com.png"><img src="https://1.bp.blogspot.com/-2DNqGXtkLhc/XTwKyJ5_KTI/AAAAAAAABnw/9hfCNpf4P6cleEU1H34LuwqdsYfKgRMMwCLcBGAs/s200/brackets-seeklogo.com.png" alt=""></a>Hey, zoals je waarschijnlijk wel weet, als je op mijn blog komt, houd ik van programmeren. Vandaag, wil ik jullie mijn favoriete code-editor laten zien: <a href="http://brackets.io/">Brackets</a></p>
+<p>Brackets is een code-editor / IDE gemaakt door Adobe. Ze gebruiken <a href="https://codemirror.net/">Code Mirror</a> om de code te kunnen highlighten. Brackets bevat een inline editor, om css en kleuren te kunnen bewerken. Dat doe je, door een element, of kleur te selecteren, en op CTRL + E te drukken. Ook kan je je scherm opdelen in 2 stukken (splitscreen). Zo kan je in twee bestanden tegelijk werken. Dat doe je door op het rechthoekige pictogram naast de bestandenlijst te klikken. Maar het handigst vind ik live voorbeeld. In live voorbeeld kun kijken hoe je code er in de browser uitziet, en zodra jij in je code iets veranderd, veranderd het mee in de browser. Je zet Live Voorbeeld aan, door op het bliksemschicht pictogram te klikken, in de rechter bovenhoek van het scherm</p>
+<p><a href="https://1.bp.blogspot.com/--0hNpFec8WU/XTwMHtJwcSI/AAAAAAAABn8/RlOclN7x2ZwhyMtL-Ht4F1JVBop4Yz_oQCLcBGAs/s1600/brackets1.PNG"><img src="https://1.bp.blogspot.com/--0hNpFec8WU/XTwMHtJwcSI/AAAAAAAABn8/RlOclN7x2ZwhyMtL-Ht4F1JVBop4Yz_oQCLcBGAs/s640/brackets1.PNG" alt=""></a></p>
+<p>Een standaard HTML-document in Brackets</p>
+<p><a href="https://1.bp.blogspot.com/-eLM3CVPqmWc/XTwMVh_IvxI/AAAAAAAABoA/7CP8s08_lGIdDuFsqLiot2pEoTWQoQaLgCLcBGAs/s1600/brackets2.PNG"><img src="https://1.bp.blogspot.com/-eLM3CVPqmWc/XTwMVh_IvxI/AAAAAAAABoA/7CP8s08_lGIdDuFsqLiot2pEoTWQoQaLgCLcBGAs/s640/brackets2.PNG" alt=""></a></p>
+<p>Een CSS-document in Brackets</p>
+<p><a href="https://1.bp.blogspot.com/-lWJYMbWxTx8/XTwMf46QxSI/AAAAAAAABoI/_IoKlJYAxcY5xJqWCr5X47srtcJtOMwjACLcBGAs/s1600/brackets3.png"><img src="https://1.bp.blogspot.com/-lWJYMbWxTx8/XTwMf46QxSI/AAAAAAAABoI/_IoKlJYAxcY5xJqWCr5X47srtcJtOMwjACLcBGAs/s640/brackets3.png" alt=""></a></p>
+<p>Inline editor voor CSS in Brackets </p>
+<p><a href="https://1.bp.blogspot.com/-EUdKN-eKPMg/XTwN3ohEU7I/AAAAAAAABoY/KwDpB0cIZ18K7l8UGTt0FkHLAKGbmNPUQCLcBGAs/s1600/brackets4.PNG"><img src="https://1.bp.blogspot.com/-EUdKN-eKPMg/XTwN3ohEU7I/AAAAAAAABoY/KwDpB0cIZ18K7l8UGTt0FkHLAKGbmNPUQCLcBGAs/s640/brackets4.PNG" alt=""></a></p>
+<p>Inline editor voor kleuren in Brackets</p>
+<p><a href="https://1.bp.blogspot.com/-vT7tCOa7jR8/XTwOW8w4FLI/AAAAAAAABog/ItN5IS1Mb-kNp1f_uirx6yMWZIni7-P_gCLcBGAs/s1600/brackets5.PNG"><img src="https://1.bp.blogspot.com/-vT7tCOa7jR8/XTwOW8w4FLI/AAAAAAAABog/ItN5IS1Mb-kNp1f_uirx6yMWZIni7-P_gCLcBGAs/s640/brackets5.PNG" alt=""></a></p>
+<p>Splitscreen in Brackets</p>
+<p>En dan nu tot slot, een filmpje over Live Voorbeeld, en de andere functies</p>
+<p>Ik hoop dat jullie iets aan deze blogpost gehad hebben, en tot de volgende keer!<br>
+Robin</p>
+ ]]></content:encoded></item></channel></rss>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>dunst on Notes</title><link>https://blog.geheimesite.nl/notes/tags/dunst/</link><description>Read the latest dunst on Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 03 Sep 2021 12:12:00 -0700</lastBuildDate><atom:link href="https://blog.geheimesite.nl/notes/tags/dunst/index.xml" rel="self" type="application/rss+xml"/><item><title>Prevent dunst from autostarting using DBus</title><link>https://blog.geheimesite.nl/notes/2021/09/prevent-dunst-from-autostarting-using.html</link><pubDate>Fri, 03 Sep 2021 12:12:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/09/prevent-dunst-from-autostarting-using.html</guid><description>By default, dunst is autostarted by DBus. This can be turned off by editing /usr/share/dbus-1/services/org.knopwob.dunst.service and changing
+Exec=/usr/bin/dunst To:
+Exec=/usr/bin/true Source:
+https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</description><content:encoded><![CDATA[ <p>By default, dunst is autostarted by DBus. This can be turned off by editing <code>/usr/share/dbus-1/services/org.knopwob.dunst.service</code> and changing</p>
+<pre tabindex="0"><code>Exec=/usr/bin/dunst
+</code></pre><p>To:</p>
+<pre tabindex="0"><code>Exec=/usr/bin/true
+</code></pre><p>Source:<br>
+<a href="https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html">https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</a></p>
+ ]]></content:encoded></item></channel></rss>

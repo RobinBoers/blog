@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>blogger on Notes</title><link>https://blog.geheimesite.nl/notes/tags/blogger/</link><description>Read the latest blogger on Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 13 Feb 2022 10:48:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/notes/tags/blogger/index.xml" rel="self" type="application/rss+xml"/><item><title>Display Blogger feed on HTML site using RSS</title><link>https://blog.geheimesite.nl/notes/2022/02/display-blogger-feed-on-html-site-using.html</link><pubDate>Sun, 13 Feb 2022 10:48:00 -0800</pubDate><guid>https://blog.geheimesite.nl/notes/2022/02/display-blogger-feed-on-html-site-using.html</guid><description>This is how to parse and display a blogger feed on your website. Replace the URL of the API-call in the last script tag to change the RSS feed the script pulls. Update the months array to change the language for the date to English.
+&amp;lt;script&amp;gt; let postTitle = new Array(); let postContent = new Array(); let postUrl = new Array(); let postDate = new Array(); let months = [&amp;amp;quot;januari&amp;amp;quot;, &amp;amp;quot;februari&amp;amp;quot;, &amp;amp;quot;maart&amp;amp;quot;, &amp;amp;quot;april&amp;amp;quot;, &amp;amp;quot;mei&amp;amp;quot;, &amp;amp;quot;juni&amp;amp;quot;, &amp;amp;quot;juli&amp;amp;quot;, &amp;amp;quot;augustus&amp;amp;quot;, &amp;amp;quot;september&amp;amp;quot;, &amp;amp;quot;oktober&amp;amp;quot;, &amp;amp;quot;november&amp;amp;quot;, &amp;amp;quot;december&amp;amp;quot;]; let feedSize = 0; function callback(apiData) { function load() { if (&amp;amp;quot;entry&amp;amp;quot; in apiData.</description><content:encoded><![CDATA[ <p>This is how to parse and display a blogger feed on your website. Replace the URL of the API-call in the last script tag to change the RSS feed the script pulls. Update the <code>months</code> array to change the language for the date to English.</p>
+<pre tabindex="0"><code>  
+&lt;script&gt;  
+let postTitle = new Array();  
+let postContent = new Array();  
+let postUrl = new Array();  
+let postDate = new Array();  
+  
+let months = [&amp;quot;januari&amp;quot;, &amp;quot;februari&amp;quot;, &amp;quot;maart&amp;quot;, &amp;quot;april&amp;quot;, &amp;quot;mei&amp;quot;, &amp;quot;juni&amp;quot;, &amp;quot;juli&amp;quot;, &amp;quot;augustus&amp;quot;, &amp;quot;september&amp;quot;, &amp;quot;oktober&amp;quot;, &amp;quot;november&amp;quot;, &amp;quot;december&amp;quot;];  
+  
+let feedSize = 0;  
+  
+function callback(apiData) {  
+    function load() {  
+        if (&amp;quot;entry&amp;quot; in apiData.feed) {  
+            let feedSize = apiData.feed.entry.length;  
+            for (let i = 0; i &amp;lt; feedSize; i++) {  
+                let post = apiData.feed.entry[i];  
+                console.log(post)  
+  
+                var p = post.published.$t.substring(5, 7);  
+  
+                for (var f = 0; f &amp;lt; post.link.length; f++) {  
+                    if (post.link[f].rel == &amp;quot;alternate&amp;quot;) {  
+                        postUrl.push(post.link[f].href);  
+                        break  
+                    }  
+                }  
+  
+                let postDateDay = post.published.$t.substring(8, 10);  
+                let postDateMonth = months[parseInt(p, 10) - 1];  
+                let postDateYear = post.published.$t.substring(0, 4);  
+  
+                postDate.push(`${postDateDay} ${postDateMonth} ${postDateYear}`);  
+  
+                postTitle.push(post.title.$t);  
+                postContent.push(post.content.$t);  
+            }  
+        }  
+    }  
+  
+    function display() {  
+        let postCount = postTitle.length;  
+        var currentPost = 0;  
+        while (currentPost &amp;lt; postCount) {          
+            document.write(`  
+                &amp;lt;article class=&amp;quot;post mt-10&amp;quot;&amp;gt;  
+                    &amp;lt;div class=&amp;quot;text-center my-7 max-w-xl mx-auto&amp;quot;&amp;gt;  
+                        &amp;lt;h1 id=&amp;quot;post-${currentPost}&amp;quot; class=&amp;quot;mb-0 text-4xl&amp;quot;&amp;gt;${postTitle[currentPost]}&amp;lt;/h1&amp;gt;  
+                        &amp;lt;p class=&amp;quot;my-5 bold&amp;quot;&amp;gt;${postDate[currentPost]}&amp;lt;/p&amp;gt;  
+                    &amp;lt;/div&amp;gt;  
+      
+                    &amp;lt;section&amp;gt;  
+                        ${postContent[currentPost]}  
+                    &amp;lt;/section&amp;gt;  
+                &amp;lt;/article&amp;gt;  
+      
+                &amp;lt;hr class=&amp;quot;my-7 border-none&amp;quot;&amp;gt;  
+            `);  
+      
+            currentPost++  
+        }  
+    }  
+      
+    load();  
+    display();  
+}  
+&lt;/script&gt;  
+&lt;script src=&#34;https://webdevelopment-en-meer.blogspot.com/feeds/posts/default?max-results=10&amp;start-index=1&amp;alt=json-in-script&amp;callback=callback&#34;&gt;&lt;/script&gt;  
+</code></pre> ]]></content:encoded></item><item><title>Publish posts using Blogger API in PHP</title><link>https://blog.geheimesite.nl/notes/2021/08/publish-posts-using-blogger-api-in-php.html</link><pubDate>Mon, 09 Aug 2021 10:41:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/publish-posts-using-blogger-api-in-php.html</guid><description>This is how to create a blogpost using the Google Client Library for PHP.
+To setup:
+Go to https://console.developers.google.com Add an project, and tap &amp;ldquo;Credentials&amp;rdquo; Tap &amp;ldquo;Create data&amp;rdquo; and create an Client-ID OAuth Choose the &amp;ldquo;Webapp&amp;rdquo; and enter the path to your server in the &amp;ldquo;Authorized diversion URIs&amp;rdquo; textbox Hit &amp;ldquo;Create&amp;rdquo;, and hit OK Click on the Client-ID you just generated Click &amp;ldquo;Download JSON&amp;rdquo; Download the file, and rename it to client_secret.</description><content:encoded><![CDATA[ <p>This is how to create a blogpost using the <a href="https://github.com/googleapis/google-api-php-client">Google Client Library for PHP</a>.</p>
+<p>To setup:</p>
+<ol>
+<li>Go to <a href="https://console.developers.google.com/">https://console.developers.google.com</a></li>
+<li>Add an project, and tap &ldquo;Credentials&rdquo;</li>
+<li>Tap &ldquo;Create data&rdquo; and create an Client-ID OAuth</li>
+<li>Choose the &ldquo;Webapp&rdquo; and enter the path to your server in the &ldquo;Authorized diversion URIs&rdquo; textbox</li>
+<li>Hit &ldquo;Create&rdquo;, and hit OK</li>
+<li>Click on the Client-ID you just generated</li>
+<li>Click &ldquo;Download JSON&rdquo;</li>
+<li>Download the file, and rename it to <code>client_secret.json</code></li>
+</ol>
+<p>Use this script to create and publish posts. Make sure to first enter the path to your <code>client_secret.json</code>.</p>
+<pre tabindex="0"><code>&lt;?php  
+// This script creates a post  
+// Made by Robin Boers  
+  
+// load Google Api  
+require_once &#39;../api/vendor/autoload.php&#39;;  
+  
+session_start();  
+  
+$redirect_uri = &#39;http://&#39; . $_SERVER[&#39;HTTP_HOST&#39;] . $_SERVER[&#39;PHP_SELF&#39;];  
+  
+// Authenticate user with OAuth   
+$client = new Google_Client();  
+$client-&gt;setAuthConfig(&#39;/path/to/client_secret.json&#39;);  
+$client-&gt;setApplicationName(&#39;Example App&#39;);  
+$client-&gt;setRedirectUri($redirect_uri);  
+$client-&gt;setScopes(array(&#39;https://www.googleapis.com/auth/blogger&#39;));   
+  
+if (!isset($_SESSION[&#39;access_token&#39;]) &amp;&amp; isset($_GET[&#39;code&#39;])) {  
+    $client-&gt;authenticate($_GET[&#39;code&#39;]);  
+    $access_token = $client-&gt;getAccessToken();  
+    $_SESSION[&#39;access_token&#39;] = $access_token;  
+}  
+  
+if (isset($_SESSION[&#39;access_token&#39;]) &amp;&amp; $_SESSION[&#39;access_token&#39;]) {  
+      
+    // First set the accesstoken  
+    $client-&gt;setAccessToken($_SESSION[&#39;access_token&#39;]);  
+  
+    $blogger = new Google_Service_Blogger($client);  
+  
+    // Get blog information  
+    $blog = $blogger-&gt;blogs-&gt;getByUrl(&#39;http://stupidstuffwastaken.blogspot.com&#39;); // Replace this URI with your blog&#39;s URI  
+    $blogId = $blog-&gt;getId();  
+    $blogName  = $blog-&gt;getName();  
+  
+    $postId = &#34;651261343944639929&#34;; // If you want to update a post  
+  
+     // Creating post  
+     $mypost = new Google_Service_Blogger_Post();  
+     $mypost-&gt;setTitle(&#34;Example heading&#34;);  
+     $mypost-&gt;setContent(&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#34;);  
+  
+     $data = $blogger-&gt;posts-&gt;insert($blogId, $mypost); // or update post like this: $data = $blogger-&gt;posts-&gt;update($blogId, $postId, $mypost);  
+     var_dump($data);  
+}  
+?&gt;
+</code></pre> ]]></content:encoded></item></channel></rss>

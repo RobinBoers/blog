@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>linux on Notes</title><link>https://blog.geheimesite.nl/notes/tags/linux/</link><description>Read the latest linux on Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 03:56:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/notes/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Enable open in terminal option for elementaryOS file manager</title><link>https://blog.geheimesite.nl/notes/2022/02/open-in-terminal.html</link><pubDate>Mon, 28 Feb 2022 03:56:00 -0800</pubDate><guid>https://blog.geheimesite.nl/notes/2022/02/open-in-terminal.html</guid><description>This is how to add an &amp;ldquo;Open terminal here&amp;rdquo; entry to the eOS file manager.
+Create /usr/share/contractors/openinterminal.contract with these contents:
+[Contractor Entry] Name=Open terminal here Icon=terminal Description=Open terminal here MimeType=inode;application/x-sh;application/x-executable; Exec=io.elementary.terminal -w %U Gettext-Domain=io.elementary.terminal Restart the terminal, and voilla!</description><content:encoded><![CDATA[ <p>This is how to add an &ldquo;Open terminal here&rdquo; entry to the eOS file manager.</p>
+<p>Create <code>/usr/share/contractors/openinterminal.contract</code> with these contents:</p>
+<pre tabindex="0"><code>[Contractor Entry]  
+Name=Open terminal here  
+Icon=terminal  
+Description=Open terminal here  
+MimeType=inode;application/x-sh;application/x-executable;  
+Exec=io.elementary.terminal -w %U  
+Gettext-Domain=io.elementary.terminal  
+</code></pre><p>Restart the terminal, and voilla!</p>
+ ]]></content:encoded></item><item><title>Notes-Up "GitHub" theme</title><link>https://blog.geheimesite.nl/notes/2022/01/notes-up-github-theme.html</link><pubDate>Wed, 05 Jan 2022 02:04:00 -0800</pubDate><guid>https://blog.geheimesite.nl/notes/2022/01/notes-up-github-theme.html</guid><description>This is a simple theme to make Notes-Up look like GitHub markdown. Adaptation of sindresorhus/github-markdown-css for Notes-Up.
+Installation Open Preferences Click viewer Download the CSS below and enter in &amp;ldquo;Global style modifications&amp;rdquo; Click close Enjoy the new look! Theme Download the theme
+License View license</description><content:encoded><![CDATA[ <p>This is a simple theme to make Notes-Up look like GitHub markdown. Adaptation of <a href="https://github.com/sindresorhus/github-markdown-css">sindresorhus/github-markdown-css</a> for Notes-Up.</p>
+<h2 id="installation">Installation</h2>
+<ul>
+<li>Open Preferences</li>
+<li>Click viewer</li>
+<li>Download the CSS below and enter in &ldquo;Global style modifications&rdquo;</li>
+<li>Click close</li>
+<li>Enjoy the new look!</li>
+</ul>
+<h2 id="theme">Theme</h2>
+<p><a href="https://gist.github.com/RobinBoers/4276744bb2c774619efc1ae4c34c6964#theme">Download the theme</a></p>
+<h2 id="license">License</h2>
+<p><a href="https://gist.github.com/RobinBoers/4276744bb2c774619efc1ae4c34c6964#license">View license</a></p>
+ ]]></content:encoded></item><item><title>Prevent dunst from autostarting using DBus</title><link>https://blog.geheimesite.nl/notes/2021/09/prevent-dunst-from-autostarting-using.html</link><pubDate>Fri, 03 Sep 2021 12:12:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/09/prevent-dunst-from-autostarting-using.html</guid><description>By default, dunst is autostarted by DBus. This can be turned off by editing /usr/share/dbus-1/services/org.knopwob.dunst.service and changing
+Exec=/usr/bin/dunst To:
+Exec=/usr/bin/true Source:
+https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</description><content:encoded><![CDATA[ <p>By default, dunst is autostarted by DBus. This can be turned off by editing <code>/usr/share/dbus-1/services/org.knopwob.dunst.service</code> and changing</p>
+<pre tabindex="0"><code>Exec=/usr/bin/dunst
+</code></pre><p>To:</p>
+<pre tabindex="0"><code>Exec=/usr/bin/true
+</code></pre><p>Source:<br>
+<a href="https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html">https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</a></p>
+ ]]></content:encoded></item><item><title>Missing depedencies when installing rofi from source on Ubuntu</title><link>https://blog.geheimesite.nl/notes/2021/08/missing-depedencies-when-installing.html</link><pubDate>Sun, 08 Aug 2021 10:30:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/missing-depedencies-when-installing.html</guid><description>When installing rofi 1.6.1 from source on Ubuntu, there are some missing dependencies. To install those, enter this command:
+sudo apt install libxcb-xkb-dev libxcb-ewmh-dev libxkbcommon-x11-dev libxcb-icccm4-dev libxcb-xinerama0-dev libxcb-xrm-dev build-essential cmake extra-cmake-modules xcb The check version in the default repos is also outdated, so you need to compile that from source too.</description><content:encoded><![CDATA[ <p>When installing rofi 1.6.1 from source on Ubuntu, there are some missing dependencies. To install those, enter this command:</p>
+<pre tabindex="0"><code>  
+sudo apt install libxcb-xkb-dev libxcb-ewmh-dev libxkbcommon-x11-dev libxcb-icccm4-dev libxcb-xinerama0-dev libxcb-xrm-dev build-essential cmake extra-cmake-modules xcb  
+</code></pre><p>The <code>check</code> version in the default repos is also outdated, so you need to compile that from source too.</p>
+ ]]></content:encoded></item><item><title>Alternative to Gala taskswitcher using Rofi</title><link>https://blog.geheimesite.nl/notes/2021/08/alternative-to-gala-taskswitcher-using.html</link><pubDate>Fri, 06 Aug 2021 10:26:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/alternative-to-gala-taskswitcher-using.html</guid><description>I kinda hate the default Alt+Tab switcher in Pantheon, so I use Rofi to fix that. This is how to use rofi as Alt+Tab switcher. Make sure you have rofi version 1.6.1 installed for this to work propperly.
+Create a new scriptfile called alttab.sh with this content:
+#!/usr/bin/env bash xdotool mousemove 960 540 &amp;amp;&amp;amp; rofi -no-config -theme alttab -kb-cancel &amp;#34;Alt+Escape,Escape&amp;#34; -kb-accept-entry &amp;#39;!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return,!Alt+Alt_L&amp;#39; -kb-row-down &amp;#39;Alt-Tab,Alt+Down,Down,ISO_Left_Tab&amp;#39; -kb-row-up &amp;#39;Alt+ISO_Left_Tab,Alt+Up,Up&amp;#39; -show window -selected-row 1 exit Now make it executable:</description><content:encoded><![CDATA[ <p>I kinda hate the default Alt+Tab switcher in Pantheon, so I use Rofi to fix that. This is how to use rofi as Alt+Tab switcher. Make sure you have rofi version 1.6.1 installed for this to work propperly.</p>
+<p>Create a new scriptfile called <code>alttab.sh</code> with this content:</p>
+<pre tabindex="0"><code>#!/usr/bin/env bash  
+xdotool mousemove 960 540 &amp;&amp; rofi -no-config -theme alttab -kb-cancel &#34;Alt+Escape,Escape&#34; -kb-accept-entry &#39;!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return,!Alt+Alt_L&#39; -kb-row-down &#39;Alt-Tab,Alt+Down,Down,ISO_Left_Tab&#39; -kb-row-up &#39;Alt+ISO_Left_Tab,Alt+Up,Up&#39; -show window -selected-row 1   
+exit  
+</code></pre><p>Now make it executable:</p>
+<pre tabindex="0"><code>sudo chmod +x ./alttab.sh  
+</code></pre><p>Delete default Alt+Tab shortcut in Switchboard -&gt; Keyboard -&gt; Shortcuts -&gt; Windows<br>
+Now link to the file you created earlier and assign it to Alt+Tab.</p>
+<p>This looks the best using this custom rofi theme I made: <a href="https://github.com/RobinBoers/dotfiles/blob/master/.config/rofi/alttab.rasi">https://github.com/RobinBoers/dotfiles/blob/master/.config/rofi/alttab.rasi</a></p>
+ ]]></content:encoded></item><item><title>Setup permissions for XAMPP</title><link>https://blog.geheimesite.nl/notes/2021/08/setup-permissions-xampp.html</link><pubDate>Fri, 06 Aug 2021 02:55:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/setup-permissions-xampp.html</guid><description>When installing XAMPP on Linux, you need to setup permissions to access the htdocs folder located at /opt/lampp/htdocs/.
+sudo chown -Rc robin /opt/lampp/htdocs/ sudo chmod -Rc 777 /opt/lampp/htdocs/</description><content:encoded><![CDATA[ <p>When installing XAMPP on Linux, you need to setup permissions to access the <code>htdocs</code> folder located at <code>/opt/lampp/htdocs/</code>.</p>
+<pre tabindex="0"><code>sudo chown -Rc robin /opt/lampp/htdocs/  
+sudo chmod -Rc 777 /opt/lampp/htdocs/
+</code></pre> ]]></content:encoded></item><item><title>Assign Rofi to super key in Pantheon</title><link>https://blog.geheimesite.nl/notes/2021/08/assign-rofi-to-super-key-in-pantheon.html</link><pubDate>Tue, 03 Aug 2021 07:29:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/assign-rofi-to-super-key-in-pantheon.html</guid><description>I&amp;rsquo;m used to use the super key to search, because I used Windows for a long time, so I like to assign Rofi to the super key.
+gsettings set org.gnome.mutter overlay-key &amp;#34;&amp;#39;Super_L&amp;#39;&amp;#34; gsettings set org.pantheon.desktop.gala.behavior overlay-action &amp;#34;rofi -show drun&amp;#34; ```You can use any launcher. In this example I&amp;#39;m using Albert:``` gsettings set org.gnome.mutter overlay-key &amp;#34;&amp;#39;Super_L&amp;#39;&amp;#34; gsettings set org.pantheon.desktop.gala.behavior overlay-action &amp;#34;albert&amp;#34;</description><content:encoded><![CDATA[ <p>I&rsquo;m used to use the super key to search, because I used Windows for a long time, so I like to assign Rofi to the super key.</p>
+<pre tabindex="0"><code>gsettings set org.gnome.mutter overlay-key &#34;&#39;Super_L&#39;&#34;  
+gsettings set org.pantheon.desktop.gala.behavior overlay-action &#34;rofi -show drun&#34;  
+
+```You can use any launcher. In this example I&#39;m using Albert:```
+gsettings set org.gnome.mutter overlay-key &#34;&#39;Super_L&#39;&#34;  
+gsettings set org.pantheon.desktop.gala.behavior overlay-action &#34;albert&#34;  
+</code></pre> ]]></content:encoded></item><item><title>Enable tray indicators in Pantheon</title><link>https://blog.geheimesite.nl/notes/2021/08/enable-tray-indicators-in-pantheon.html</link><pubDate>Tue, 03 Aug 2021 07:26:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/enable-tray-indicators-in-pantheon.html</guid><description>Some apps use the old system tray. To view them in the elementaryOS tray edit /etc/xdg/autostart/indicator-application.desktop and change this line:
+OnlyShowIn=Unity;GNOME; ```to``` OnlyShowIn=Unity;GNOME;Pantheon; Now install the old panel indicator from launchpad.net:
+http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana
+After relog you should be able to see the icons in wingpanel.</description><content:encoded><![CDATA[ <p>Some apps use the old system tray. To view them in the elementaryOS tray edit <code>/etc/xdg/autostart/indicator-application.desktop</code> and change this line:</p>
+<pre tabindex="0"><code>OnlyShowIn=Unity;GNOME;
+```to```
+OnlyShowIn=Unity;GNOME;Pantheon;
+</code></pre><p>Now install the old panel indicator from launchpad.net:<br>
+<a href="http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana">http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana</a></p>
+<p>After relog you should be able to see the icons in wingpanel.</p>
+ ]]></content:encoded></item><item><title>Set default terminal in Nemo outside Cinnamon</title><link>https://blog.geheimesite.nl/notes/2021/08/set-default-terminal-in-nemo-outside.html</link><pubDate>Tue, 03 Aug 2021 07:21:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/set-default-terminal-in-nemo-outside.html</guid><description>Replace alacritty with your favorite terminal emulator.
+gsettings set org.gnome.desktop.default-applications.terminal exec alacritty gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty</description><content:encoded><![CDATA[ <p>Replace alacritty with your favorite terminal emulator.</p>
+<pre tabindex="0"><code>gsettings set org.gnome.desktop.default-applications.terminal exec alacritty
+</code></pre><p>gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty</p>
+<pre tabindex="0"><code></code></pre> ]]></content:encoded></item><item><title>Set default apps using the commandline</title><link>https://blog.geheimesite.nl/notes/2021/08/set-default-apps-using-commandline.html</link><pubDate>Tue, 03 Aug 2021 07:17:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/set-default-apps-using-commandline.html</guid><description>To look up what the current default is:
+xdg-mime query default inode/directory To set the new default:
+xdg-mime default nemo.desktop inode/directory</description><content:encoded><![CDATA[ <p>To look up what the current default is:</p>
+<pre tabindex="0"><code>xdg-mime query default inode/directory
+</code></pre><p>To set the new default:</p>
+<pre tabindex="0"><code>xdg-mime default nemo.desktop inode/directory
+</code></pre> ]]></content:encoded></item><item><title>Add Qtile icon in LightDM slick-greeter</title><link>https://blog.geheimesite.nl/notes/2021/08/add-qtile-icon-in-lightdm-slick-greeter.html</link><pubDate>Tue, 03 Aug 2021 07:11:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/add-qtile-icon-in-lightdm-slick-greeter.html</guid><description>This is how to a Qtile icon to LightDM slick-greeter. By default it displays a stupid circle.
+Download the icon: Rename it to qtile.png Place it in /usr/share/slick-greeter/badges/</description><content:encoded><![CDATA[ <p>This is how to a Qtile icon to LightDM slick-greeter. By default it displays a stupid circle.</p>
+<ol>
+<li>Download the icon:<a href="https://1.bp.blogspot.com/-uJs5oKgj-mw/YQlOQng1HUI/AAAAAAAAK8s/Q2qZg7HgVrU5vlhnQBOft5RHVCokju9-gCLcBGAsYHQ/s22/icon.png"><img src="https://1.bp.blogspot.com/-uJs5oKgj-mw/YQlOQng1HUI/AAAAAAAAK8s/Q2qZg7HgVrU5vlhnQBOft5RHVCokju9-gCLcBGAsYHQ/s0/icon.png" alt=""></a></li>
+<li>Rename it to <code>qtile.png</code></li>
+<li>Place it in <code>/usr/share/slick-greeter/badges/</code></li>
+</ol>
+ ]]></content:encoded></item><item><title>Smaller GTK headerbars on non-CSD windows</title><link>https://blog.geheimesite.nl/notes/2021/08/smaller-gtk-headerbars-on-non-csd.html</link><pubDate>Tue, 03 Aug 2021 07:03:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/08/smaller-gtk-headerbars-on-non-csd.html</guid><description>This is how to make the titlebars on non-CSD windows in Metacity, Marco, Mutter and Gala smaller using gtk.css
+This is mostly for themes like Ambiance that were not designed for these window managers.
+Put this in ~/.config/gtk-3.0/gtk.css. This makes the headerbars on non-CSD windows smaller to make them look better.
+/* Decrease the size of head bars for non-CSD applications Gnome 20 (Fedora 24) compatible version https://unix.stackexchange.com/questions/276951/how-to-change-the-titlebar-height-in-standard-gtk-apps-and-those-with-headerbars */ /* x11 and xwayland windows */ window.</description><content:encoded><![CDATA[ <p>This is how to make the titlebars on non-CSD windows in Metacity, Marco, Mutter and Gala smaller using gtk.css</p>
+<p>This is mostly for themes like Ambiance that were not designed for these window managers.</p>
+<p>Put this in <code>~/.config/gtk-3.0/gtk.css</code>. This makes the headerbars on non-CSD windows smaller to make them look better.</p>
+<pre tabindex="0"><code>/*  
+ Decrease the size of head bars for non-CSD applications  
+ Gnome 20 (Fedora 24) compatible version  
+ https://unix.stackexchange.com/questions/276951/how-to-change-the-titlebar-height-in-standard-gtk-apps-and-those-with-headerbars  
+*/  
+  
+/* x11 and xwayland windows */  
+window.ssd headerbar.titlebar {  
+    padding: 4px;   
+    padding-right: 5px;  
+    min-height: 0;  
+    /* remove border between titlebar and window */  
+    border: none;  
+}  
+  
+window.ssd headerbar.titlebar button.titlebutton {  
+    padding: 2px;  
+    min-height: 0;  
+    min-width: 0;  
+}  
+  
+  
+/* native wayland ssd windows */  
+.default-decoration {  
+    padding: 4px;  
+    padding-right: 5px;  
+    min-height: 0;  
+    /* remove border between titlebar and window */  
+    border: none;  
+}  
+  
+.default-decoration .titlebutton {  
+    padding: 2px;  
+    min-height: 0;  
+    min-width: 0;  
+}
+</code></pre> ]]></content:encoded></item></channel></rss>
