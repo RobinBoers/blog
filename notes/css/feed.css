@@ -63,14 +63,11 @@ pre {
 .mb-2 {
     margin-bottom: 0.5rem;
 }
-.mt-2 {
-    margin-top: 0.5rem;
-}
 .gap-1 {
     gap: 5px;
 }
 .p-0 {
-    padding: 0px;
+    padding: 0;
 }
 .flex-grow {
     flex-grow: 10;
