@@ -37,7 +37,7 @@ Notes
 <time class="hidden dt-published">2021-08-06 10:26:00.003 -0700 -0700</time>
 <h1 class="p-name mb-0 text-4xl">Alternative to Gala taskswitcher using Rofi</h1><p class="my-5 bold">
 06 August 2021
-</p></div><section class="p-summary e-content">
+</p></div><section class="p-summary e-content mt-2">
 <p>I kinda hate the default Alt+Tab switcher in Pantheon, so I use Rofi to fix that. This is how to use rofi as Alt+Tab switcher. Make sure you have rofi version 1.6.1 installed for this to work propperly.</p><p>Create a new scriptfile called <code>alttab.sh</code> with this content:</p><pre tabindex=0><code>#!/usr/bin/env bash  
 xdotool mousemove 960 540 &amp;&amp; rofi -no-config -theme alttab -kb-cancel &#34;Alt+Escape,Escape&#34; -kb-accept-entry &#39;!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return,!Alt+Alt_L&#39; -kb-row-down &#39;Alt-Tab,Alt+Down,Down,ISO_Left_Tab&#39; -kb-row-up &#39;Alt+ISO_Left_Tab,Alt+Up,Up&#39; -show window -selected-row 1   
 exit  

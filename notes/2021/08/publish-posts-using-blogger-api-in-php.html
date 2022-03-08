@@ -37,7 +37,7 @@ Notes
 <time class="hidden dt-published">2021-08-09 10:41:00.034 -0700 -0700</time>
 <h1 class="p-name mb-0 text-4xl">Publish posts using Blogger API in PHP</h1><p class="my-5 bold">
 09 August 2021
-</p></div><section class="p-summary e-content">
+</p></div><section class="p-summary e-content mt-2">
 <p>This is how to create a blogpost using the <a href=https://github.com/googleapis/google-api-php-client>Google Client Library for PHP</a>.</p><p>To setup:</p><ol>
 <li>Go to <a href=https://console.developers.google.com/>https://console.developers.google.com</a></li><li>Add an project, and tap &ldquo;Credentials&rdquo;</li><li>Tap &ldquo;Create data&rdquo; and create an Client-ID OAuth</li><li>Choose the &ldquo;Webapp&rdquo; and enter the path to your server in the &ldquo;Authorized diversion URIs&rdquo; textbox</li><li>Hit &ldquo;Create&rdquo;, and hit OK</li><li>Click on the Client-ID you just generated</li><li>Click &ldquo;Download JSON&rdquo;</li><li>Download the file, and rename it to <code>client_secret.json</code></li></ol><p>Use this script to create and publish posts. Make sure to first enter the path to your <code>client_secret.json</code>.</p><pre tabindex=0><code>&lt;?php  
 // This script creates a post  

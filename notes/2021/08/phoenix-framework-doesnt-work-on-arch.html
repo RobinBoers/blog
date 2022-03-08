@@ -37,7 +37,7 @@ Notes
 <time class="hidden dt-published">2021-08-05 11:05:00.001 -0700 -0700</time>
 <h1 class="p-name mb-0 text-4xl">Phoenix Framework doesn't work on Arch Linux due to node-sass</h1><p class="my-5 bold">
 05 August 2021
-</p></div><section class="p-summary e-content">
+</p></div><section class="p-summary e-content mt-2">
 <p>While trying to setup a chat app on Arch Linux using Phoenix Framework I ran into a lot of nodejs related errors. First of all, make sure you&rsquo;re using nodejs 14 or maybe 15. Everything above is absolute hell. I recommend using <a href=https://github.com/nvm-sh/nvm><code>nvm</code></a>.</p><p>I still got a lot of errors using <code>node-sass</code>. It prevented me from using websockets by crashing the building process. Turns out you can just replace <code>node-sass</code> with <code>sass</code> in <code>package.json</code></p><p>Just remove this line:</p><pre tabindex=0><code>&#34;node-sass&#34;: &#34;xx.xx.xx&#34;
 </code></pre><p>And replace it with:</p><pre tabindex=0><code>&#34;sass&#34;: &#34;^1.22.10&#34;
 </code></pre><p>Ta da! All problems fixed. I have no idea why the guys over at Phoenix Framework don&rsquo;t just ship this as the default!</p><p>Sources:</p><ul>
