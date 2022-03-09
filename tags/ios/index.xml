@@ -50,17 +50,16 @@ Na een jailbreak wordt meestal Cydia geïnstalleerd. Cydia is een soort van een 
 <p>Wil je meer over jailbreaken weten? Deze site is een mooie bron:</p>
 <p><a href="https://cydia-app.com/">https://cydia-app.com/</a></p>
 <p>Hier zie je al mijn blogjes over jailbreaken:</p>
-<p><a href="https://webdevelopment-en-meer.blogspot.com/search/label/jailbreak">https://webdevelopment-en-meer.blogspot.com/search/label/jailbreak</a></p>
+<p><a href="https://blog.geheimesite.nl/tag/jailbreak">https://blog.geheimesite.nl/tag/jailbreak</a></p>
 <p>Dit was het weer,</p>
 <p>Robin</p>
  ]]></content:encoded></item><item><title>Zo dualboot je een iPad 1/2/3</title><link>https://blog.geheimesite.nl/2020/02/zo-dualboot-je-een-ipad-123.html</link><pubDate>Mon, 24 Feb 2020 05:18:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/zo-dualboot-je-een-ipad-123.html</guid><description>https://www.youtube.com/watch?v=JBPA_u034-0</description><content:encoded> &lt;p>&lt;a href="https://www.youtube.com/watch?v=JBPA_u034-0">https://www.youtube.com/watch?v=JBPA_u034-0&lt;/a>&lt;/p></content:encoded></item><item><title>Jailbreak een oude iPad / iPhone / iPod Touch met iOS 9</title><link>https://blog.geheimesite.nl/2020/02/jailbreak-oude-ipad-iphone-ipod-touch.html</link><pubDate>Mon, 17 Feb 2020 08:39:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/jailbreak-oude-ipad-iphone-ipod-touch.html</guid><description>Hallo allemaal,
 Ik ben pas jarig geweest, en ik heb een oude iPad 2 gekregen, om te jailbreaken. Ik wilde dat al heel lang doen, en nu kan dat. In dit blogje ga ik jullie laten zien hoe ik dat doe.
-Stap 1: Check of je apparaat ondersteund wordt
-Alleen 32 bit apparaten zijn ondersteund. Dit houd in:
+Check of je apparaat ondersteund wordt Alleen 32 bit apparaten zijn ondersteund. Dit houd in:
 iPhone 4 iPhone 4S iPhone 5 iPad 1 iPad 2 iPad 3 GEEN iPhone 5s</description><content:encoded><![CDATA[ <p>Hallo allemaal,<br>
 Ik ben pas jarig geweest, en ik heb een oude iPad 2 gekregen, om te jailbreaken. Ik wilde dat al heel lang doen, en nu kan dat. In dit blogje ga ik jullie laten zien hoe ik dat doe.</p>
-<p><strong>Stap 1: Check of je apparaat ondersteund wordt</strong><br>
-Alleen 32 bit apparaten zijn ondersteund. Dit houd in:</p>
+<h2 id="check-of-je-apparaat-ondersteund-wordt">Check of je apparaat ondersteund wordt</h2>
+<p>Alleen 32 bit apparaten zijn ondersteund. Dit houd in:</p>
 <ul>
 <li>iPhone 4</li>
 <li>iPhone 4S</li>
@@ -69,42 +68,43 @@ Alleen 32 bit apparaten zijn ondersteund. Dit houd in:</p>
 <li>iPad 2</li>
 <li>iPad 3</li>
 </ul>
-<p>GEEN iPhone 5s</p>
-<p>GEEN iPad 4</p>
+<p>GEEN iPhone 5s<br>
+GEEN iPad 4</p>
 <p>Je apparaat moet iOS 9.3.5 of 9.3.6 draaien</p>
-<p><strong>Stap 2: Maak een backup</strong><br>
-Zorg er altijd voor dat je een backup hebt voor het geval er iets mis gaat. Dit zo:</p>
+<h2 id="maak-een-backup">Maak een backup</h2>
+<p>Zorg er altijd voor dat je een backup hebt voor het geval er iets mis gaat. Dit zo:</p>
 <p>Instellingen -&gt; iCloud -&gt; iCloud reservekopie -&gt; Zet aan -&gt; Maak nu een backup</p>
-<p><strong>Stap 3: De jailbreak downloaden</strong><br>
-Je kan de jailbreak via de computer downloaden, en met cydia impactor naar je iDevice sturen, maar dat daar had ik problemen mee, dus gebruik ik een andere methode: direct op je apparaat installeren.</p>
+<h2 id="de-jailbreak-downloaden">De jailbreak downloaden</h2>
+<p>Je kan de jailbreak via de computer downloaden, en met cydia impactor naar je iDevice sturen, maar dat daar had ik problemen mee, dus gebruik ik een andere methode: direct op je apparaat installeren.</p>
 <p>Hiervoor moet je de jailbreak uit 1 van de volgende bronnen downloaden:</p>
 <ol>
 <li>iOS Ninja (<a href="https://iosninja.io/">https://iosninja.io/</a>)</li>
 <li>Panda helper (<a href="https://www.pandahelp.vip/">https://www.pandahelp.vip/</a>)</li>
 </ol>
 <p>Als je voor panda helper kiest, moet je eerst de panda helper app installeren. Daarna kun je in het zoekveld &ldquo;Phoenix Jailbreak&rdquo; intypen, en klik je op de Phoenix jailbreak. Installeer die app.</p>
-<p> Als je voor iOS Ninja kiest, klik je op de volgende link:</p>
+<p>Als je voor iOS Ninja kiest, klik je op de volgende link:</p>
 <p><a href="https://iosninja.io/ipa-library/download-phoenix-jailbreak-ios-9-3-5">https://iosninja.io/ipa-library/download-phoenix-jailbreak-ios-9-3-5</a></p>
-<p>Klik op de &ldquo;Tap to install&rdquo; knop. Als je de tekst  **Direct install disabled because certificates have been revoked by Apple. Follow us on <a href="https://twitter.com/iosninja_io">Twitter</a> to find out when it&rsquo;s fixed. **</p>
-<p>ziet, moet je de andere methode gebruiken.</p>
+<p>Klik op de &ldquo;Tap to install&rdquo; knop. Als je de tekst &ldquo;Direct install disabled because certificates have been revoked by Apple. Follow us on <a href="https://twitter.com/iosninja_io">Twitter</a> to find out when it&rsquo;s fixed.&rdquo; ziet, moet je de andere methode gebruiken.</p>
 <p>Als het goed is zie je bij beide methoden na het installeren dit icoontje op je homescherm staan:</p>
 <p><img src="https://iosninja.io/img/ipas/phoenix-jailbreak.png" alt=""></p>
 <p>Als je dit icoontje niet ziet, herhaal je de stappen hierboven</p>
-<p><strong>Stap 4: de app goedkeuren</strong><br>
-Als je de app probeert te openen, krijg je als het goed is zo&rsquo;n soort error:</p>
+<h2 id="de-app-goedkeuren">De app goedkeuren</h2>
+<p>Als je de app probeert te openen, krijg je als het goed is zo&rsquo;n soort error:</p>
 <p><a href="https://1.bp.blogspot.com/-rCsywp18UMY/XjsMVerSnnI/AAAAAAAAB3Y/jG_uX-u9li8fZgdhBFpDSmapUT9z8Z34QCLcBGAsYHQ/s1600/Untitled.png"><img src="https://1.bp.blogspot.com/-rCsywp18UMY/XjsMVerSnnI/AAAAAAAAB3Y/jG_uX-u9li8fZgdhBFpDSmapUT9z8Z34QCLcBGAsYHQ/s320/Untitled.png" alt=""></a></p>
 <p>Om dit op te lossen, volg je deze tutorial: <a href="https://testersupport.usertesting.com/hc/en-us/articles/115003712912-How-to-Trust-an-Unreleased-iOS-App">https://testersupport.usertesting.com/hc/en-us/articles/115003712912-How-to-Trust-an-Unreleased-iOS-App</a></p>
 <p>Als het goed is kun je nu de app wel openen.</p>
-<p><strong>Stap 5: Jailbreak je apparaat</strong></p>
+<h2 id="jailbreak-je-apparaat">Jailbreak je apparaat</h2>
 <p>Klik op de knop: &ldquo;Prepare for jailbreak&rdquo;</p>
 <p>Je zou nu een ronddraaiend rondje moeten zien, met techpraat eronder.<br>
 Na een tijdje wordt springboard herstart, en ben je officieel gejailbreakt.</p>
-<p><strong>Stap 6: Doe coole dingen!</strong><br>
-Nu je apparaat is gejailbreakt, kun je er coole dingen mee doen. Hieronder zie je een lijstje met suggesties:</p>
-<p>- Voeg coole tweaks toe<br>
-- Versnel iOS<br>
-- Voeg coole animaties to<br>
-- Dual boot je iDevice met CoolBooter</p>
+<h2 id="doe-coole-dingen">Doe coole dingen!</h2>
+<p>Nu je apparaat is gejailbreakt, kun je er coole dingen mee doen. Hieronder zie je een lijstje met suggesties:</p>
+<ul>
+<li>Voeg coole tweaks toe</li>
+<li>Versnel iOS</li>
+<li>Voeg coole animaties to</li>
+<li>Dual boot je iDevice met CoolBooter</li>
+</ul>
 <p>Dit was het alweer,</p>
 <p>Robin</p>
  ]]></content:encoded></item></channel></rss>

@@ -81,9 +81,11 @@ Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![
 <p>Verder hoop ik de totaalprijs onder de €200 te houden. Hij wordt waarschijnlijk niet sneller dan een iPhone 6s, dus hij moet ook niet duurder zijn.</p>
 <p>Dus, ik hoop dat ik zoiets voor elkaar kan krijgen. Nu nog sparen **:) **</p>
 <p>** -Robin**</p>
- ]]></content:encoded></item><item><title>De Frambo - DIY Raspberry Pi spelcomputer.</title><link>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</link><pubDate>Thu, 13 Aug 2020 11:43:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</guid><description>Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.</description><content:encoded><![CDATA[ <p> Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.</p>
+ ]]></content:encoded></item><item><title>De Frambo - DIY Raspberry Pi spelcomputer.</title><link>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</link><pubDate>Thu, 13 Aug 2020 11:43:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</guid><description>Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.
+Maar hoe heb ik hem gebouwd?</description><content:encoded><![CDATA[ <p>Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.</p>
 <p><a href="https://1.bp.blogspot.com/-0ICW-dRPf9U/XzWHR20bleI/AAAAAAAAIQA/fJFBHZsx-DgMz5ExeC5oxX741qQVUvoJgCLcBGAsYHQ/s2048/284A3823-C070-4D52-922F-08FD8AF2B7E8.jpeg"><img src="https://1.bp.blogspot.com/-0ICW-dRPf9U/XzWHR20bleI/AAAAAAAAIQA/fJFBHZsx-DgMz5ExeC5oxX741qQVUvoJgCLcBGAsYHQ/w328-h184/284A3823-C070-4D52-922F-08FD8AF2B7E8.jpeg" alt=""></a></p>
 <p>Maar hoe heb ik hem gebouwd? Dat leg ik uit in de video hieronder.</p>
+<p><a href="https://www.youtube.com/watch?v=7P-LVfkQSNQ">https://www.youtube.com/watch?v=7P-LVfkQSNQ</a></p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Dualboot een Raspberry Pi met RetroPie, Raspbian en Kodi</title><link>https://blog.geheimesite.nl/2020/06/dualboot-een-raspberry-pi-met-retropie.html</link><pubDate>Mon, 22 Jun 2020 06:10:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/06/dualboot-een-raspberry-pi-met-retropie.html</guid><description>Ik ben bezig om een Raspberry Pi Powerd tablet / Nintendo Switch te maken. Toen ik aan de software kant bezig was, had ik er in eerste instantie voor gekozen om meerdere keren Raspbian te installeren met BerryBoot, en dan op een van die versies Kodi te installeren, op een andere RetroPie, en op de laatste niks.
 Ik kwam er alleen vandaag achter dat je in RetroPie via het Setup menu Kodi, en de Pixel desktop kan installeren.</description><content:encoded><![CDATA[ <p>Ik ben bezig om een Raspberry Pi Powerd tablet / Nintendo Switch te maken. Toen ik aan de software kant bezig was, had ik er in eerste instantie voor gekozen om meerdere keren Raspbian te installeren met BerryBoot, en dan op een van die versies Kodi te installeren, op een andere RetroPie, en op de laatste niks.</p>
@@ -92,43 +94,41 @@ Ik kwam er alleen vandaag achter dat je in RetroPie via het Setup menu Kodi, en 
 <p>Vandaag ga ik je uitleggen hoe je Kodi en de Pixel desktop (de standaard Raspbian desktop) naast RetroPie kan installeren.</p>
 <p>Eerst wat achtergrondinformatie. RetroPie is software waarmee je games van de NES, SNES, Gameboy, Commodore, Atari etc kan spelen op een Raspberry Pi. Kodi is software waarmee je video&rsquo;s kan bekijken (een media center) en de Pixel desktop is een interface waarmee je programma&rsquo;s kan openen (net als Gnome of KDE). RetroPie en Kodi zijn programma&rsquo;s. Raspbian is een besturingssysteem. RetroPie en Kodi worden normaal gedownload als een pre-configured image, waardoor de meeste mensen denken dat het ook besturingssystemen zijn. Maar omdat het programma&rsquo;s zijn, kan je ze allemaal tegelijk op 1 image draaien, waardoor je veel meer opslagruimte over houd.</p>
 <p>In deze tutorial ga ik dus uitleggen hoe dat moet</p>
-<p><strong>Stap 1</strong></p>
+<h2 id="stap-1">Stap 1</h2>
 <p>Ga naar <a href="http://retropie.org.uk">retropie.org.uk</a> en klik op download. Scroll naar beneden en klik op het op welke versie van de Pi je hebt. Download dit image.</p>
-<p><strong>Stap 2</strong></p>
+<h2 id="stap-2">Stap 2</h2>
 <p>Download de de <a href="https://www.sdcard.org/downloads/formatter/">SD card formatter</a> en <a href="https://rufus.ie/">Rufus</a></p>
-<p><strong>Stap 3</strong></p>
+<h2 id="stap-3">Stap 3</h2>
 <p>Format je SD kaartje met de SD card formatter, en open Rufus.</p>
 <p>Kies in Rufus je SD kaartje uit het dropdown menu, en klik op select. Navigeer naar de plek waar je je RetroPie image hebt opgeslagen. Klik daarna op START. Wacht tot Rufus klaar is, en klik op CLOSE</p>
-<p><strong>Stap 4</strong></p>
+<h2 id="stap-4">Stap 4</h2>
 <p>Stop je SD kaartje in de Pi, en start hem op. Volg de RetroPie setup totdat je in het games select menu bent. Klik op RetroPie (dat is de enige optie) Scroll naar beneden tot je bij RetroPie-Setup komt. Klik deze optie aan. Je wordt een blauw scherm in gebracht. Klik hier op Manage packages</p>
 <p><a href="https://1.bp.blogspot.com/-Gnp_oOt8vZ4/XvJOA0v7aiI/AAAAAAAAHrU/K3xCPYwJnHASmkJlKxuRqnQ2OtqGeUQKgCK4BGAsYHg/s1325/Annotation%2B2020-06-23%2B204612.png"><img src="https://1.bp.blogspot.com/-Gnp_oOt8vZ4/XvJOA0v7aiI/AAAAAAAAHrU/K3xCPYwJnHASmkJlKxuRqnQ2OtqGeUQKgCK4BGAsYHg/w625-h364/Annotation%2B2020-06-23%2B204612.png" alt=""></a></p>
-<p>**Stap 5</p>
+<h2 id="stap-5">Stap 5</h2>
 <p><a href="https://1.bp.blogspot.com/-8wgELVtv-ks/XvJOQxRdxCI/AAAAAAAAHro/JeVTqy4lUwgoI2nMomwBkJGila7EW0ZswCK4BGAsYHg/s625/Thumbnail-symbol-transparent.png"><img src="https://1.bp.blogspot.com/-8wgELVtv-ks/XvJOQxRdxCI/AAAAAAAAHro/JeVTqy4lUwgoI2nMomwBkJGila7EW0ZswCK4BGAsYHg/w131-h131/Thumbnail-symbol-transparent.png" alt=""></a></p>
-<p>**</p>
 <p>Klik nu op Optional packages, en scroll naar beneden tot je Kodi ziet. Klik erop en klik op install</p>
 <p>Dit kan even duren, afhankelijk van je internetverbinding</p>
-<p><strong>Stap 6</strong></p>
+<h2 id="stap-6">Stap 6**</h2>
 <p>Als het klaar is, ga je terug naar het startscherm van de RetroPie-Setup (waar je eerst op Manage Packages moest klikken) Klik nu op Exit</p>
-<p><strong>Stap 7</strong></p>
+<h2 id="stap-7">Stap 7**</h2>
 <p>Klik op START op je controller, en klik op QUIT. Klik nu op RESTART SYSTEM</p>
-<p><strong>Stap 8</strong></p>
+<h2 id="stap-8">Stap 8**</h2>
 <p>Als je Pi is geherstart, ga je weer naar de RetroPie-Setup. Ga dit keer naar Configuration/tools</p>
 <p>Klik op Raspian related tools en daarna op install Pixel desktop.</p>
 <p><a href="https://1.bp.blogspot.com/-2r2STLP_2fY/XvJOls_oneI/AAAAAAAAHr8/kR8wXJ7Hkswz1MUf1CsiDMotc4_Rg8i8wCK4BGAsYHg/s1920/pi3-10.jpg"><img src="https://1.bp.blogspot.com/-2r2STLP_2fY/XvJOls_oneI/AAAAAAAAHr8/kR8wXJ7Hkswz1MUf1CsiDMotc4_Rg8i8wCK4BGAsYHg/w625-h351/pi3-10.jpg" alt=""></a></p>
-<p><strong>Stap 9</strong></p>
+<h2 id="stap-9">Stap 9</h2>
 <p>Wacht tot de Pi klaar is. Waarschijnlijk moet je eerst een paar keer op OK klikken.</p>
-<p><strong>Stap 10</strong></p>
+<h2 id="stap-10">Stap 10</h2>
 <p>Herstart je Pi zoals in stap 6</p>
-<p><strong>Stap 11</strong></p>
+<h2 id="stap-11">Stap 11</h2>
 <p>Als het goed is is er een knopje ports verschenen op het games select menu. Klik hierop, en vanuit hier zou je Kodi of de Pixel desktop moeten kunnen starten!</p>
 <p>Goedzo, je hebt successvol je Raspberry Pi gedualboot met RetroPie, Kodi en de Pixel desktop!</p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Een Raspberry Pi dualbooten met berryboot</title><link>https://blog.geheimesite.nl/2020/05/een-raspberry-pi-dualbooten-met.html</link><pubDate>Wed, 27 May 2020 12:04:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/05/een-raspberry-pi-dualbooten-met.html</guid><description>Met berryboot kan je een Raspberry Pi op een simpele manier dualbooten, of triplebooten of (hoe heet het als er 4 of 5 besturingssystemen op 1 systeem staan??)
-Ik kwam deze tool tegen omdat ik meerderen besturingssystemen op 1 MicroSD kaartje wilde zetten. Dus hoe werkt het?
-Je gaat naar https://www.berryterminal.com/doku.php/berryboot en download de laatste versie. Daarna formateer je een MicroSD kaartje met SD card formatter. Als je dat gedaan hebt kopieer je de bestanden die je hebt gedownload naar je MicroSD kaartje.</description><content:encoded><![CDATA[ <p>Met berryboot kan je een Raspberry Pi op een simpele manier dualbooten, of triplebooten of (hoe heet het als er 4 of 5 besturingssystemen op 1 systeem staan??)</p>
+Ik kwam deze tool tegen omdat ik meerderen besturingssystemen op 1 MicroSD kaartje wilde zetten. Dus hoe werkt het? Je gaat naar https://www.berryterminal.com/doku.php/berryboot en download de laatste versie. Daarna formateer je een MicroSD kaartje met SD card formatter. Als je dat gedaan hebt kopieer je de bestanden die je hebt gedownload naar je MicroSD kaartje.</description><content:encoded><![CDATA[ <p>Met berryboot kan je een Raspberry Pi op een simpele manier dualbooten, of triplebooten of (hoe heet het als er 4 of 5 besturingssystemen op 1 systeem staan??)</p>
 <p><a href="https://1.bp.blogspot.com/-mVgSYDXv7qE/XswZB5xH9PI/AAAAAAAAHho/VSv-Z5LaNIQedoX-y-7F8VqE9tPpjQqswCK4BGAsYHg/047D1680-5074-4064-A44C-82ACA5C896F9.png"><img src="https://1.bp.blogspot.com/-mVgSYDXv7qE/XswZB5xH9PI/AAAAAAAAHho/VSv-Z5LaNIQedoX-y-7F8VqE9tPpjQqswCK4BGAsYHg/w200-h178/047D1680-5074-4064-A44C-82ACA5C896F9.png" alt=""></a></p>
 <p>Ik kwam deze tool tegen omdat ik meerderen besturingssystemen op 1 MicroSD kaartje wilde zetten. </p>
-<p><strong>Dus hoe werkt het?</strong></p>
+<h2 id="dus-hoe-werkt-het">Dus hoe werkt het?</h2>
 <p>Je gaat naar <a href="https://www.berryterminal.com/doku.php/berryboot">https://www.berryterminal.com/doku.php/berryboot</a> en download de laatste versie. Daarna formateer je een MicroSD kaartje met <a href="https://www.sdcard.org/downloads/formatter/">SD card formatter</a>. Als je dat gedaan hebt kopieer je de bestanden die je hebt gedownload naar je MicroSD kaartje.</p>
 <p>Nadat je dat hebt gedaan kan je je kaartje in je Raspberry Pi stoppen, en hem aanzetten.</p>
 <p>Als het goed is krijg je dan een scherm te zien met verschillende knoppen. Als je op ‘Add OS’ klikt krijg je een menu waarin je een OS kan kiezen. Als je er meerdere heb geselecteerd, kan je een favoriet kiezen.</p>

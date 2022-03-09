@@ -50,35 +50,42 @@ Robin Boers
 </div></div></div></div><section class="p-summary e-content">
 <p><a href=https://1.bp.blogspot.com/-8BVsGTCTpJA/XfSzOqIHv3I/AAAAAAAAB1c/onYrjjqMvvAr-hi77NCpvBJzAi2JzCUNgCLcBGAsYHQ/s1600/Untitled.png><img src=https://1.bp.blogspot.com/-8BVsGTCTpJA/XfSzOqIHv3I/AAAAAAAAB1c/onYrjjqMvvAr-hi77NCpvBJzAi2JzCUNgCLcBGAsYHQ/s200/Untitled.png alt></a><strong>Een tutorial over het bouwen van je eerste website</strong><br>
 Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder<br>
-ontwerpprogramma&rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?</p><p>In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</p><p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href=https://webdevelopment-en-meer.blogspot.com/search/label/ontwikkelomgeving_opzetten>Een ontwikkelomgeving opzetten</a></em></p><p><strong>Laten we beginnen!</strong><br>
-Ik zal dit onderwerp over meerdere blogposten verspreiden, we gaan hier leren hoe we een simpele homepage, en over-mij pagina gaan maken.</p><p>Open Brackets, en typ het volgende:</p><pre tabindex=0><code>  
-&lt;!DOCTYPE html&gt;  
-&lt;html&gt;  
-    &lt;head&gt;
-</code></pre><p>    <br>
-        Mijn eerste website!</p><p>    </p><p><a href=https://1.bp.blogspot.com/-00Ro7bVwLzk/XfSrhjOYRBI/AAAAAAAAB00/ORB72UgpruQsEPXSKNNI_mp7M8To5bm5gCLcBGAsYHQ/s1600/Untitled.png><img src=https://1.bp.blogspot.com/-00Ro7bVwLzk/XfSrhjOYRBI/AAAAAAAAB00/ORB72UgpruQsEPXSKNNI_mp7M8To5bm5gCLcBGAsYHQ/s1600/Untitled.png alt></a></p><p>Open het bestan door er dubbel op te klikken, en je zou dit moeten zien:</p><p><a href=https://1.bp.blogspot.com/-sOZz53EtcLE/XfSsG4i2V_I/AAAAAAAAB08/K9hzyVWBGbgMKrbBq3_Z-iJnDz7m8r4lQCLcBGAsYHQ/s1600/Untitled.png><img src=https://1.bp.blogspot.com/-sOZz53EtcLE/XfSsG4i2V_I/AAAAAAAAB08/K9hzyVWBGbgMKrbBq3_Z-iJnDz7m8r4lQCLcBGAsYHQ/s640/Untitled.png alt></a></p><p>Dit is het begin, maar hoe werkt die code nou?<br>
-Kort gezegd werkt het zo:</p><p>1. De webpagina die je zojuist hebt gemaakt bestaat uit blokken met een duidelijk begin en einde, waarvan het einde is gemarkeerd met een /<br>
-2. De blokken staan onder elkaar, maar kunnen ook in elkaar staan. Als blokken in elkaar staan, heet dat nesten.<br>
-3. In geneste blokken kunnen ook blokken onder elkaar staan, neem bijvoorbeeld :<br>
-Staat in (genest), maar ook op (gestapeld)<br>
-4. De blokken heten <strong>Elementen</strong><br>
-5. De tekst die het begin en eind van een element weergeven heten <strong>tags</strong>. Zo is een <strong>begintag</strong> en een <strong>eindtag</strong>.</p><p>Hieronder zie je wat de elementen doen:</p><p><a href=https://1.bp.blogspot.com/-ObuqAv61jBI/XfSwYGfNxcI/AAAAAAAAB1I/JHiqDjLUXW8XYpwcFPuSKVAS-Tl3sEjzACLcBGAsYHQ/s1600/werking.png><img src=https://1.bp.blogspot.com/-ObuqAv61jBI/XfSwYGfNxcI/AAAAAAAAB1I/JHiqDjLUXW8XYpwcFPuSKVAS-Tl3sEjzACLcBGAsYHQ/s640/werking.png alt></a></p><p>Laten we de webapgina eens invullen met wat nuttige informatie!<br>
+ontwerpprogramma&rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?</p><p>In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</p><p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href=https://blog.geheimesite.nl/search/label/ontwikkelomgeving_opzetten>Een ontwikkelomgeving opzetten</a></em></p><p><strong>Laten we beginnen!</strong><br>
+Ik zal dit onderwerp over meerdere blogposten verspreiden, we gaan hier leren hoe we een simpele homepage, en over-mij pagina gaan maken.</p><p>Open Brackets, en typ het volgende:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>  
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;  
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>title</span>&gt;Coole website!&lt;/<span style=color:#f92672>title</span>&gt;  
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>head</span>&gt;  
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>body</span>&gt;  
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>h1</span>&gt;Mijn eerste website!&lt;/<span style=color:#f92672>h1</span>&gt;  
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>body</span>&gt;  
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p>Sla dit bestand op als <code>index.html</code>, en navigeer naar het bestand.<br>
+Het bestand zou een chrome, firefox of IE/Edge logo moeten hebben:</p><p><a href=https://1.bp.blogspot.com/-00Ro7bVwLzk/XfSrhjOYRBI/AAAAAAAAB00/ORB72UgpruQsEPXSKNNI_mp7M8To5bm5gCLcBGAsYHQ/s1600/Untitled.png><img src=https://1.bp.blogspot.com/-00Ro7bVwLzk/XfSrhjOYRBI/AAAAAAAAB00/ORB72UgpruQsEPXSKNNI_mp7M8To5bm5gCLcBGAsYHQ/s1600/Untitled.png alt></a></p><p>Open het bestan door er dubbel op te klikken, en je zou dit moeten zien:</p><p><a href=https://1.bp.blogspot.com/-sOZz53EtcLE/XfSsG4i2V_I/AAAAAAAAB08/K9hzyVWBGbgMKrbBq3_Z-iJnDz7m8r4lQCLcBGAsYHQ/s1600/Untitled.png><img src=https://1.bp.blogspot.com/-sOZz53EtcLE/XfSsG4i2V_I/AAAAAAAAB08/K9hzyVWBGbgMKrbBq3_Z-iJnDz7m8r4lQCLcBGAsYHQ/s640/Untitled.png alt></a></p><p>Dit is het begin, maar hoe werkt die code nou?<br>
+Kort gezegd werkt het zo:</p><ol>
+<li>De webpagina die je zojuist hebt gemaakt bestaat uit blokken met een duidelijk begin en einde, waarvan het einde is gemarkeerd met een <code>/</code></li><li>De blokken staan onder elkaar, maar kunnen ook in elkaar staan. Als blokken in elkaar staan, heet dat nesten.</li><li>In geneste blokken kunnen ook blokken onder elkaar staan, neem bijvoorbeeld <code>&lt;head></code>:<br>
+Staat in <code>&lt;html></code> (genest), maar ook op <code>&lt;body></code> (gestapeld)</li><li>De blokken heten <strong>Elementen</strong></li><li>De tekst die het begin en eind van een element weergeven heten <strong>tags</strong>. Zo is <code>&lt;head></code> een <strong>begintag</strong> en <code>&lt;/head></code> een <strong>eindtag</strong>.</li></ol><p>Hieronder zie je wat de elementen doen:</p><p><a href=https://1.bp.blogspot.com/-ObuqAv61jBI/XfSwYGfNxcI/AAAAAAAAB1I/JHiqDjLUXW8XYpwcFPuSKVAS-Tl3sEjzACLcBGAsYHQ/s1600/werking.png><img src=https://1.bp.blogspot.com/-ObuqAv61jBI/XfSwYGfNxcI/AAAAAAAAB1I/JHiqDjLUXW8XYpwcFPuSKVAS-Tl3sEjzACLcBGAsYHQ/s640/werking.png alt></a></p><p>Laten we de webapgina eens invullen met wat nuttige informatie!<br>
 Ik maak in dit voorbeeld een website, voor een zogenaamd bedrijf, dat websites maakt.<br>
-Opeen Brackets weer, en typ het volgende: (Voel je vrij om je eigen inhoud toe te voegen)</p><pre tabindex=0><code>  
-&lt;!DOCTYPE html&gt;  
-  
-&lt;html&gt;
-</code></pre><p>    <br>
-        Robin Boers | Web Design<br>
-    </p><pre tabindex=0><code>&lt;body&gt;  
-        &lt;header&gt;  
-            &lt;h1&gt;Robin Boers | Web Design&lt;/h1&gt;  
-        &lt;/header&gt;  
-  
-        &lt;h2&gt;Welkom op mijn website!&lt;/h2&gt;  
-  
-        &lt;p&gt;Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.&lt;br&gt; 
-</code></pre><p>Wil je ook een website? Neem dan contact met me op via: <a href=mailto:robin@geheimesite.nl>robin@geheimesite.nl</a></p><p>    </p><p><a href=https://1.bp.blogspot.com/-f1GsoTvPSgM/XfSywX42N8I/AAAAAAAAB1U/e7FflpAcwA4JH_e-oXKZmSnoJD-U3HihwCLcBGAsYHQ/s1600/Untitled.png><img src=https://1.bp.blogspot.com/-f1GsoTvPSgM/XfSywX42N8I/AAAAAAAAB1U/e7FflpAcwA4JH_e-oXKZmSnoJD-U3HihwCLcBGAsYHQ/s640/Untitled.png alt></a></p><p>Allemaal wel leuk en aardig, maar hoe werkt dit nou weer??<br>
+Opeen Brackets weer, en typ het volgende: (Voel je vrij om je eigen inhoud toe te voegen)</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>  
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>head</span>&gt;  
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>title</span>&gt;Robin Boers | Web Design&lt;/<span style=color:#f92672>title</span>&gt;  
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>body</span>&gt;  
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>header</span>&gt;  
+</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>h1</span>&gt;Robin Boers | Web Design&lt;/<span style=color:#f92672>h1</span>&gt;  
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>header</span>&gt;  
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>h2</span>&gt;Welkom op mijn website!&lt;/<span style=color:#f92672>h2</span>&gt;  
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>p</span>&gt;Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.&lt;<span style=color:#f92672>br</span>&gt; 
+</span></span><span style=display:flex><span>           Wil je ook een website? Neem dan contact met me op via: robin@geheimesite.nl&lt;/<span style=color:#f92672>p</span>&gt;  
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>body</span>&gt;  
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p>Open het bestand weer, of (als je de webbrowser nog open hebt staan) klik op CTRL+R (dat staat voor refresh)<br>
+Dit zou het volgende resultaat moeten geven:</p><p><a href=https://1.bp.blogspot.com/-f1GsoTvPSgM/XfSywX42N8I/AAAAAAAAB1U/e7FflpAcwA4JH_e-oXKZmSnoJD-U3HihwCLcBGAsYHQ/s1600/Untitled.png><img src=https://1.bp.blogspot.com/-f1GsoTvPSgM/XfSywX42N8I/AAAAAAAAB1U/e7FflpAcwA4JH_e-oXKZmSnoJD-U3HihwCLcBGAsYHQ/s640/Untitled.png alt></a></p><p>Allemaal wel leuk en aardig, maar hoe werkt dit nou weer??<br>
 Geen nood, hieronder staat weer een uitleg, met wat alle elementen doen.</p><p><a href=https://1.bp.blogspot.com/-2l8ZR2rTimU/XfS3lfKqHGI/AAAAAAAAB1o/2sSaCUinlm8Fe8ZQs5idrs_f7-rrOb7WwCLcBGAsYHQ/s1600/werking.png><img src=https://1.bp.blogspot.com/-2l8ZR2rTimU/XfS3lfKqHGI/AAAAAAAAB1o/2sSaCUinlm8Fe8ZQs5idrs_f7-rrOb7WwCLcBGAsYHQ/s640/werking.png alt></a></p><p>Gefeliciteerd! Je hebt zojuist een webpagina gemaakt, en ingevuld met informatie!</p><p>Wil je meer informatie over het bouwen van websites? Bekijk dan dit boek eens: <a href=http://www.nano-tips.com/>Coderdojo Nano - Bouw je eigen website</a>. Met dit boek heb ik de eerste versie van mijn website gemaakt. Ook is het nuttig om <a href=https://w3schools.com/>w3schools.com</a> eens te raadplegen. Het is een enorme site, met veel informatie. Er zit alleen 1 nadeel aan: het is Engels&mldr;</p><p>Dit was het voor deze tutorial.</p><p>Ik hoop dat je hem nuttig vond.</p><p>Blijf creatief,</p><p>Robin</p></section><a class=hidden href=https://brid.gy/publish/mastodon></a>
 <a class=hidden href=https://brid.gy/publish/twitter></a>
 <a class=hidden href=https://fed.brid.gy/></a>

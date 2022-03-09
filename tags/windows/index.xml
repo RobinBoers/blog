@@ -13,14 +13,13 @@ Ik wilde het vandaag hebben over FancyZones. Dat is een van de tools in PowerToy
  ]]></content:encoded></item><item><title>Een virus maken! (Part 2)</title><link>https://blog.geheimesite.nl/2019/12/een-virus-maken-part-2.html</link><pubDate>Fri, 13 Dec 2019 07:03:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2019/12/een-virus-maken-part-2.html</guid><description>Hi,
 Ik heb recent een blogpost gemaakt over het maken van een simpel virus. Vandaag gaan we iets verder. Ik ga je leren een iets moeilijker, maar nog steeds ongevaarlijk virus te maken. Laten we maar snel aan de slag gaan.
 Ik ga ervan uit dat je een code-editor hebt, en bestandsnaam extensies aanstaan.
-Het idee is dat als de gebruiker op het &amp;lsquo;Mijn Computer&amp;rsquo; icoontje op zijn bureaublad klikt, het eruit ziet alsof Windows een virus heeft gedetecteerd.</description><content:encoded><![CDATA[ <p>Hi,<br>
-Ik heb recent een blogpost gemaakt over het maken van een simpel virus. Vandaag gaan we iets verder. Ik ga je leren een iets moeilijker, maar nog steeds ongevaarlijk virus te maken. Laten we maar snel aan de slag gaan.</p>
+Het idee is dat als de gebruiker op het &amp;lsquo;Mijn Computer&amp;rsquo; icoontje op zijn bureaublad klikt, het eruit ziet alsof Windows een virus heeft gedetecteerd.</description><content:encoded><![CDATA[ <p>Hi,</p>
+<p>Ik heb recent een blogpost gemaakt over het maken van een simpel virus. Vandaag gaan we iets verder. Ik ga je leren een iets moeilijker, maar nog steeds ongevaarlijk virus te maken. Laten we maar snel aan de slag gaan.</p>
 <p>Ik ga ervan uit dat je een code-editor hebt, en bestandsnaam extensies aanstaan.</p>
 <p>Het idee is dat als de gebruiker op het &lsquo;Mijn Computer&rsquo; icoontje op zijn bureaublad klikt, het eruit ziet alsof Windows een virus heeft gedetecteerd.</p>
-<p><strong>Stap 1: de code</strong><br>
-Maak een bestand aan in brackets, met de volgende inhoud:</p>
-<pre tabindex="0"><code>  
-X=MsgBox(&#34;Error while opening Computer. Do you want to Fix this Error?&#34;,4+64,&#34;Computer&#34;)  
+<h2 id="stap-1-de-code">Stap 1: de code</h2>
+<p>Maak een bestand aan in brackets, met de volgende inhoud:</p>
+<pre tabindex="0"><code>X=MsgBox(&#34;Error while opening Computer. Do you want to Fix this Error?&#34;,4+64,&#34;Computer&#34;)  
 X=MsgBox(&#34;Unable to Fix this Error. Do you want to scan this Computer&#34;,3+48,&#34;Computer&#34;)  
 X=MsgBox(&#34;Alert ! Virus Detected. Delete Virus? &#34;,3+16,&#34;Alert!&#34;)  
 X=MsgBox(&#34;Unable to delete this Virus&#34;,1+64,&#34;Critical Error&#34;)  
@@ -31,82 +30,51 @@ X=MsgBox(&#34;Please Wait, Uploading your data to Server. Do you want to Stop it
 X=MsgBox(&#34;Could not stop. File Transfer Completed&#34;,1+16,&#34;Completed&#34;)  
 X=MsgBox(&#34;Your Computer is Hacked&#34;,0+64,&#34;Alert&#34;)  
 X=MsgBox(&#34;LOL+LOL=HIHI dit was een Prank&#34;,0+64,&#34;Gepranked!&#34;)  
-
-```[![](https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG)](https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG)  
-Sla het op als _mijn computer.vbs_  
-  
-**Stap 2: het icoontje**  
-Zet  het bestand op je bureaublad. Het ziet er niet heel overtuigend uit...  
-  
-Plaats het bestand op een plek waar de gebruiker het niet kan vinden, en klik er met de rechtermuisknop op.  
-  
-Klik op &#34;Verzenden naar&#34; en dan op &#34;Bureaublad (snelkoppeling)&#34;  
-  
-Verander de naam terug indien nodig.  
-  
-Klik met de rechtermuisknop op de snelkoppeling, en klik op &#34;Eigenschappen&#34;  
-Je zou dit venster moeten zien:  
-
-  
-
-[![](https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s640/Capture.PNG)](https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s1600/Capture.PNG)  
-
-  
-
-Klik op &#34;Change Icon...&#34;  
-  
-
-[![](https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s640/Capture.PNG)](https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s1600/Capture.PNG)
-
-  
-
-Kies het icoontje met de computer, en klik op OK, en dan op APPLY en OK.
-
-Als het goed is zou je nu dit moeten zien:
-
-  
-
-[![](https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG)](https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG)
-
-Goed gedaan! 
-
-Je hebt nu je tweede virus af!
-
-  
-
-Blijf coderen, en tot de volgende keer!
-
-  
-
-**Robin**
-</code></pre> ]]></content:encoded></item><item><title>Een virus maken!</title><link>https://blog.geheimesite.nl/2019/11/een-virus-maken.html</link><pubDate>Wed, 27 Nov 2019 07:57:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2019/11/een-virus-maken.html</guid><description>Een simpel VBScript maken
-In deze tutorial ga ik laten zien, hoe je een simpel virus maakt.
+</code></pre><p><a href="https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG"><img src="https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG" alt=""></a></p>
+<p>Sla het op als <em>mijn computer.vbs</em></p>
+<h2 id="stap-2-het-icoontje">Stap 2: het icoontje</h2>
+<p>Zet  het bestand op je bureaublad. Het ziet er niet heel overtuigend uit&hellip;</p>
+<p>Plaats het bestand op een plek waar de gebruiker het niet kan vinden, en klik er met de rechtermuisknop op.</p>
+<p>Klik op &ldquo;Verzenden naar&rdquo; en dan op &ldquo;Bureaublad (snelkoppeling)&rdquo;</p>
+<p>Verander de naam terug indien nodig.</p>
+<p>Klik met de rechtermuisknop op de snelkoppeling, en klik op &ldquo;Eigenschappen&rdquo;<br>
+Je zou dit venster moeten zien:</p>
+<p><a href="https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s1600/Capture.PNG"><img src="https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s640/Capture.PNG" alt=""></a></p>
+<p>Klik op &ldquo;Change Icon&hellip;&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s1600/Capture.PNG"><img src="https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s640/Capture.PNG" alt=""></a></p>
+<p>Kies het icoontje met de computer, en klik op OK, en dan op APPLY en OK.</p>
+<p>Als het goed is zou je nu dit moeten zien:</p>
+<p><a href="https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG"><img src="https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG" alt=""></a></p>
+<p>Goed gedaan! </p>
+<p>Je hebt nu je tweede virus af!</p>
+<p>Blijf coderen, en tot de volgende keer!</p>
+<p><strong>Robin</strong></p>
+ ]]></content:encoded></item><item><title>Een virus maken!</title><link>https://blog.geheimesite.nl/2019/11/een-virus-maken.html</link><pubDate>Wed, 27 Nov 2019 07:57:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2019/11/een-virus-maken.html</guid><description>Een simpel VBScript maken In deze tutorial ga ik laten zien, hoe je een simpel virus maakt.
 Het is niet gevaarlijk, maar wel grappig.
 Wat ons virus gaat doen is een melding laten zien met de tekst: &amp;ldquo;Your computer has been hacked, press OK to accept!&amp;rdquo;. Deze melding is niet weg te klikken, en heeft maar een knop: &amp;ldquo;OK&amp;rdquo;
-Voor deze tutorial, gebruiken we de taal VBScript.
-Ik ga ervan uit dat je al een code-editor hebt, anders vind je hier een tutorial over hoe je Brackets download.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-P--PzZVNvQI/Xd6TwbTyF1I/AAAAAAAABzc/1z4gvn2ZljI_Pk5x6U7WLDuqc0kaacBMQCLcBGAsYHQ/s1600/popup.PNG"><img src="https://1.bp.blogspot.com/-P--PzZVNvQI/Xd6TwbTyF1I/AAAAAAAABzc/1z4gvn2ZljI_Pk5x6U7WLDuqc0kaacBMQCLcBGAsYHQ/s320/popup.PNG" alt=""></a><strong>Een simpel VBScript maken</strong></p>
+Voor deze tutorial, gebruiken we de taal VBScript. Ik ga ervan uit dat je al een code-editor hebt, anders vind je hier een tutorial over hoe je Brackets download.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-P--PzZVNvQI/Xd6TwbTyF1I/AAAAAAAABzc/1z4gvn2ZljI_Pk5x6U7WLDuqc0kaacBMQCLcBGAsYHQ/s1600/popup.PNG"><img src="https://1.bp.blogspot.com/-P--PzZVNvQI/Xd6TwbTyF1I/AAAAAAAABzc/1z4gvn2ZljI_Pk5x6U7WLDuqc0kaacBMQCLcBGAsYHQ/s320/popup.PNG" alt=""></a></p>
+<h2 id="een-simpel-vbscript-maken">Een simpel VBScript maken</h2>
 <p>In deze tutorial ga ik laten zien, hoe je een simpel virus maakt.</p>
 <p>Het is niet gevaarlijk, maar wel grappig.</p>
 <p>Wat ons virus gaat doen is een melding laten zien met de tekst: &ldquo;Your computer has been hacked, press OK to accept!&rdquo;. Deze melding is niet weg te klikken, en heeft maar een knop: &ldquo;OK&rdquo;</p>
-<p>Voor deze tutorial, gebruiken we de taal VBScript.<br>
-Ik ga ervan uit dat je al een code-editor hebt, anders vind je <a href="https://webdevelopment-en-meer.blogspot.com/2019/11/brackets-installeren.html">hier</a> een tutorial over hoe je Brackets download. Ook ga ik ervan uit dat bestandsnaam extensies aanstaat, zo niet, kun je <a href="https://webdevelopment-en-meer.blogspot.com/2019/11/zo-zet-je-bestandsnaam-extensies-aan-in.html">hier</a> een tutorial vinden.</p>
-<p><strong>Stap 1: Script aanmaken</strong><br>
-Open Brackets, en maak een nieuw bestand aan, geef het een leuke naam, maar zorg wel dat het eindigt op .vbs (dit is de bestandsnaam extensie)</p>
-<p><strong>Stap 2: Schrijf het script</strong><br>
-Nu is het zaak om het script te schrijven. Hieronder zie je de code, neem die over in Brackets, en sla het bestand op.</p>
-<pre tabindex="0"><code>  
-do  
+<p>Voor deze tutorial, gebruiken we de taal VBScript. <br>
+Ik ga ervan uit dat je al een code-editor hebt, anders vind je <a href="https://blog.geheimesite.nl/2019/11/brackets-installeren.html">hier</a> een tutorial over hoe je Brackets download. Ook ga ik ervan uit dat bestandsnaam extensies aanstaat, zo niet, kun je <a href="https://blog.geheimesite.nl/2019/11/zo-zet-je-bestandsnaam-extensies-aan-in.html">hier</a> een tutorial vinden.</p>
+<h2 id="stap-1-script-aanmaken">Stap 1: Script aanmaken</h2>
+<p>Open Brackets, en maak een nieuw bestand aan, geef het een leuke naam, maar zorg wel dat het eindigt op .vbs (dit is de bestandsnaam extensie)</p>
+<h2 id="stap-2-schrijf-het-script">Stap 2: Schrijf het script</h2>
+<p>Nu is het zaak om het script te schrijven. Hieronder zie je de code, neem die over in Brackets, en sla het bestand op.</p>
+<pre tabindex="0"><code>do  
 x=msgbox(&#34;Your computer has been hacked, press OK to accept!&#34;,0+16,&#34;Critical Message&#34;)  
 loop  
 </code></pre><p>In dit script staat 0+16 voor het type melding (promt, ja/nee, cancel/Ok, OK) en &ldquo;Critical Message&rdquo; voor de titel. Verder zie je de tekst van het bericht.<br>
 De loop aan het einde zorgt ervoor dat de melding  box niet gesloten kan worden.</p>
-<p><strong>Stap 3: Testen</strong><br>
-Dubbel klik op het bestand om het te openen. Als het goed is zou je zoiets moeten zien:</p>
+<h2 id="stap-3-testen">Stap 3: Testen</h2>
+<p>Dubbel klik op het bestand om het te openen. Als het goed is zou je zoiets moeten zien:</p>
 <p><a href="https://1.bp.blogspot.com/-P--PzZVNvQI/Xd6TwbTyF1I/AAAAAAAABzg/8xZo5Fampek22XHsF1CvyV6GQAg71gWhgCEwYBhgL/s1600/popup.PNG"><img src="https://1.bp.blogspot.com/-P--PzZVNvQI/Xd6TwbTyF1I/AAAAAAAABzg/8xZo5Fampek22XHsF1CvyV6GQAg71gWhgCEwYBhgL/s640/popup.PNG" alt=""></a></p>
-<p><strong>Stap 4: Iemand pranken!</strong><br>
-Laat iemand schrikken door het bestand stiekem op zijn computer te zetten als hij niet kijkt, en het te openen! (Vertel daarna wel dat jij het was, en hoe je het uitzet. Dat staat hieronder)</p>
-<p><strong>Het virus uitschakelen.</strong><br>
-Open taak beheer door op CTRL+ALT+DEL te klikken, en klik op &ldquo;Microsoft @ Windows Based Script&rdquo; klik nu op de knop &ldquo;End Task&rdquo; rechtsonder.</p>
+<h2 id="stap-4-iemand-pranken">Stap 4: Iemand pranken!</h2>
+<p>Laat iemand schrikken door het bestand stiekem op zijn computer te zetten als hij niet kijkt, en het te openen! (Vertel daarna wel dat jij het was, en hoe je het uitzet. Dat staat hieronder)</p>
+<h2 id="het-virus-uitschakelen">Het virus uitschakelen</h2>
+<p>Open taak beheer door op CTRL+ALT+DEL te klikken, en klik op &ldquo;Microsoft @ Windows Based Script&rdquo; klik nu op de knop &ldquo;End Task&rdquo; rechtsonder.</p>
 <p><a href="https://1.bp.blogspot.com/-d6NoeqS2I4I/Xd6Z8jfaIQI/AAAAAAAABzo/syQL7MzDC_Y1okmTHoq93VYAkKCRbGBdQCLcBGAsYHQ/s1600/taakbeheer.png"><img src="https://1.bp.blogspot.com/-d6NoeqS2I4I/Xd6Z8jfaIQI/AAAAAAAABzo/syQL7MzDC_Y1okmTHoq93VYAkKCRbGBdQCLcBGAsYHQ/s640/taakbeheer.png" alt=""></a></p>
 <p>Ik hoop dat dit leer vol was,<br>
 Veel codeer plezier,<br>
@@ -115,10 +83,10 @@ Robin</p>
 Klik in de Windows Verkenner op &amp;ldquo;Beeld&amp;rdquo; en dan op &amp;ldquo;Bestandsnaam extensies&amp;rdquo;
 Zo simpel is het,
 Veel codeer plezier,
-Robin</description><content:encoded><![CDATA[ <p>Als je programmeert heb je vaak bestandsnaam extensies nodig. Daaraan kun je zien wat voor type een bestand is, en het bestandstype wijzigen. Hieronder zie je hoe je bestandsnaam extensies aanzet.<br>
-Klik in de Windows Verkenner op &ldquo;Beeld&rdquo; en dan op &ldquo;Bestandsnaam extensies&rdquo;</p>
+Robin</description><content:encoded><![CDATA[ <p>Als je programmeert heb je vaak bestandsnaam extensies nodig. Daaraan kun je zien wat voor type een bestand is, en het bestandstype wijzigen. Hieronder zie je hoe je bestandsnaam extensies aanzet.</p>
+<p>Klik in de Windows Verkenner op &ldquo;Beeld&rdquo; en dan op &ldquo;Bestandsnaam extensies&rdquo;</p>
 <p><a href="https://1.bp.blogspot.com/-MTbba20crAI/Xd1MiSYGE3I/AAAAAAAAByc/RhnwYHx5TIYdgFs5QFIaAmv-Uj6jZ8LhACLcBGAsYHQ/s1600/we.png"><img src="https://1.bp.blogspot.com/-MTbba20crAI/Xd1MiSYGE3I/AAAAAAAAByc/RhnwYHx5TIYdgFs5QFIaAmv-Uj6jZ8LhACLcBGAsYHQ/s640/we.png" alt=""></a></p>
-<p>Zo simpel is het,<br>
-Veel codeer plezier,<br>
+<p>Zo simpel is het,</p>
+<p>Veel codeer plezier,<br>
 Robin</p>
  ]]></content:encoded></item></channel></rss>

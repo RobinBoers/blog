@@ -48,10 +48,7 @@ Robin Boers
 <a class="icon u-url" href=https://blog.geheimesite.nl/2019/12/een-virus-maken-part-2.html><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
 </a>
 </div></div></div></div><section class="p-summary e-content">
-<p>Hi,<br>
-Ik heb recent een blogpost gemaakt over het maken van een simpel virus. Vandaag gaan we iets verder. Ik ga je leren een iets moeilijker, maar nog steeds ongevaarlijk virus te maken. Laten we maar snel aan de slag gaan.</p><p>Ik ga ervan uit dat je een code-editor hebt, en bestandsnaam extensies aanstaan.</p><p>Het idee is dat als de gebruiker op het &lsquo;Mijn Computer&rsquo; icoontje op zijn bureaublad klikt, het eruit ziet alsof Windows een virus heeft gedetecteerd.</p><p><strong>Stap 1: de code</strong><br>
-Maak een bestand aan in brackets, met de volgende inhoud:</p><pre tabindex=0><code>  
-X=MsgBox(&#34;Error while opening Computer. Do you want to Fix this Error?&#34;,4+64,&#34;Computer&#34;)  
+<p>Hi,</p><p>Ik heb recent een blogpost gemaakt over het maken van een simpel virus. Vandaag gaan we iets verder. Ik ga je leren een iets moeilijker, maar nog steeds ongevaarlijk virus te maken. Laten we maar snel aan de slag gaan.</p><p>Ik ga ervan uit dat je een code-editor hebt, en bestandsnaam extensies aanstaan.</p><p>Het idee is dat als de gebruiker op het &lsquo;Mijn Computer&rsquo; icoontje op zijn bureaublad klikt, het eruit ziet alsof Windows een virus heeft gedetecteerd.</p><h2 id=stap-1-de-code>Stap 1: de code</h2><p>Maak een bestand aan in brackets, met de volgende inhoud:</p><pre tabindex=0><code>X=MsgBox(&#34;Error while opening Computer. Do you want to Fix this Error?&#34;,4+64,&#34;Computer&#34;)  
 X=MsgBox(&#34;Unable to Fix this Error. Do you want to scan this Computer&#34;,3+48,&#34;Computer&#34;)  
 X=MsgBox(&#34;Alert ! Virus Detected. Delete Virus? &#34;,3+16,&#34;Alert!&#34;)  
 X=MsgBox(&#34;Unable to delete this Virus&#34;,1+64,&#34;Critical Error&#34;)  
@@ -62,55 +59,8 @@ X=MsgBox(&#34;Please Wait, Uploading your data to Server. Do you want to Stop it
 X=MsgBox(&#34;Could not stop. File Transfer Completed&#34;,1+16,&#34;Completed&#34;)  
 X=MsgBox(&#34;Your Computer is Hacked&#34;,0+64,&#34;Alert&#34;)  
 X=MsgBox(&#34;LOL+LOL=HIHI dit was een Prank&#34;,0+64,&#34;Gepranked!&#34;)  
-
-```[![](https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG)](https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG)  
-Sla het op als _mijn computer.vbs_  
-  
-**Stap 2: het icoontje**  
-Zet  het bestand op je bureaublad. Het ziet er niet heel overtuigend uit...  
-  
-Plaats het bestand op een plek waar de gebruiker het niet kan vinden, en klik er met de rechtermuisknop op.  
-  
-Klik op &#34;Verzenden naar&#34; en dan op &#34;Bureaublad (snelkoppeling)&#34;  
-  
-Verander de naam terug indien nodig.  
-  
-Klik met de rechtermuisknop op de snelkoppeling, en klik op &#34;Eigenschappen&#34;  
-Je zou dit venster moeten zien:  
-
-  
-
-[![](https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s640/Capture.PNG)](https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s1600/Capture.PNG)  
-
-  
-
-Klik op &#34;Change Icon...&#34;  
-  
-
-[![](https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s640/Capture.PNG)](https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s1600/Capture.PNG)
-
-  
-
-Kies het icoontje met de computer, en klik op OK, en dan op APPLY en OK.
-
-Als het goed is zou je nu dit moeten zien:
-
-  
-
-[![](https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG)](https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG)
-
-Goed gedaan! 
-
-Je hebt nu je tweede virus af!
-
-  
-
-Blijf coderen, en tot de volgende keer!
-
-  
-
-**Robin**
-</code></pre></section><a class=hidden href=https://brid.gy/publish/mastodon></a>
+</code></pre><p><a href=https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG><img src=https://1.bp.blogspot.com/-DlH62zZmkSs/XfOlAMHOwXI/AAAAAAAAB0M/IdSxM9rhqtM7Ff_fywLJSJFw0BRm2GQfQCLcBGAsYHQ/s1600/Capture.PNG alt></a></p><p>Sla het op als <em>mijn computer.vbs</em></p><h2 id=stap-2-het-icoontje>Stap 2: het icoontje</h2><p>Zet  het bestand op je bureaublad. Het ziet er niet heel overtuigend uit&mldr;</p><p>Plaats het bestand op een plek waar de gebruiker het niet kan vinden, en klik er met de rechtermuisknop op.</p><p>Klik op &ldquo;Verzenden naar&rdquo; en dan op &ldquo;Bureaublad (snelkoppeling)&rdquo;</p><p>Verander de naam terug indien nodig.</p><p>Klik met de rechtermuisknop op de snelkoppeling, en klik op &ldquo;Eigenschappen&rdquo;<br>
+Je zou dit venster moeten zien:</p><p><a href=https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s1600/Capture.PNG><img src=https://1.bp.blogspot.com/-l2BpaMl3UUw/XfOmrwyS7iI/AAAAAAAAB0c/nv7acTReOIgvIypYMWOOhoOz1Wu0rWmSQCEwYBhgL/s640/Capture.PNG alt></a></p><p>Klik op &ldquo;Change Icon&mldr;&rdquo;</p><p><a href=https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s1600/Capture.PNG><img src=https://1.bp.blogspot.com/-ZYaZTJf2Q-8/XfOnWiW3VjI/AAAAAAAAB0g/gKJFpL-PenI_A8DBgvx6yYLU_2nhfnenACLcBGAsYHQ/s640/Capture.PNG alt></a></p><p>Kies het icoontje met de computer, en klik op OK, en dan op APPLY en OK.</p><p>Als het goed is zou je nu dit moeten zien:</p><p><a href=https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG><img src=https://1.bp.blogspot.com/-FwNDx-4eDus/XfOoDAaO0oI/AAAAAAAAB0o/7hqZsfZfhpQN4QIOptukLWHlAqL36HE_wCLcBGAsYHQ/s1600/Capture.PNG alt></a></p><p>Goed gedaan! </p><p>Je hebt nu je tweede virus af!</p><p>Blijf coderen, en tot de volgende keer!</p><p><strong>Robin</strong></p></section><a class=hidden href=https://brid.gy/publish/mastodon></a>
 <a class=hidden href=https://brid.gy/publish/twitter></a>
 <a class=hidden href=https://fed.brid.gy/></a>
 <data class=p-bridgy-omit-link value=false></data>

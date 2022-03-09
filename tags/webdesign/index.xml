@@ -38,10 +38,10 @@ Dit zijn de tools die ik tot nu toe heb.  Javascript KeyCodes:</description><co
 <p>In de toekomst zal ik waarschijnlijk tools toevoegen als ik ze nodig heb.</p>
 <p>Het leek me leuk om dit even te delen. Misschien heeft een van mijn lezers er wel wat aan :)</p>
 <p>- Robin</p>
- ]]></content:encoded></item><item><title>Nieuw project: Nibor</title><link>https://blog.geheimesite.nl/2020/07/nieuw-project-nibor.html</link><pubDate>Mon, 27 Jul 2020 00:30:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/07/nieuw-project-nibor.html</guid><description>Hoi, ik ben een tijdje geleden aan een nieuw project begonnen, en het is nu in de fase waarin het redelijk werkt. Het is een virtuele assistent genaamd Nibor Virtual Assistant, of gewoon kort: Nibor. 
+ ]]></content:encoded></item><item><title>Nieuw project: Nibor</title><link>https://blog.geheimesite.nl/2020/07/nieuw-project-nibor.html</link><pubDate>Mon, 27 Jul 2020 00:30:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/07/nieuw-project-nibor.html</guid><description>Hoi, ik ben een tijdje geleden aan een nieuw project begonnen, en het is nu in de fase waarin het redelijk werkt. Het is een virtuele assistent genaamd Nibor Virtual Assistant, of gewoon kort: Nibor.
 Nibor is een klein programma dat de speech-recognitionAPI gebruikt. Je kunt hem simpele opdrachten geven, zoals:
-Vertel een grap. Welke dag is het? Hoe laat is het vandaag? Wat is het weer? Hij is nog niet erg slim, omdat ik nog geen goede manier heb gevonden om commando&amp;rsquo;s op te slaan.</description><content:encoded><![CDATA[ <p>Hoi, ik ben een tijdje geleden aan een nieuw project begonnen, en het is nu in de fase waarin het redelijk werkt. Het is een virtuele assistent genaamd Nibor Virtual Assistant, of gewoon kort: Nibor. </p>
-<p><a href="https://code.geheimesite.nl/speech/logo.png"><img src="https://code.geheimesite.nl/speech/logo.png" alt=""></a></p>
+Vertel een grap. Welke dag is het? Hoe laat is het vandaag? Wat is het weer? Hij is nog niet erg slim, omdat ik nog geen goede manier heb gevonden om commando&amp;rsquo;s op te slaan.</description><content:encoded><![CDATA[ <p>Hoi, ik ben een tijdje geleden aan een nieuw project begonnen, en het is nu in de fase waarin het redelijk werkt. Het is een virtuele assistent genaamd Nibor Virtual Assistant, of gewoon kort: Nibor.</p>
+<p><a href="https://code.geheimesite.nl/beta/nibor/logo.png"><img src="https://code.geheimesite.nl/beta/nibor/logo.png" alt=""></a></p>
 <p>Nibor is een klein programma dat de <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition">speech-recognition</a><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition"> API</a> gebruikt. Je kunt hem simpele opdrachten geven, zoals:</p>
 <ul>
 <li>Vertel een grap.</li>
@@ -50,8 +50,8 @@ Vertel een grap. Welke dag is het? Hoe laat is het vandaag? Wat is het weer? Hij
 <li>Wat is het weer?</li>
 </ul>
 <p>Hij is nog niet erg slim, omdat ik nog geen goede manier heb gevonden om commando&rsquo;s op te slaan. Ik check nu op trefwoorden zoals &ldquo;weer&rdquo; of &ldquo;hoe&rdquo;+&ldquo;laat&rdquo; met if-else statements, maar dat is niet efficient, en de code wordt er verschrikkelijk rommelig van.</p>
-<p><strong>Spotify</strong><br>
-Ik maak ook gebruik van de Spotify Web Playback API. Daarmee kan je je Spotify Account koppelen aan Nibor, en kan je simpele opdrachten geven zoals:</p>
+<h2 id="spotify">Spotify</h2>
+<p>Ik maak ook gebruik van de Spotify Web Playback API. Daarmee kan je je Spotify Account koppelen aan Nibor, en kan je simpele opdrachten geven zoals:</p>
 <p><a href="https://1.bp.blogspot.com/-Glgt1VYSbBQ/Xx6CMZvRaJI/AAAAAAAAIMo/pSUzaWHq_nEfKuVA7PP2xuewPoHN8guEgCLcBGAsYHQ/s511/Annotation%2B2020-07-27%2B092633.png"><img src="https://1.bp.blogspot.com/-Glgt1VYSbBQ/Xx6CMZvRaJI/AAAAAAAAIMo/pSUzaWHq_nEfKuVA7PP2xuewPoHN8guEgCLcBGAsYHQ/w256-h226/Annotation%2B2020-07-27%2B092633.png" alt=""></a></p>
 <ul>
 <li>Skip dit nummer</li>
@@ -59,8 +59,8 @@ Ik maak ook gebruik van de Spotify Web Playback API. Daarmee kan je je Spotify A
 <li>Ga terug naar het vorige nummer</li>
 </ul>
 <p>Wil je Spotify koppelen? Klik dan bij het opstarten van Nibor op OK, en log in en klik op AGREE. Daarna ga je naar de app van Spotify, op PC of Mobiel, en klik je op apparaten verbinden. (Net zoals het koppelen van een speaker). Daarna zie bij Nibor play buttons.</p>
-<p><strong>Rekenen</strong><br>
-Nibor kan redelijk rekenen. Hij kan geen wiskundige formules oplossen, maar je kan bijvoorbeeld vragen:</p>
+<h2 id="rekenen">Rekenen</h2>
+<p>Nibor kan redelijk rekenen. Hij kan geen wiskundige formules oplossen, maar je kan bijvoorbeeld vragen:</p>
 <ul>
 <li>Wat is 6 x 3</li>
 <li>Wat is 420 : 5</li>
@@ -90,9 +90,9 @@ In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML 
 Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder<br>
 ontwerpprogramma&rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?</p>
 <p>In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</p>
-<p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href="https://webdevelopment-en-meer.blogspot.com/search/label/ontwikkelomgeving_opzetten">Een ontwikkelomgeving opzetten</a></em></p>
+<p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href="https://blog.geheimesite.nl/search/label/ontwikkelomgeving_opzetten">Een ontwikkelomgeving opzetten</a></em></p>
 <p><strong>Hyperlinks</strong><br>
-In deel 1 van deze tutorial heb ik je laten zien hoe je de homepage van je website kan bouwen. (Heb je dat nog niet gedaan? Check dan eerst deze post uit: <a href="https://webdevelopment-en-meer.blogspot.com/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a>) Maar, een website bestaat niet uit 1 pagina. Ik wil ook nog een over-mij pagina, en een pagina waarop mijn projecten staan.<br>
+In deel 1 van deze tutorial heb ik je laten zien hoe je de homepage van je website kan bouwen. (Heb je dat nog niet gedaan? Check dan eerst deze post uit: <a href="https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a>) Maar, een website bestaat niet uit 1 pagina. Ik wil ook nog een over-mij pagina, en een pagina waarop mijn projecten staan.<br>
 <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png" alt="Afbeeldingsresultaat voor hyperlink&quot;"></a>Dit is waar <strong>hyperlinks</strong> tevoorschijn komen.<br>
 Hyperlinks zijn die blauwe klikbare dingen, die je op websites ziet, die je van website naar website brengen. Hyperlinks zijn het hart van het internet. Zonder hyperlinks kun je er niks mee.</p>
 <p>Maar ondertussen denk jij: &lsquo;Robin loopt maar wat te lullen, maar wanneer, en hoe gebruik je nou hyperlinks?</p>
@@ -208,13 +208,13 @@ Robin
 Robin</p>
 <ul>
 <li>
-<p><a href="https://webdevelopment-en-meer.blogspot.com/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a></p>
+<p><a href="https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a></p>
 </li>
 <li>
-<p><a href="https://webdevelopment-en-meer.blogspot.com/2020/02/hyperlinks-aan-je-website-toevoegen.html">Hyperlinks aan je website toevoegen</a></p>
+<p><a href="https://blog.geheimesite.nl/2020/02/hyperlinks-aan-je-website-toevoegen.html">Hyperlinks aan je website toevoegen</a></p>
 </li>
 <li>
-<p><a href="https://webdevelopment-en-meer.blogspot.com/search/label/website-maken">Alle blogjes</a></p>
+<p><a href="https://blog.geheimesite.nl/search/label/website-maken">Alle blogjes</a></p>
 </li>
 </ul>
  ]]></content:encoded></item><item><title>Websites bouwen, hoe moet dat?</title><link>https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html</link><pubDate>Sat, 29 Feb 2020 04:00:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html</guid><description>Een tutorial over het bouwen van je eerste website
@@ -224,53 +224,59 @@ In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML 
 Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder<br>
 ontwerpprogramma&rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?</p>
 <p>In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</p>
-<p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href="https://webdevelopment-en-meer.blogspot.com/search/label/ontwikkelomgeving_opzetten">Een ontwikkelomgeving opzetten</a></em></p>
+<p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href="https://blog.geheimesite.nl/search/label/ontwikkelomgeving_opzetten">Een ontwikkelomgeving opzetten</a></em></p>
 <p><strong>Laten we beginnen!</strong><br>
 Ik zal dit onderwerp over meerdere blogposten verspreiden, we gaan hier leren hoe we een simpele homepage, en over-mij pagina gaan maken.</p>
 <p>Open Brackets, en typ het volgende:</p>
-<pre tabindex="0"><code>  
-&lt;!DOCTYPE html&gt;  
-&lt;html&gt;  
-    &lt;head&gt;
-</code></pre><!-- raw HTML omitted -->
-<p>    <!-- raw HTML omitted --><br>
-        <!-- raw HTML omitted -->Mijn eerste website!<!-- raw HTML omitted --></p>
-<p>    <!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>  
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;  
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">title</span>&gt;Coole website!&lt;/<span style="color:#f92672">title</span>&gt;  
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;  
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h1</span>&gt;Mijn eerste website!&lt;/<span style="color:#f92672">h1</span>&gt;  
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;  
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Sla dit bestand op als <code>index.html</code>, en navigeer naar het bestand.<br>
+Het bestand zou een chrome, firefox of IE/Edge logo moeten hebben:</p>
 <p><a href="https://1.bp.blogspot.com/-00Ro7bVwLzk/XfSrhjOYRBI/AAAAAAAAB00/ORB72UgpruQsEPXSKNNI_mp7M8To5bm5gCLcBGAsYHQ/s1600/Untitled.png"><img src="https://1.bp.blogspot.com/-00Ro7bVwLzk/XfSrhjOYRBI/AAAAAAAAB00/ORB72UgpruQsEPXSKNNI_mp7M8To5bm5gCLcBGAsYHQ/s1600/Untitled.png" alt=""></a></p>
 <p>Open het bestan door er dubbel op te klikken, en je zou dit moeten zien:</p>
 <p><a href="https://1.bp.blogspot.com/-sOZz53EtcLE/XfSsG4i2V_I/AAAAAAAAB08/K9hzyVWBGbgMKrbBq3_Z-iJnDz7m8r4lQCLcBGAsYHQ/s1600/Untitled.png"><img src="https://1.bp.blogspot.com/-sOZz53EtcLE/XfSsG4i2V_I/AAAAAAAAB08/K9hzyVWBGbgMKrbBq3_Z-iJnDz7m8r4lQCLcBGAsYHQ/s640/Untitled.png" alt=""></a></p>
 <p>Dit is het begin, maar hoe werkt die code nou?<br>
 Kort gezegd werkt het zo:</p>
-<p>1. De webpagina die je zojuist hebt gemaakt bestaat uit blokken met een duidelijk begin en einde, waarvan het einde is gemarkeerd met een /<br>
-2. De blokken staan onder elkaar, maar kunnen ook in elkaar staan. Als blokken in elkaar staan, heet dat nesten.<br>
-3. In geneste blokken kunnen ook blokken onder elkaar staan, neem bijvoorbeeld <!-- raw HTML omitted -->:<br>
-Staat in <!-- raw HTML omitted --> (genest), maar ook op <!-- raw HTML omitted --> (gestapeld)<br>
-4. De blokken heten <strong>Elementen</strong><br>
-5. De tekst die het begin en eind van een element weergeven heten <strong>tags</strong>. Zo is <!-- raw HTML omitted --> een <strong>begintag</strong> en <!-- raw HTML omitted --> een <strong>eindtag</strong>.</p>
+<ol>
+<li>De webpagina die je zojuist hebt gemaakt bestaat uit blokken met een duidelijk begin en einde, waarvan het einde is gemarkeerd met een <code>/</code></li>
+<li>De blokken staan onder elkaar, maar kunnen ook in elkaar staan. Als blokken in elkaar staan, heet dat nesten.</li>
+<li>In geneste blokken kunnen ook blokken onder elkaar staan, neem bijvoorbeeld <code>&lt;head&gt;</code>:<br>
+Staat in <code>&lt;html&gt;</code> (genest), maar ook op <code>&lt;body&gt;</code> (gestapeld)</li>
+<li>De blokken heten <strong>Elementen</strong></li>
+<li>De tekst die het begin en eind van een element weergeven heten <strong>tags</strong>. Zo is <code>&lt;head&gt;</code> een <strong>begintag</strong> en <code>&lt;/head&gt;</code> een <strong>eindtag</strong>.</li>
+</ol>
 <p>Hieronder zie je wat de elementen doen:</p>
 <p><a href="https://1.bp.blogspot.com/-ObuqAv61jBI/XfSwYGfNxcI/AAAAAAAAB1I/JHiqDjLUXW8XYpwcFPuSKVAS-Tl3sEjzACLcBGAsYHQ/s1600/werking.png"><img src="https://1.bp.blogspot.com/-ObuqAv61jBI/XfSwYGfNxcI/AAAAAAAAB1I/JHiqDjLUXW8XYpwcFPuSKVAS-Tl3sEjzACLcBGAsYHQ/s640/werking.png" alt=""></a></p>
 <p>Laten we de webapgina eens invullen met wat nuttige informatie!<br>
 Ik maak in dit voorbeeld een website, voor een zogenaamd bedrijf, dat websites maakt.<br>
 Opeen Brackets weer, en typ het volgende: (Voel je vrij om je eigen inhoud toe te voegen)</p>
-<pre tabindex="0"><code>  
-&lt;!DOCTYPE html&gt;  
-  
-&lt;html&gt;
-</code></pre><p>    <!-- raw HTML omitted --><br>
-        <!-- raw HTML omitted -->Robin Boers | Web Design<!-- raw HTML omitted --><br>
-    <!-- raw HTML omitted --></p>
-<pre tabindex="0"><code>&lt;body&gt;  
-        &lt;header&gt;  
-            &lt;h1&gt;Robin Boers | Web Design&lt;/h1&gt;  
-        &lt;/header&gt;  
-  
-        &lt;h2&gt;Welkom op mijn website!&lt;/h2&gt;  
-  
-        &lt;p&gt;Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.&lt;br&gt; 
-</code></pre><p>Wil je ook een website? Neem dan contact met me op via: <a href="mailto:robin@geheimesite.nl">robin@geheimesite.nl</a><!-- raw HTML omitted --></p>
-<p>    <!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>  
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;  
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">title</span>&gt;Robin Boers | Web Design&lt;/<span style="color:#f92672">title</span>&gt;  
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;  
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">header</span>&gt;  
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">h1</span>&gt;Robin Boers | Web Design&lt;/<span style="color:#f92672">h1</span>&gt;  
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">header</span>&gt;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h2</span>&gt;Welkom op mijn website!&lt;/<span style="color:#f92672">h2</span>&gt;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">p</span>&gt;Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.&lt;<span style="color:#f92672">br</span>&gt; 
+</span></span><span style="display:flex;"><span>           Wil je ook een website? Neem dan contact met me op via: robin@geheimesite.nl&lt;/<span style="color:#f92672">p</span>&gt;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;  
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Open het bestand weer, of (als je de webbrowser nog open hebt staan) klik op CTRL+R (dat staat voor refresh)<br>
+Dit zou het volgende resultaat moeten geven:</p>
 <p><a href="https://1.bp.blogspot.com/-f1GsoTvPSgM/XfSywX42N8I/AAAAAAAAB1U/e7FflpAcwA4JH_e-oXKZmSnoJD-U3HihwCLcBGAsYHQ/s1600/Untitled.png"><img src="https://1.bp.blogspot.com/-f1GsoTvPSgM/XfSywX42N8I/AAAAAAAAB1U/e7FflpAcwA4JH_e-oXKZmSnoJD-U3HihwCLcBGAsYHQ/s640/Untitled.png" alt=""></a></p>
 <p>Allemaal wel leuk en aardig, maar hoe werkt dit nou weer??<br>
 Geen nood, hieronder staat weer een uitleg, met wat alle elementen doen.</p>
@@ -282,14 +288,14 @@ Geen nood, hieronder staat weer een uitleg, met wat alle elementen doen.</p>
 <p>Blijf creatief,</p>
 <p>Robin</p>
  ]]></content:encoded></item><item><title>Zo maak je een inlogsysteem met PHP en HTML</title><link>https://blog.geheimesite.nl/2020/02/zo-maak-je-een-inlogsysteem-met-php-en.html</link><pubDate>Tue, 25 Feb 2020 06:56:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/zo-maak-je-een-inlogsysteem-met-php-en.html</guid><description>Hallo, ik ben Robin. In deze tutorial laat ik zien hoe je een simpel inlogsysteem maakt in PHP.
-Voor deze video moet je wel de basisvaardigheden van PHP en HTML onder de knie hebben. Wil je leren hoe je je eerste HTML website maakt?
-Houd dan dit blog in de gaten, want binnenkort plaats ik een beginners handleiding HTML.
-Kijk voor de broncode van dit project op mijn GitHub profiel: https://github.</description><content:encoded><![CDATA[ <p>Hallo, ik ben Robin. In deze tutorial laat ik zien hoe je een simpel inlogsysteem maakt in PHP.<br>
-Voor deze video moet je wel de basisvaardigheden van PHP en HTML onder de knie hebben. Wil je leren hoe je je eerste HTML website maakt?<br>
-Houd dan dit blog in de gaten, want binnenkort plaats ik een beginners handleiding HTML.</p>
+https://www.youtube.com/watch?v=Nqw5XAYdeMc
+Voor deze video moet je wel de basisvaardigheden van PHP en HTML onder de knie hebben. Wil je leren hoe je je eerste HTML website maakt? Houd dan dit blog in de gaten, want binnenkort plaats ik een beginners handleiding HTML.
+Kijk voor de broncode van dit project op mijn GitHub profiel: https://github.</description><content:encoded><![CDATA[ <p>Hallo, ik ben Robin. In deze tutorial laat ik zien hoe je een simpel inlogsysteem maakt in PHP.</p>
+<p><a href="https://www.youtube.com/watch?v=Nqw5XAYdeMc">https://www.youtube.com/watch?v=Nqw5XAYdeMc</a></p>
+<p>Voor deze video moet je wel de basisvaardigheden van PHP en HTML onder de knie hebben. Wil je leren hoe je je eerste HTML website maakt? Houd dan dit blog in de gaten, want binnenkort plaats ik een beginners handleiding HTML.</p>
 <p>Kijk voor de broncode van dit project op mijn GitHub profiel: <a href="https://github.com/RobinBoers/Inlogsysteem_PHP">https://github.com/RobinBoers/Inlogsysteem_PHP</a></p>
-<p>Hier heb je nog een lijstje handige tools bij webdevelopment en PHP:<br>
-- <strong>xampp</strong>: <a href="https://www.apachefriends.org/index.html">https://www.apachefriends.org/index.html</a><br>
+<p>Hier heb je nog een lijstje handige tools bij webdevelopment en PHP:</p>
+<p>- <strong>xampp</strong>: <a href="https://www.apachefriends.org/index.html">https://www.apachefriends.org/index.html</a><br>
 - <strong>brackets</strong>: <a href="http://brackets.io/">http://brackets.io/</a><br>
 - <strong>visual studio code</strong>: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
 <p>Heb je nog vragen of tips? Plaats ze in de comments!</p>
