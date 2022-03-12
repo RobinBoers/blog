@@ -21,7 +21,8 @@ Verder heb ik nog wat leuke dingen toegevoegd. Iedereen krijgt bijvoorbeeld een 
 <p>Je kan het project hier vinden: <a href="https://chat.geheimesite.nl/">https://chat.geheimesite.nl/</a></p>
 <p> - Robin</p>
  ]]></content:encoded></item><item><title>Wat is jailbreaken?</title><link>https://blog.geheimesite.nl/2020/03/wat-is-jailbreaken.html</link><pubDate>Mon, 02 Mar 2020 06:40:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/03/wat-is-jailbreaken.html</guid><description>Als je jailbreakt krijg je volledige toegang tot het besturingssysteem op je iDevice (iOS). Hierdoor heb je er volledige controle over. Je hackt een soort van je eigen apparaat. Na de jailbreak kan je vanalles met je apparaat doen: animaties toevoegen, dualbooten, icoontjes laten vliegen, wat je maar wilt. Jij bent de baas!
-Na een jailbreak wordt meestal Cydia geïnstalleerd. Cydia is een soort van een App Store voor jailbreak tweaks.</description><content:encoded><![CDATA[ <p><a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png" alt=""></a>Als je jailbreakt krijg je volledige toegang tot het besturingssysteem op je iDevice (iOS). Hierdoor heb je er volledige controle over. Je hackt een soort van je eigen apparaat. Na de jailbreak kan je vanalles met je apparaat doen: animaties toevoegen, dualbooten, icoontjes laten vliegen, wat je maar wilt. Jij bent de baas!</p>
+Na een jailbreak wordt meestal Cydia geïnstalleerd. Cydia is een soort van een App Store voor jailbreak tweaks.</description><content:encoded><![CDATA[ <p><a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png" alt=""></a></p>
+<p>Als je jailbreakt krijg je volledige toegang tot het besturingssysteem op je iDevice (iOS). Hierdoor heb je er volledige controle over. Je hackt een soort van je eigen apparaat. Na de jailbreak kan je vanalles met je apparaat doen: animaties toevoegen, dualbooten, icoontjes laten vliegen, wat je maar wilt. Jij bent de baas!</p>
 <p>Na een jailbreak wordt meestal Cydia geïnstalleerd. Cydia is een soort van een App Store voor jailbreak tweaks. Je kunt hier thema&rsquo;s, plugins, apps, mods en ringtones downloaden. Je kan met de plugins bijvoorbeeld:</p>
 <ul>
 <li>De layout van iOS veranderen</li>
@@ -45,7 +46,7 @@ Na een jailbreak wordt meestal Cydia geïnstalleerd. Cydia is een soort van een 
 <li>En nog veel meer&hellip;</li>
 </ul>
 <p>Er is een enorme community rondom jailbreaken die bestaat uit ervaren ontwikkelaars, hackers, YouTubers, en gebruikers die hun kennis uitwisselen op onder andere r/jailbreak.</p>
-<p>Maar hoe werkt het?</p>
+<h2 id="maar-hoe-werkt-het">Maar hoe werkt het?</h2>
 <p>Dat hangt af van de iOS versie die je hebt. Voor elke iOS versie is een andere jailbreak. Na even googelen vind je vanzelf de goede jailbreak. Er zijn verschillende typen: tethered, untethered en semi-untethered. Bij tethered moet je je iDevice elke keer dat ie opnieuw opstart aan je computer verbinden, om opnieuw te jailbreaken. Bij semi-untethered moet dat ook, maar heb je een app op je apparaat, in plaats van dat je hem aan je computer hangt. Bij untethered download je 1 keer een app, of hang je hem 1 keer aan je computer, en blijft de jailbreak, ook al herstart je je apparaat.</p>
 <p>Wil je meer over jailbreaken weten? Deze site is een mooie bron:</p>
 <p><a href="https://cydia-app.com/">https://cydia-app.com/</a></p>

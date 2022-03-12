@@ -43,7 +43,7 @@ Python Software Foundation heeft een site waar je de software kunt downloaden, e
 <h2 id="3-je-programmeeromgeving-opzetten">3. Je programmeeromgeving opzetten</h2>
 <p>Je hebt nu de benodigde software, en zou aan de slag kunnen gaan. Maar de IDE (Integrated Development Environment) die in de Python software zit ingebouwd is niet heel fijn om mee te werken. Daarom heb ik een aparte code-editor, waarin ik ook met andere talen zoals HTML, CSS, PHP, JavaScript, en C++ kan werken. De code-editor die ik gebruik, heet Brackets. Zie daarover meer in mijn <a href="https://blog.geheimesite.nl/2019/07/beste-code-editor-brackets.html">blogpost over Brackets</a>. Hier onder zie je een klein overzicht over hoe je Brackets installeert.</p>
 <h3 id="31-download-brackets">3.1 Download Brackets</h3>
-<p>Ga naar <a href="http://www.brackets.io">www.brackets.io</a> in je webbrowser, en klik op &ldquo;Download Brackets&rdquo;</p>
+<p>Ga naar <a href="https://www.brackets.io">www.brackets.io</a> in je webbrowser, en klik op &ldquo;Download Brackets&rdquo;</p>
 <p><a href="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s1600/screenshot%2B3.1.png"><img src="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s640/screenshot%2B3.1.png" alt=""></a></p>
 <p>Open het installatiebestand op dezelfde manier, zoals je ook het installatiebestand van de Python software hebt geopend, en klik op &ldquo;Next&rdquo;, en dan op &ldquo;Install&rdquo;. Als de installatie voltooit is, klik je op &ldquo;Finish&rdquo;</p>
 <h3 id="32-maak-je-klaar-voor-lancering">3.2 Maak je klaar voor lancering</h3>

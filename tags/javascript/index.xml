@@ -166,10 +166,10 @@ Dus, hoe gaan we dat doen? Nou simpel: installeer Kali Linux, download hacking t
 <p>- Robin</p>
 <p>PS: Ik ben jarig 🥳</p>
  ]]></content:encoded></item><item><title>Nieuw project: Nibor</title><link>https://blog.geheimesite.nl/2020/07/nieuw-project-nibor.html</link><pubDate>Mon, 27 Jul 2020 00:30:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/07/nieuw-project-nibor.html</guid><description>Hoi, ik ben een tijdje geleden aan een nieuw project begonnen, en het is nu in de fase waarin het redelijk werkt. Het is een virtuele assistent genaamd Nibor Virtual Assistant, of gewoon kort: Nibor.
-Nibor is een klein programma dat de speech-recognitionAPI gebruikt. Je kunt hem simpele opdrachten geven, zoals:
+Nibor is een klein programma dat de speech-recognition API gebruikt. Je kunt hem simpele opdrachten geven, zoals:
 Vertel een grap. Welke dag is het? Hoe laat is het vandaag? Wat is het weer? Hij is nog niet erg slim, omdat ik nog geen goede manier heb gevonden om commando&amp;rsquo;s op te slaan.</description><content:encoded><![CDATA[ <p>Hoi, ik ben een tijdje geleden aan een nieuw project begonnen, en het is nu in de fase waarin het redelijk werkt. Het is een virtuele assistent genaamd Nibor Virtual Assistant, of gewoon kort: Nibor.</p>
 <p><a href="https://code.geheimesite.nl/beta/nibor/logo.png"><img src="https://code.geheimesite.nl/beta/nibor/logo.png" alt=""></a></p>
-<p>Nibor is een klein programma dat de <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition">speech-recognition</a><a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition"> API</a> gebruikt. Je kunt hem simpele opdrachten geven, zoals:</p>
+<p>Nibor is een klein programma dat de <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition">speech-recognition API</a> gebruikt. Je kunt hem simpele opdrachten geven, zoals:</p>
 <ul>
 <li>Vertel een grap.</li>
 <li>Welke dag is het?</li>
