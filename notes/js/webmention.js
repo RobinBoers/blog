@@ -219,7 +219,7 @@ A more detailed example:
           linktext = '(mention)'
         }
   
-        html += '<div class="webmention__content ' + linkclass + '">' + linktext + '</div>'
+        html += '<div class="webmention__content mt-2' + linkclass + '">' + linktext + '</div>'
   
         html += '</div></li>'
       })
