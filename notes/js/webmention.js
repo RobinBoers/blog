@@ -180,11 +180,11 @@ A more detailed example:
     }
   
     function formatComments (comments) {
-      let html = '<ul class="comments" class="p-0">'
+      let html = '<ul class="comments p-0">'
       comments.forEach(function (c) {
         html += '<li class="rounded-md p-6 list-style-none bg-vibrant/20 dark:bg-slate/70 shadow-md my-5 max-w-[52rem]"><div class="webmention">'
   
-        html += '<div class="hidden webmention__meta flex flex-row justify-start items-center gap-5">'
+        html += '<div class="webmention__meta flex flex-row justify-start items-center gap-5">'
 
         html += reactImage(c)
         html += '<div><strong class="block">'
@@ -195,7 +195,7 @@ A more detailed example:
           html += entities(c.url.split('/')[2])
         }
   
-        html += '</strong><span class="block">' + publishDate(c.published) + '</span></div>'
+        html += '</strong><!--<span class="block">' + publishDate(c.published) + '</span>--></div>'
         html += '</div>'
   
         let linkclass
@@ -223,13 +223,12 @@ A more detailed example:
   
         html += '</div></li>'
       })
-      html += '</ul><div class="page-separator"><hr /></div>'
   
       return html
     }
   
     function formatReactions (reacts) {
-      let html = '<ul class="reacts">'
+      let html = '<ul class="reacts p-0">'
   
       reacts.forEach(function (r) {
         html += '<li class="rounded-md p-6 list-style-none bg-vibrant/20 dark:bg-slate/70 shadow-md my-5 max-w-[52rem] mx-auto"><div class="webmention">'
