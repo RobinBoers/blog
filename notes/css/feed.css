@@ -40,6 +40,10 @@ pre {
     overflow-x: auto;
 }
 
+.e-content .post p:last-child {
+    margin: 0;
+}
+
 /* Tailwind patches */
 .justify-between {
     justify-content: space-between;
@@ -48,8 +52,8 @@ pre {
 .font-bold {
     font-weight: bolder;
 }
-.mt-5 {
-    margin-top: 1rem;
+.mt-2 {
+    margin-top: 0.5rem;
 }
 .p-6 {
     padding: 1.5rem;

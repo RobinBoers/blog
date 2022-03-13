@@ -180,19 +180,22 @@ A more detailed example:
     }
   
     function formatComments (comments) {
-      let html = '<h2>Webmentions</h2><ul class="comments">'
+      let html = '<h2>Webmentions</h2><ul class="comments" class="p-0">'
       comments.forEach(function (c) {
-        html += '<li><div class="webmention">'
+        html += '<li class="rounded-md p-6 list-style-none bg-vibrant/20 dark:bg-slate/70 shadow-md my-5 max-w-[52rem]"><div class="webmention">'
   
-        html += '<div class="webmention__meta"><a class="source" rel="nofollow ugc" href="' +
+        html += '<div class="webmention__meta flex flex-row justify-start items-center gap-5"><a class="source" rel="nofollow ugc" href="' +
           c[mentionSource] + '">'
+
+        html += reactImage(c) + '<div><strong class="block">'
+
         if (c.author && c.author.name) {
           html += entities(c.author.name)
         } else {
           html += entities(c.url.split('/')[2])
         }
   
-        html += '</a> ' + reactImage(c) + ' ' + publishDate(c.published) + '</div>'
+        '</a></strong><span class="block">' + publishDate(c.published) + '</span></div></div>'
   
         let linkclass
         let linktext
@@ -228,7 +231,7 @@ A more detailed example:
       let html = '<h2>Appreciation</h2><ul class="reacts">'
   
       reacts.forEach(function (r) {
-        html += '<li><div class="webmention">'
+        html += '<li class="rounded-md p-6 list-style-none bg-vibrant/20 dark:bg-slate/70 shadow-md my-5 max-w-[52rem]"><div class="webmention">'
         html += reactImage(r)
       })
   
