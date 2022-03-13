@@ -48,9 +48,17 @@ pre {
 .justify-between {
     justify-content: space-between;
 }
-
 .font-bold {
     font-weight: bolder;
+}
+.list-style-none {
+    list-style: none;
+}
+.w-14 {
+    width: 56px;
+}
+.aspect-square {
+    aspect-ratio: 1 / 1;
 }
 .mt-2 {
     margin-top: 0.5rem;

@@ -44,9 +44,17 @@ pre {
 .justify-between {
     justify-content: space-between;
 }
-
 .font-bold {
     font-weight: bolder;
+}
+.list-style-none {
+    list-style: none;
+}
+.w-14 {
+    width: 56px;
+}
+.aspect-square {
+    aspect-ratio: 1 / 1;
 }
 .mt-5 {
     margin-top: 1rem;
@@ -63,7 +71,6 @@ pre {
 .mb-2 {
     margin-bottom: 0.5rem;
 }
-
 .gap-1 {
     gap: 5px;
 }
