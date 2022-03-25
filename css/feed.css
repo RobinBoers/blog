@@ -40,6 +40,10 @@ pre {
     overflow-x: auto;
 }
 
+.post img {
+    max-width: 100%;
+}
+
 /* Tailwind patches */
 .justify-between {
     justify-content: space-between;
@@ -78,7 +82,7 @@ pre {
     gap: 5px;
 }
 .p-0 {
-    padding: 0px;
+    padding: 0;
 }
 .flex-grow {
     flex-grow: 10;
