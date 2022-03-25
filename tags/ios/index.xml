@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>ios on Webdevelopment-En-Meer</title><link>https://blog.geheimesite.nl/tags/ios/</link><description>Read the latest ios on Webdevelopment-En-Meer</description><generator>Hugo -- gohugo.io</generator><language>nl-nl</language><lastBuildDate>Wed, 24 Feb 2021 11:52:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/tags/ios/index.xml" rel="self" type="application/rss+xml"/><item><title>iOS 6 in 2021</title><link>https://blog.geheimesite.nl/2021/02/ios-6-in-2021.html</link><pubDate>Wed, 24 Feb 2021 11:52:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/02/ios-6-in-2021.html</guid><description>De eerste video op mijn YouTube kanaal ging over het dualbooten van mijn iPad 2. Ik ging in die video namelijk met coolbooter mijn iPad 2 downgraden naar iOS 7. Maar mijn iPad heeft niet lang iOS 7 gedraaid hoor. Ik ben namelijk 3 dagen na het maken van die video naar iOS 6 geswitcht. Ik wil je in deze blogpost vertellen hoe mijn ervaringen met iOS 6 in 2020 en 2021 tot nu toe zijn geweest.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-RDe4mdNvgMc/YDAbjEMmczI/AAAAAAAAKXo/f8ic4BxpB0AokjFq_POi75L3acGmmBFSwCLcBGAsYHQ/s750/ios-6-logo-56a536383df78cf77286f4ac.jpg"><img src="https://1.bp.blogspot.com/-RDe4mdNvgMc/YDAbjEMmczI/AAAAAAAAKXo/f8ic4BxpB0AokjFq_POi75L3acGmmBFSwCLcBGAsYHQ/w200-h200/ios-6-logo-56a536383df78cf77286f4ac.jpg" alt=""></a></p>
+<p>De <a href="https://www.youtube.com/watch?v=JBPA_u034-0">eerste video</a> op mijn YouTube kanaal ging over het dualbooten van mijn iPad 2. Ik ging in die video namelijk met coolbooter mijn iPad 2 downgraden naar iOS 7. Maar mijn iPad heeft niet lang iOS 7 gedraaid hoor. Ik ben namelijk 3 dagen na het maken van die video naar iOS 6 geswitcht. </p>
+<p>Ik wil je in deze blogpost vertellen hoe mijn ervaringen met iOS 6 in 2020 en 2021 tot nu toe zijn geweest. Spoiler: vrij goed. iOS 6 zelf is vrijwel onbruikbaar in 2020 of 2021. Maar met wat tweaks werd het toch mogelijk. Zelfs iMessage en Facetime werken!</p>
+<p>Het eerste wat ik heb gedaan is het jailbreaken van iOS 6. Dit was vrij simpel, want dat was gewoon een optie in Coolbooter. Daarna heb ik wat tweaks geïnstalleerd vanuit Cydia. </p>
+<p>Een daarvan is <a href="https://cydia.akemi.ai/?page/net.angelxwind.appsyncunified">AppSync Unified</a>. Daarmee verwijder je de restrictie van Apple om .ipa files te installeren. Als je AppSync hebt gedownload en geïnstalleerd, kan je naar <a href="http://mtmdev.org">mtmdev.org</a> gaan. Dat is een website waar ze oude iOS apps archiveren. Je kan dan bovenin op &ldquo;webapp&rdquo; klikken. Er wordt dan een scherm geopend waaruit je oude apps die niet meer in de AppStore staan kan installeren.</p>
+<p>Over de AppStore gesproken. Als je apps probeert te installeren krijg je de melding &ldquo;This app is incompatible&rdquo;. Dit is veroorzaakt door een bug in iOS waarbij iOS eerst checkt voor moderen features zoals 64-bit en bluethoot voor het installeren. Daar kan iOS 6 niet mee omgaan omdat die dingen toen nog niet bestonden. Om dit op te lossen kan je de tweak <a href="https://www.reddit.com/r/LegacyJailbreak/comments/cy4l1g/release_checkmate_store_bypass_capability/">Checkmate, Store!</a> installeren. Deze tweak houd de AppStore voor de gek en zorgt ervoor dat je alsnog oude versies (die wel degelijk compatible zijn) van apps kan downloaden.</p>
+<p>Verder is IPA installer ook een handige tweak. Je kan daarmee je eigen .ipa files installeren. Ik heb hiermee bijvoorbeeld Minecraft op mijn iPad gezet.</p>
+<p>Als je YouTube wil kijken, of Google apps gebruikt is het handig om de volgende tweaks te gebruiken: <a href="https://tubefixer.ovh/">TubeFixer</a> en <a href="http://cydia.invoxiplaygames.uk/package/googlesigninfix">GSignInFix </a></p>
+<p>En als je Discord gebruikt, heb je misschien gezien dat dat niet beschikbaar is voor iOS 6. Er is gelukkig iemand in <a href="https://reddit.com/r/LegacyJailbreak">r/LegacyJailbreak</a> die een discord client genaamd <a href="http://cydia.invoxiplaygames.uk/package/discordclassic">Discord Classic</a> voor oude iOS versies heeft gemaakt.  Dus yee! Er zit geen support voor welke vorm van multimedia dan ook in, maar hé, je kan chatten toch?</p>
+<p>En dat is ongeveer alles om de iPad weer redelijk functioneel te maken.</p>
+<p>Er zijn verder wel een paar dingen die je gewoon echt mist in iOS 6: mail en websites. De mail app functioneert gewoon helemaal niet meer. Je kan geen mails openen of versturen. Safari is een ander verhaal. Het internet werkt namelijk gewoon, maar de WebKit versie van Safari is sterk verouderd. Daardoor worden websites (vooral menu&rsquo;s) niet meer correct weergegeven. Maar dat is echt het enige.</p>
+<p>Ik hoop dat je deze post interessant vond.</p>
+<p>-Robin</p>
+ ]]></content:encoded></item><item><title>ThinkChat: mijn nieuwe chatapp</title><link>https://blog.geheimesite.nl/2021/02/thinkchat-mijn-nieuwe-chatapp.html</link><pubDate>Wed, 03 Feb 2021 03:05:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/02/thinkchat-mijn-nieuwe-chatapp.html</guid><description>Ik heb de laatste paar dagen erg hard gewerkt aan een nieuw project: ThinkChat
+ThinkChat is een simpele chatapp die gebruik maakt van socket.io en Node.js. Er zijn meerdere rooms, en je hoeft alleen maar een nickname in te vullen om te kunnen chatten.
+Verder heb ik nog wat leuke dingen toegevoegd. Iedereen krijgt bijvoorbeeld een 4-cijferige &amp;ldquo;pin&amp;rdquo; of &amp;ldquo;tag&amp;rdquo; achter hun nickname. Hierdoor zijn alle nicknames uniek, en kunnen er bijvoorbeeld meerdere Robins in de chat zitten.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-lYM1ULJfRBY/YBKkqsR0ViI/AAAAAAAAKG8/-5BkmMPy370YMEDcTvGUVvnzEHaF1P9ZACLcBGAsYHQ/s720/icon.png"><img src="https://1.bp.blogspot.com/-lYM1ULJfRBY/YBKkqsR0ViI/AAAAAAAAKG8/-5BkmMPy370YMEDcTvGUVvnzEHaF1P9ZACLcBGAsYHQ/w200-h200/icon.png" alt=""></a></p>
+<p>Ik heb de laatste paar dagen erg hard gewerkt aan een nieuw project: ThinkChat</p>
+<p>ThinkChat is een simpele chatapp die gebruik maakt van socket.io en Node.js. Er zijn meerdere rooms, en je hoeft alleen maar een nickname in te vullen om te kunnen chatten.</p>
+<p>Verder heb ik nog wat leuke dingen toegevoegd. Iedereen krijgt bijvoorbeeld een 4-cijferige &ldquo;pin&rdquo; of &ldquo;tag&rdquo; achter hun nickname. Hierdoor zijn alle nicknames uniek, en kunnen er bijvoorbeeld meerdere Robins in de chat zitten. Ook wordt er voor elke naam een random kleur gegenereed (net als in whatsapp), waardoor je verschillende mensen snel kan herkennen. Ook leuk: je nickname wordt automatisch opgeslagen in localStorage, zodat je volgende keer je als je wil chatten je nickname geeneens hoeft in te vullen. Daarnaast kan je de app ook als PWA (Progressive Web App) installeren op zowel iOS als Android.</p>
+<p>Dus hoe werkt het? Als je de app opent moet je eerst verbinden met een server (alleen de eerste keer, daarna verbind de app automatisch met die server). Je kan lokaal een server hosten, of bijvoorbeeld een VPS gebruiken. Als je bent verbonden met de server kies je een nickname, en krijg je het chat scherm te zien. Dit is heel simpel: onderaan een tekstbalk en bovenaan het channel / de room waar je inzit. Je kan bovenin ook zien hoeveel mensen er online zijn. Je zit standaard in het general channel, maar door op de channelnaam te klikken krijg je een menu om een ander channel te openen. Op grotere schermen (zoals landscape tablet en laptop) zie je de sidebar automatisch al.</p>
+<p>Je kan het project hier vinden: <a href="https://chat.geheimesite.nl/">https://chat.geheimesite.nl/</a></p>
+<p> - Robin</p>
+ ]]></content:encoded></item><item><title>Wat is jailbreaken?</title><link>https://blog.geheimesite.nl/2020/03/wat-is-jailbreaken.html</link><pubDate>Mon, 02 Mar 2020 06:40:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/03/wat-is-jailbreaken.html</guid><description>Als je jailbreakt krijg je volledige toegang tot het besturingssysteem op je iDevice (iOS). Hierdoor heb je er volledige controle over. Je hackt een soort van je eigen apparaat. Na de jailbreak kan je vanalles met je apparaat doen: animaties toevoegen, dualbooten, icoontjes laten vliegen, wat je maar wilt. Jij bent de baas!
+Na een jailbreak wordt meestal Cydia geïnstalleerd. Cydia is een soort van een App Store voor jailbreak tweaks.</description><content:encoded><![CDATA[ <p><a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Cydia_logo.png" alt=""></a></p>
+<p>Als je jailbreakt krijg je volledige toegang tot het besturingssysteem op je iDevice (iOS). Hierdoor heb je er volledige controle over. Je hackt een soort van je eigen apparaat. Na de jailbreak kan je vanalles met je apparaat doen: animaties toevoegen, dualbooten, icoontjes laten vliegen, wat je maar wilt. Jij bent de baas!</p>
+<p>Na een jailbreak wordt meestal Cydia geïnstalleerd. Cydia is een soort van een App Store voor jailbreak tweaks. Je kunt hier thema&rsquo;s, plugins, apps, mods en ringtones downloaden. Je kan met de plugins bijvoorbeeld:</p>
+<ul>
+<li>De layout van iOS veranderen</li>
+<li>Extra functies (features) toevoegen</li>
+<li>Dingen verbergen</li>
+<li>Tekst aanpassen</li>
+<li>En nog veel meer!</li>
+</ul>
+<p>Je kan bijvoorbeeld:</p>
+<ul>
+<li>Automatisch desktopweergave laden in Safari (useragentfaker)</li>
+<li>Standaard apps instellen (Browserchooser, mapsopener)</li>
+<li>Icoontjes laten vliegen (Gravity)</li>
+<li>Seconden weergeven op de klok op je homescherm (FastForwardTime)</li>
+<li>Thema&rsquo;s installeren (Winterboard)</li>
+<li>5 icoontjes in de dock zetten (FiveIconDockXI)</li>
+<li>Belinterface aanpassen (CallBar)</li>
+<li>Siri klein maken (SmallSiri)</li>
+<li>Je iDevice dualbooten (coolbooter)</li>
+<li>Apps beveiligen met je vingerafdruk (BioLockdown)</li>
+<li>En nog veel meer&hellip;</li>
+</ul>
+<p>Er is een enorme community rondom jailbreaken die bestaat uit ervaren ontwikkelaars, hackers, YouTubers, en gebruikers die hun kennis uitwisselen op onder andere r/jailbreak.</p>
+<h2 id="maar-hoe-werkt-het">Maar hoe werkt het?</h2>
+<p>Dat hangt af van de iOS versie die je hebt. Voor elke iOS versie is een andere jailbreak. Na even googelen vind je vanzelf de goede jailbreak. Er zijn verschillende typen: tethered, untethered en semi-untethered. Bij tethered moet je je iDevice elke keer dat ie opnieuw opstart aan je computer verbinden, om opnieuw te jailbreaken. Bij semi-untethered moet dat ook, maar heb je een app op je apparaat, in plaats van dat je hem aan je computer hangt. Bij untethered download je 1 keer een app, of hang je hem 1 keer aan je computer, en blijft de jailbreak, ook al herstart je je apparaat.</p>
+<p>Wil je meer over jailbreaken weten? Deze site is een mooie bron:</p>
+<p><a href="https://cydia-app.com/">https://cydia-app.com/</a></p>
+<p>Hier zie je al mijn blogjes over jailbreaken:</p>
+<p><a href="https://blog.geheimesite.nl/tag/jailbreak">https://blog.geheimesite.nl/tag/jailbreak</a></p>
+<p>Dit was het weer,</p>
+<p>Robin</p>
+ ]]></content:encoded></item><item><title>Zo dualboot je een iPad 1/2/3</title><link>https://blog.geheimesite.nl/2020/02/zo-dualboot-je-een-ipad-123.html</link><pubDate>Mon, 24 Feb 2020 05:18:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/zo-dualboot-je-een-ipad-123.html</guid><description>https://www.youtube.com/watch?v=JBPA_u034-0</description><content:encoded> &lt;p>&lt;a href="https://www.youtube.com/watch?v=JBPA_u034-0">https://www.youtube.com/watch?v=JBPA_u034-0&lt;/a>&lt;/p></content:encoded></item><item><title>Jailbreak een oude iPad / iPhone / iPod Touch met iOS 9</title><link>https://blog.geheimesite.nl/2020/02/jailbreak-oude-ipad-iphone-ipod-touch.html</link><pubDate>Mon, 17 Feb 2020 08:39:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/jailbreak-oude-ipad-iphone-ipod-touch.html</guid><description>Hallo allemaal,
+Ik ben pas jarig geweest, en ik heb een oude iPad 2 gekregen, om te jailbreaken. Ik wilde dat al heel lang doen, en nu kan dat. In dit blogje ga ik jullie laten zien hoe ik dat doe.
+Check of je apparaat ondersteund wordt Alleen 32 bit apparaten zijn ondersteund. Dit houd in:
+iPhone 4 iPhone 4S iPhone 5 iPad 1 iPad 2 iPad 3 GEEN iPhone 5s</description><content:encoded><![CDATA[ <p>Hallo allemaal,<br>
+Ik ben pas jarig geweest, en ik heb een oude iPad 2 gekregen, om te jailbreaken. Ik wilde dat al heel lang doen, en nu kan dat. In dit blogje ga ik jullie laten zien hoe ik dat doe.</p>
+<h2 id="check-of-je-apparaat-ondersteund-wordt">Check of je apparaat ondersteund wordt</h2>
+<p>Alleen 32 bit apparaten zijn ondersteund. Dit houd in:</p>
+<ul>
+<li>iPhone 4</li>
+<li>iPhone 4S</li>
+<li>iPhone 5</li>
+<li>iPad 1</li>
+<li>iPad 2</li>
+<li>iPad 3</li>
+</ul>
+<p>GEEN iPhone 5s<br>
+GEEN iPad 4</p>
+<p>Je apparaat moet iOS 9.3.5 of 9.3.6 draaien</p>
+<h2 id="maak-een-backup">Maak een backup</h2>
+<p>Zorg er altijd voor dat je een backup hebt voor het geval er iets mis gaat. Dit zo:</p>
+<p>Instellingen -&gt; iCloud -&gt; iCloud reservekopie -&gt; Zet aan -&gt; Maak nu een backup</p>
+<h2 id="de-jailbreak-downloaden">De jailbreak downloaden</h2>
+<p>Je kan de jailbreak via de computer downloaden, en met cydia impactor naar je iDevice sturen, maar dat daar had ik problemen mee, dus gebruik ik een andere methode: direct op je apparaat installeren.</p>
+<p>Hiervoor moet je de jailbreak uit 1 van de volgende bronnen downloaden:</p>
+<ol>
+<li>iOS Ninja (<a href="https://iosninja.io/">https://iosninja.io/</a>)</li>
+<li>Panda helper (<a href="https://www.pandahelp.vip/">https://www.pandahelp.vip/</a>)</li>
+</ol>
+<p>Als je voor panda helper kiest, moet je eerst de panda helper app installeren. Daarna kun je in het zoekveld &ldquo;Phoenix Jailbreak&rdquo; intypen, en klik je op de Phoenix jailbreak. Installeer die app.</p>
+<p>Als je voor iOS Ninja kiest, klik je op de volgende link:</p>
+<p><a href="https://iosninja.io/ipa-library/download-phoenix-jailbreak-ios-9-3-5">https://iosninja.io/ipa-library/download-phoenix-jailbreak-ios-9-3-5</a></p>
+<p>Klik op de &ldquo;Tap to install&rdquo; knop. Als je de tekst &ldquo;Direct install disabled because certificates have been revoked by Apple. Follow us on <a href="https://twitter.com/iosninja_io">Twitter</a> to find out when it&rsquo;s fixed.&rdquo; ziet, moet je de andere methode gebruiken.</p>
+<p>Als het goed is zie je bij beide methoden na het installeren dit icoontje op je homescherm staan:</p>
+<p><img src="https://iosninja.io/img/ipas/phoenix-jailbreak.png" alt=""></p>
+<p>Als je dit icoontje niet ziet, herhaal je de stappen hierboven</p>
+<h2 id="de-app-goedkeuren">De app goedkeuren</h2>
+<p>Als je de app probeert te openen, krijg je als het goed is zo&rsquo;n soort error:</p>
+<p><a href="https://1.bp.blogspot.com/-rCsywp18UMY/XjsMVerSnnI/AAAAAAAAB3Y/jG_uX-u9li8fZgdhBFpDSmapUT9z8Z34QCLcBGAsYHQ/s1600/Untitled.png"><img src="https://1.bp.blogspot.com/-rCsywp18UMY/XjsMVerSnnI/AAAAAAAAB3Y/jG_uX-u9li8fZgdhBFpDSmapUT9z8Z34QCLcBGAsYHQ/s320/Untitled.png" alt=""></a></p>
+<p>Om dit op te lossen, volg je deze tutorial: <a href="https://testersupport.usertesting.com/hc/en-us/articles/115003712912-How-to-Trust-an-Unreleased-iOS-App">https://testersupport.usertesting.com/hc/en-us/articles/115003712912-How-to-Trust-an-Unreleased-iOS-App</a></p>
+<p>Als het goed is kun je nu de app wel openen.</p>
+<h2 id="jailbreak-je-apparaat">Jailbreak je apparaat</h2>
+<p>Klik op de knop: &ldquo;Prepare for jailbreak&rdquo;</p>
+<p>Je zou nu een ronddraaiend rondje moeten zien, met techpraat eronder.<br>
+Na een tijdje wordt springboard herstart, en ben je officieel gejailbreakt.</p>
+<h2 id="doe-coole-dingen">Doe coole dingen!</h2>
+<p>Nu je apparaat is gejailbreakt, kun je er coole dingen mee doen. Hieronder zie je een lijstje met suggesties:</p>
+<ul>
+<li>Voeg coole tweaks toe</li>
+<li>Versnel iOS</li>
+<li>Voeg coole animaties to</li>
+<li>Dual boot je iDevice met CoolBooter</li>
+</ul>
+<p>Dit was het alweer,</p>
+<p>Robin</p>
+ ]]></content:encoded></item></channel></rss>

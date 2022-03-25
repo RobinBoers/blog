@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>hacken on Webdevelopment-En-Meer</title><link>https://blog.geheimesite.nl/tags/hacken/</link><description>Read the latest hacken on Webdevelopment-En-Meer</description><generator>Hugo -- gohugo.io</generator><language>nl-nl</language><lastBuildDate>Wed, 13 Jan 2021 09:16:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/tags/hacken/index.xml" rel="self" type="application/rss+xml"/><item><title>Chrome Dino game hacken met Javascript</title><link>https://blog.geheimesite.nl/2021/01/chrome-dino-game-hacken-met-javascript.html</link><pubDate>Wed, 13 Jan 2021 09:16:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/chrome-dino-game-hacken-met-javascript.html</guid><description>Ken je die Dinosaurus die je te zien krijgt als je geen internet hebt in Google Chrome? Wist je dat dat een game was? Waarschijnlijk wel. Zo niet moet je eens op spatiebalk drukken als je hem ziet. Voor de lezers die wisten dat de game bestond: vandaag gaan we hem hacken!
+Dus, hoe gaan we dat doen? Nou simpel: installeer Kali Linux, download hacking tools van sketchy websites, &amp;hellip;..</description><content:encoded><![CDATA[ <p>Ken je die Dinosaurus die je te zien krijgt als je geen internet hebt in Google Chrome? Wist je dat dat een game was? Waarschijnlijk wel. Zo niet moet je eens op spatiebalk drukken als je hem ziet. Voor de lezers die wisten dat de game bestond: vandaag gaan we hem hacken!</p>
+<p>Dus, hoe gaan we dat doen? Nou simpel: installeer Kali Linux, download hacking tools van sketchy websites, &hellip;..</p>
+<p>Nee, tuurlijk niet, we houden het simpel! Het eerste wat je moet weten is dat de game is geschreven in Javascript. Dat is een programmeertaal waarmee websites interactief gemaakt kunnen worden. Javascript is client side. Dat betekent dat de code op jouw computer wordt uitgevoerd. Dat maakt het erg simpel om te hacken!</p>
+<p><a href="https://1.bp.blogspot.com/-NC27jatgu8c/X_8q1NlipjI/AAAAAAAAJ5o/ZrKi86sTDaMSg3QRB6mYLPgxc6F-Fp22QCLcBGAsYHQ/s640/unnamed.jpg"><img src="https://1.bp.blogspot.com/-NC27jatgu8c/X_8q1NlipjI/AAAAAAAAJ5o/ZrKi86sTDaMSg3QRB6mYLPgxc6F-Fp22QCLcBGAsYHQ/s320/unnamed.jpg" alt=""></a></p>
+<p>Wist je trouwens dat je de game ook kan spelen als je gewoon internet hebt? Als je in Chrome in de adressbalk <a href="chrome://dino">chrome://dino</a> intypt, zou je een bekend scherm moeten zien</p>
+<p>Dus, wat gaan we precies doen? Stap 1 is het openen van de game. Ik leg hierboven uit hoe, maar je kan natuurlijk ook de kabel uit de router trekken :)</p>
+<p>Als je de game hebt geopend, moet je ergens op de pagina rechts klikken en op &ldquo;Inspecteren&rdquo; klikken. Je kan ook de sneltoets CTRL + SHIFT + I gebruiken.Je zou nu rechts of onder een vak moeten zien verschijnen met allemaal informatie. Dit is de HTML DOM code (Document Object Model), maar dat hebben we allemaal niet nodig. We hebben de Javascript console nodig, dus klikken we bovenaan op &ldquo;Console&rdquo;. Je kan hier nu de volgende commando&rsquo;s typen:</p>
+<p>Runner.instance_.gameOver = () =&gt; {console.log(&ldquo;Ik ben een vampier, ik ben onsterfelijk!&rdquo;)}</p>
+<p>Runner.instance_.config.ACCELERATION = 100;</p>
+<p>De bovenstaande commando&rsquo;s doen het volgende:</p>
+<ol>
+<li>Het eerste command overschrijft de functie die wordt afgespeelt als de dino dood gaat, en maakt er een praktisch lege functie van. Hierdoor kan de dino niet meer dood gaan.</li>
+<li>Het 2e command stelt de snelheid van de dino in (of eigenlijk de versnelling). Ik heb hem hier op 100 gezet, maar ik denk dat je zo ver als het 32-bit integer limit kan (rond de 32K)</li>
+</ol>
+<p>Als het goed is vliegt de dino dus over het scherm en kan hij niet dood. Je wil nu nog wel je score kunnen opslaan. Dat doe je door dit command te typen: </p>
+<p>Runner.instance_.saveHighScore(Runner.instance_.distanceRan)</p>
+<p>Hierdoor wordt de afstand die je momenteel gelopen hebt als highscore opgeslagen. Nu vraag je je af: Robin, kan ik niet ook zoiets als Runner.instance_.saveHighScore(999999) doen?</p>
+<p>Jup, dat kan. &ldquo;En waarom heb je dat dan niet gewoon gedaan?&rdquo;. Omdat dit veel cooler is natuurlijk!</p>
+<p>Nou ja, ik hoop dat je het leuk vond om te lezen, en tot de volgende keer!</p>
+<p>- Robin</p>
+<p>PS: Ik ben jarig 🥳</p>
+ ]]></content:encoded></item><item><title>Minecraft PE hacken: Custom Capes</title><link>https://blog.geheimesite.nl/2020/06/minecraft-pe-hacken-custom-capes.html</link><pubDate>Sun, 21 Jun 2020 03:23:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/06/minecraft-pe-hacken-custom-capes.html</guid><description>Bij Minecon LIVE 2019 is als promotie van de nieuwe Character Creator een cape beschikbaar gesteld in de Minecraft PE marketplace. Dit is natuurlijk heel cool, maar wat nou als je je eigen cape wil?
+Minecraft laat normaal 4D skinpacks, en skinpacks met capes niet toe als je ze importeert. Maar het standaard skinpack in minecraft (die met steve en alex) zit geen controle op. Het eerste wat je moet doen is de oude skinkiezer terughalen.</description><content:encoded><![CDATA[ <p>Bij Minecon LIVE 2019 is als promotie van de nieuwe Character Creator een cape beschikbaar gesteld in de Minecraft PE marketplace. Dit is natuurlijk heel cool, maar wat nou als je je eigen cape wil?</p>
+<p><a href="https://1.bp.blogspot.com/-UsP72SthiDk/Xu802zKaAiI/AAAAAAAAHoI/iG1CTOBPTc8St9yfytV8g5HhkmbbIoCBACK4BGAsYHg/s560/body.png"><img src="https://1.bp.blogspot.com/-UsP72SthiDk/Xu802zKaAiI/AAAAAAAAHoI/iG1CTOBPTc8St9yfytV8g5HhkmbbIoCBACK4BGAsYHg/s320/body.png" alt=""></a></p>
+<p>Minecraft laat normaal 4D skinpacks, en skinpacks met capes niet toe als je ze importeert. Maar het standaard skinpack in minecraft (die met steve en alex) zit geen controle op. Het eerste wat je moet doen is de oude skinkiezer terughalen. Je kan er niet meer bij via de minecraft menu&rsquo;s, maar hij is nog aanwezig. Door <a href="https://mcpedl.com/skins-ui-changer/">dit rescourcepack</a> te downloaden en importeren, krijg je er een extra knopje bij, waarmee je de oude UI terugkrijgt.</p>
+<p>Nadat je de oude skin UI weer terug hebt, moet je <a href="https://mcpedl.com/custom-cape-skin-pack/">dit rescourcepack</a> downloaden (het zip bestand). Ga daarna naar deze map: </p>
+<p><em>C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_1.14.6005.0_x64__8wekyb3d8bbwe\data\skin_packs</em></p>
+<p>en klik op de map vanilla. </p>
+<p>Verwijder wat er in deze map staat, en vervang het met de bestanden uit het skinpack. Verwijder vervolgens de steve skin, en plak je eigen skin in het mapje. Verander daarna de naam van je skin naar <em>steve.png</em></p>
+<p>Je hebt zojuist de steve skin vervangen door je eigen skin, en als je minecraft herstart, en de oude skin UI opent, zou je daar je eigen skin moeten zien staan, waar normaal steve staat. Als je die skin selecteert, zou die als het goed is een groene cape moeten hebben. Als dit het geval is, heb je zojuist minecraft gehackt, en een custom cape geïmporteerd! Je kan nu het bestand <em>cape.png</em> bewerken zoals jij wilt.</p>
+<p>- Robin</p>
+<p><strong>PS</strong></p>
+<p>hier is een videotutorial: <a href="https://www.youtube.com/watch?v=9c4rlpj6_c0">https://www.youtube.com/watch?v=9c4rlpj6_c0</a></p>
+ ]]></content:encoded></item><item><title>Nieuw project: hacked</title><link>https://blog.geheimesite.nl/2020/02/nieuw-project-hacked.html</link><pubDate>Mon, 17 Feb 2020 08:38:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/nieuw-project-hacked.html</guid><description>Hallo, een kleine update vandaag. Hier is mijn niewst programma:
+https://www.youtube.com/watch?v=fjbV4eEZJqs
+Het is een simpel script, dat nieuwe vensters blijft openen, todat je ze sluit vanuit task manager. Tot de volgende keer, en blijf creatief!
+Robin</description><content:encoded><![CDATA[ <p>Hallo, een kleine update vandaag. Hier is mijn niewst programma:</p>
+<p><a href="https://www.youtube.com/watch?v=fjbV4eEZJqs">https://www.youtube.com/watch?v=fjbV4eEZJqs</a></p>
+<p>Het is een simpel script, dat nieuwe vensters blijft openen, todat je ze sluit vanuit task manager. </p>
+<p>Tot de volgende keer, en blijf creatief!</p>
+<p>Robin</p>
+ ]]></content:encoded></item></channel></rss>

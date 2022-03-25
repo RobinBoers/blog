@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>python on Webdevelopment-En-Meer</title><link>https://blog.geheimesite.nl/tags/python/</link><description>Read the latest python on Webdevelopment-En-Meer</description><generator>Hugo -- gohugo.io</generator><language>nl-nl</language><lastBuildDate>Tue, 26 Nov 2019 07:08:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Beginnen met Python</title><link>https://blog.geheimesite.nl/2019/11/beginnen-met-python.html</link><pubDate>Tue, 26 Nov 2019 07:08:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2019/11/beginnen-met-python.html</guid><description>Een tutorial over het installeren van Python, en het opzetten van een programmeeromgeving
+In mijn klas zitten een paar kinderen die willen leren hoe Python werkt. Daarom maak ik een tutorial over hoe je Python installeert, gebruikt, en activeert. Eerst vertel ik wat achtergrond informatie over Python.
+Python is een programmeer/scripttaal, gemaakt in de jaren 90 van de vorige eeuw.
+Het is ontworpen door Guido van Rossum. De taal is mede gebaseerd op inzichten van professor Lambert Meertens die een taal genaamd ABC had ontworpen, bedoeld als alternatief voor BASIC, maar dan met geavanceerde datastructuren.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-EfXyKY9MH9M/Xd0_8wyq0uI/AAAAAAAABxE/WMFlvfNyEpkzIBvR2FqoQsmckApbsXDXgCLcBGAsYHQ/s1600/python-logo%25402x.png"><img src="https://1.bp.blogspot.com/-EfXyKY9MH9M/Xd0_8wyq0uI/AAAAAAAABxE/WMFlvfNyEpkzIBvR2FqoQsmckApbsXDXgCLcBGAsYHQ/s320/python-logo%25402x.png" alt=""></a><br>
+<strong>Een tutorial over het installeren van Python, en het opzetten van een programmeeromgeving</strong><br>
+In mijn klas zitten een paar kinderen die willen leren hoe Python werkt. Daarom maak ik een tutorial over hoe je Python installeert, gebruikt, en activeert. Eerst vertel ik wat achtergrond informatie over Python.</p>
+<p>Python is een programmeer/scripttaal, gemaakt in de jaren 90 van de vorige eeuw.<br>
+Het is ontworpen door Guido van Rossum. De taal is mede gebaseerd op inzichten van professor Lambert Meertens die een taal genaamd ABC had ontworpen, bedoeld als alternatief voor BASIC, maar dan met geavanceerde datastructuren.</p>
+<p>De ontwikkeling van Python wordt momenteel geleid door Python Software Foundation<br>
+Python Software Foundation heeft een site waar je de software kunt downloaden, en waar de nodige documentatie staat. De site vind je hier:<br>
+<a href="https://www.python.org/">https://www.python.org/</a></p>
+<h2 id="maar-hoe-installeer-je-python-nou">Maar hoe installeer je Python nou?</h2>
+<p>Om Python te gebruiken heb je software nodig. Die kun je downloaden en installeren via de (zelfgemaakte) handleiding hieronder.</p>
+<p><em>Opmerking: Mijn laptop staat ingesteld op Engels, omdat ik dat fijner vind, en dan Cortana kan gebruiken. Het kan dus zijn, dat bij jou de menu&rsquo;s er anders uitzien dan hier beschreven staat.</em></p>
+<h2 id="1-download-de-software">1. Download de software</h2>
+<p>Ga naar <a href="http://www.python.org/">www.python.org</a> in je favoriete webbrowser. Klik op de knop <a href="https://www.python.org/downloads/">Downloads</a> in het menu.</p>
+<p><a href="https://1.bp.blogspot.com/-_-3ahkTxBCQ/Xd08gCyLjVI/AAAAAAAABwk/r01jjimAE9wtDrZGJO3_YmC1olzLlDDdgCEwYBhgL/s1600/screenshot1.png"><img src="https://1.bp.blogspot.com/-_-3ahkTxBCQ/Xd08gCyLjVI/AAAAAAAABwk/r01jjimAE9wtDrZGJO3_YmC1olzLlDDdgCEwYBhgL/s640/screenshot1.png" alt=""></a></p>
+<p>Je ziet een webpagina met de kop &ldquo;Download the latest version for Windows&rdquo;. Check eerste je besturingssysteem. Ben je op Windows 10, Windows 8.1/8.2 of Windows 7, dan zit je goed. Klik dan gewoon op de knop &ldquo;Download Python&rdquo;. Zit je op een mac, of linux PC? Klik dan op de hyperlinks eronder.</p>
+<p><a href="https://1.bp.blogspot.com/-D4PN0Zbot0k/Xd08gFYVphI/AAAAAAAABwo/DuBfb4xQDe8kWQPkoDzE8Sk69a-m4LT9wCEwYBhgL/s1600/scrrenshot2.png"><img src="https://1.bp.blogspot.com/-D4PN0Zbot0k/Xd08gFYVphI/AAAAAAAABwo/DuBfb4xQDe8kWQPkoDzE8Sk69a-m4LT9wCEwYBhgL/s640/scrrenshot2.png" alt=""></a></p>
+<h2 id="2-installeren">2. Installeren</h2>
+<p>Navigeer naar de Downloads map op je computer, en klik op het bestand dat je zojuist hebt gedownload.</p>
+<p><a href="https://1.bp.blogspot.com/-_KuJNmBWZg8/Xd0_lqs9xtI/AAAAAAAABw8/v5_r3iH3S4YPBFzpGVJ7tg9YrKkThbtMgCLcBGAsYHQ/s1600/screenshot3.png"><img src="https://1.bp.blogspot.com/-_KuJNmBWZg8/Xd0_lqs9xtI/AAAAAAAABw8/v5_r3iH3S4YPBFzpGVJ7tg9YrKkThbtMgCLcBGAsYHQ/s640/screenshot3.png" alt=""></a></p>
+<p>Klik op het bestand en open het. Als het goed is zou er zich nu een installatie programma moeten openen, dat er zo uitziet.</p>
+<p><a href="https://1.bp.blogspot.com/-fNsNkAtbbkU/Xd0_Llv2X1I/AAAAAAAABw0/Y_2ML2jY0-0z9ExdC779kwxA5O8dtk7iQCLcBGAsYHQ/s1600/screenshot4.png"><img src="https://1.bp.blogspot.com/-fNsNkAtbbkU/Xd0_Llv2X1I/AAAAAAAABw0/Y_2ML2jY0-0z9ExdC779kwxA5O8dtk7iQCLcBGAsYHQ/s640/screenshot4.png" alt=""></a></p>
+<p>Klik op &ldquo;Install Now&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-6e31yrv_fas/Xd0_ySmv8XI/AAAAAAAABxA/6E0nHLHgYrM6L8okkxZ94yr5Nim6r8dyACLcBGAsYHQ/s1600/screenshot4.png"><img src="https://1.bp.blogspot.com/-6e31yrv_fas/Xd0_ySmv8XI/AAAAAAAABxA/6E0nHLHgYrM6L8okkxZ94yr5Nim6r8dyACLcBGAsYHQ/s640/screenshot4.png" alt=""></a></p>
+<p>Dit is een <a href="https://www.reviversoft.com/nl/file-extensions/exe">.exe</a> bestand. Dit betekent dat net een uitvoerbaar programma is. Waarschijnlijk zal Windows je een beveiligings melding geven. Voer dan je Administrator wachtwoord in, en klik op OK. Als het goed is zou het installatieproces nu moeten starten.</p>
+<p><a href="https://1.bp.blogspot.com/-YPSUOSNFj_A/Xd1AsOhc54I/AAAAAAAABxU/ODhJETPMwM8u4DO-fI98mpzE-zkjzdtSgCLcBGAsYHQ/s1600/scrrenshot5.png"><img src="https://1.bp.blogspot.com/-YPSUOSNFj_A/Xd1AsOhc54I/AAAAAAAABxU/ODhJETPMwM8u4DO-fI98mpzE-zkjzdtSgCLcBGAsYHQ/s640/scrrenshot5.png" alt=""></a></p>
+<p>Als de installatie voltooit is, klik je op &ldquo;Close&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-3Xgl5mM0VYY/Xd1BJbwf6dI/AAAAAAAABxc/DGSJglPecpUjtwQ6Imf66AtkGSk8kQ2owCLcBGAsYHQ/s1600/screenshot6.png"><img src="https://1.bp.blogspot.com/-3Xgl5mM0VYY/Xd1BJbwf6dI/AAAAAAAABxc/DGSJglPecpUjtwQ6Imf66AtkGSk8kQ2owCLcBGAsYHQ/s640/screenshot6.png" alt=""></a></p>
+<h2 id="3-je-programmeeromgeving-opzetten">3. Je programmeeromgeving opzetten</h2>
+<p>Je hebt nu de benodigde software, en zou aan de slag kunnen gaan. Maar de IDE (Integrated Development Environment) die in de Python software zit ingebouwd is niet heel fijn om mee te werken. Daarom heb ik een aparte code-editor, waarin ik ook met andere talen zoals HTML, CSS, PHP, JavaScript, en C++ kan werken. De code-editor die ik gebruik, heet Brackets. Zie daarover meer in mijn <a href="https://blog.geheimesite.nl/2019/07/beste-code-editor-brackets.html">blogpost over Brackets</a>. Hier onder zie je een klein overzicht over hoe je Brackets installeert.</p>
+<h3 id="31-download-brackets">3.1 Download Brackets</h3>
+<p>Ga naar <a href="https://www.brackets.io">www.brackets.io</a> in je webbrowser, en klik op &ldquo;Download Brackets&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s1600/screenshot%2B3.1.png"><img src="https://1.bp.blogspot.com/-VQdMgXr-nJk/Xd1D-iJNDyI/AAAAAAAABxs/ixcRVXlxSYo3wdxY2MSH-BOHY10dOAqQgCLcBGAsYHQ/s640/screenshot%2B3.1.png" alt=""></a></p>
+<p>Open het installatiebestand op dezelfde manier, zoals je ook het installatiebestand van de Python software hebt geopend, en klik op &ldquo;Next&rdquo;, en dan op &ldquo;Install&rdquo;. Als de installatie voltooit is, klik je op &ldquo;Finish&rdquo;</p>
+<h3 id="32-maak-je-klaar-voor-lancering">3.2 Maak je klaar voor lancering</h3>
+<p>Nu je Brackets hebt gedownload, kun je het openen vanuit je startmenu. Klik op je startmenu. (Dat windows icoontje, linksonder op het scherm). Open Brackets. Als je het voor de eerste keer opent zie je dit:</p>
+<p><a href="https://1.bp.blogspot.com/-DfyHyDA02Qw/Xd1GPMnAQSI/AAAAAAAABx8/2SCubHwaggIEwubsC4IahhnR7HKvXCFbQCLcBGAsYHQ/s1600/brackets.png"><img src="https://1.bp.blogspot.com/-DfyHyDA02Qw/Xd1GPMnAQSI/AAAAAAAABx8/2SCubHwaggIEwubsC4IahhnR7HKvXCFbQCLcBGAsYHQ/s640/brackets.png" alt=""></a></p>
+<p>Er moeten nu een paar dingen gebeuren. Maak eerst de tekst wat groter, anders zie je helemaal niks, omdat het zo klein is. Hiervoor gebruik je de toetscombinatie CTRL en +.</p>
+<p>Maak nu een map aan, op je bureaublad, en noem het geef het een leuke naam. (Dit wordt je projectmap, waarin je python programma dat jij gaat coderen komt te staan)</p>
+<p>Ga terug naar Brackets, en klik op het pijltje naast &ldquo;Getting Started&rdquo;. Er komt een dropdownmenu tevoorschijn. Klik op &ldquo;Open folder&rdquo;.</p>
+<p><a href="https://1.bp.blogspot.com/-MOjptWMZEVQ/Xd1Ik_GJUzI/AAAAAAAAByI/U9x9unOw7lkaXzwgzLjamFyRF-IzBM3ewCLcBGAsYHQ/s1600/brackets2.PNG"><img src="https://1.bp.blogspot.com/-MOjptWMZEVQ/Xd1Ik_GJUzI/AAAAAAAAByI/U9x9unOw7lkaXzwgzLjamFyRF-IzBM3ewCLcBGAsYHQ/s640/brackets2.PNG" alt=""></a></p>
+<p>Navigeer naar je projectmap (De map die je net hebt aangemaakt) en klik op &ldquo;Select folder&rdquo;.</p>
+<p><a href="https://1.bp.blogspot.com/-f0OlJYKsxtw/Xd1I3UQjKAI/AAAAAAAAByQ/VGGx4dSDOMMiXTWs719DxFrWlWfM-vunQCLcBGAsYHQ/s1600/brackets3.png"><img src="https://1.bp.blogspot.com/-f0OlJYKsxtw/Xd1I3UQjKAI/AAAAAAAAByQ/VGGx4dSDOMMiXTWs719DxFrWlWfM-vunQCLcBGAsYHQ/s640/brackets3.png" alt=""></a></p>
+<p>Nu je je projectmap hebt geopend, kun je beginnen met het coderen van je Python programma.<br>
+Je moet hiervoor nu nog 1 ding doen, en dat is bestandsnaam-extensies aanzetten. Dit doe je door in de Windows Verkenner op &ldquo;View&rdquo; (&ldquo;Beeld&rdquo; op een in het Nederlands ingestelde PC), en klik je op &ldquo;Filename extensions&rdquo; (&ldquo;Bestandsnaam extensies&rdquo; op een in het Nederlands ingestelde PC).</p>
+<p><a href="https://1.bp.blogspot.com/-MTbba20crAI/Xd1MiSYGE3I/AAAAAAAAByc/RhnwYHx5TIYdgFs5QFIaAmv-Uj6jZ8LhACLcBGAsYHQ/s1600/we.png"><img src="https://1.bp.blogspot.com/-MTbba20crAI/Xd1MiSYGE3I/AAAAAAAAByc/RhnwYHx5TIYdgFs5QFIaAmv-Uj6jZ8LhACLcBGAsYHQ/s640/we.png" alt=""></a></p>
+<p>Maak nu je programma aan. Hiervoor klik je op het dropdownmenu &ldquo;File&rdquo; (Waarschijnlijk &ldquo;Bestand&rdquo; op een in het Nederlands ingestelde PC) en klik op &ldquo;New&rdquo; (Waarschijnlijk &ldquo;Nieuw&rdquo; op een in het Nederlands ingestelde PC).</p>
+<p>Typ nu:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>)  
+</span></span></code></pre></div><p>Of laat de Fibonacci Reeks zien met:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Python 3: Fibonacci series up to n  </span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fib</span>(n):  
+</span></span><span style="display:flex;"><span>     a, b <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>  
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">while</span> a <span style="color:#f92672">&lt;</span> n:  
+</span></span><span style="display:flex;"><span>         print(a, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)  
+</span></span><span style="display:flex;"><span>         a, b <span style="color:#f92672">=</span> b, a<span style="color:#f92672">+</span>b  
+</span></span><span style="display:flex;"><span>     print()  
+</span></span><span style="display:flex;"><span> fib(<span style="color:#ae81ff">1000</span>)  
+</span></span></code></pre></div><p>Sla het bestand op met <em>CTRL+S</em>. Geef het een naam, maar zorg ervoor, dat je eindigd met .py (dit staat voor Python, nu weet de computer dat het een Python programma is)</p>
+<h2 id="4-maar-hoe-bekijk-ik-mijn-programma-nou">4. Maar hoe bekijk ik mijn programma nou?</h2>
+<p>Je wilt het programma nu wel kunnen aanzetten, maar hoe moet dat zonder de Python IDE?<br>
+Daarvoor open je Windows Verkenner, en navigeer je naar je projectmap, en klik op de adresbalk (zie plaatje) en typ &ldquo;cmd&rdquo;</p>
+<p><a href="https://1.bp.blogspot.com/-tmQ9y5U5mRw/Xd1OlcFHCgI/AAAAAAAAByo/Kp_Ds3xBNmAiwwc_a6FkRr6NLOdctqYggCLcBGAsYHQ/s1600/balk1.png"><img src="https://1.bp.blogspot.com/-tmQ9y5U5mRw/Xd1OlcFHCgI/AAAAAAAAByo/Kp_Ds3xBNmAiwwc_a6FkRr6NLOdctqYggCLcBGAsYHQ/s640/balk1.png" alt=""></a></p>
+<p><a href="https://1.bp.blogspot.com/-V2i19SahPk8/Xd1Oldzl0jI/AAAAAAAABys/buaXtwxNSGUToyh2Wty3S9Sey3q8FOLFgCLcBGAsYHQ/s1600/balk2.png"><img src="https://1.bp.blogspot.com/-V2i19SahPk8/Xd1Oldzl0jI/AAAAAAAABys/buaXtwxNSGUToyh2Wty3S9Sey3q8FOLFgCLcBGAsYHQ/s640/balk2.png" alt=""></a></p>
+<p>Er wordt nu een zwart ding geopend. Waarschijnlijk heb je het weleens gezien, het heet het command prompt. Je kunt er commando&rsquo;s in invoeren. Je kunt daarmee je computer kapot maken, maar wat wij ermee gaan doen, is gewoon veilig.</p>
+<p><a href="https://1.bp.blogspot.com/-1T2i4uyvU1Q/Xd1PZmgG_0I/AAAAAAAABy8/ZHHPs8q3rE8vu9smm5D3oLAa1T0uBVH7ACLcBGAsYHQ/s1600/cdm1.png"><img src="https://1.bp.blogspot.com/-1T2i4uyvU1Q/Xd1PZmgG_0I/AAAAAAAABy8/ZHHPs8q3rE8vu9smm5D3oLAa1T0uBVH7ACLcBGAsYHQ/s640/cdm1.png" alt=""></a></p>
+<h3 id="42">4.2</h3>
+<p>Typ in: <code>py _bestandnaam_.py</code><br>
+Vervang <em>bestandnaam</em> door de naam van jouw programma dat je net hebt gemaakt.</p>
+<p>Als alles werk, zou je nu de Fabonacci Reeks, of Hello World moeten zien.</p>
+<p><a href="https://1.bp.blogspot.com/-YwF2-ZY2jAs/Xd1T48ZFWaI/AAAAAAAABzQ/D-Xr65dHBww-vrm0LLg1sY1s5qYl97HFgCLcBGAsYHQ/s1600/cdm3.png"><img src="https://1.bp.blogspot.com/-YwF2-ZY2jAs/Xd1T48ZFWaI/AAAAAAAABzQ/D-Xr65dHBww-vrm0LLg1sY1s5qYl97HFgCLcBGAsYHQ/s640/cdm3.png" alt=""></a></p>
+<h3 id="43">4.3</h3>
+<p>Wil je je programma aanpassen? Herschrijf, of pas de code in Brackets aan, en voer opnieuw stap 4.2 uit!</p>
+<p>Dit was mijn tutorial over het installeren en activeren van Python. Wil je meer weten? Stel je vragen dan in de comments.</p>
+<p>Veel codeer plezier,<br>
+Robin</p>
+<h2 id="bronnen">Bronnen</h2>
+<ul>
+<li><a href="https://www.python.org/">https://www.python.org/</a></li>
+<li><a href="https://nl.wikipedia.org/wiki/Python_(programmeertaal)">https://nl.wikipedia.org/wiki/Python_(programmeertaal)</a></li>
+<li><a href="https://www.w3schools.com/python/python_intro.asp">https://www.w3schools.com/python/python_intro.asp</a></li>
+</ul>
+ ]]></content:encoded></item></channel></rss>
