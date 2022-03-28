@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>rpi on Webdevelopment-En-Meer</title><link>https://blog.geheimesite.nl/tags/rpi/</link><description>Read the latest rpi on Webdevelopment-En-Meer</description><generator>Hugo -- gohugo.io</generator><language>nl-nl</language><lastBuildDate>Sun, 09 May 2021 05:51:00 -0700</lastBuildDate><atom:link href="https://blog.geheimesite.nl/tags/rpi/index.xml" rel="self" type="application/rss+xml"/><item><title>Mogelijke besturingssystemen voor mijn DIY telefoon</title><link>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</link><pubDate>Sun, 09 May 2021 05:51:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</guid><description>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&amp;rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten. Een mobile shell is de interface waarin je apps draaien (homescherm, launcher, notificatiecentrum, lockscreen)
-Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![CDATA[ <p>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten. </p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>rpi on Webdevelopment-En-Meer</title><link>https://blog.geheimesite.nl/tags/rpi/</link><description>Read the latest rpi on Webdevelopment-En-Meer</description><generator>Hugo -- gohugo.io</generator><language>nl-nl</language><lastBuildDate>Sun, 09 May 2021 05:51:00 -0700</lastBuildDate><atom:link href="https://blog.geheimesite.nl/tags/rpi/index.xml" rel="self" type="application/rss+xml"/><item><title>Mogelijke besturingssystemen voor mijn DIY telefoon</title><link>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</link><pubDate>Sun, 09 May 2021 05:51:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</guid><description>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&amp;rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten.
+Een mobile shell is de interface waarin je apps draaien (homescherm, launcher, notificatiecentrum, lockscreen)
+Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![CDATA[ <p>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten.</p>
 <p>Een mobile shell is de interface waarin je apps draaien (homescherm, launcher, notificatiecentrum, lockscreen)</p>
 <p>Dit zijn tot nu toe de meest belovende opties:</p>
 <h3 id="ubuntu-touch--lomiri">Ubuntu Touch / Lomiri</h3>
@@ -11,8 +12,7 @@ Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![
 <p>Plasma Mobile heeft goede intergratie met de KDE Plasma desktop (mijn Desktop Environment) via KDE Connect. Plasma Mobile is nog onder ontwikkeling, en nog niet echt productie-ready.</p>
 <p><img src="https://1.bp.blogspot.com/-CUTohcLYffQ/YJfaWdfA9JI/AAAAAAAAKyo/QGhG06jX6AUGMwgZqU2Fu7RpjGDi-WkBgCLcBGAsYHQ/w640-h416/2021-05-09-144907_691x449_scrot.png" alt=""></p>
 <p>KDE Plasma Shell en apps (<a href="https://www.plasma-mobile.org/screenshots">https://www.plasma-mobile.org/screenshots</a>)</p>
-<h3 id="heading"></h3>
-<p>Phosh</p>
+<h3 id="phosh">Phosh</h3>
 <p>Dit is een open-source Wayland shell voor Gnome. Phosh is wat <a href="https://puri.sm/">Purism</a> gebruikt in hun PureOS voor de Liberem 5. Je kan Phosh ook installeren in pmOS. Phosh is nog wel in ontwikkeling, dus kan wat instabiel zijn.</p>
 <p>Phosh gebruikt libhandy om desktop apps goed te laten werken op een telefoonscherm.</p>
 <p>Aangezien Phosh op GNOME gebaseerd is kan het wel laggen. Zo ver ik kon vinden is het nog niet mogelijk om Phosh op een Raspberry Pi te krijgen.</p>
@@ -26,8 +26,8 @@ Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![
 <p>Voor nu ziet postmarketOS er het meest belovend uit omdat het veel verschillende shells ondersteunt.</p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Ik wil zelf een telefoon maken</title><link>https://blog.geheimesite.nl/2021/01/ik-wil-zelf-een-telefoon-maken.html</link><pubDate>Sat, 23 Jan 2021 02:32:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/ik-wil-zelf-een-telefoon-maken.html</guid><description>Misschien een beetje raar, maar ik heb besloten dat ik zelf een telefoon wil maken. Ik wil een telefoon waar ik alles mee kan doen, en die ik daar niet voor hoef te rooten of jailbreaken. Ik wil een telefoon die makkelijk uit te breiden is. Ik wil een telefoon die makkelijk te upgraden is. En dus ga ik zelf een smartphone maken.
- Ik heb de volgende voorwaarden voor de telefoon:</description><content:encoded><![CDATA[ <p>Misschien een beetje raar, maar ik heb besloten dat ik zelf een telefoon wil maken. Ik wil een telefoon waar ik alles mee kan doen, en die ik daar niet voor hoef te rooten of jailbreaken. Ik wil een telefoon die makkelijk uit te breiden is. Ik wil een telefoon die makkelijk te upgraden is. En dus ga ik zelf een smartphone maken.</p>
-<p> Ik heb de volgende voorwaarden voor de telefoon:</p>
+Ik heb de volgende voorwaarden voor de telefoon:</description><content:encoded><![CDATA[ <p>Misschien een beetje raar, maar ik heb besloten dat ik zelf een telefoon wil maken. Ik wil een telefoon waar ik alles mee kan doen, en die ik daar niet voor hoef te rooten of jailbreaken. Ik wil een telefoon die makkelijk uit te breiden is. Ik wil een telefoon die makkelijk te upgraden is. En dus ga ik zelf een smartphone maken.</p>
+<p>Ik heb de volgende voorwaarden voor de telefoon:</p>
 <ul>
 <li>
 <p><strong>Hardware</strong></p>
@@ -36,7 +36,7 @@ Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![
 <p>Off the Shelf parts: Ik wil onderdelen gebruiken die gewoon zo in de winkel te verkrijgen zijn. Geen solderen en custom PCB&rsquo;s</p>
 </li>
 <li>
-<p>Moet verschillende SBC&rsquo;s (single board computers) ondersteunen.  </p>
+<p>Moet verschillende SBC&rsquo;s (single board computers) ondersteunen.</p>
 </li>
 <li>
 <p>Moet een goed touchscreen of andere makkelijke manier van input hebben</p>
@@ -54,7 +54,7 @@ Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![
 <p>Open Source besturingssysteem: draait geen Android of een fork daarvan. Draait een linux distro zoals Ubuntu Touch, Sailfish OS of KDE Plasma mobile. Misschien maak ik wel mijn eigen linux distro voor dit project.</p>
 </li>
 <li>
-<p> Er moeten apps zoals Spotify, Firefox en Signal beschikbaar zijn.</p>
+<p>Er moeten apps zoals Spotify, Firefox en Signal beschikbaar zijn.</p>
 </li>
 <li>
 <p><strong>Connectiviteit</strong></p>
@@ -73,14 +73,14 @@ Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![
 </li>
 </ul>
 <p>Stappen om dit project realiteit te maken:</p>
-<ul>
+<ol>
 <li>Maak een simpele telefoon met batterij, scherm en wifi</li>
 <li>Voeg de GSM module toe</li>
 <li>Maak een behuizing</li>
-</ul>
+</ol>
 <p>Verder hoop ik de totaalprijs onder de €200 te houden. Hij wordt waarschijnlijk niet sneller dan een iPhone 6s, dus hij moet ook niet duurder zijn.</p>
-<p>Dus, ik hoop dat ik zoiets voor elkaar kan krijgen. Nu nog sparen **:) **</p>
-<p>** -Robin**</p>
+<p>Dus, ik hoop dat ik zoiets voor elkaar kan krijgen. Nu nog sparen <strong>:)</strong></p>
+<p><strong>-Robin</strong></p>
  ]]></content:encoded></item><item><title>De Frambo - DIY Raspberry Pi spelcomputer.</title><link>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</link><pubDate>Thu, 13 Aug 2020 11:43:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2020/08/de-frambo-diy-raspberry-pi-spelcomputer.html</guid><description>Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.
 Maar hoe heb ik hem gebouwd?</description><content:encoded><![CDATA[ <p>Ik heb vorig jaar (2019) voor kerst een Raspberry Pi gekregen. Nu (een half jaar later) heb ik hem eindelijk gebruikt. En wel in een heel cool project: een retrogaming spelcomputer! Hij heet de Frambo (van frambozentaart, vertaling van Raspberry Pi), en hij draait RetroPie, een opensource programma wat Emulation Station en RetroArch combineert, zodat je N64, SNES, NES, GameCube, GameBoy Color en nog veel meer kan spelen.</p>
 <p><a href="https://1.bp.blogspot.com/-0ICW-dRPf9U/XzWHR20bleI/AAAAAAAAIQA/fJFBHZsx-DgMz5ExeC5oxX741qQVUvoJgCLcBGAsYHQ/s2048/284A3823-C070-4D52-922F-08FD8AF2B7E8.jpeg"><img src="https://1.bp.blogspot.com/-0ICW-dRPf9U/XzWHR20bleI/AAAAAAAAIQA/fJFBHZsx-DgMz5ExeC5oxX741qQVUvoJgCLcBGAsYHQ/w328-h184/284A3823-C070-4D52-922F-08FD8AF2B7E8.jpeg" alt=""></a></p>
