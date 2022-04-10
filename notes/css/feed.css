@@ -90,3 +90,11 @@ pre {
 .max-w-\[52rem\] {
     max-width: 53rem;
 }
+.text-black {
+    color: rgb(13 43 69);
+}
+@media (prefers-color-scheme: dark){
+    .dark\:text-white {
+        color: rgb(255 236 214);
+    }
+}
