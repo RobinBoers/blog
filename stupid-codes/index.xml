@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Stupid Codes</title><link>https://blog.geheimesite.nl/stupid-codes/</link><description>Read the latest on Stupid Codes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 03:56:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/stupid-codes/index.xml" rel="self" type="application/rss+xml"/><item><title>Enable open in terminal option for elementaryOS file manager</title><link>https://blog.geheimesite.nl/stupid-codes/2022/02/open-in-terminal.html</link><pubDate>Mon, 28 Feb 2022 03:56:00 -0800</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2022/02/open-in-terminal.html</guid><description>This is how to add an &amp;ldquo;Open terminal here&amp;rdquo; entry to the eOS file manager.
+Create /usr/share/contractors/openinterminal.contract with these contents:
+[Contractor Entry] Name=Open terminal here Icon=terminal Description=Open terminal here MimeType=inode;application/x-sh;application/x-executable; Exec=io.elementary.terminal -w %U Gettext-Domain=io.elementary.terminal Restart the terminal, and voilla!</description><content:encoded><![CDATA[ <p>This is how to add an &ldquo;Open terminal here&rdquo; entry to the eOS file manager.</p>
+<p>Create <code>/usr/share/contractors/openinterminal.contract</code> with these contents:</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">[Contractor Entry]  
+Name=Open terminal here  
+Icon=terminal  
+Description=Open terminal here  
+MimeType=inode;application/x-sh;application/x-executable;  
+Exec=io.elementary.terminal -w %U  
+Gettext-Domain=io.elementary.terminal  
+</code></pre><p>Restart the terminal, and voilla!</p>
+ ]]></content:encoded></item><item><title>Display Blogger feed on HTML site using RSS</title><link>https://blog.geheimesite.nl/stupid-codes/2022/02/display-blogger-feed-on-html-site-using.html</link><pubDate>Sun, 13 Feb 2022 10:48:00 -0800</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2022/02/display-blogger-feed-on-html-site-using.html</guid><description>This is how to parse and display a blogger feed on your website. Replace the URL of the API-call in the last script tag to change the RSS feed the script pulls. Update the months array to change the language for the date to English.
+&amp;lt;script&amp;gt; let postTitle = new Array(); let postContent = new Array(); let postUrl = new Array(); let postDate = new Array(); let months = [&amp;amp;quot;januari&amp;amp;quot;, &amp;amp;quot;februari&amp;amp;quot;, &amp;amp;quot;maart&amp;amp;quot;, &amp;amp;quot;april&amp;amp;quot;, &amp;amp;quot;mei&amp;amp;quot;, &amp;amp;quot;juni&amp;amp;quot;, &amp;amp;quot;juli&amp;amp;quot;, &amp;amp;quot;augustus&amp;amp;quot;, &amp;amp;quot;september&amp;amp;quot;, &amp;amp;quot;oktober&amp;amp;quot;, &amp;amp;quot;november&amp;amp;quot;, &amp;amp;quot;december&amp;amp;quot;]; let feedSize = 0; function callback(apiData) { function load() { if (&amp;amp;quot;entry&amp;amp;quot; in apiData.</description><content:encoded><![CDATA[ <p>This is how to parse and display a blogger feed on your website. Replace the URL of the API-call in the last script tag to change the RSS feed the script pulls. Update the <code>months</code> array to change the language for the date to English.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postTitle</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Array();  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postContent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Array();  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postUrl</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Array();  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postDate</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Array();  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">months</span> <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">januari</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">februari</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">maart</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">april</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">mei</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">juni</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">juli</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">augustus</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">september</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">oktober</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">november</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">december</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;];  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">feedSize</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">callback</span>(<span style="color:#a6e22e">apiData</span>) {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">load</span>() {  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">entry</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>; <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">apiData</span>.<span style="color:#a6e22e">feed</span>) {  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">feedSize</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">apiData</span>.<span style="color:#a6e22e">feed</span>.<span style="color:#a6e22e">entry</span>.<span style="color:#a6e22e">length</span>;  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">lt</span>; <span style="color:#a6e22e">feedSize</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {  
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">post</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">apiData</span>.<span style="color:#a6e22e">feed</span>.<span style="color:#a6e22e">entry</span>[<span style="color:#a6e22e">i</span>];  
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">post</span>)  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">published</span>.<span style="color:#a6e22e">$t</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">f</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">f</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">lt</span>; <span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">link</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">f</span><span style="color:#f92672">++</span>) {  
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">link</span>[<span style="color:#a6e22e">f</span>].<span style="color:#a6e22e">rel</span> <span style="color:#f92672">==</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;<span style="color:#a6e22e">alternate</span><span style="color:#f92672">&amp;</span><span style="color:#a6e22e">quot</span>;) {  
+</span></span><span style="display:flex;"><span>                        <span style="color:#a6e22e">postUrl</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">link</span>[<span style="color:#a6e22e">f</span>].<span style="color:#a6e22e">href</span>);  
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">break</span>  
+</span></span><span style="display:flex;"><span>                    }  
+</span></span><span style="display:flex;"><span>                }  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postDateDay</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">published</span>.<span style="color:#a6e22e">$t</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>);  
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postDateMonth</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">months</span>[parseInt(<span style="color:#a6e22e">p</span>, <span style="color:#ae81ff">10</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>];  
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postDateYear</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">published</span>.<span style="color:#a6e22e">$t</span>.<span style="color:#a6e22e">substring</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">postDate</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postDateDay</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postDateMonth</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postDateYear</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">postTitle</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">title</span>.<span style="color:#a6e22e">$t</span>);  
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">postContent</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">content</span>.<span style="color:#a6e22e">$t</span>);  
+</span></span><span style="display:flex;"><span>            }  
+</span></span><span style="display:flex;"><span>        }  
+</span></span><span style="display:flex;"><span>    }  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">display</span>() {  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">postCount</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">postTitle</span>.<span style="color:#a6e22e">length</span>;  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">currentPost</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">currentPost</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">lt</span>; <span style="color:#a6e22e">postCount</span>) {          
+</span></span><span style="display:flex;"><span>            document.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">`  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &amp;lt;article class=&amp;quot;post mt-10&amp;quot;&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    &amp;lt;div class=&amp;quot;text-center my-7 max-w-xl mx-auto&amp;quot;&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                        &amp;lt;h1 id=&amp;quot;post-</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">currentPost</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;quot; class=&amp;quot;mb-0 text-4xl&amp;quot;&amp;gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postTitle</span>[<span style="color:#a6e22e">currentPost</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;lt;/h1&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                        &amp;lt;p class=&amp;quot;my-5 bold&amp;quot;&amp;gt;</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postDate</span>[<span style="color:#a6e22e">currentPost</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;lt;/p&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    &amp;lt;/div&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    &amp;lt;section&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                        </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">postContent</span>[<span style="color:#a6e22e">currentPost</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                    &amp;lt;/section&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &amp;lt;/article&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                &amp;lt;hr class=&amp;quot;my-7 border-none&amp;quot;&amp;gt;  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            `</span>);  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">currentPost</span><span style="color:#f92672">++</span>  
+</span></span><span style="display:flex;"><span>        }  
+</span></span><span style="display:flex;"><span>    }  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">load</span>();  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">display</span>();  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;  
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://webdevelopment-en-meer.blogspot.com/feeds/posts/default?max-results=10&amp;start-index=1&amp;alt=json-in-script&amp;callback=callback&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;  
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Minecraft Void World on 1.18.1 server</title><link>https://blog.geheimesite.nl/stupid-codes/2022/01/minecraft-void-world-on-1181-server.html</link><pubDate>Fri, 21 Jan 2022 07:21:00 -0800</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2022/01/minecraft-void-world-on-1181-server.html</guid><description>Edit your server.properties and change generator-settings to this:
+generator-settings={&amp;#34;biome&amp;#34;\:&amp;#34;minecraft\:jungle&amp;#34;,&amp;#34;lakes&amp;#34;\:false,&amp;#34;features&amp;#34;\:false,&amp;#34;layers&amp;#34;\:[{&amp;#34;block&amp;#34;\:&amp;#34;minecraft\:air&amp;#34;,&amp;#34;height&amp;#34;\:1}],&amp;#34;structures&amp;#34;\:{&amp;#34;structures&amp;#34;\:{}}} And change level-type to FLAT</description><content:encoded><![CDATA[ <p>Edit your <code>server.properties</code> and change <code>generator-settings</code> to this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">generator-settings=</span>{<span style="color:#f92672">&#34;biome&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:<span style="color:#e6db74">&#34;minecraft\:jungle&#34;</span>,<span style="color:#f92672">&#34;lakes&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:<span style="color:#66d9ef">false</span>,<span style="color:#f92672">&#34;features&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:<span style="color:#66d9ef">false</span>,<span style="color:#f92672">&#34;layers&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:[{<span style="color:#f92672">&#34;block&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:<span style="color:#e6db74">&#34;minecraft\:air&#34;</span>,<span style="color:#f92672">&#34;height&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:<span style="color:#ae81ff">1</span>}],<span style="color:#f92672">&#34;structures&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:{<span style="color:#f92672">&#34;structures&#34;</span><span style="color:#960050;background-color:#1e0010">\</span>:{}}}
+</span></span></code></pre></div><p>And change <code>level-type</code> to <code>FLAT</code></p>
+ ]]></content:encoded></item><item><title>Notes-Up "GitHub" theme</title><link>https://blog.geheimesite.nl/stupid-codes/2022/01/notes-up-github-theme.html</link><pubDate>Wed, 05 Jan 2022 02:04:00 -0800</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2022/01/notes-up-github-theme.html</guid><description>This is a simple theme to make Notes-Up look like GitHub markdown. Adaptation of sindresorhus/github-markdown-css for Notes-Up.
+Installation Open Preferences Click viewer Download the CSS below and enter in &amp;ldquo;Global style modifications&amp;rdquo; Click close Enjoy the new look! Theme Download the theme
+License View license</description><content:encoded><![CDATA[ <p>This is a simple theme to make Notes-Up look like GitHub markdown. Adaptation of <a href="https://github.com/sindresorhus/github-markdown-css">sindresorhus/github-markdown-css</a> for Notes-Up.</p>
+<h2 id="installation">Installation</h2>
+<ul>
+<li>Open Preferences</li>
+<li>Click viewer</li>
+<li>Download the CSS below and enter in &ldquo;Global style modifications&rdquo;</li>
+<li>Click close</li>
+<li>Enjoy the new look!</li>
+</ul>
+<h2 id="theme">Theme</h2>
+<p><a href="https://gist.github.com/RobinBoers/4276744bb2c774619efc1ae4c34c6964#theme">Download the theme</a></p>
+<h2 id="license">License</h2>
+<p><a href="https://gist.github.com/RobinBoers/4276744bb2c774619efc1ae4c34c6964#license">View license</a></p>
+ ]]></content:encoded></item><item><title>Fill remaining height CSS</title><link>https://blog.geheimesite.nl/stupid-codes/2021/10/fill-remaining-height-css.html</link><pubDate>Sun, 24 Oct 2021 11:02:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/10/fill-remaining-height-css.html</guid><description>.parent { height: 100%; display: flex; flex-direction: column; } .child { flex-grow: 1; }</description><content:encoded><![CDATA[ <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">parent</span> {  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">column</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">child</span> {  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">flex-grow</span>: <span style="color:#ae81ff">1</span>;  
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Prevent dunst from autostarting using DBus</title><link>https://blog.geheimesite.nl/stupid-codes/2021/09/prevent-dunst-from-autostarting-using.html</link><pubDate>Fri, 03 Sep 2021 12:12:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/09/prevent-dunst-from-autostarting-using.html</guid><description>By default, dunst is autostarted by DBus. This can be turned off by editing /usr/share/dbus-1/services/org.knopwob.dunst.service and changing
+Exec=/usr/bin/dunst To:
+Exec=/usr/bin/true Source:
+https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</description><content:encoded><![CDATA[ <p>By default, dunst is autostarted by DBus. This can be turned off by editing <code>/usr/share/dbus-1/services/org.knopwob.dunst.service</code> and changing</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">Exec=/usr/bin/dunst
+</code></pre><p>To:</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">Exec=/usr/bin/true
+</code></pre><p>Source:<br>
+<a href="https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html">https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</a></p>
+ ]]></content:encoded></item><item><title>Alias for diff-so-fancy</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/alias-for-diff-so-fancy.html</link><pubDate>Fri, 27 Aug 2021 04:59:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/alias-for-diff-so-fancy.html</guid><description>diff-so-fancy is a tool to create cooler looking git diffs. To alias git dsf, enter these commands:
+git config --global alias.dsf &amp;#34;diff --color&amp;#34; git config --global pager.dsf &amp;#34;diff-so-fancy | less --tabs=4 -RFXS&amp;#34;</description><content:encoded><![CDATA[ <p><code>diff-so-fancy</code> is a tool to create cooler looking <code>git diff</code>s. To alias <code>git dsf</code>, enter these commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global alias.dsf <span style="color:#e6db74">&#34;diff --color&#34;</span>  
+</span></span><span style="display:flex;"><span>git config --global pager.dsf <span style="color:#e6db74">&#34;diff-so-fancy | less --tabs=4 -RFXS&#34;</span>
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>How to disable default VSCode themes</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/how-to-disable-default-vscode-themes.html</link><pubDate>Mon, 16 Aug 2021 06:01:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/how-to-disable-default-vscode-themes.html</guid><description>To disable the default VSCode themes like Kimbie Dark, Red, Solarized etc, open the extensions tab (CTRL+Shift+X) and type @builtin. Then under Themes, click the ones you want to disable.</description><content:encoded><![CDATA[ <p>To disable the default VSCode themes like Kimbie Dark, Red, Solarized etc, open the extensions tab (<code>CTRL+Shift+X</code>) and type <code>@builtin</code>. Then under Themes, click the ones you want to disable.</p>
+ ]]></content:encoded></item><item><title>form.submit() is not a function (JavaScript)</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/formsubmit-is-not-function-javascript.html</link><pubDate>Fri, 13 Aug 2021 12:42:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/formsubmit-is-not-function-javascript.html</guid><description>Recently, I tried sending a form using JS. I was sure I didn&amp;rsquo;t make typos and errors in my code. Turns out you can&amp;rsquo;t set the name attribute of an input submit and use the JS function submit() at the same time. JS tries to access submit, finds the button and thinks: &amp;ldquo;Weird, this isn&amp;rsquo;t a function&amp;rdquo;. So, make sure you didn&amp;rsquo;t set the name attribute of any input to submit.</description><content:encoded><![CDATA[ <p>Recently, I tried sending a form using JS. I was sure I didn&rsquo;t make typos and errors in my code. Turns out you can&rsquo;t set the name attribute of an input <code>submit</code> and use the JS function <code>submit()</code> at the same time. JS tries to access submit, finds the button and thinks: &ldquo;Weird, this isn&rsquo;t a function&rdquo;. So, make sure you didn&rsquo;t set the name attribute of any input to <code>submit</code>. It can conflict with the JS function.</p>
+ ]]></content:encoded></item><item><title>Duplicate Spotify playlist</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/duplicate-spotify-playlist.html</link><pubDate>Tue, 10 Aug 2021 12:30:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/duplicate-spotify-playlist.html</guid><description>To duplicate a Spotify playlist:
+Open that playlist Hit CTRL+A Right click -&amp;gt; copy Create new playlist Hit CTRL+V</description><content:encoded><![CDATA[ <p>To duplicate a Spotify playlist:</p>
+<ul>
+<li>Open that playlist</li>
+<li>Hit CTRL+A</li>
+<li>Right click -&gt; copy</li>
+<li>Create new playlist</li>
+<li>Hit CTRL+V</li>
+</ul>
+ ]]></content:encoded></item><item><title>Publish posts using Blogger API in PHP</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/publish-posts-using-blogger-api-in-php.html</link><pubDate>Mon, 09 Aug 2021 10:41:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/publish-posts-using-blogger-api-in-php.html</guid><description>This is how to create a blogpost using the Google Client Library for PHP.
+To setup:
+Go to https://console.developers.google.com Add an project, and tap &amp;ldquo;Credentials&amp;rdquo; Tap &amp;ldquo;Create data&amp;rdquo; and create an Client-ID OAuth Choose the &amp;ldquo;Webapp&amp;rdquo; and enter the path to your server in the &amp;ldquo;Authorized diversion URIs&amp;rdquo; textbox Hit &amp;ldquo;Create&amp;rdquo;, and hit OK Click on the Client-ID you just generated Click &amp;ldquo;Download JSON&amp;rdquo; Download the file, and rename it to client_secret.</description><content:encoded><![CDATA[ <p>This is how to create a blogpost using the <a href="https://github.com/googleapis/google-api-php-client">Google Client Library for PHP</a>.</p>
+<p>To setup:</p>
+<ol>
+<li>Go to <a href="https://console.developers.google.com/">https://console.developers.google.com</a></li>
+<li>Add an project, and tap &ldquo;Credentials&rdquo;</li>
+<li>Tap &ldquo;Create data&rdquo; and create an Client-ID OAuth</li>
+<li>Choose the &ldquo;Webapp&rdquo; and enter the path to your server in the &ldquo;Authorized diversion URIs&rdquo; textbox</li>
+<li>Hit &ldquo;Create&rdquo;, and hit OK</li>
+<li>Click on the Client-ID you just generated</li>
+<li>Click &ldquo;Download JSON&rdquo;</li>
+<li>Download the file, and rename it to <code>client_secret.json</code></li>
+</ol>
+<p>Use this script to create and publish posts. Make sure to first enter the path to your <code>client_secret.json</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// This script creates a post  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Made by Robin Boers  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// load Google Api  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">require_once</span> <span style="color:#e6db74">&#39;../api/vendor/autoload.php&#39;</span>;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">session_start</span>();  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>$redirect_uri <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://&#39;</span> <span style="color:#f92672">.</span> $_SERVER[<span style="color:#e6db74">&#39;HTTP_HOST&#39;</span>] <span style="color:#f92672">.</span> $_SERVER[<span style="color:#e6db74">&#39;PHP_SELF&#39;</span>];  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Authenticate user with OAuth   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Google_Client</span>();  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setAuthConfig</span>(<span style="color:#e6db74">&#39;/path/to/client_secret.json&#39;</span>);  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setApplicationName</span>(<span style="color:#e6db74">&#39;Example App&#39;</span>);  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setRedirectUri</span>($redirect_uri);  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setScopes</span>(<span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;https://www.googleapis.com/auth/blogger&#39;</span>));   
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isset</span>($_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">isset</span>($_GET[<span style="color:#e6db74">&#39;code&#39;</span>])) {  
+</span></span><span style="display:flex;"><span>    $client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">authenticate</span>($_GET[<span style="color:#e6db74">&#39;code&#39;</span>]);  
+</span></span><span style="display:flex;"><span>    $access_token <span style="color:#f92672">=</span> $client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getAccessToken</span>();  
+</span></span><span style="display:flex;"><span>    $_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>] <span style="color:#f92672">=</span> $access_token;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]) <span style="color:#f92672">&amp;&amp;</span> $_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]) {  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// First set the accesstoken  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setAccessToken</span>($_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    $blogger <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Google_Service_Blogger</span>($client);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Get blog information  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $blog <span style="color:#f92672">=</span> $blogger<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">blogs</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getByUrl</span>(<span style="color:#e6db74">&#39;http://stupidstuffwastaken.blogspot.com&#39;</span>); <span style="color:#75715e">// Replace this URI with your blog&#39;s URI  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $blogId <span style="color:#f92672">=</span> $blog<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getId</span>();  
+</span></span><span style="display:flex;"><span>    $blogName  <span style="color:#f92672">=</span> $blog<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getName</span>();  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    $postId <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;651261343944639929&#34;</span>; <span style="color:#75715e">// If you want to update a post  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span><span style="display:flex;"><span>     <span style="color:#75715e">// Creating post  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     $mypost <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Google_Service_Blogger_Post</span>();  
+</span></span><span style="display:flex;"><span>     $mypost<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setTitle</span>(<span style="color:#e6db74">&#34;Example heading&#34;</span>);  
+</span></span><span style="display:flex;"><span>     $mypost<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setContent</span>(<span style="color:#e6db74">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#34;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>     $data <span style="color:#f92672">=</span> $blogger<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">posts</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert</span>($blogId, $mypost); <span style="color:#75715e">// or update post like this: $data = $blogger-&gt;posts-&gt;update($blogId, $postId, $mypost);  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#a6e22e">var_dump</span>($data);  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div> ]]></content:encoded></item><item><title>Missing depedencies when installing rofi from source on Ubuntu</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/missing-depedencies-when-installing.html</link><pubDate>Sun, 08 Aug 2021 10:30:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/missing-depedencies-when-installing.html</guid><description>When installing rofi 1.6.1 from source on Ubuntu, there are some missing dependencies. To install those, enter this command:
+sudo apt install libxcb-xkb-dev libxcb-ewmh-dev libxkbcommon-x11-dev libxcb-icccm4-dev libxcb-xinerama0-dev libxcb-xrm-dev build-essential cmake extra-cmake-modules xcb The check version in the default repos is also outdated, so you need to compile that from source too.</description><content:encoded><![CDATA[ <p>When installing rofi 1.6.1 from source on Ubuntu, there are some missing dependencies. To install those, enter this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install libxcb-xkb-dev libxcb-ewmh-dev libxkbcommon-x11-dev libxcb-icccm4-dev libxcb-xinerama0-dev libxcb-xrm-dev build-essential cmake extra-cmake-modules xcb  
+</span></span></code></pre></div><p>The <code>check</code> version in the default repos is also outdated, so you need to compile that from source too.</p>
+ ]]></content:encoded></item><item><title>Alternative to Gala taskswitcher using Rofi</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/alternative-to-gala-taskswitcher-using.html</link><pubDate>Fri, 06 Aug 2021 10:26:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/alternative-to-gala-taskswitcher-using.html</guid><description>I kinda hate the default Alt+Tab switcher in Pantheon, so I use Rofi to fix that. This is how to use rofi as Alt+Tab switcher. Make sure you have rofi version 1.6.1 installed for this to work propperly.
+Create a new scriptfile called alttab.sh with this content:
+#!/usr/bin/env bash xdotool mousemove 960 540 &amp;amp;&amp;amp; rofi -no-config -theme alttab -kb-cancel &amp;#34;Alt+Escape,Escape&amp;#34; -kb-accept-entry &amp;#39;!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return,!Alt+Alt_L&amp;#39; -kb-row-down &amp;#39;Alt-Tab,Alt+Down,Down,ISO_Left_Tab&amp;#39; -kb-row-up &amp;#39;Alt+ISO_Left_Tab,Alt+Up,Up&amp;#39; -show window -selected-row 1 exit Now make it executable:</description><content:encoded><![CDATA[ <p>I kinda hate the default Alt+Tab switcher in Pantheon, so I use Rofi to fix that. This is how to use rofi as Alt+Tab switcher. Make sure you have rofi version 1.6.1 installed for this to work propperly.</p>
+<p>Create a new scriptfile called <code>alttab.sh</code> with this content:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env bash  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>xdotool mousemove <span style="color:#ae81ff">960</span> <span style="color:#ae81ff">540</span> <span style="color:#f92672">&amp;&amp;</span> rofi -no-config -theme alttab -kb-cancel <span style="color:#e6db74">&#34;Alt+Escape,Escape&#34;</span> -kb-accept-entry <span style="color:#e6db74">&#39;!Alt-Tab,!Alt+Down,!Alt+ISO_Left_Tab,!Alt+Up,Return,!Alt+Alt_L&#39;</span> -kb-row-down <span style="color:#e6db74">&#39;Alt-Tab,Alt+Down,Down,ISO_Left_Tab&#39;</span> -kb-row-up <span style="color:#e6db74">&#39;Alt+ISO_Left_Tab,Alt+Up,Up&#39;</span> -show window -selected-row <span style="color:#ae81ff">1</span>   
+</span></span><span style="display:flex;"><span>exit  
+</span></span></code></pre></div><p>Now make it executable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chmod +x ./alttab.sh  
+</span></span></code></pre></div><p>Delete default Alt+Tab shortcut in Switchboard -&gt; Keyboard -&gt; Shortcuts -&gt; Windows<br>
+Now link to the file you created earlier and assign it to Alt+Tab.</p>
+<p>This looks the best using this custom rofi theme I made: <a href="https://github.com/RobinBoers/dotfiles/blob/master/.config/rofi/alttab.rasi">https://github.com/RobinBoers/dotfiles/blob/master/.config/rofi/alttab.rasi</a></p>
+ ]]></content:encoded></item><item><title>Setup permissions for XAMPP</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/setup-permissions-xampp.html</link><pubDate>Fri, 06 Aug 2021 02:55:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/setup-permissions-xampp.html</guid><description>When installing XAMPP on Linux, you need to setup permissions to access the htdocs folder located at /opt/lampp/htdocs/.
+sudo chown -Rc robin /opt/lampp/htdocs/ sudo chmod -Rc 777 /opt/lampp/htdocs/</description><content:encoded><![CDATA[ <p>When installing XAMPP on Linux, you need to setup permissions to access the <code>htdocs</code> folder located at <code>/opt/lampp/htdocs/</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown -Rc robin /opt/lampp/htdocs/  
+</span></span><span style="display:flex;"><span>sudo chmod -Rc <span style="color:#ae81ff">777</span> /opt/lampp/htdocs/
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Phoenix Framework doesn't work on Arch Linux due to node-sass</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/phoenix-framework-doesnt-work-on-arch.html</link><pubDate>Thu, 05 Aug 2021 11:05:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/phoenix-framework-doesnt-work-on-arch.html</guid><description>While trying to setup a chat app on Arch Linux using Phoenix Framework I ran into a lot of nodejs related errors. First of all, make sure you&amp;rsquo;re using nodejs 14 or maybe 15. Everything above is absolute hell. I recommend using nvm.
+I still got a lot of errors using node-sass. It prevented me from using websockets by crashing the building process. Turns out you can just replace node-sass with sass in package.</description><content:encoded><![CDATA[ <p>While trying to setup a chat app on Arch Linux using Phoenix Framework I ran into a lot of nodejs related errors. First of all, make sure you&rsquo;re using nodejs 14 or maybe 15. Everything above is absolute hell. I recommend using <a href="https://github.com/nvm-sh/nvm"><code>nvm</code></a>.</p>
+<p>I still got a lot of errors using <code>node-sass</code>. It prevented me from using websockets by crashing the building process. Turns out you can just replace <code>node-sass</code> with <code>sass</code> in <code>package.json</code></p>
+<p>Just remove this line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;node-sass&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;xx.xx.xx&#34;</span>
+</span></span></code></pre></div><p>And replace it with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;sass&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;^1.22.10&#34;</span>
+</span></span></code></pre></div><p>Ta da! All problems fixed. I have no idea why the guys over at Phoenix Framework don&rsquo;t just ship this as the default!</p>
+<p>Sources:</p>
+<ul>
+<li><a href="https://elixirforum.com/t/phoenix-wont-compile-due-to-node-sass-on-win10/31842">https://elixirforum.com/t/phoenix-wont-compile-due-to-node-sass-on-win10</a></li>
+</ul>
+ ]]></content:encoded></item><item><title>Send emails using PHP</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/send-emails-using-php.html</link><pubDate>Wed, 04 Aug 2021 08:16:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/send-emails-using-php.html</guid><description>This is how to send an email using PHP. For this to work, PHP needs access to the sendmail binary (and permission to use it). You have to set the path to this binary in php.ini (check where it is located using the phpinfo() function). Place it under the line [mail function]. Here&amp;rsquo;s an example:
+[mail function] sendmail_path = /usr/sbin/sendmail On Windows you also have to set your SMTP server.</description><content:encoded><![CDATA[ <p>This is how to send an email using PHP. For this to work, PHP needs access to the <code>sendmail</code> binary (and permission to use it). You have to set the path to this binary in <code>php.ini</code> (check where it is located using the <code>phpinfo()</code> function). Place it under the line <code>[mail function]</code>. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">[mail function]  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sendmail_path</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/usr/sbin/sendmail  </span>
+</span></span></code></pre></div><p>On Windows you also have to set your SMTP server. Here&rsquo;s another example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">[mail function]  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">SMTP</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">localhost  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">smtp_port</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">25  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sendmail_from</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">robin@geheimesite.nl  </span>
+</span></span></code></pre></div><p>This is a simple script to send emails using PHP:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php </span>  
+</span></span><span style="display:flex;"><span>$msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et fermentum lorem. Proin tristique tortor in metus mattis euismod. Donec ligula erat, ultrices at dapibus ornare, convallis ut ligula. Nullam aliquet nec enim eget consectetur. Quisque hendrerit, purus quis luctus vestibulum, massa dui commodo lectus, luctus iaculis nisl arcu eu odio. Integer porta ultrices libero, et vestibulum metus lacinia vitae. Etiam ipsum arcu, pharetra ut maximus nec, imperdiet vel ex. Donec ut ligula vel risus pellentesque porttitor. Nam lectus leo, tincidunt et justo pellentesque, dictum hendrerit neque. Pellentesque consectetur, mauris id lobortis sagittis, nisl tortor lacinia est, vel rhoncus lorem libero ut erat. Nam maximus iaculis mollis. Nunc rhoncus sagittis nulla. Nulla porta dolor sit amet ultricies ultrices. &#34;</span>;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>$email <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;robin@geheimesite.nl&#34;</span>;  
+</span></span><span style="display:flex;"><span>$subject <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Example email&#34;</span>;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>$msg <span style="color:#f92672">=</span> <span style="color:#a6e22e">wordwrap</span>($msg,<span style="color:#ae81ff">70</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mail</span>($email,$subject,$msg);  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010"> 
+</span></span></span></code></pre></div><p>On the PHP documentation there also was a <a href="https://www.php.net/manual/en/book.mail.php#92738">usefull comment</a> (credits to pouletfou at gmail dot com) describing how to use a fakemail binary to check the logs for testing purposes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/php  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//====================================================  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Program : Fake send mail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Author : pouletfou at gmail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Description : save this file as /usr/sbin/sendmail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//  and you can test your PHP applications using mail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//  by looking at the /tmp/fakesendmail.log files.  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//====================================================  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">define</span>(<span style="color:#e6db74">&#39;LOGFILE&#39;</span>,<span style="color:#e6db74">&#39;/tmp/fakesendmail.log&#39;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    $log <span style="color:#f92672">=</span> <span style="color:#a6e22e">fopen</span> (<span style="color:#a6e22e">LOGFILE</span>,<span style="color:#e6db74">&#39;a+&#39;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fwrite</span>($log,<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">implode</span>(<span style="color:#e6db74">&#39; &#39;</span>,$argv)<span style="color:#f92672">.</span>  
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34; called on : &#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>)<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fwrite</span>($log,<span style="color:#a6e22e">file_get_contents</span>(<span style="color:#e6db74">&#34;php://stdin&#34;</span>));  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fwrite</span>($log,  
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">===========================================================</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fclose</span>($log);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">  
+</span></span></span></code></pre></div><p>Sources:</p>
+<ul>
+<li><a href="https://www.php.net/manual/en/book.mail.php">https://www.php.net/manual/en/book.mail.php</a></li>
+<li><a href="https://www.quackit.com/php/tutorial/php_mail_configuration.cfm">https://www.quackit.com/php/tutorial/php_mail_configuration.cfm</a></li>
+</ul>
+ ]]></content:encoded></item><item><title>Assign Rofi to super key in Pantheon</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/assign-rofi-to-super-key-in-pantheon.html</link><pubDate>Tue, 03 Aug 2021 07:29:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/assign-rofi-to-super-key-in-pantheon.html</guid><description>I&amp;rsquo;m used to use the super key to search, because I used Windows for a long time, so I like to assign Rofi to the super key.
+gsettings set org.gnome.mutter overlay-key &amp;#34;&amp;#39;Super_L&amp;#39;&amp;#34; gsettings set org.pantheon.desktop.gala.behavior overlay-action &amp;#34;rofi -show drun&amp;#34; You can use any launcher. In this example I&amp;rsquo;m using Albert:
+gsettings set org.gnome.mutter overlay-key &amp;#34;&amp;#39;Super_L&amp;#39;&amp;#34; gsettings set org.pantheon.desktop.gala.behavior overlay-action &amp;#34;albert&amp;#34;</description><content:encoded><![CDATA[ <p>I&rsquo;m used to use the super key to search, because I used Windows for a long time, so I like to assign Rofi to the super key.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gsettings set org.gnome.mutter overlay-key <span style="color:#e6db74">&#34;&#39;Super_L&#39;&#34;</span>  
+</span></span><span style="display:flex;"><span>gsettings set org.pantheon.desktop.gala.behavior overlay-action <span style="color:#e6db74">&#34;rofi -show drun&#34;</span>  
+</span></span></code></pre></div><p>You can use any launcher. In this example I&rsquo;m using Albert:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gsettings set org.gnome.mutter overlay-key <span style="color:#e6db74">&#34;&#39;Super_L&#39;&#34;</span>  
+</span></span><span style="display:flex;"><span>gsettings set org.pantheon.desktop.gala.behavior overlay-action <span style="color:#e6db74">&#34;albert&#34;</span>  
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Enable tray indicators in Pantheon</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/enable-tray-indicators-in-pantheon.html</link><pubDate>Tue, 03 Aug 2021 07:26:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/enable-tray-indicators-in-pantheon.html</guid><description>Some apps use the old system tray. To view them in the elementaryOS tray edit /etc/xdg/autostart/indicator-application.desktop and change this line:
+OnlyShowIn=Unity;GNOME; to
+OnlyShowIn=Unity;GNOME;Pantheon; Now install the old panel indicator from launchpad.net:
+http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana
+After relog you should be able to see the icons in wingpanel.</description><content:encoded><![CDATA[ <p>Some apps use the old system tray. To view them in the elementaryOS tray edit <code>/etc/xdg/autostart/indicator-application.desktop</code> and change this line:</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">OnlyShowIn=Unity;GNOME;
+</code></pre><p>to</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">OnlyShowIn=Unity;GNOME;Pantheon;
+</code></pre><p>Now install the old panel indicator from launchpad.net:<br>
+<a href="http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana">http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana</a></p>
+<p>After relog you should be able to see the icons in wingpanel.</p>
+ ]]></content:encoded></item><item><title>Set default terminal in Nemo outside Cinnamon</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-terminal-in-nemo-outside.html</link><pubDate>Tue, 03 Aug 2021 07:21:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-terminal-in-nemo-outside.html</guid><description>Replace alacritty with your favorite terminal emulator.
+gsettings set org.gnome.desktop.default-applications.terminal exec alacritty gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty</description><content:encoded><![CDATA[ <p>Replace alacritty with your favorite terminal emulator.</p>
+<pre tabindex="0"><code>gsettings set org.gnome.desktop.default-applications.terminal exec alacritty
+</code></pre><p>gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty</p>
+<pre tabindex="0"><code></code></pre> ]]></content:encoded></item><item><title>Set default apps using the commandline</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-apps-using-commandline.html</link><pubDate>Tue, 03 Aug 2021 07:17:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-apps-using-commandline.html</guid><description>To look up what the current default is:
+xdg-mime query default inode/directory To set the new default:
+xdg-mime default nemo.desktop inode/directory</description><content:encoded><![CDATA[ <p>To look up what the current default is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xdg-mime query default inode/directory
+</span></span></code></pre></div><p>To set the new default:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xdg-mime default nemo.desktop inode/directory
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Add Qtile icon in LightDM slick-greeter</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/add-qtile-icon-in-lightdm-slick-greeter.html</link><pubDate>Tue, 03 Aug 2021 07:11:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/add-qtile-icon-in-lightdm-slick-greeter.html</guid><description>This is how to a Qtile icon to LightDM slick-greeter. By default it displays a stupid circle.
+Download the icon: Rename it to qtile.png Place it in /usr/share/slick-greeter/badges/</description><content:encoded><![CDATA[ <p>This is how to a Qtile icon to LightDM slick-greeter. By default it displays a stupid circle.</p>
+<ol>
+<li>Download the icon:<a href="https://1.bp.blogspot.com/-uJs5oKgj-mw/YQlOQng1HUI/AAAAAAAAK8s/Q2qZg7HgVrU5vlhnQBOft5RHVCokju9-gCLcBGAsYHQ/s22/icon.png"><img src="https://1.bp.blogspot.com/-uJs5oKgj-mw/YQlOQng1HUI/AAAAAAAAK8s/Q2qZg7HgVrU5vlhnQBOft5RHVCokju9-gCLcBGAsYHQ/s0/icon.png" alt=""></a></li>
+<li>Rename it to <code>qtile.png</code></li>
+<li>Place it in <code>/usr/share/slick-greeter/badges/</code></li>
+</ol>
+ ]]></content:encoded></item><item><title>Smaller GTK headerbars on non-CSD windows</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/smaller-gtk-headerbars-on-non-csd.html</link><pubDate>Tue, 03 Aug 2021 07:03:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/smaller-gtk-headerbars-on-non-csd.html</guid><description>This is how to make the titlebars on non-CSD windows in Metacity, Marco, Mutter and Gala smaller using gtk.css
+This is mostly for themes like Ambiance that were not designed for these window managers.
+Put this in ~/.config/gtk-3.0/gtk.css. This makes the headerbars on non-CSD windows smaller to make them look better.
+/* Decrease the size of head bars for non-CSD applications Gnome 20 (Fedora 24) compatible version https://unix.stackexchange.com/questions/276951/how-to-change-the-titlebar-height-in-standard-gtk-apps-and-those-with-headerbars */ /* x11 and xwayland windows */ window.</description><content:encoded><![CDATA[ <p>This is how to make the titlebars on non-CSD windows in Metacity, Marco, Mutter and Gala smaller using gtk.css</p>
+<p>This is mostly for themes like Ambiance that were not designed for these window managers.</p>
+<p>Put this in <code>~/.config/gtk-3.0/gtk.css</code>. This makes the headerbars on non-CSD windows smaller to make them look better.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/*  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> Decrease the size of head bars for non-CSD applications  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> Gnome 20 (Fedora 24) compatible version  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> https://unix.stackexchange.com/questions/276951/how-to-change-the-titlebar-height-in-standard-gtk-apps-and-those-with-headerbars  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* x11 and xwayland windows */</span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">window</span>.<span style="color:#a6e22e">ssd</span> <span style="color:#f92672">headerbar</span>.<span style="color:#a6e22e">titlebar</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;   
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* remove border between titlebar and window */</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">window</span>.<span style="color:#a6e22e">ssd</span> <span style="color:#f92672">headerbar</span>.<span style="color:#a6e22e">titlebar</span> <span style="color:#f92672">button</span>.<span style="color:#a6e22e">titlebutton</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-width</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* native wayland ssd windows */</span>  
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">default-decoration</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* remove border between titlebar and window */</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">default-decoration</span> .<span style="color:#a6e22e">titlebutton</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-width</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div> ]]></content:encoded></item></channel></rss>

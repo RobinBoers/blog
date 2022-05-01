@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>twm on Stupid Codes</title><link>https://blog.geheimesite.nl/stupid-codes/tags/twm/</link><description>Read the latest twm on Stupid Codes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 03 Aug 2021 07:11:00 -0700</lastBuildDate><atom:link href="https://blog.geheimesite.nl/stupid-codes/tags/twm/index.xml" rel="self" type="application/rss+xml"/><item><title>Add Qtile icon in LightDM slick-greeter</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/add-qtile-icon-in-lightdm-slick-greeter.html</link><pubDate>Tue, 03 Aug 2021 07:11:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/add-qtile-icon-in-lightdm-slick-greeter.html</guid><description>This is how to a Qtile icon to LightDM slick-greeter. By default it displays a stupid circle.
+Download the icon: Rename it to qtile.png Place it in /usr/share/slick-greeter/badges/</description><content:encoded><![CDATA[ <p>This is how to a Qtile icon to LightDM slick-greeter. By default it displays a stupid circle.</p>
+<ol>
+<li>Download the icon:<a href="https://1.bp.blogspot.com/-uJs5oKgj-mw/YQlOQng1HUI/AAAAAAAAK8s/Q2qZg7HgVrU5vlhnQBOft5RHVCokju9-gCLcBGAsYHQ/s22/icon.png"><img src="https://1.bp.blogspot.com/-uJs5oKgj-mw/YQlOQng1HUI/AAAAAAAAK8s/Q2qZg7HgVrU5vlhnQBOft5RHVCokju9-gCLcBGAsYHQ/s0/icon.png" alt=""></a></li>
+<li>Rename it to <code>qtile.png</code></li>
+<li>Place it in <code>/usr/share/slick-greeter/badges/</code></li>
+</ol>
+ ]]></content:encoded></item></channel></rss>

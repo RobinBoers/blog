@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>css on Stupid Codes</title><link>https://blog.geheimesite.nl/stupid-codes/tags/css/</link><description>Read the latest css on Stupid Codes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 24 Oct 2021 11:02:00 -0700</lastBuildDate><atom:link href="https://blog.geheimesite.nl/stupid-codes/tags/css/index.xml" rel="self" type="application/rss+xml"/><item><title>Fill remaining height CSS</title><link>https://blog.geheimesite.nl/stupid-codes/2021/10/fill-remaining-height-css.html</link><pubDate>Sun, 24 Oct 2021 11:02:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/10/fill-remaining-height-css.html</guid><description>.parent { height: 100%; display: flex; flex-direction: column; } .child { flex-grow: 1; }</description><content:encoded><![CDATA[ <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">parent</span> {  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">column</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">child</span> {  
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">flex-grow</span>: <span style="color:#ae81ff">1</span>;  
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Smaller GTK headerbars on non-CSD windows</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/smaller-gtk-headerbars-on-non-csd.html</link><pubDate>Tue, 03 Aug 2021 07:03:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/smaller-gtk-headerbars-on-non-csd.html</guid><description>This is how to make the titlebars on non-CSD windows in Metacity, Marco, Mutter and Gala smaller using gtk.css
+This is mostly for themes like Ambiance that were not designed for these window managers.
+Put this in ~/.config/gtk-3.0/gtk.css. This makes the headerbars on non-CSD windows smaller to make them look better.
+/* Decrease the size of head bars for non-CSD applications Gnome 20 (Fedora 24) compatible version https://unix.stackexchange.com/questions/276951/how-to-change-the-titlebar-height-in-standard-gtk-apps-and-those-with-headerbars */ /* x11 and xwayland windows */ window.</description><content:encoded><![CDATA[ <p>This is how to make the titlebars on non-CSD windows in Metacity, Marco, Mutter and Gala smaller using gtk.css</p>
+<p>This is mostly for themes like Ambiance that were not designed for these window managers.</p>
+<p>Put this in <code>~/.config/gtk-3.0/gtk.css</code>. This makes the headerbars on non-CSD windows smaller to make them look better.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/*  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> Decrease the size of head bars for non-CSD applications  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> Gnome 20 (Fedora 24) compatible version  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> https://unix.stackexchange.com/questions/276951/how-to-change-the-titlebar-height-in-standard-gtk-apps-and-those-with-headerbars  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* x11 and xwayland windows */</span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">window</span>.<span style="color:#a6e22e">ssd</span> <span style="color:#f92672">headerbar</span>.<span style="color:#a6e22e">titlebar</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;   
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* remove border between titlebar and window */</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">window</span>.<span style="color:#a6e22e">ssd</span> <span style="color:#f92672">headerbar</span>.<span style="color:#a6e22e">titlebar</span> <span style="color:#f92672">button</span>.<span style="color:#a6e22e">titlebutton</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-width</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* native wayland ssd windows */</span>  
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">default-decoration</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">4</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding-right</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* remove border between titlebar and window */</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#66d9ef">none</span>;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">default-decoration</span> .<span style="color:#a6e22e">titlebutton</span> {  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-height</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">min-width</span>: <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div> ]]></content:encoded></item></channel></rss>

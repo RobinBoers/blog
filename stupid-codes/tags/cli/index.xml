@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>cli on Stupid Codes</title><link>https://blog.geheimesite.nl/stupid-codes/tags/cli/</link><description>Read the latest cli on Stupid Codes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 03:56:00 -0800</lastBuildDate><atom:link href="https://blog.geheimesite.nl/stupid-codes/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>Enable open in terminal option for elementaryOS file manager</title><link>https://blog.geheimesite.nl/stupid-codes/2022/02/open-in-terminal.html</link><pubDate>Mon, 28 Feb 2022 03:56:00 -0800</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2022/02/open-in-terminal.html</guid><description>This is how to add an &amp;ldquo;Open terminal here&amp;rdquo; entry to the eOS file manager.
+Create /usr/share/contractors/openinterminal.contract with these contents:
+[Contractor Entry] Name=Open terminal here Icon=terminal Description=Open terminal here MimeType=inode;application/x-sh;application/x-executable; Exec=io.elementary.terminal -w %U Gettext-Domain=io.elementary.terminal Restart the terminal, and voilla!</description><content:encoded><![CDATA[ <p>This is how to add an &ldquo;Open terminal here&rdquo; entry to the eOS file manager.</p>
+<p>Create <code>/usr/share/contractors/openinterminal.contract</code> with these contents:</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">[Contractor Entry]  
+Name=Open terminal here  
+Icon=terminal  
+Description=Open terminal here  
+MimeType=inode;application/x-sh;application/x-executable;  
+Exec=io.elementary.terminal -w %U  
+Gettext-Domain=io.elementary.terminal  
+</code></pre><p>Restart the terminal, and voilla!</p>
+ ]]></content:encoded></item><item><title>Prevent dunst from autostarting using DBus</title><link>https://blog.geheimesite.nl/stupid-codes/2021/09/prevent-dunst-from-autostarting-using.html</link><pubDate>Fri, 03 Sep 2021 12:12:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/09/prevent-dunst-from-autostarting-using.html</guid><description>By default, dunst is autostarted by DBus. This can be turned off by editing /usr/share/dbus-1/services/org.knopwob.dunst.service and changing
+Exec=/usr/bin/dunst To:
+Exec=/usr/bin/true Source:
+https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</description><content:encoded><![CDATA[ <p>By default, dunst is autostarted by DBus. This can be turned off by editing <code>/usr/share/dbus-1/services/org.knopwob.dunst.service</code> and changing</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">Exec=/usr/bin/dunst
+</code></pre><p>To:</p>
+<pre tabindex="0"><code class="language-desktop" data-lang="desktop">Exec=/usr/bin/true
+</code></pre><p>Source:<br>
+<a href="https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html">https://lists.archlinux.org/pipermail/arch-general/2015-January/038282.html</a></p>
+ ]]></content:encoded></item><item><title>Alias for diff-so-fancy</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/alias-for-diff-so-fancy.html</link><pubDate>Fri, 27 Aug 2021 04:59:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/alias-for-diff-so-fancy.html</guid><description>diff-so-fancy is a tool to create cooler looking git diffs. To alias git dsf, enter these commands:
+git config --global alias.dsf &amp;#34;diff --color&amp;#34; git config --global pager.dsf &amp;#34;diff-so-fancy | less --tabs=4 -RFXS&amp;#34;</description><content:encoded><![CDATA[ <p><code>diff-so-fancy</code> is a tool to create cooler looking <code>git diff</code>s. To alias <code>git dsf</code>, enter these commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global alias.dsf <span style="color:#e6db74">&#34;diff --color&#34;</span>  
+</span></span><span style="display:flex;"><span>git config --global pager.dsf <span style="color:#e6db74">&#34;diff-so-fancy | less --tabs=4 -RFXS&#34;</span>
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Setup permissions for XAMPP</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/setup-permissions-xampp.html</link><pubDate>Fri, 06 Aug 2021 02:55:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/setup-permissions-xampp.html</guid><description>When installing XAMPP on Linux, you need to setup permissions to access the htdocs folder located at /opt/lampp/htdocs/.
+sudo chown -Rc robin /opt/lampp/htdocs/ sudo chmod -Rc 777 /opt/lampp/htdocs/</description><content:encoded><![CDATA[ <p>When installing XAMPP on Linux, you need to setup permissions to access the <code>htdocs</code> folder located at <code>/opt/lampp/htdocs/</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown -Rc robin /opt/lampp/htdocs/  
+</span></span><span style="display:flex;"><span>sudo chmod -Rc <span style="color:#ae81ff">777</span> /opt/lampp/htdocs/
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Set default terminal in Nemo outside Cinnamon</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-terminal-in-nemo-outside.html</link><pubDate>Tue, 03 Aug 2021 07:21:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-terminal-in-nemo-outside.html</guid><description>Replace alacritty with your favorite terminal emulator.
+gsettings set org.gnome.desktop.default-applications.terminal exec alacritty gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty</description><content:encoded><![CDATA[ <p>Replace alacritty with your favorite terminal emulator.</p>
+<pre tabindex="0"><code>gsettings set org.gnome.desktop.default-applications.terminal exec alacritty
+</code></pre><p>gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty</p>
+<pre tabindex="0"><code></code></pre> ]]></content:encoded></item><item><title>Set default apps using the commandline</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-apps-using-commandline.html</link><pubDate>Tue, 03 Aug 2021 07:17:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/set-default-apps-using-commandline.html</guid><description>To look up what the current default is:
+xdg-mime query default inode/directory To set the new default:
+xdg-mime default nemo.desktop inode/directory</description><content:encoded><![CDATA[ <p>To look up what the current default is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xdg-mime query default inode/directory
+</span></span></code></pre></div><p>To set the new default:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xdg-mime default nemo.desktop inode/directory
+</span></span></code></pre></div> ]]></content:encoded></item></channel></rss>

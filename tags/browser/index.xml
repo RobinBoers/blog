@@ -13,21 +13,21 @@ Grote kans dat jij nu een browser gebruikt om deze post te lezen (tenzij je een 
 <li><a href="https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/PVc8zwKTAwAJ?pli=1">https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/PVc8zwKTAwAJ?pli=1</a></li>
 <li><a href="https://www.youtube.com/watch?v=P39Buvpzjaw">https://www.youtube.com/watch?v=P39Buvpzjaw (Google is breaking the web to rebuild it in their own image.)</a></li>
 </ul>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Je zou kunnen zeggen dat Safari ook niet op Chromium is gebaseerd, maar Safari gebruikt WebKit, dat zo nauw verwant is met Blink (de browser engine van Google) dat het niet echt een verschil maakt. Zeker als je kijkt naar hoeveel mensen Safari gebruiken tenopzichte van Chromium.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>Zie hier een StackOverflow post van andere programmeurs die er last van hadden: <a href="https://stackoverflow.com/questions/68492434/javascript-dialogs-alert-confirm-and-prompt-in-cross-origin-iframe-does-n">https://stackoverflow.com/questions/68492434/javascript-dialogs-alert-confirm-and-prompt-in-cross-origin-iframe-does-n</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>Ondanks de gelijkenis met Blink en Chromium&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>Een artikel over de recente problemen van Firefox: <a href="https://www.computerworld.com/article/3628338/as-mozilla-talks-up-firefoxs-future-the-present-is-killing-it.html">https://www.computerworld.com/article/3628338/as-mozilla-talks-up-firefoxs-future-the-present-is-killing-it.html</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
  ]]></content:encoded></item></channel></rss>

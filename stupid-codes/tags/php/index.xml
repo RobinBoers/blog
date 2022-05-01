@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>php on Stupid Codes</title><link>https://blog.geheimesite.nl/stupid-codes/tags/php/</link><description>Read the latest php on Stupid Codes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 10:41:00 -0700</lastBuildDate><atom:link href="https://blog.geheimesite.nl/stupid-codes/tags/php/index.xml" rel="self" type="application/rss+xml"/><item><title>Publish posts using Blogger API in PHP</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/publish-posts-using-blogger-api-in-php.html</link><pubDate>Mon, 09 Aug 2021 10:41:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/publish-posts-using-blogger-api-in-php.html</guid><description>This is how to create a blogpost using the Google Client Library for PHP.
+To setup:
+Go to https://console.developers.google.com Add an project, and tap &amp;ldquo;Credentials&amp;rdquo; Tap &amp;ldquo;Create data&amp;rdquo; and create an Client-ID OAuth Choose the &amp;ldquo;Webapp&amp;rdquo; and enter the path to your server in the &amp;ldquo;Authorized diversion URIs&amp;rdquo; textbox Hit &amp;ldquo;Create&amp;rdquo;, and hit OK Click on the Client-ID you just generated Click &amp;ldquo;Download JSON&amp;rdquo; Download the file, and rename it to client_secret.</description><content:encoded><![CDATA[ <p>This is how to create a blogpost using the <a href="https://github.com/googleapis/google-api-php-client">Google Client Library for PHP</a>.</p>
+<p>To setup:</p>
+<ol>
+<li>Go to <a href="https://console.developers.google.com/">https://console.developers.google.com</a></li>
+<li>Add an project, and tap &ldquo;Credentials&rdquo;</li>
+<li>Tap &ldquo;Create data&rdquo; and create an Client-ID OAuth</li>
+<li>Choose the &ldquo;Webapp&rdquo; and enter the path to your server in the &ldquo;Authorized diversion URIs&rdquo; textbox</li>
+<li>Hit &ldquo;Create&rdquo;, and hit OK</li>
+<li>Click on the Client-ID you just generated</li>
+<li>Click &ldquo;Download JSON&rdquo;</li>
+<li>Download the file, and rename it to <code>client_secret.json</code></li>
+</ol>
+<p>Use this script to create and publish posts. Make sure to first enter the path to your <code>client_secret.json</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// This script creates a post  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Made by Robin Boers  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// load Google Api  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">require_once</span> <span style="color:#e6db74">&#39;../api/vendor/autoload.php&#39;</span>;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">session_start</span>();  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>$redirect_uri <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://&#39;</span> <span style="color:#f92672">.</span> $_SERVER[<span style="color:#e6db74">&#39;HTTP_HOST&#39;</span>] <span style="color:#f92672">.</span> $_SERVER[<span style="color:#e6db74">&#39;PHP_SELF&#39;</span>];  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Authenticate user with OAuth   
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>$client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Google_Client</span>();  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setAuthConfig</span>(<span style="color:#e6db74">&#39;/path/to/client_secret.json&#39;</span>);  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setApplicationName</span>(<span style="color:#e6db74">&#39;Example App&#39;</span>);  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setRedirectUri</span>($redirect_uri);  
+</span></span><span style="display:flex;"><span>$client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setScopes</span>(<span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;https://www.googleapis.com/auth/blogger&#39;</span>));   
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isset</span>($_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">isset</span>($_GET[<span style="color:#e6db74">&#39;code&#39;</span>])) {  
+</span></span><span style="display:flex;"><span>    $client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">authenticate</span>($_GET[<span style="color:#e6db74">&#39;code&#39;</span>]);  
+</span></span><span style="display:flex;"><span>    $access_token <span style="color:#f92672">=</span> $client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getAccessToken</span>();  
+</span></span><span style="display:flex;"><span>    $_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>] <span style="color:#f92672">=</span> $access_token;  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]) <span style="color:#f92672">&amp;&amp;</span> $_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]) {  
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// First set the accesstoken  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $client<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setAccessToken</span>($_SESSION[<span style="color:#e6db74">&#39;access_token&#39;</span>]);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    $blogger <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Google_Service_Blogger</span>($client);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Get blog information  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $blog <span style="color:#f92672">=</span> $blogger<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">blogs</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getByUrl</span>(<span style="color:#e6db74">&#39;http://stupidstuffwastaken.blogspot.com&#39;</span>); <span style="color:#75715e">// Replace this URI with your blog&#39;s URI  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $blogId <span style="color:#f92672">=</span> $blog<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getId</span>();  
+</span></span><span style="display:flex;"><span>    $blogName  <span style="color:#f92672">=</span> $blog<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getName</span>();  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    $postId <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;651261343944639929&#34;</span>; <span style="color:#75715e">// If you want to update a post  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span><span style="display:flex;"><span>     <span style="color:#75715e">// Creating post  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     $mypost <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Google_Service_Blogger_Post</span>();  
+</span></span><span style="display:flex;"><span>     $mypost<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setTitle</span>(<span style="color:#e6db74">&#34;Example heading&#34;</span>);  
+</span></span><span style="display:flex;"><span>     $mypost<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setContent</span>(<span style="color:#e6db74">&#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#34;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>     $data <span style="color:#f92672">=</span> $blogger<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">posts</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">insert</span>($blogId, $mypost); <span style="color:#75715e">// or update post like this: $data = $blogger-&gt;posts-&gt;update($blogId, $postId, $mypost);  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>     <span style="color:#a6e22e">var_dump</span>($data);  
+</span></span><span style="display:flex;"><span>}  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div> ]]></content:encoded></item><item><title>Setup permissions for XAMPP</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/setup-permissions-xampp.html</link><pubDate>Fri, 06 Aug 2021 02:55:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/setup-permissions-xampp.html</guid><description>When installing XAMPP on Linux, you need to setup permissions to access the htdocs folder located at /opt/lampp/htdocs/.
+sudo chown -Rc robin /opt/lampp/htdocs/ sudo chmod -Rc 777 /opt/lampp/htdocs/</description><content:encoded><![CDATA[ <p>When installing XAMPP on Linux, you need to setup permissions to access the <code>htdocs</code> folder located at <code>/opt/lampp/htdocs/</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown -Rc robin /opt/lampp/htdocs/  
+</span></span><span style="display:flex;"><span>sudo chmod -Rc <span style="color:#ae81ff">777</span> /opt/lampp/htdocs/
+</span></span></code></pre></div> ]]></content:encoded></item><item><title>Send emails using PHP</title><link>https://blog.geheimesite.nl/stupid-codes/2021/08/send-emails-using-php.html</link><pubDate>Wed, 04 Aug 2021 08:16:00 -0700</pubDate><guid>https://blog.geheimesite.nl/stupid-codes/2021/08/send-emails-using-php.html</guid><description>This is how to send an email using PHP. For this to work, PHP needs access to the sendmail binary (and permission to use it). You have to set the path to this binary in php.ini (check where it is located using the phpinfo() function). Place it under the line [mail function]. Here&amp;rsquo;s an example:
+[mail function] sendmail_path = /usr/sbin/sendmail On Windows you also have to set your SMTP server.</description><content:encoded><![CDATA[ <p>This is how to send an email using PHP. For this to work, PHP needs access to the <code>sendmail</code> binary (and permission to use it). You have to set the path to this binary in <code>php.ini</code> (check where it is located using the <code>phpinfo()</code> function). Place it under the line <code>[mail function]</code>. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">[mail function]  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sendmail_path</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/usr/sbin/sendmail  </span>
+</span></span></code></pre></div><p>On Windows you also have to set your SMTP server. Here&rsquo;s another example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">[mail function]  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">SMTP</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">localhost  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">smtp_port</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">25  
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  </span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sendmail_from</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">robin@geheimesite.nl  </span>
+</span></span></code></pre></div><p>This is a simple script to send emails using PHP:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php </span>  
+</span></span><span style="display:flex;"><span>$msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et fermentum lorem. Proin tristique tortor in metus mattis euismod. Donec ligula erat, ultrices at dapibus ornare, convallis ut ligula. Nullam aliquet nec enim eget consectetur. Quisque hendrerit, purus quis luctus vestibulum, massa dui commodo lectus, luctus iaculis nisl arcu eu odio. Integer porta ultrices libero, et vestibulum metus lacinia vitae. Etiam ipsum arcu, pharetra ut maximus nec, imperdiet vel ex. Donec ut ligula vel risus pellentesque porttitor. Nam lectus leo, tincidunt et justo pellentesque, dictum hendrerit neque. Pellentesque consectetur, mauris id lobortis sagittis, nisl tortor lacinia est, vel rhoncus lorem libero ut erat. Nam maximus iaculis mollis. Nunc rhoncus sagittis nulla. Nulla porta dolor sit amet ultricies ultrices. &#34;</span>;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>$email <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;robin@geheimesite.nl&#34;</span>;  
+</span></span><span style="display:flex;"><span>$subject <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Example email&#34;</span>;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>$msg <span style="color:#f92672">=</span> <span style="color:#a6e22e">wordwrap</span>($msg,<span style="color:#ae81ff">70</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mail</span>($email,$subject,$msg);  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010"> 
+</span></span></span></code></pre></div><p>On the PHP documentation there also was a <a href="https://www.php.net/manual/en/book.mail.php#92738">usefull comment</a> (credits to pouletfou at gmail dot com) describing how to use a fakemail binary to check the logs for testing purposes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/php  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//====================================================  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Program : Fake send mail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Author : pouletfou at gmail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// Description : save this file as /usr/sbin/sendmail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//  and you can test your PHP applications using mail  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//  by looking at the /tmp/fakesendmail.log files.  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//====================================================  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">define</span>(<span style="color:#e6db74">&#39;LOGFILE&#39;</span>,<span style="color:#e6db74">&#39;/tmp/fakesendmail.log&#39;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    $log <span style="color:#f92672">=</span> <span style="color:#a6e22e">fopen</span> (<span style="color:#a6e22e">LOGFILE</span>,<span style="color:#e6db74">&#39;a+&#39;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fwrite</span>($log,<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">implode</span>(<span style="color:#e6db74">&#39; &#39;</span>,$argv)<span style="color:#f92672">.</span>  
+</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34; called on : &#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;Y-m-d H:i:s&#39;</span>)<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fwrite</span>($log,<span style="color:#a6e22e">file_get_contents</span>(<span style="color:#e6db74">&#34;php://stdin&#34;</span>));  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fwrite</span>($log,  
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">===========================================================</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);  
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fclose</span>($log);  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">  
+</span></span></span></code></pre></div><p>Sources:</p>
+<ul>
+<li><a href="https://www.php.net/manual/en/book.mail.php">https://www.php.net/manual/en/book.mail.php</a></li>
+<li><a href="https://www.quackit.com/php/tutorial/php_mail_configuration.cfm">https://www.quackit.com/php/tutorial/php_mail_configuration.cfm</a></li>
+</ul>
+ ]]></content:encoded></item></channel></rss>

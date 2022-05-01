@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>flexbox on Notes</title><link>https://blog.geheimesite.nl/notes/tags/flexbox/</link><description>Read the latest flexbox on Notes</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 24 Oct 2021 11:02:00 -0700</lastBuildDate><atom:link href="https://blog.geheimesite.nl/notes/tags/flexbox/index.xml" rel="self" type="application/rss+xml"/><item><title>Fill remaining height CSS</title><link>https://blog.geheimesite.nl/notes/2021/10/fill-remaining-height-css.html</link><pubDate>Sun, 24 Oct 2021 11:02:00 -0700</pubDate><guid>https://blog.geheimesite.nl/notes/2021/10/fill-remaining-height-css.html</guid><description>.parent { height: 100%; display: flex; flex-direction: column; } .child { flex-grow: 1; }</description><content:encoded> &lt;pre tabindex="0">&lt;code>.parent {
-height: 100%;
-display: flex;
-flex-direction: column;
-}
-.child {
-flex-grow: 1;
-}
-&lt;/code>&lt;/pre></content:encoded></item></channel></rss>

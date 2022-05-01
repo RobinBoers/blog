@@ -31,14 +31,14 @@ Sommigen van jullie zullen misschien het Dunning–Kruger effect1 kennen. Voor d
 <p>Ik zat zeg maar toen ik dit project starte helemaal aan de linkerkant, en nu zit ik wat meer richting het midden. Mijn idee was: ik pak een Raspberry Pi, slap er een 4G chip en mobile OS op en ik ben ready to go! Maar helaas is niks minder waar. Ik had nog niet echt nagedacht over het scherm, de batterij, hoe op te laden, volumeknoppen, sluimerknop, behuizing en bovenal de daadwerkelijke integratie van de software.</p>
 <p>Ik heb nog steeds alle intenties om met dit project verder te gaan, maar in een wat slomer tempo. Ik heb ook nog andere projecten, school en werk, en moet mijn tijd dus goed verdelen. Ik ga, zoals ik in de eerste post al zei, beginnen met het bouwen van een kleine tablet. Dat is nu het doel. Of ik het haal en wanneer dan is nog te bekijken.</p>
 <p>- Robin</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Een mooi artikel over het Dunning-Kruger effect: <a href="https://ardalis.com/the-more-you-know-the-more-you-realize-you-dont-know/">https://ardalis.com/the-more-you-know-the-more-you-realize-you-dont-know</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
  ]]></content:encoded></item><item><title>Mogelijke besturingssystemen voor mijn DIY telefoon</title><link>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</link><pubDate>Sun, 09 May 2021 05:51:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2021/05/mogelijke-besturingssystemen-voor-mijn.html</guid><description>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&amp;rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten.
 Een mobile shell is de interface waarin je apps draaien (homescherm, launcher, notificatiecentrum, lockscreen)
 Dit zijn tot nu toe de meest belovende opties:</description><content:encoded><![CDATA[ <p>Zoals ik in mijn vorige post al zei draait mijn theoretische telefoon Linux. Ik ben momenteel aan het testen met verschillende Linux distro&rsquo;s / mobile shells. Ik gebruik hiervoor een Raspberry Pi omdat ik die toevallig heb, maar in de toekomst zijn andere SBCs (singleboard computers) niet uitgesloten.</p>
