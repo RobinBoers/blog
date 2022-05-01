@@ -38,12 +38,12 @@ body > header > div {
 
 pre {
     overflow-x: auto;
-    scrollbar-color: #494949 #272822;
 }
 
 .highlight pre {
     padding: 15px;
     border-radius: 0.375rem;
+    scrollbar-color: #494949 #272822;
 }
 
 /* Tailwind patches */

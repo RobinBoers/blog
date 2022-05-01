@@ -1,102 +1,52 @@
-<!doctype html><html lang=nl-nl><head><meta charset=utf-8><meta charset=utf-8><meta name=mobile-web-app-capable content="yes"><meta name=viewport content="width=device-width,initial-scale=1"><title>Hyperlinks aan je website toevoegen — Webdevelopment-En-Meer | Robin Boers</title><link rel=stylesheet type=text/css href=https://geheimesite.nl/css/main.css><link rel=stylesheet type=text/css href=https://blog.geheimesite.nl//css/feed.css><link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>"><link rel=authorization_endpoint href=https://indieauth.com/auth><link rel=token_endpoint href=https://tokens.indieauth.com/token><link rel=me href=https://github.com/Robin%20Boers><link rel=webmention href=https://webmention.io/geheimesite.nl/webmention><link rel=pingback href=https://webmention.io/geheimesite.nl/xmlrpc><meta property="og:url" content="https://blog.geheimesite.nl/"><meta property="og:title" content="Webdevelopment-En-Meer"><meta property="og:site_name" content="Webdevelopment-En-Meer"><meta property="og:type" content="website"><meta name=twitter:title content="Webdevelopment-En-Meer"></head><body><header><div><div class="flex flex-row justify-between items-center"><div class="header__item flex flex-row flex-grow"><div id=logo></div><h1 class=title><a id=site__name href=https://blog.geheimesite.nl/>Webdevelopment-En-Meer</a></h1></div><nav aria-label="page menu"><ul role=menubar class="flex flex-row gap-10 m-0 p-0"><li role=none><a class=menu__item href=https://blog.geheimesite.nl/><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38.0 01-.9 3.8A8.5 8.5.0 0112.5 20a8.38 8.38.0 01-3.8-.9L3 21l1.9-5.7A8.38 8.38.0 014 11.5a8.5 8.5.0 014.7-7.6 8.38 8.38.0 013.8-.9h.5a8.48 8.48.0 018 8v.5z"/></svg></a></li></ul></nav></div></div></header><article class="feed__li feed__content h-entry post mt-10"><div class="text-center my-7 max-w-xl mx-auto"><time class="hidden dt-published">2020-02-29 04:01:00 -0800 -0800</time><h1 class="p-name mb-0 text-4xl">Hyperlinks aan je website toevoegen</h1><p class="my-5 bold text-black dark:text-white">29 February 2020</p><div class=hidden><div class="flex flex-row justify-between items-center"><div rel=author class="flex items-center gap-5 p-author h-card"><img class=u-photo src=https://geheimesite.nl/images/me.jpeg alt="Robin Boers" id=author-img><div><p rel=me class="p-name font-bold m-0" id=author-name>Robin Boers</p><p class=m-0>29 February 2020</p></div></div><div class=flex><a class="icon u-url" href=https://blog.geheimesite.nl/2020/02/hyperlinks-aan-je-website-toevoegen.html><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></a></div></div></div></div><section class="p-summary e-content"><p><strong>Een tutorial over het bouwen van je eerste website</strong><br>Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder<br>ontwerpprogramma&rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?</p><p>In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</p><p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href=https://blog.geheimesite.nl/search/label/ontwikkelomgeving_opzetten>Een ontwikkelomgeving opzetten</a></em></p><p><strong>Hyperlinks</strong><br>In deel 1 van deze tutorial heb ik je laten zien hoe je de homepage van je website kan bouwen. (Heb je dat nog niet gedaan? Check dan eerst deze post uit: <a href=https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html>Websites bouwen, hoe moet dat?</a>) Maar, een website bestaat niet uit 1 pagina. Ik wil ook nog een over-mij pagina, en een pagina waarop mijn projecten staan.<br><a href=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png alt='Afbeeldingsresultaat voor hyperlink"'></a>Dit is waar <strong>hyperlinks</strong> tevoorschijn komen.<br>Hyperlinks zijn die blauwe klikbare dingen, die je op websites ziet, die je van website naar website brengen. Hyperlinks zijn het hart van het internet. Zonder hyperlinks kun je er niks mee.</p><p>Maar ondertussen denk jij: &lsquo;Robin loopt maar wat te lullen, maar wanneer, en hoe gebruik je nou hyperlinks?</p><p>In dit geval gaan we hyperlinks gebruiken in de navigatie van de website, het menu.</p><p>Maak een nieuwe HTML pagina aan. Dit doe je door het bestand <code>index.html</code> in Brackets te openen, en dan bovenin op <code>file / bestand</code> te klikken. Klik daarna op <code>Opslaan als / Save as</code>. Typ in over-mij.html, en klik op <code>Opslaan / Save</code>. Als het goed is heb je nu 2 bestanden: <code>index.html</code> en <code>over-mij.html</code>. Open het <code>index.html</code>. En typ dit:</p><pre tabindex=0><code>&lt;!DOCTYPE html&gt;  
-&lt;html&gt;  
-  
-    &lt;head&gt;  
-  
-        &lt;title&gt;Robin Boers | Web Design&lt;/title&gt;  
-  
-    &lt;/head&gt;  
-  
-    &lt;body&gt;  
-  
-        &lt;header&gt;  
-  
-            &lt;h1&gt;Robin Boers | Web Design&lt;/h1&gt;  
-  
-      &lt;nav&gt;  
-  &lt;ul&gt;  
-      &lt;li&gt;Home&lt;/li&gt;  
-      &lt;li&gt;&lt;a href=&#34;over-mij.html&#34;&gt;Over mij&lt;/a&gt;&lt;/li&gt;  
-  &lt;/ul&gt;  
-            &lt;/nav&gt;
-</code></pre><p>       </p><p>        Welkom op mijn website!</p><p>        Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.<br>        Wil je ook een website? Neem dan contact met me op via: <a href=mailto:robin@geheimesite.nl>robin@geheimesite.nl</a></p><p>   </p><pre tabindex=0><code>  
-Open hierna het bestand `over-mij.html`, en typ dit:  
-  
-`&lt;!DOCTYPE html&gt;  
-  
-&lt;html&gt;  
-  
-    &lt;head&gt;  
-        &lt;title&gt;Over mij - Robin Boers | Web Design&lt;/title&gt;  
-    &lt;/head&gt;  
-  
-    &lt;body&gt;  
-        &lt;header&gt;  
-            &lt;h1&gt;Robin Boers | Web Design&lt;/h1&gt;  
-    &lt;nav&gt;  
-&lt;ul&gt;  
-    &lt;li&gt;&lt;a href=&#34;index.html&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;  
-    &lt;li&gt;Over mij&lt;/li&gt;  
-&lt;/ul&gt;  
-            &lt;/nav&gt;  
-        &lt;/header&gt;  
-  
-        &lt;h2&gt;Over mij&lt;/h2&gt;  
-  
-        &lt;p&gt;Hallo, ik ben 13 jaar, en ik maak websites. Ik heet Robin en toen ik dit schreef zat ik in de brugklas.&lt;br&gt;  
-Ik heb een YouTube kanaal, dat Robin Boers heet, waar ik video&#39;s maak over mij intresses. En ik heb een blog, dat je nu leest&lt;/p&gt;  
-  
-    &lt;/body&gt;  
-  
-&lt;/html&gt;`  
-  
-Open nu het bestand `index.html` in de browser, en bekijk het resultaat.  
-Als het goed is zou je dit moeten zien:  
-
-[![](https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s640/Capture.PNG)](https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s1600/Capture.PNG)
-
-De homepagina
-
-  
-Klik je dan op het linkje &#34;Over mij&#34;, dan zie je dit:  
-  
-
-[![](https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s640/Capture2.PNG)](https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s1600/Capture2.PNG)
-
-De over-mij pagina
-
-  
-Maar hoe werkt die code nou eigenlijk?  
-Het is best simpel: We maken een navigatievak met het element &lt;nav&gt;, daarna plaatsen we in dat vak een lijstje met &lt;ul&gt;. &lt;ul&gt; staat voor **U**nsorted **L**ist, een lijst zonder nummers. Daarna maken we **L**ist **I**tems met &lt;li&gt;. In de **L**ist **I**tems maken we hyperlinks met &lt;a&gt;.  
-  
-
-[![](https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s640/Capture3.PNG)](https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s1600/Capture3.PNG)
-
-De werking van het menu
-
-  
-Een hyperlink werkt zo:  
-  
-
-[![](https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s640/Capture4.PNG)](https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s1600/Capture4.PNG)
-
-  
-Gefeliciteerd! Je hebt zojuist je eerste hyperlink gemaakt!  
-
-Wil je meer informatie over het bouwen van websites? Bekijk dan dit boek eens: [Coderdojo Nano - Bouw je eigen website](http://www.nano-tips.com/). Met dit boek heb ik de eerste versie van mijn website gemaakt. Ook is het nuttig om [w3schools.com](https://w3schools.com/) eens te raadplegen. Het is een enorme site, met veel informatie. Er zit alleen 1 nadeel aan: het is Engels...
-
-  
-
-Dit was het voor deze tutorial.
-
-Ik hoop dat je hem nuttig vond.
-
-Blijf creatief,
-
-  
-
-Robin
-</code></pre></section><a class=hidden href=https://brid.gy/publish/mastodon></a>
+<!doctype html><html lang=nl-nl><head><meta charset=utf-8><meta charset=utf-8><meta name=mobile-web-app-capable content="yes"><meta name=viewport content="width=device-width,initial-scale=1"><title>Hyperlinks aan je website toevoegen — Webdevelopment-En-Meer | Robin Boers</title><link rel=stylesheet type=text/css href=https://geheimesite.nl/css/main.css><link rel=stylesheet type=text/css href=https://blog.geheimesite.nl//css/feed.css><link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>"><link rel=authorization_endpoint href=https://indieauth.com/auth><link rel=token_endpoint href=https://tokens.indieauth.com/token><link rel=me href=https://github.com/Robin%20Boers><link rel=webmention href=https://webmention.io/geheimesite.nl/webmention><link rel=pingback href=https://webmention.io/geheimesite.nl/xmlrpc><meta property="og:url" content="https://blog.geheimesite.nl/"><meta property="og:title" content="Webdevelopment-En-Meer"><meta property="og:site_name" content="Webdevelopment-En-Meer"><meta property="og:type" content="website"><meta name=twitter:title content="Webdevelopment-En-Meer"></head><body><header><div><div class="flex flex-row justify-between items-center"><div class="header__item flex flex-row flex-grow"><div id=logo></div><h1 class=title><a id=site__name href=https://blog.geheimesite.nl/>Webdevelopment-En-Meer</a></h1></div><nav aria-label="page menu"><ul role=menubar class="flex flex-row gap-10 m-0 p-0"><li role=none><a class=menu__item href=https://blog.geheimesite.nl/><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38.0 01-.9 3.8A8.5 8.5.0 0112.5 20a8.38 8.38.0 01-3.8-.9L3 21l1.9-5.7A8.38 8.38.0 014 11.5a8.5 8.5.0 014.7-7.6 8.38 8.38.0 013.8-.9h.5a8.48 8.48.0 018 8v.5z"/></svg></a></li></ul></nav></div></div></header><article class="feed__li feed__content h-entry post mt-10"><div class="text-center my-7 max-w-xl mx-auto"><time class="hidden dt-published">2020-02-29 04:01:00 -0800 -0800</time><h1 class="p-name mb-0 text-4xl">Hyperlinks aan je website toevoegen</h1><p class="my-5 bold text-black dark:text-white">29 February 2020</p><div class=hidden><div class="flex flex-row justify-between items-center"><div rel=author class="flex items-center gap-5 p-author h-card"><img class=u-photo src=https://geheimesite.nl/images/me.jpeg alt="Robin Boers" id=author-img><div><p rel=me class="p-name font-bold m-0" id=author-name>Robin Boers</p><p class=m-0>29 February 2020</p></div></div><div class=flex><a class="icon u-url" href=https://blog.geheimesite.nl/2020/02/hyperlinks-aan-je-website-toevoegen.html><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></a></div></div></div></div><section class="p-summary e-content"><p><strong>Een tutorial over het bouwen van je eerste website</strong></p><p>Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder<br>ontwerpprogramma&rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?</p><p>In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</p><p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href=https://blog.geheimesite.nl/search/label/ontwikkelomgeving_opzetten>Een ontwikkelomgeving opzetten</a></em></p><p><strong>Hyperlinks</strong></p><p>In deel 1 van deze tutorial heb ik je laten zien hoe je de homepage van je website kan bouwen. (Heb je dat nog niet gedaan? Check dan eerst deze post uit: <a href=https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html>Websites bouwen, hoe moet dat?</a>) Maar, een website bestaat niet uit 1 pagina. Ik wil ook nog een over-mij pagina, en een pagina waarop mijn projecten staan.<br><a href=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png alt='Afbeeldingsresultaat voor hyperlink"'></a>Dit is waar <strong>hyperlinks</strong> tevoorschijn komen.<br>Hyperlinks zijn die blauwe klikbare dingen, die je op websites ziet, die je van website naar website brengen. Hyperlinks zijn het hart van het internet. Zonder hyperlinks kun je er niks mee.</p><p>Maar ondertussen denk jij: &lsquo;Robin loopt maar wat te lullen, maar wanneer, en hoe gebruik je nou hyperlinks?</p><p>In dit geval gaan we hyperlinks gebruiken in de navigatie van de website, het menu.</p><p>Maak een nieuwe HTML pagina aan. Dit doe je door het bestand <code>index.html</code> in Brackets te openen, en dan bovenin op <code>file / bestand</code> te klikken. Klik daarna op <code>Opslaan als / Save as</code>. Typ in over-mij.html, en klik op <code>Opslaan / Save</code>. Als het goed is heb je nu 2 bestanden: <code>index.html</code> en <code>over-mij.html</code>. Open het <code>index.html</code>. En typ dit:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>title</span>&gt;Robin Boers | Web Design&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>h1</span>&gt;Robin Boers | Web Design&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>nav</span>&gt;
+</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>ul</span>&gt;
+</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>li</span>&gt;Home&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;over-mij.html&#34;</span>&gt;Over mij&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>ul</span>&gt;
+</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>nav</span>&gt;
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>h2</span>&gt;Welkom op mijn website!&lt;/<span style=color:#f92672>h2</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>            Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.&lt;<span style=color:#f92672>br</span> /&gt;
+</span></span><span style=display:flex><span>            Wil je ook een website? Neem dan contact met me op via: robin@geheimesite.nl
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p>Open hierna het bestand <code>over-mij.html</code>, en typ dit:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>title</span>&gt;Over mij - Robin Boers | Web Design&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>h1</span>&gt;Robin Boers | Web Design&lt;/<span style=color:#f92672>h1</span>&gt;
+</span></span><span style=display:flex><span>            &lt;<span style=color:#f92672>nav</span>&gt;
+</span></span><span style=display:flex><span>                &lt;<span style=color:#f92672>ul</span>&gt;
+</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>li</span>&gt;&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;index.html&#34;</span>&gt;Home&lt;/<span style=color:#f92672>a</span>&gt;&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>                    &lt;<span style=color:#f92672>li</span>&gt;Over mij&lt;/<span style=color:#f92672>li</span>&gt;
+</span></span><span style=display:flex><span>                &lt;/<span style=color:#f92672>ul</span>&gt;
+</span></span><span style=display:flex><span>            &lt;/<span style=color:#f92672>nav</span>&gt;
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>header</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>h2</span>&gt;Over mij&lt;/<span style=color:#f92672>h2</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        &lt;<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>            Hallo, ik ben 13 jaar, en ik maak websites. Ik heet Robin en toen ik dit schreef zat ik in de brugklas.&lt;<span style=color:#f92672>br</span> /&gt;
+</span></span><span style=display:flex><span>            Ik heb een YouTube kanaal, dat Robin Boers heet, waar ik video&#39;s maak over mij intresses. En ik heb een blog, dat je nu leest
+</span></span><span style=display:flex><span>        &lt;/<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
+</span></span></code></pre></div><p>Open nu het bestand <code>index.html</code> in de browser, en bekijk het resultaat.<br>Als het goed is zou je dit moeten zien:</p><p><a href=https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s1600/Capture.PNG><img src=https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s640/Capture.PNG alt></a></p><p><em>De homepagina</em></p><p>Klik je dan op het linkje &ldquo;Over mij&rdquo;, dan zie je dit:</p><p><a href=https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s1600/Capture2.PNG><img src=https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s640/Capture2.PNG alt></a></p><p><em>De over-mij pagina</em></p><p>Maar hoe werkt die code nou eigenlijk?<br>Het is best simpel: We maken een navigatievak met het element <code>&lt;nav></code>, daarna plaatsen we in dat vak een lijstje met <code>&lt;ul></code>. <code>&lt;ul></code> staat voor <strong>U</strong>nsorted <strong>L</strong>ist, een lijst zonder nummers. Daarna maken we <strong>L</strong>ist <strong>I</strong>tems met <code>&lt;li></code>. In de <strong>L</strong>ist <strong>I</strong>tems maken we hyperlinks met <code>&lt;a></code>.</p><p><a href=https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s1600/Capture3.PNG><img src=https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s640/Capture3.PNG alt></a></p><p><em>De werking van het menu</em></p><p>Een hyperlink werkt zo:</p><p><a href=https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s1600/Capture4.PNG><img src=https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s640/Capture4.PNG alt></a></p><p>Gefeliciteerd! Je hebt zojuist je eerste hyperlink gemaakt!</p><p>Wil je meer informatie over het bouwen van websites? Bekijk dan dit boek eens: <a href=http://www.nano-tips.com/>Coderdojo Nano - Bouw je eigen website</a>. Met dit boek heb ik de eerste versie van mijn website gemaakt. Ook is het nuttig om <a href=https://w3schools.com/>w3schools.com</a> eens te raadplegen. Het is een enorme site, met veel informatie. Er zit alleen 1 nadeel aan: het is Engels&mldr;</p><p>Dit was het voor deze tutorial.</p><p>Ik hoop dat je hem nuttig vond.</p><p>Blijf creatief,</p><p>Robin</p></section><a class=hidden href=https://brid.gy/publish/mastodon></a>
 <a class=hidden href=https://brid.gy/publish/twitter></a>
 <a class=hidden href=https://fed.brid.gy/></a>
 <data class=p-bridgy-omit-link value=false></data><section><div id=webmentions></div><p><a class="button btn" id=wm-link href=https://webmention.io/geheimesite.nl/webmention target=_blank>webmention this&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-external-link"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>

@@ -6,8 +6,8 @@ Nope, ik heb me toch bedacht. Ik wilde React leren omdat het het “standaard”
 Als ik bijvoorbeeld data wil hebben over mijn eigen profiel, kan ik de GitHub API daarom vragen door een HTTP verzoek (request) naar deze URL te sturen:
 https://api.github.com/users/RobinBoers Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel.</description><content:encoded><![CDATA[ <p>Ik heb vandaag wat geëxperimenteerd met de <a href="https://docs.github.com/en/rest">GitHub API</a>. Een API is een manier om data uit te wisselen tussen verschillende stukken code. Ik kan met de code van mijn website dus de code van GitHub aanspreken via de API.</p>
 <p>Als ik bijvoorbeeld data wil hebben over mijn eigen profiel, kan ik de GitHub API daarom vragen door een HTTP verzoek (request) naar deze URL te sturen:</p>
-<pre tabindex="0"><code>https://api.github.com/users/RobinBoers
-</code></pre><p>Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel. Op die manier kan ik ook mijn repos (repositories), followers, forks, starred repos etc. zien.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://api.github.com/users/RobinBoers
+</span></span></code></pre></div><p>Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel. Op die manier kan ik ook mijn repos (repositories), followers, forks, starred repos etc. zien.</p>
 <p>Ik heb de API gebruikt om alle repositories die niet gearchiveerd zijn op te halen en op mijn website weer te geven. Daardoor hoef ik niet iedere keer dat ik een project start mijn website aan te passen.</p>
 <p>Ik hoop dat jullie deze korte post interessant vonden :)</p>
 <p>- Robin</p>
@@ -30,21 +30,15 @@ Three.js is een Javascript library om 3D objecten in je browser weer te geven me
 Maar je kan er naast coole 3D effecten ook games mee maken! Het is niet een game specifieke library, maar het is wel mogelijk.</description><content:encoded><![CDATA[ <p>Ik heb de laatste 2 weken wat geëxperimenteerd met three.js</p>
 <p>Three.js is een Javascript library om 3D objecten in je browser weer te geven met WebGL. Klinkt moeilijk, maar het betekent eigenlijk: je kan coole 3D stuff op websites maken. Voorbeelden daarvan kan je op de homepage van <a href="http://threejs.org">threejs.org</a> vinden.</p>
 <p>Maar je kan er naast coole 3D effecten ook games mee maken! Het is niet een game specifieke library, maar het is wel mogelijk. Gecombineerd met bijvoorbeeld ammo.js kan je best coole games maken. Ik ben zelf momenteel bezig met een space shooter (ik zal wel een blogje posten als ie af is).</p>
-<p>Het eigenlijk best simpel. Je begint altijd met een scene, camera en renderer. Een scene is een groep 3D objecten. </p>
+<p>Het eigenlijk best simpel. Je begint altijd met een scene, camera en renderer. Een scene is een groep 3D objecten.</p>
 <p>Om dat scene te kunnen zien heb je een camera nodig. Dit is het perspectief waaruit je de 3D wereld ziet. Je hebt verschillende soorten camera&rsquo;s, maar degene die het meest wordt gebruikt is de perspective camera. Dit is gewoon het centraal perspectief wat je bij kunst hebt geleerd. De manier waarop mensen diepte zien.</p>
 <p>Dan heb je een renderer nodig. Dit is het onderdeel wat de scene op het scherm laat verschijnen. Meestal wordt <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">WebGL</a> (een Javascript API voor het renderen van 2D en 3D graphics met de GPU) gebruikt, maar er zijn ook andere beschikbaar voor outdated browsers.</p>
-<p>En dan heb je: een leeg scherm! Ja dat klopt. We hebben namelijk nog geen 3D objecten aan ons scene toegevoegd. Een 3D object kan een ruimtelijk figuur zijn (zoals een piramide of prisma) of een <a href="https://en.wikipedia.org/wiki/3D_modeling">model</a> wat is gemaakt in bijvoorbeeld blender. We kunnen ons object daarna aan ons scene toevoegen. </p>
+<p>En dan heb je: een leeg scherm! Ja dat klopt. We hebben namelijk nog geen 3D objecten aan ons scene toegevoegd. Een 3D object kan een ruimtelijk figuur zijn (zoals een piramide of prisma) of een <a href="https://en.wikipedia.org/wiki/3D_modeling">model</a> wat is gemaakt in bijvoorbeeld blender. We kunnen ons object daarna aan ons scene toevoegen.</p>
 <p>We hebben nu een scene met een object, maar het object is helemaal wit. Het probleem is dat we nog geen material hebben toegekend. Een material bepaalt hoe een object eruit ziet. Het meest simpele material is <a href="https://threejs.org/docs/?q=material#api/en/materials/MeshBasicMaterial">MeshBasicMaterial</a>. Dit material heeft geen licht nodig, maar er is ook geen diepte zichtbaar (het is flat). Je hebt ook andere materials:</p>
 <ul>
-<li>
-<p><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshStandardMaterial">MeshStandardMaterial</a>: het standaard material</p>
-</li>
-<li>
-<p><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshPhongMaterial">MeshPhongMaterial</a>: voor glimmende objecten</p>
-</li>
-<li>
-<p><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshToonMaterial">MeshToonMaterial</a>: hierdoor lijkt alles alsof het uit een stripboek komt </p>
-</li>
+<li><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshStandardMaterial">MeshStandardMaterial</a>: het standaard material</li>
+<li><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshPhongMaterial">MeshPhongMaterial</a>: voor glimmende objecten</li>
+<li><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshToonMaterial">MeshToonMaterial</a>: hierdoor lijkt alles alsof het uit een stripboek komt</li>
 </ul>
 <p><a href="https://1.bp.blogspot.com/-_8hxbezxXwU/YN8kHPOJ3BI/AAAAAAAAK6Q/akWuxrMsFoo0Znm9cRd0aLmbaAyixNBJQCLcBGAsYHQ/s1393/materials.png"><img src="https://1.bp.blogspot.com/-_8hxbezxXwU/YN8kHPOJ3BI/AAAAAAAAK6Q/akWuxrMsFoo0Znm9cRd0aLmbaAyixNBJQCLcBGAsYHQ/w640-h158/materials.png" alt=""></a></p>
 <p>De materials die ik hierboven beschreef: Basic, Standard, Phong en Toon</p>
@@ -64,11 +58,11 @@ Ik heb als experiment een game gemaakt genaamd CutieTanks. CutieTanks is een sho
 <p>Je kan CutieTanks tot 4 spelers spelen, en je speelt met een controller. Je kan zelf een skin en level kiezen. Er zijn nu 3 levels: City, Forest en Factory. Alle levels hebben jumppads, en factory heeft ook nog lopende banden.</p>
 <p>Als je de game start moet je op de start knop klikken om het player select scherm te openen. Elke speler die dan mee wil doen klikt op de onderste knop van de d-pad. Je kan met de d-pad een skin selecteren, en dan een level kiezen. Als je daarna op start drukt kom je in een game. Je kan bewegen met de linker analog stick, en richten met de andere analog stick. Als je het fijner vind om te richten waar je heen kijkt, kan je de d-pad gebruiken. De aanbevolen manier is echter met de analog sticks. Om te schieten kan je de rechter analog trigger gebruiken.</p>
 <p><a href="https://1.bp.blogspot.com/-kx-U0mcOlEs/YENNs1AHMvI/AAAAAAAAKkE/sUmqput6SykXXfkDQCwT4F6Mrti1M6NXACLcBGAsYHQ/s1200/forest.png"><img src="https://1.bp.blogspot.com/-kx-U0mcOlEs/YENNs1AHMvI/AAAAAAAAKkE/sUmqput6SykXXfkDQCwT4F6Mrti1M6NXACLcBGAsYHQ/w400-h200/forest.png" alt=""></a></p>
-<p>Het maken van een game in Phaser was erg leuk. Phaser is vrij makkelijk om te leren, en je kan er heel veel coole dingen mee doen. </p>
+<p>Het maken van een game in Phaser was erg leuk. Phaser is vrij makkelijk om te leren, en je kan er heel veel coole dingen mee doen.</p>
 <p>Je kan de game proberen op <a href="https://robijntje.itch.io/cutie-tanks">mijn itch.io profiel</a>.</p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Mijn eerste (goede) game!</title><link>https://blog.geheimesite.nl/2021/02/mijn-eerste-goede-game.html</link><pubDate>Tue, 23 Feb 2021 02:42:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/02/mijn-eerste-goede-game.html</guid><description>Ik heb de afgelopen weken erg hard gewerkt aan een game, en die is nu in een staat dat ik er tevreden mee ben. De game heet Sticks and Rocks en het is een 2d exploration game met een topdown camera. Dat betekent dat je het karakter van bovenaf ziet. Ook heeft de game random gegenereerd &amp;ldquo;destructible&amp;rdquo; terrein. Das eigenlijk gewoon een coole manier om te zeggen: je kan net als in het echt de wereld om je heen helemaal vernielen :)</description><content:encoded><![CDATA[ <p>Ik heb de afgelopen weken erg hard gewerkt aan een game, en die is nu in een staat dat ik er tevreden mee ben. De game heet Sticks and Rocks en het is een 2d exploration game met een topdown camera. Dat betekent dat je het karakter van bovenaf ziet. Ook heeft de game random gegenereerd &ldquo;destructible&rdquo; terrein. Das eigenlijk gewoon een coole manier om te zeggen: je kan net als in het echt de wereld om je heen helemaal vernielen :)</p>
-<p>De game is gemaakt met Javascript, HTML en CSS. Dat zijn de talen waarmee ik ook websites maak. Je vraagt je misschien af: hoe kan je met webdevelopment games maken? Vrij simpel. Voor de player movement en camera gebruik ik een set css regels. Daarmee verschuif ik de map op basis van de coords van de player met css achter de player langs. Verder gebruik ik JS als basis. Daarin is de gameloop geschreven en worden input, geluid en menu&rsquo;s geregeld. </p>
+<p>De game is gemaakt met Javascript, HTML en CSS. Dat zijn de talen waarmee ik ook websites maak. Je vraagt je misschien af: hoe kan je met webdevelopment games maken? Vrij simpel. Voor de player movement en camera gebruik ik een set css regels. Daarmee verschuif ik de map op basis van de coords van de player met css achter de player langs. Verder gebruik ik JS als basis. Daarin is de gameloop geschreven en worden input, geluid en menu&rsquo;s geregeld.</p>
 <p>Als je hier meer over wil zien raad ik je aan naar de <a href="https://github.com/RobinBoers/NinjaDO/tree/singleplayer">singleplayer branch van NinjaDO</a> (een andere game die ik heb gemaakt) te kijken. Dat is een heel simpele versie van NinjaDO waarin ik ook css, html en javascript gebruik.</p>
 <p>Dit is ook de eerste keer dat ik pixel art heb gemaakt. Pixel art is een manier van tekenen waarbij je alleen maar met vierkantjes (=pixels) werkt. Het mooie van pixel art is dat het makkelijk te maken is, en het kleine bestanden blijven. Hieronder zie je een screenshot van de game.</p>
 <p><a href="https://1.bp.blogspot.com/-2SPcwrS9iS8/YDTXGA-MGQI/AAAAAAAAKeY/E8bmBMvW89Ms9oR7cwVq9g5zV6b1kCl3ACLcBGAsYHQ/s1272/sticks-and-rocks%2B-%2BCopy.png"><img src="https://1.bp.blogspot.com/-2SPcwrS9iS8/YDTXGA-MGQI/AAAAAAAAKeY/E8bmBMvW89Ms9oR7cwVq9g5zV6b1kCl3ACLcBGAsYHQ/w640-h410/sticks-and-rocks%2B-%2BCopy.png" alt=""></a></p>
@@ -82,8 +76,9 @@ Ik heb als experiment een game gemaakt genaamd CutieTanks. CutieTanks is een sho
 <p>- Robin</p>
 <p>PS: voordat ik de vraag krijg waarom ik op itch.io de username Robijntje heb, dat mijn bijnaam die mijn vrienden met hebben gegeven. Ik gebruik die bijnaam wel op meer plekken (zoals reddit bijvoorbeeld)</p>
  ]]></content:encoded></item><item><title>WebDev ToolKit: tools voor web- en gamedevelopment</title><link>https://blog.geheimesite.nl/2021/02/webdev-toolkit-tools-voor-web-en.html</link><pubDate>Sat, 20 Feb 2021 01:00:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/02/webdev-toolkit-tools-voor-web-en.html</guid><description>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.
-Dit zijn de tools die ik tot nu toe heb.  Javascript KeyCodes:</description><content:encoded><![CDATA[ <p>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.</p>
-<p>Dit zijn de tools die ik tot nu toe heb. </p>
+Dit zijn de tools die ik tot nu toe heb.
+Javascript KeyCodes:</description><content:encoded><![CDATA[ <p>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.</p>
+<p>Dit zijn de tools die ik tot nu toe heb.</p>
 <ul>
 <li>Javascript KeyCodes:<br>
 <a href="https://code.geheimesite.nl/tools/keycode/">https://code.geheimesite.nl/tools/keycode/</a></li>
@@ -94,53 +89,32 @@ Dit zijn de tools die ik tot nu toe heb.  Javascript KeyCodes:</description><co
 <p>Het leek me leuk om dit even te delen. Misschien heeft een van mijn lezers er wel wat aan :)</p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Dit wil ik leren in 2021</title><link>https://blog.geheimesite.nl/2021/01/dit-wil-ik-leren-in-2021.html</link><pubDate>Sat, 30 Jan 2021 02:02:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/dit-wil-ik-leren-in-2021.html</guid><description>Misschien ben ik er een beetje laat mee omdat we al een maand in het nieuwe jaar zitten, maar dit zijn mijn doelen voor 2021. Dit zijn nieuwe dingen die ik graag wil leren of dingen waar ik me nog verder in wil verdiepen.
-React &amp;amp; React native. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/s720/1%2BLjR0UrFB2a__5h1DWqzstA.png"><img src="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/w200-h200/1%2BLjR0UrFB2a__5h1DWqzstA.png" alt=""></a></p>
+React &amp;amp; React native. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken Socket.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/s720/1%2BLjR0UrFB2a__5h1DWqzstA.png"><img src="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/w200-h200/1%2BLjR0UrFB2a__5h1DWqzstA.png" alt=""></a></p>
 <p>Misschien ben ik er een beetje laat mee omdat we al een maand in het nieuwe jaar zitten, maar dit zijn mijn doelen voor 2021. Dit zijn nieuwe dingen die ik graag wil leren of dingen waar ik me nog verder in wil verdiepen.</p>
 <ul>
-<li>
-<p><a href="https://reactjs.org/">React</a> &amp; <a href="https://reactnative.dev/">React native</a>. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken</p>
-</li>
-<li>
-<p><a href="http://Socket.io">Socket.io</a> en websockets. Ik wil me verdiepen in multiplayer games en chatapps in Javascript en Node.js met websockets.</p>
-</li>
-<li>
-<p>Linux, Python en Bash. Ik wil leren hoe je commandline apps maakt voor Linux. Ik ben al bezig met een settingsmanager voor de commandline genaamd TermiTools, maar ik heb het nooit afgemaakt.</p>
-</li>
-<li>
-<p><a href="https://www.electronjs.org/">Electron</a>. Ik wil me verder verdiepen in het maken van goede apps met Node.js en ik wil me verdiepen in het gebruik van Electron.</p>
-</li>
-<li>
-<p><a href="https://expressjs.com/">Express</a>. Ik wil leren hoe je webapps met een Node.js backend maakt met Express. </p>
-</li>
-<li>
-<p>LocalStorage. Ik wil me verdiepen in het maken van apps met de LocalStorage API voor het opslaan van gegevens zoals highscores, instellingen en meer.</p>
-</li>
+<li><a href="https://reactjs.org/">React</a> &amp; <a href="https://reactnative.dev/">React native</a>. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken</li>
+<li><a href="http://Socket.io">Socket.io</a> en websockets. Ik wil me verdiepen in multiplayer games en chatapps in Javascript en Node.js met websockets.</li>
+<li>Linux, Python en Bash. Ik wil leren hoe je commandline apps maakt voor Linux. Ik ben al bezig met een settingsmanager voor de commandline genaamd TermiTools, maar ik heb het nooit afgemaakt.</li>
+<li><a href="https://www.electronjs.org/">Electron</a>. Ik wil me verder verdiepen in het maken van goede apps met Node.js en ik wil me verdiepen in het gebruik van Electron.</li>
+<li><a href="https://expressjs.com/">Express</a>. Ik wil leren hoe je webapps met een Node.js backend maakt met Express.</li>
+<li>LocalStorage. Ik wil me verdiepen in het maken van apps met de LocalStorage API voor het opslaan van gegevens zoals highscores, instellingen en meer.</li>
 </ul>
 <p>Dit zijn een paar projecten die ik plan te maken:</p>
 <ul>
-<li>
-<p>Een commandline settingsmanager voor Linux (zoals ik hierboven al zei)</p>
-</li>
-<li>
-<p>Een Javascript terminal clone met LocalStorage. (ik wil mijn huidige <a href="https://www.geheimesite.nl/library/projects/package/cmd.php#2">CMD2</a> project herschrijven in Javascript)</p>
-</li>
-<li>
-<p>Een multiplayer game in Javascript gebaseerd op mijn huidige project <a href="https://github.com/RobinBoers/NinjaDO">NinjaDO</a>.</p>
-</li>
-<li>
-<p>Een password manager met MySQL database en een Python interface.</p>
-</li>
-<li>
-<p>Ik wil een simpele chatapp voor op mijn website maken als vervanger van <a href="https://github.com/RobinBoers/Nindo#nindo">Nindo</a>. De bedoeling is dat het gebruikt maakt van een React interface, een Node.js backend en websockets.</p>
-</li>
+<li>Een commandline settingsmanager voor Linux (zoals ik hierboven al zei)</li>
+<li>Een Javascript terminal clone met LocalStorage. (ik wil mijn huidige <a href="https://www.geheimesite.nl/library/projects/package/cmd.php#2">CMD2</a> project herschrijven in Javascript)</li>
+<li>Een multiplayer game in Javascript gebaseerd op mijn huidige project <a href="https://github.com/RobinBoers/NinjaDO">NinjaDO</a>.</li>
+<li>Een password manager met MySQL database en een Python interface.</li>
+<li>Ik wil een simpele chatapp voor op mijn website maken als vervanger van <a href="https://github.com/RobinBoers/Nindo#nindo">Nindo</a>. De bedoeling is dat het gebruikt maakt van een React interface, een Node.js backend en websockets.</li>
 </ul>
 <p>Dus ja, dit is wat ik dit jaar op het gebied van programmeren en webdevelopment ga doen.</p>
 <p>- Robin</p>
- ]]></content:encoded></item><item><title>js0.23-improved: Een verbeterde versie van classic.minecraft.net</title><link>https://blog.geheimesite.nl/2021/01/js023-improved-een-verbeterde-versie.html</link><pubDate>Wed, 27 Jan 2021 04:53:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/js023-improved-een-verbeterde-versie.html</guid><description>Ik ben de afgelopen 2 weken aan een verbeterde versie van classic.minecraft.net gewerkt. Minecraft Classic is de 2e grote versie van Minecraft en de eerste versie die het publiek kon spelen. Minecraft Classic is ook het moment dat multiplayer en survivalmode werden geïntroduceerd. Toen Minecraft in 2019 tien jaar oud werd heeft Mojang (het bedrijf achter Minecraft) een remake van Minecraft Classic versie 0.023a_01 geschreven in Javascript online gezet op classic.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-0SoXwRgbr10/YA1hM_ym-pI/AAAAAAAAKFw/OaMwhSIuze82Q7oMDnYF34K8Tp2mhaTmQCLcBGAsYHQ/s150/icon.png"><img src="https://1.bp.blogspot.com/-0SoXwRgbr10/YA1hM_ym-pI/AAAAAAAAKFw/OaMwhSIuze82Q7oMDnYF34K8Tp2mhaTmQCLcBGAsYHQ/s0/icon.png" alt=""></a></p>
-<p>Ik ben de afgelopen 2 weken aan een verbeterde versie van classic.minecraft.net gewerkt. Minecraft Classic is de 2e grote versie van Minecraft en de eerste versie die het publiek kon spelen. Minecraft Classic is ook het moment dat multiplayer en survivalmode werden geïntroduceerd. </p>
+ ]]></content:encoded></item><item><title>js0.23-improved: Een verbeterde versie van classic.minecraft.net</title><link>https://blog.geheimesite.nl/2021/01/js023-improved-een-verbeterde-versie.html</link><pubDate>Wed, 27 Jan 2021 04:53:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/js023-improved-een-verbeterde-versie.html</guid><description>Ik ben de afgelopen 2 weken aan een verbeterde versie van classic.minecraft.net gewerkt. Minecraft Classic is de 2e grote versie van Minecraft en de eerste versie die het publiek kon spelen. Minecraft Classic is ook het moment dat multiplayer en survivalmode werden geïntroduceerd.
+Toen Minecraft in 2019 tien jaar oud werd heeft Mojang (het bedrijf achter Minecraft) een remake van Minecraft Classic versie 0.023a_01 geschreven in Javascript online gezet op classic.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-0SoXwRgbr10/YA1hM_ym-pI/AAAAAAAAKFw/OaMwhSIuze82Q7oMDnYF34K8Tp2mhaTmQCLcBGAsYHQ/s150/icon.png"><img src="https://1.bp.blogspot.com/-0SoXwRgbr10/YA1hM_ym-pI/AAAAAAAAKFw/OaMwhSIuze82Q7oMDnYF34K8Tp2mhaTmQCLcBGAsYHQ/s0/icon.png" alt=""></a></p>
+<p>Ik ben de afgelopen 2 weken aan een verbeterde versie van classic.minecraft.net gewerkt. Minecraft Classic is de 2e grote versie van Minecraft en de eerste versie die het publiek kon spelen. Minecraft Classic is ook het moment dat multiplayer en survivalmode werden geïntroduceerd.</p>
 <p>Toen Minecraft in 2019 tien jaar oud werd heeft Mojang (het bedrijf achter Minecraft) een remake van Minecraft Classic versie 0.023a_01 geschreven in Javascript online gezet op <a href="http://classic.minecraft.net">classic.minecraft.net</a></p>
 <p>Omdat ik onder een steen leef kwam ik daar pas in 2021 achter. Maar toen ik er achter kwam ben ik meteen begonnen met het modden van de game (die ook wel js0.23 wordt genoemd). Ik heb onder andere een menuscherm, verbeterde muiscontrols, veborgen credits scherm, seeds, custom commands, vliegmodus en wat andere dingen toegevoegd. Ook heb ik er een Electron app van gemaakt, en kan je het dus direct op je computer (ook offline) spelen.</p>
-<p>Als je het ook eens wil proberen kan je hier een testversie downloaden: </p>
+<p>Als je het ook eens wil proberen kan je hier een testversie downloaden:</p>
 <p><a href="https://github.com/RobinBoers/js0.23-improved/releases">https://github.com/RobinBoers/js0.23-improved/releases</a></p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Chrome Dino game hacken met Javascript</title><link>https://blog.geheimesite.nl/2021/01/chrome-dino-game-hacken-met-javascript.html</link><pubDate>Wed, 13 Jan 2021 09:16:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/chrome-dino-game-hacken-met-javascript.html</guid><description>Ken je die Dinosaurus die je te zien krijgt als je geen internet hebt in Google Chrome? Wist je dat dat een game was? Waarschijnlijk wel. Zo niet moet je eens op spatiebalk drukken als je hem ziet. Voor de lezers die wisten dat de game bestond: vandaag gaan we hem hacken!
@@ -151,16 +125,17 @@ Dus, hoe gaan we dat doen? Nou simpel: installeer Kali Linux, download hacking t
 <p>Wist je trouwens dat je de game ook kan spelen als je gewoon internet hebt? Als je in Chrome in de adressbalk <a href="chrome://dino">chrome://dino</a> intypt, zou je een bekend scherm moeten zien</p>
 <p>Dus, wat gaan we precies doen? Stap 1 is het openen van de game. Ik leg hierboven uit hoe, maar je kan natuurlijk ook de kabel uit de router trekken :)</p>
 <p>Als je de game hebt geopend, moet je ergens op de pagina rechts klikken en op &ldquo;Inspecteren&rdquo; klikken. Je kan ook de sneltoets CTRL + SHIFT + I gebruiken.Je zou nu rechts of onder een vak moeten zien verschijnen met allemaal informatie. Dit is de HTML DOM code (Document Object Model), maar dat hebben we allemaal niet nodig. We hebben de Javascript console nodig, dus klikken we bovenaan op &ldquo;Console&rdquo;. Je kan hier nu de volgende commando&rsquo;s typen:</p>
-<p>Runner.instance_.gameOver = () =&gt; {console.log(&ldquo;Ik ben een vampier, ik ben onsterfelijk!&rdquo;)}</p>
-<p>Runner.instance_.config.ACCELERATION = 100;</p>
-<p>De bovenstaande commando&rsquo;s doen het volgende:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Runner</span>.<span style="color:#a6e22e">instance</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">_</span>.<span style="color:#a6e22e">gameOver</span> <span style="color:#f92672">=</span> () =&gt; {<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Ik ben een vampier, ik ben onsterfelijk!&#34;</span>)}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Runner</span>.<span style="color:#a6e22e">instance</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">_</span>.<span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">ACCELERATION</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;  
+</span></span></code></pre></div><p>De bovenstaande commando&rsquo;s doen het volgende:</p>
 <ol>
 <li>Het eerste command overschrijft de functie die wordt afgespeelt als de dino dood gaat, en maakt er een praktisch lege functie van. Hierdoor kan de dino niet meer dood gaan.</li>
 <li>Het 2e command stelt de snelheid van de dino in (of eigenlijk de versnelling). Ik heb hem hier op 100 gezet, maar ik denk dat je zo ver als het 32-bit integer limit kan (rond de 32K)</li>
 </ol>
-<p>Als het goed is vliegt de dino dus over het scherm en kan hij niet dood. Je wil nu nog wel je score kunnen opslaan. Dat doe je door dit command te typen: </p>
-<p>Runner.instance_.saveHighScore(Runner.instance_.distanceRan)</p>
-<p>Hierdoor wordt de afstand die je momenteel gelopen hebt als highscore opgeslagen. Nu vraag je je af: Robin, kan ik niet ook zoiets als Runner.instance_.saveHighScore(999999) doen?</p>
+<p>Als het goed is vliegt de dino dus over het scherm en kan hij niet dood. Je wil nu nog wel je score kunnen opslaan. Dat doe je door dit command te typen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Runner</span>.<span style="color:#a6e22e">instance</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">_</span>.<span style="color:#a6e22e">saveHighScore</span>(<span style="color:#a6e22e">Runner</span>.<span style="color:#a6e22e">instance</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">_</span>.<span style="color:#a6e22e">distanceRan</span>)
+</span></span></code></pre></div><p>Hierdoor wordt de afstand die je momenteel gelopen hebt als highscore opgeslagen. Nu vraag je je af: Robin, kan ik niet ook zoiets als <code>Runner.instance\_.saveHighScore(999999)</code> doen?</p>
 <p>Jup, dat kan. &ldquo;En waarom heb je dat dan niet gewoon gedaan?&rdquo;. Omdat dit veel cooler is natuurlijk!</p>
 <p>Nou ja, ik hoop dat je het leuk vond om te lezen, en tot de volgende keer!</p>
 <p>- Robin</p>

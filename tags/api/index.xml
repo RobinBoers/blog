@@ -2,8 +2,8 @@
 Als ik bijvoorbeeld data wil hebben over mijn eigen profiel, kan ik de GitHub API daarom vragen door een HTTP verzoek (request) naar deze URL te sturen:
 https://api.github.com/users/RobinBoers Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel.</description><content:encoded><![CDATA[ <p>Ik heb vandaag wat geëxperimenteerd met de <a href="https://docs.github.com/en/rest">GitHub API</a>. Een API is een manier om data uit te wisselen tussen verschillende stukken code. Ik kan met de code van mijn website dus de code van GitHub aanspreken via de API.</p>
 <p>Als ik bijvoorbeeld data wil hebben over mijn eigen profiel, kan ik de GitHub API daarom vragen door een HTTP verzoek (request) naar deze URL te sturen:</p>
-<pre tabindex="0"><code>https://api.github.com/users/RobinBoers
-</code></pre><p>Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel. Op die manier kan ik ook mijn repos (repositories), followers, forks, starred repos etc. zien.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://api.github.com/users/RobinBoers
+</span></span></code></pre></div><p>Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel. Op die manier kan ik ook mijn repos (repositories), followers, forks, starred repos etc. zien.</p>
 <p>Ik heb de API gebruikt om alle repositories die niet gearchiveerd zijn op te halen en op mijn website weer te geven. Daardoor hoef ik niet iedere keer dat ik een project start mijn website aan te passen.</p>
 <p>Ik hoop dat jullie deze korte post interessant vonden :)</p>
 <p>- Robin</p>

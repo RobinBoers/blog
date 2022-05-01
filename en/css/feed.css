@@ -40,6 +40,12 @@ pre {
     overflow-x: auto;
 }
 
+.highlight pre {
+    padding: 15px;
+    border-radius: 0.375rem;
+    scrollbar-color: #494949 #272822;
+}
+
 /* Tailwind patches */
 .justify-between {
     justify-content: space-between;

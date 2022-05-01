@@ -45,13 +45,13 @@ Som is noice. Je kan er je cijfers, huiswerk en leermiddelen zien. Maar ik zie o
 Als ik bijvoorbeeld data wil hebben over mijn eigen profiel, kan ik de GitHub API daarom vragen door een HTTP verzoek (request) naar deze URL te sturen:
 https://api.github.com/users/RobinBoers Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel.</description><content:encoded><![CDATA[ <p>Ik heb vandaag wat geëxperimenteerd met de <a href="https://docs.github.com/en/rest">GitHub API</a>. Een API is een manier om data uit te wisselen tussen verschillende stukken code. Ik kan met de code van mijn website dus de code van GitHub aanspreken via de API.</p>
 <p>Als ik bijvoorbeeld data wil hebben over mijn eigen profiel, kan ik de GitHub API daarom vragen door een HTTP verzoek (request) naar deze URL te sturen:</p>
-<pre tabindex="0"><code>https://api.github.com/users/RobinBoers
-</code></pre><p>Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel. Op die manier kan ik ook mijn repos (repositories), followers, forks, starred repos etc. zien.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://api.github.com/users/RobinBoers
+</span></span></code></pre></div><p>Ik krijg dan een reactie (response) van de GitHub API, met daarin alle (publieke) informatie van mijn profiel. Op die manier kan ik ook mijn repos (repositories), followers, forks, starred repos etc. zien.</p>
 <p>Ik heb de API gebruikt om alle repositories die niet gearchiveerd zijn op te halen en op mijn website weer te geven. Daardoor hoef ik niet iedere keer dat ik een project start mijn website aan te passen.</p>
 <p>Ik hoop dat jullie deze korte post interessant vonden :)</p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Mijn eerste (goede) game!</title><link>https://blog.geheimesite.nl/2021/02/mijn-eerste-goede-game.html</link><pubDate>Tue, 23 Feb 2021 02:42:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/02/mijn-eerste-goede-game.html</guid><description>Ik heb de afgelopen weken erg hard gewerkt aan een game, en die is nu in een staat dat ik er tevreden mee ben. De game heet Sticks and Rocks en het is een 2d exploration game met een topdown camera. Dat betekent dat je het karakter van bovenaf ziet. Ook heeft de game random gegenereerd &amp;ldquo;destructible&amp;rdquo; terrein. Das eigenlijk gewoon een coole manier om te zeggen: je kan net als in het echt de wereld om je heen helemaal vernielen :)</description><content:encoded><![CDATA[ <p>Ik heb de afgelopen weken erg hard gewerkt aan een game, en die is nu in een staat dat ik er tevreden mee ben. De game heet Sticks and Rocks en het is een 2d exploration game met een topdown camera. Dat betekent dat je het karakter van bovenaf ziet. Ook heeft de game random gegenereerd &ldquo;destructible&rdquo; terrein. Das eigenlijk gewoon een coole manier om te zeggen: je kan net als in het echt de wereld om je heen helemaal vernielen :)</p>
-<p>De game is gemaakt met Javascript, HTML en CSS. Dat zijn de talen waarmee ik ook websites maak. Je vraagt je misschien af: hoe kan je met webdevelopment games maken? Vrij simpel. Voor de player movement en camera gebruik ik een set css regels. Daarmee verschuif ik de map op basis van de coords van de player met css achter de player langs. Verder gebruik ik JS als basis. Daarin is de gameloop geschreven en worden input, geluid en menu&rsquo;s geregeld. </p>
+<p>De game is gemaakt met Javascript, HTML en CSS. Dat zijn de talen waarmee ik ook websites maak. Je vraagt je misschien af: hoe kan je met webdevelopment games maken? Vrij simpel. Voor de player movement en camera gebruik ik een set css regels. Daarmee verschuif ik de map op basis van de coords van de player met css achter de player langs. Verder gebruik ik JS als basis. Daarin is de gameloop geschreven en worden input, geluid en menu&rsquo;s geregeld.</p>
 <p>Als je hier meer over wil zien raad ik je aan naar de <a href="https://github.com/RobinBoers/NinjaDO/tree/singleplayer">singleplayer branch van NinjaDO</a> (een andere game die ik heb gemaakt) te kijken. Dat is een heel simpele versie van NinjaDO waarin ik ook css, html en javascript gebruik.</p>
 <p>Dit is ook de eerste keer dat ik pixel art heb gemaakt. Pixel art is een manier van tekenen waarbij je alleen maar met vierkantjes (=pixels) werkt. Het mooie van pixel art is dat het makkelijk te maken is, en het kleine bestanden blijven. Hieronder zie je een screenshot van de game.</p>
 <p><a href="https://1.bp.blogspot.com/-2SPcwrS9iS8/YDTXGA-MGQI/AAAAAAAAKeY/E8bmBMvW89Ms9oR7cwVq9g5zV6b1kCl3ACLcBGAsYHQ/s1272/sticks-and-rocks%2B-%2BCopy.png"><img src="https://1.bp.blogspot.com/-2SPcwrS9iS8/YDTXGA-MGQI/AAAAAAAAKeY/E8bmBMvW89Ms9oR7cwVq9g5zV6b1kCl3ACLcBGAsYHQ/w640-h410/sticks-and-rocks%2B-%2BCopy.png" alt=""></a></p>
@@ -65,8 +65,9 @@ https://api.github.com/users/RobinBoers Ik krijg dan een reactie (response) van 
 <p>- Robin</p>
 <p>PS: voordat ik de vraag krijg waarom ik op itch.io de username Robijntje heb, dat mijn bijnaam die mijn vrienden met hebben gegeven. Ik gebruik die bijnaam wel op meer plekken (zoals reddit bijvoorbeeld)</p>
  ]]></content:encoded></item><item><title>WebDev ToolKit: tools voor web- en gamedevelopment</title><link>https://blog.geheimesite.nl/2021/02/webdev-toolkit-tools-voor-web-en.html</link><pubDate>Sat, 20 Feb 2021 01:00:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/02/webdev-toolkit-tools-voor-web-en.html</guid><description>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.
-Dit zijn de tools die ik tot nu toe heb.  Javascript KeyCodes:</description><content:encoded><![CDATA[ <p>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.</p>
-<p>Dit zijn de tools die ik tot nu toe heb. </p>
+Dit zijn de tools die ik tot nu toe heb.
+Javascript KeyCodes:</description><content:encoded><![CDATA[ <p>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.</p>
+<p>Dit zijn de tools die ik tot nu toe heb.</p>
 <ul>
 <li>Javascript KeyCodes:<br>
 <a href="https://code.geheimesite.nl/tools/keycode/">https://code.geheimesite.nl/tools/keycode/</a></li>
@@ -124,136 +125,94 @@ PWA staat voor Progressive Web App, en betekent eigenlijk dat als je een website
  ]]></content:encoded></item><item><title>Hyperlinks aan je website toevoegen</title><link>https://blog.geheimesite.nl/2020/02/hyperlinks-aan-je-website-toevoegen.html</link><pubDate>Sat, 29 Feb 2020 04:01:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/hyperlinks-aan-je-website-toevoegen.html</guid><description>Een tutorial over het bouwen van je eerste website
 Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder
 ontwerpprogramma&amp;rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?
-In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</description><content:encoded><![CDATA[ <p><strong>Een tutorial over het bouwen van je eerste website</strong><br>
-Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder<br>
+In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</description><content:encoded><![CDATA[ <p><strong>Een tutorial over het bouwen van je eerste website</strong></p>
+<p>Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder<br>
 ontwerpprogramma&rsquo;s en die onzin, gewoon met code. Maar dat is helemaal toch niet zo lastig?</p>
 <p>In deze tutorial bouw je je eerste website, daarvoor gebruiken we de talen HTML (HyperText Markup Language), CSS (Cascading StyleSheets) en een beetje JS (JavaScript). Ik ga het proberen makkelijk te houden, maar ik zal er ook blauwe vakken in zetten, daarin ga ik verder op in de code en theorie.</p>
 <p><em>Ik verwacht dat je Brackets al hebt gedownload, en bestandnaamextensies aan staan. Is dat niet het geval, bekijk daar dan mijn tutorials over. Je vind ze hier: <a href="https://blog.geheimesite.nl/search/label/ontwikkelomgeving_opzetten">Een ontwikkelomgeving opzetten</a></em></p>
-<p><strong>Hyperlinks</strong><br>
-In deel 1 van deze tutorial heb ik je laten zien hoe je de homepage van je website kan bouwen. (Heb je dat nog niet gedaan? Check dan eerst deze post uit: <a href="https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a>) Maar, een website bestaat niet uit 1 pagina. Ik wil ook nog een over-mij pagina, en een pagina waarop mijn projecten staan.<br>
+<p><strong>Hyperlinks</strong></p>
+<p>In deel 1 van deze tutorial heb ik je laten zien hoe je de homepage van je website kan bouwen. (Heb je dat nog niet gedaan? Check dan eerst deze post uit: <a href="https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a>) Maar, een website bestaat niet uit 1 pagina. Ik wil ook nog een over-mij pagina, en een pagina waarop mijn projecten staan.<br>
 <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1200px-Hyperlink-Wikipedia.svg.png" alt="Afbeeldingsresultaat voor hyperlink&quot;"></a>Dit is waar <strong>hyperlinks</strong> tevoorschijn komen.<br>
 Hyperlinks zijn die blauwe klikbare dingen, die je op websites ziet, die je van website naar website brengen. Hyperlinks zijn het hart van het internet. Zonder hyperlinks kun je er niks mee.</p>
 <p>Maar ondertussen denk jij: &lsquo;Robin loopt maar wat te lullen, maar wanneer, en hoe gebruik je nou hyperlinks?</p>
 <p>In dit geval gaan we hyperlinks gebruiken in de navigatie van de website, het menu.</p>
 <p>Maak een nieuwe HTML pagina aan. Dit doe je door het bestand <code>index.html</code> in Brackets te openen, en dan bovenin op <code>file / bestand</code> te klikken. Klik daarna op <code>Opslaan als / Save as</code>. Typ in over-mij.html, en klik op <code>Opslaan / Save</code>. Als het goed is heb je nu 2 bestanden: <code>index.html</code> en <code>over-mij.html</code>. Open het <code>index.html</code>. En typ dit:</p>
-<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;  
-&lt;html&gt;  
-  
-    &lt;head&gt;  
-  
-        &lt;title&gt;Robin Boers | Web Design&lt;/title&gt;  
-  
-    &lt;/head&gt;  
-  
-    &lt;body&gt;  
-  
-        &lt;header&gt;  
-  
-            &lt;h1&gt;Robin Boers | Web Design&lt;/h1&gt;  
-  
-      &lt;nav&gt;  
-  &lt;ul&gt;  
-      &lt;li&gt;Home&lt;/li&gt;  
-      &lt;li&gt;&lt;a href=&#34;over-mij.html&#34;&gt;Over mij&lt;/a&gt;&lt;/li&gt;  
-  &lt;/ul&gt;  
-            &lt;/nav&gt;
-</code></pre><p>        <!-- raw HTML omitted --></p>
-<p>        <!-- raw HTML omitted -->Welkom op mijn website!<!-- raw HTML omitted --></p>
-<p>        <!-- raw HTML omitted -->Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.<!-- raw HTML omitted --><br>
-        Wil je ook een website? Neem dan contact met me op via: <a href="mailto:robin@geheimesite.nl">robin@geheimesite.nl</a><!-- raw HTML omitted --></p>
-<p>    <!-- raw HTML omitted --></p>
-<!-- raw HTML omitted -->
-<pre tabindex="0"><code>  
-Open hierna het bestand `over-mij.html`, en typ dit:  
-  
-`&lt;!DOCTYPE html&gt;  
-  
-&lt;html&gt;  
-  
-    &lt;head&gt;  
-        &lt;title&gt;Over mij - Robin Boers | Web Design&lt;/title&gt;  
-    &lt;/head&gt;  
-  
-    &lt;body&gt;  
-        &lt;header&gt;  
-            &lt;h1&gt;Robin Boers | Web Design&lt;/h1&gt;  
-    &lt;nav&gt;  
-&lt;ul&gt;  
-    &lt;li&gt;&lt;a href=&#34;index.html&#34;&gt;Home&lt;/a&gt;&lt;/li&gt;  
-    &lt;li&gt;Over mij&lt;/li&gt;  
-&lt;/ul&gt;  
-            &lt;/nav&gt;  
-        &lt;/header&gt;  
-  
-        &lt;h2&gt;Over mij&lt;/h2&gt;  
-  
-        &lt;p&gt;Hallo, ik ben 13 jaar, en ik maak websites. Ik heet Robin en toen ik dit schreef zat ik in de brugklas.&lt;br&gt;  
-Ik heb een YouTube kanaal, dat Robin Boers heet, waar ik video&#39;s maak over mij intresses. En ik heb een blog, dat je nu leest&lt;/p&gt;  
-  
-    &lt;/body&gt;  
-  
-&lt;/html&gt;`  
-  
-Open nu het bestand `index.html` in de browser, en bekijk het resultaat.  
-Als het goed is zou je dit moeten zien:  
-
-[![](https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s640/Capture.PNG)](https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s1600/Capture.PNG)
-
-De homepagina
-
-  
-Klik je dan op het linkje &#34;Over mij&#34;, dan zie je dit:  
-  
-
-[![](https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s640/Capture2.PNG)](https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s1600/Capture2.PNG)
-
-De over-mij pagina
-
-  
-Maar hoe werkt die code nou eigenlijk?  
-Het is best simpel: We maken een navigatievak met het element &lt;nav&gt;, daarna plaatsen we in dat vak een lijstje met &lt;ul&gt;. &lt;ul&gt; staat voor **U**nsorted **L**ist, een lijst zonder nummers. Daarna maken we **L**ist **I**tems met &lt;li&gt;. In de **L**ist **I**tems maken we hyperlinks met &lt;a&gt;.  
-  
-
-[![](https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s640/Capture3.PNG)](https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s1600/Capture3.PNG)
-
-De werking van het menu
-
-  
-Een hyperlink werkt zo:  
-  
-
-[![](https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s640/Capture4.PNG)](https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s1600/Capture4.PNG)
-
-  
-Gefeliciteerd! Je hebt zojuist je eerste hyperlink gemaakt!  
-
-Wil je meer informatie over het bouwen van websites? Bekijk dan dit boek eens: [Coderdojo Nano - Bouw je eigen website](http://www.nano-tips.com/). Met dit boek heb ik de eerste versie van mijn website gemaakt. Ook is het nuttig om [w3schools.com](https://w3schools.com/) eens te raadplegen. Het is een enorme site, met veel informatie. Er zit alleen 1 nadeel aan: het is Engels...
-
-  
-
-Dit was het voor deze tutorial.
-
-Ik hoop dat je hem nuttig vond.
-
-Blijf creatief,
-
-  
-
-Robin
-</code></pre> ]]></content:encoded></item><item><title>Websites bouwen voor beginners.</title><link>https://blog.geheimesite.nl/2020/02/websites-bouwen-voor-beginners.html</link><pubDate>Sat, 29 Feb 2020 04:00:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/websites-bouwen-voor-beginners.html</guid><description>Hallo, ik ben Robin. Ik ben 13 jaar, en toen ik 10 was, maakte ik mijn eerste website met dit boek: CoderDojo Nano - Bouw je eigen website. Ik ben inmiddels 13, en ik zit in de brugklas. In deze serie blogjes ga ik je (proberen) uit te leggen, hoe je een website kan bouwen. Ik heb veel ervaring opgedaan tijdens het maken van mijn eigen website, geheimesite.nl, en met die ervaring heb ik dit blog gemaakt.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-5ExypmpUzWI/XlpS0J3RJaI/AAAAAAAAGaM/AZfC9xrBZHMZlcG193-nTNTkB8EzpvXFACLcBGAsYHQ/s1600/code-logo-png-1.png"><img src="https://1.bp.blogspot.com/-5ExypmpUzWI/XlpS0J3RJaI/AAAAAAAAGaM/AZfC9xrBZHMZlcG193-nTNTkB8EzpvXFACLcBGAsYHQ/s200/code-logo-png-1.png" alt=""></a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">title</span>&gt;Robin Boers | Web Design&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">h1</span>&gt;Robin Boers | Web Design&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">li</span>&gt;Home&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;over-mij.html&#34;</span>&gt;Over mij&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h2</span>&gt;Welkom op mijn website!&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>            Hallo, ik ben Robin Boers, ik ben bijna 13, en ik maak websites.&lt;<span style="color:#f92672">br</span> /&gt;
+</span></span><span style="display:flex;"><span>            Wil je ook een website? Neem dan contact met me op via: robin@geheimesite.nl
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Open hierna het bestand <code>over-mij.html</code>, en typ dit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">title</span>&gt;Over mij - Robin Boers | Web Design&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">h1</span>&gt;Robin Boers | Web Design&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;index.html&#34;</span>&gt;Home&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">li</span>&gt;Over mij&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h2</span>&gt;Over mij&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>            Hallo, ik ben 13 jaar, en ik maak websites. Ik heet Robin en toen ik dit schreef zat ik in de brugklas.&lt;<span style="color:#f92672">br</span> /&gt;
+</span></span><span style="display:flex;"><span>            Ik heb een YouTube kanaal, dat Robin Boers heet, waar ik video&#39;s maak over mij intresses. En ik heb een blog, dat je nu leest
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Open nu het bestand <code>index.html</code> in de browser, en bekijk het resultaat.<br>
+Als het goed is zou je dit moeten zien:</p>
+<p><a href="https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s1600/Capture.PNG"><img src="https://1.bp.blogspot.com/-e5Weh9v9tMo/Xlo6NEiqq-I/AAAAAAAAGZk/MpEwhpN6mU8cmx_-lyrghbR8WFEHIWUkQCLcBGAsYHQ/s640/Capture.PNG" alt=""></a></p>
+<p><em>De homepagina</em></p>
+<p>Klik je dan op het linkje &ldquo;Over mij&rdquo;, dan zie je dit:</p>
+<p><a href="https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s1600/Capture2.PNG"><img src="https://1.bp.blogspot.com/-Qrq6CG2H_5E/Xlo6NLEWFII/AAAAAAAAGZg/F4Yk8sdWawg84NBxb-1YwCD7qmYHLj85gCEwYBhgL/s640/Capture2.PNG" alt=""></a></p>
+<p><em>De over-mij pagina</em></p>
+<p>Maar hoe werkt die code nou eigenlijk?<br>
+Het is best simpel: We maken een navigatievak met het element <code>&lt;nav&gt;</code>, daarna plaatsen we in dat vak een lijstje met <code>&lt;ul&gt;</code>. <code>&lt;ul&gt;</code> staat voor <strong>U</strong>nsorted <strong>L</strong>ist, een lijst zonder nummers. Daarna maken we <strong>L</strong>ist <strong>I</strong>tems met <code>&lt;li&gt;</code>. In de <strong>L</strong>ist <strong>I</strong>tems maken we hyperlinks met <code>&lt;a&gt;</code>.</p>
+<p><a href="https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s1600/Capture3.PNG"><img src="https://1.bp.blogspot.com/-rKkaPNOlhGU/XlpKDrEB12I/AAAAAAAAGZ0/MFTpm7niYRonjdYWgaulbK49jhss9It4QCLcBGAsYHQ/s640/Capture3.PNG" alt=""></a></p>
+<p><em>De werking van het menu</em></p>
+<p>Een hyperlink werkt zo:</p>
+<p><a href="https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s1600/Capture4.PNG"><img src="https://1.bp.blogspot.com/-eiri35QSMlQ/XlpPYZrkbXI/AAAAAAAAGaA/XHv3gGmTFoER8Azpmaf7xizN7GEJFmcqwCLcBGAsYHQ/s640/Capture4.PNG" alt=""></a></p>
+<p>Gefeliciteerd! Je hebt zojuist je eerste hyperlink gemaakt!</p>
+<p>Wil je meer informatie over het bouwen van websites? Bekijk dan dit boek eens: <a href="http://www.nano-tips.com/">Coderdojo Nano - Bouw je eigen website</a>. Met dit boek heb ik de eerste versie van mijn website gemaakt. Ook is het nuttig om <a href="https://w3schools.com/">w3schools.com</a> eens te raadplegen. Het is een enorme site, met veel informatie. Er zit alleen 1 nadeel aan: het is Engels&hellip;</p>
+<p>Dit was het voor deze tutorial.</p>
+<p>Ik hoop dat je hem nuttig vond.</p>
+<p>Blijf creatief,</p>
+<p>Robin</p>
+ ]]></content:encoded></item><item><title>Websites bouwen voor beginners.</title><link>https://blog.geheimesite.nl/2020/02/websites-bouwen-voor-beginners.html</link><pubDate>Sat, 29 Feb 2020 04:00:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/websites-bouwen-voor-beginners.html</guid><description>Hallo, ik ben Robin. Ik ben 13 jaar, en toen ik 10 was, maakte ik mijn eerste website met dit boek: CoderDojo Nano - Bouw je eigen website. Ik ben inmiddels 13, en ik zit in de brugklas. In deze serie blogjes ga ik je (proberen) uit te leggen, hoe je een website kan bouwen. Ik heb veel ervaring opgedaan tijdens het maken van mijn eigen website, geheimesite.nl, en met die ervaring heb ik dit blog gemaakt.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-5ExypmpUzWI/XlpS0J3RJaI/AAAAAAAAGaM/AZfC9xrBZHMZlcG193-nTNTkB8EzpvXFACLcBGAsYHQ/s1600/code-logo-png-1.png"><img src="https://1.bp.blogspot.com/-5ExypmpUzWI/XlpS0J3RJaI/AAAAAAAAGaM/AZfC9xrBZHMZlcG193-nTNTkB8EzpvXFACLcBGAsYHQ/s200/code-logo-png-1.png" alt=""></a></p>
 <p>Hallo, ik ben Robin. Ik ben 13 jaar, en toen ik 10 was, maakte ik mijn eerste website met dit boek: <a href="http://www.nano-tips.com/">CoderDojo Nano - Bouw je eigen website</a>. Ik ben inmiddels 13, en ik zit in de brugklas. In deze serie blogjes ga ik je (proberen) uit te leggen, hoe je een website kan bouwen. Ik heb veel ervaring opgedaan tijdens het maken van mijn eigen website, geheimesite.nl, en met die ervaring heb ik dit blog gemaakt. Ik hoop dat je het leuk gaat vinden, en ik wens je veel plezier bij het programmeren van je eerste website!</p>
 <p>Blijf creatief,<br>
 Robin</p>
 <ul>
-<li>
-<p><a href="https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a></p>
-</li>
-<li>
-<p><a href="https://blog.geheimesite.nl/2020/02/hyperlinks-aan-je-website-toevoegen.html">Hyperlinks aan je website toevoegen</a></p>
-</li>
-<li>
-<p><a href="https://blog.geheimesite.nl/search/label/website-maken">Alle blogjes</a></p>
-</li>
+<li><a href="https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html">Websites bouwen, hoe moet dat?</a></li>
+<li><a href="https://blog.geheimesite.nl/2020/02/hyperlinks-aan-je-website-toevoegen.html">Hyperlinks aan je website toevoegen</a></li>
+<li><a href="https://blog.geheimesite.nl/search/label/website-maken">Alle blogjes</a></li>
 </ul>
  ]]></content:encoded></item><item><title>Websites bouwen, hoe moet dat?</title><link>https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html</link><pubDate>Sat, 29 Feb 2020 04:00:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/websites-bouwen-hoe-moet-dat.html</guid><description>Een tutorial over het bouwen van je eerste website
 Veel mensen vinden het knap als je zegt dat je een website hebt gemaakt, zonder
@@ -326,16 +285,22 @@ Geen nood, hieronder staat weer een uitleg, met wat alle elementen doen.</p>
 <p>Blijf creatief,</p>
 <p>Robin</p>
  ]]></content:encoded></item><item><title>Zo maak je een inlogsysteem met PHP en HTML</title><link>https://blog.geheimesite.nl/2020/02/zo-maak-je-een-inlogsysteem-met-php-en.html</link><pubDate>Tue, 25 Feb 2020 06:56:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2020/02/zo-maak-je-een-inlogsysteem-met-php-en.html</guid><description>Hallo, ik ben Robin. In deze tutorial laat ik zien hoe je een simpel inlogsysteem maakt in PHP.
-https://www.youtube.com/watch?v=Nqw5XAYdeMc
+&amp;gt;
 Voor deze video moet je wel de basisvaardigheden van PHP en HTML onder de knie hebben. Wil je leren hoe je je eerste HTML website maakt? Houd dan dit blog in de gaten, want binnenkort plaats ik een beginners handleiding HTML.
 Kijk voor de broncode van dit project op mijn GitHub profiel: https://github.</description><content:encoded><![CDATA[ <p>Hallo, ik ben Robin. In deze tutorial laat ik zien hoe je een simpel inlogsysteem maakt in PHP.</p>
-<p><a href="https://www.youtube.com/watch?v=Nqw5XAYdeMc">https://www.youtube.com/watch?v=Nqw5XAYdeMc</a></p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Nqw5XAYdeMc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+&gt;</p>
 <p>Voor deze video moet je wel de basisvaardigheden van PHP en HTML onder de knie hebben. Wil je leren hoe je je eerste HTML website maakt? Houd dan dit blog in de gaten, want binnenkort plaats ik een beginners handleiding HTML.</p>
 <p>Kijk voor de broncode van dit project op mijn GitHub profiel: <a href="https://github.com/RobinBoers/Inlogsysteem_PHP">https://github.com/RobinBoers/Inlogsysteem_PHP</a></p>
 <p>Hier heb je nog een lijstje handige tools bij webdevelopment en PHP:</p>
-<p>- <strong>xampp</strong>: <a href="https://www.apachefriends.org/index.html">https://www.apachefriends.org/index.html</a><br>
-- <strong>brackets</strong>: <a href="http://brackets.io/">http://brackets.io/</a><br>
-- <strong>visual studio code</strong>: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<ul>
+<li><strong>xampp</strong>: <a href="https://www.apachefriends.org/index.html">https://www.apachefriends.org/index.html</a></li>
+<li><strong>brackets</strong>: <a href="http://brackets.io/">http://brackets.io/</a></li>
+<li><strong>visual studio code</strong>: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+</ul>
 <p>Heb je nog vragen of tips? Plaats ze in de comments!</p>
 <p>En wil je graag dat ik nog een tutorial maak over een inlogsysteem met een database? Zet het in de comments!</p>
  ]]></content:encoded></item><item><title>Nindo App</title><link>https://blog.geheimesite.nl/2019/07/nindo-app.html</link><pubDate>Thu, 25 Jul 2019 07:31:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2019/07/nindo-app.html</guid><description>Hoi, ik heb pas een app gemaakt. Hij heet DGAW. Dat staat voor De Geheim Agenten Web-app. Want dat is het, een web-app. Hij past zich automatisch aan aan het platform (IOS of Android), zodat ie er toch uitziet als een native app. De layout is gemaakt met Onsen UI. Als je hem aan je beginscherm vastmaakt, ziet het eruit als een systeemeigen app, omdat hij in een eigen venster wordt geopend, zonder browsercontrolls.</description><content:encoded><![CDATA[ <p>Hoi, ik heb pas een app gemaakt. Hij heet DGAW. Dat staat voor De Geheim Agenten Web-app. Want dat is het, een web-app. Hij past zich automatisch aan aan het platform (IOS of Android), zodat ie er toch uitziet als een native app. De layout is gemaakt met <a href="https://onsen.io/">Onsen UI</a>. Als je hem aan je beginscherm vastmaakt, ziet het eruit als een systeemeigen app, omdat hij in een eigen venster wordt geopend, zonder browsercontrolls. Dat komt opdat ik een <a href="https://developers.google.com/web/fundamentals/web-app-manifest/">Web App Manifest</a> heb toegevoegd. Je kan er openbare berichten in plaatsen, met Nindo. Ook kan je privé berichten versturen en chatten. Hieronder zie je een paar screenshots:</p>
@@ -348,7 +313,7 @@ Kijk voor de broncode van dit project op mijn GitHub profiel: https://github.</d
 <p><a href="https://1.bp.blogspot.com/-_vs5MHh1WiQ/XTm8kvWvWDI/AAAAAAAABnM/Sz_KbeXUzGAorDK6UtIp4-yXvq3XDhe8wCLcBGAs/s1600/CBE605B4-2646-4B7A-9AA2-8CA4E9CF5604.png"><img src="https://1.bp.blogspot.com/-_vs5MHh1WiQ/XTm8kvWvWDI/AAAAAAAABnM/Sz_KbeXUzGAorDK6UtIp4-yXvq3XDhe8wCLcBGAs/s320/CBE605B4-2646-4B7A-9AA2-8CA4E9CF5604.png" alt=""></a></p>
 <p>Je kan de app hier vinden: <a href="http://geheimesite.nl/dgaw/app/install">DGAW</a><br>
 Dit was het alweer&hellip; Wil je meer weten? Laat het me weten in de reacties!</p>
-<p>Doeii, </p>
+<p>Doeii,</p>
 <p>Robin</p>
 <p>PS: deze blogpost is verouderd. Als je de nieuwe versie van de app wil downloaden moet je inloggen op geheimesite.nl en de stappen volgen</p>
  ]]></content:encoded></item></channel></rss>

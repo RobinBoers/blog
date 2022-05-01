@@ -7,17 +7,17 @@ Een package manager is een programma dat automatisch software voor jouw installe
 <p>Maak een account aan bij de AUR. Je hebt daar alleen een username en emailadres voor nodig. Je kan hier een AUR account aanmaken: <a href="https://aur.archlinux.org/register">https://aur.archlinux.org/register</a></p>
 <p>Maak dan een SSH keypair aan. Met een SSH keypair kan je met een server verbinden via SSH zonder een wachtwoord te gebruiken. Lees daar hier meer over: <a href="https://linuxiac.com/generate-ssh-key-pair">https://linuxiac.com/generate-ssh-key-pair</a>. Je moet je SSH public key (die in id_rsa.pub) in je AUR account invoeren in het veld <em>SSH Public Key</em>. Dit kan ook al bij het aanmaken van je account.</p>
 <p>Je kan dan via SSH een git repo clonen en daar je PKGBUILD in toevoegen. Dat kan je met het volgende command doen: (vervang package_name natuurlijk met de naam van je package)</p>
-<p>git clone ssh://aur@aur.archlinux.org/<em>package_name</em>.git</p>
-<p>Je PKGBUILD is een bestand waarin precies staat hoe de software geinstalleerd moet worden. DistroTube heeft een hele goede video gemaakt in samenwerking met BigPod over hoe je zo&rsquo;n PKGBUILD maakt. Zie die hieronder:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone ssh://aur@aur.archlinux.org/_package<span style="color:#ae81ff">\_</span>name_.git
+</span></span></code></pre></div><p>Je PKGBUILD is een bestand waarin precies staat hoe de software geinstalleerd moet worden. DistroTube heeft een hele goede video gemaakt in samenwerking met BigPod over hoe je zo&rsquo;n PKGBUILD maakt. Zie die hieronder:</p>
 <p>Je moet daarna een .SRCINFO bestand maken. Hier staat allemaal informatie over jouw package in. Je kan deze heel makkelijk genereren met het volgende command:</p>
-<p>makepkg &ndash;printsrcinfo &gt; .SRCINFO</p>
-<p>Lees nu eerst de guidelines en kijk of je package daar aan voldoet. Je kan de guidelines voor de AUR hier vinden: <a href="https://wiki.archlinux.org/title/AUR_submission_guidelines">https://wiki.archlinux.org/title/AUR_submission_guidelines</a> Als je al de nodige bestanden hebt toegevoegd en de guidelines hebt gelezen kan je je package publiceren met de volgende commands:</p>
-<p>git add .</p>
-<p>git commit -m &ldquo;initial commit&rdquo;</p>
-<p>git push</p>
-<p>Als het goed is zou je package nu gepubliceerd moeten worden. Anderen kunnen nu je package installeren met een AUR helper zoals yay of paru. Je kan bijvoorbeeld mijn game installeren met het volgende command:</p>
-<p>yay -S cutie-tanks</p>
-<p>Doei,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>makepkg --printsrcinfo &gt; .SRCINFO
+</span></span></code></pre></div><p>Lees nu eerst de guidelines en kijk of je package daar aan voldoet. Je kan de guidelines voor de AUR hier vinden: <a href="https://wiki.archlinux.org/title/AUR_submission_guidelines">https://wiki.archlinux.org/title/AUR_submission_guidelines</a> Als je al de nodige bestanden hebt toegevoegd en de guidelines hebt gelezen kan je je package publiceren met de volgende commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;initial commit&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><p>Als het goed is zou je package nu gepubliceerd moeten worden. Anderen kunnen nu je package installeren met een AUR helper zoals yay of paru. Je kan bijvoorbeeld mijn game installeren met het volgende command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yay -S cutie-tanks
+</span></span></code></pre></div><p>Doei,</p>
 <p>-Robin</p>
  ]]></content:encoded></item><item><title>Tiling Window Managers: wat zijn het en wat zijn de voordelen?</title><link>https://blog.geheimesite.nl/2021/04/tiling-window-managers-wat-zijn-het-en.html</link><pubDate>Sun, 25 Apr 2021 03:50:00 -0700</pubDate><guid>https://blog.geheimesite.nl/2021/04/tiling-window-managers-wat-zijn-het-en.html</guid><description>HAAAAALLLOOO! Hier ben ik weer. Vandaag ga ik jullie iets vertellen over tiling window managers.
 Een window manager is een programma dat op iedere computer staat. De window manager managet de windows. Als je het over windows hebt gaat het in dit geval niet over het besturingssysteem van Microsoft maar over zogenaamde vensters: de vakjes waar je apps in leven.
@@ -28,7 +28,7 @@ De meeste window managers zijn floating window managers. Bij een floating window
 <p>Maar wat is een tiling window manager dan? Een tiling window manager tilet de windows voor je. Als je 1 app opent is deze fullscreen. Als je 2 apps open hebt staan zijn ze allebei de helft, bij 3 allemaal een derde bij 4 een vierde enzovoort.</p>
 <p>Het voordeel hiervan is dat je altijd overzicht hebt. Je kan altijd je apps zien en je raakt ze nooit &ldquo;kwijt&rdquo; omdat ze ergens anders achter zitten. Daarnaast gebruik je de maximale capaciteit van je scherm. En, je sluit vaak de apps die je niet meer gebruikt omdat ze anders ruimte in beslag nemen. Hierdoor heb je niet 3 miljoen dingen openstaan die allemaal RAM, CPU en andere stuff opslokken.</p>
 <p>Misschien vraag je je af: wat als ik verschillende apps fullscreen wil hebben, maar toch tegelijk open moet hebben? Daarvoor gebruik je workspaces of virtual desktops. Dit is net alsof je meerdere monitoren hebt, maar dan met 1 scherm. Je kan van workspace switchen en zo toch meerdere dingen tegelijk doen, terwijl je het overzicht behoud.</p>
-<p>Als je een tiling window manager in linux wil gebruiken kan je deze gewoon downloaden vanuit de repos en dan vanaf je login scherm/display manager starten. </p>
+<p>Als je een tiling window manager in linux wil gebruiken kan je deze gewoon downloaden vanuit de repos en dan vanaf je login scherm/display manager starten.</p>
 <p>In Windows kan je via WSL (Windows Subsystem for Linux) een tiling window manager starten, maar let erop dat je performance problemen kan krijgen omdat je hem binnen Windows draait. Voor Windows is er ook nog een ander alternatief: PowerToys. Daarin zit een tool waarover ik al eerder een blogje heb geschreven. Dit is ook psuedo-tiling, maar je kan in ieder geval je eigen layouts maken.</p>
 <p>Ik hoop dat jullie dit blogje interresant vonden, en tot de volgende keer!</p>
 <p>-Robin</p>
@@ -41,7 +41,7 @@ De grootste reden voor de switch is dat ik zelf in beheer kan zijn van mijn eige
 <p>De grootste reden voor de switch is dat ik zelf in beheer kan zijn van mijn eigen computer. Ik werk nu al sinds 2018 met Linux, en wat me vanaf het begin al opviel: je kan echt alles met je systeem doen. Als ik de standaard icoontjes niet mooi vind, kan ik zo een ander theme installeren. In Linux heb je keuze. De keuze om je eigen desktop envoirment te kiezen, te kiezen welke software je wilt draaien op je apparaat, en de keuze of je wel of niet wilt updaten.</p>
 <p>Een andere reden is privacy. Linux trackt je niet. Linux verzamelt je data niet, en in Linux krijg je geen advertenties in je start menu te zien. Als je Linux installeert krijg je niet eerst allemaal popups van een bedrijf dat je antivirus probeert aan te smeren, of een gratis abonnement op Dropbox voor 6 maanden waar je daarna aan vast zit.</p>
 <p>Als je Linux download is het vanaf dat moment van jouw. Je hebt de rechten voor de software. Dat is omdat Linux open-source is. Je kan de software aanpassen en distribueren. In Windows mag dat niet. Microsoft is nog steeds eigenaar van de software, ook al draait het op <strong>jouw</strong> computer. Je mag Windows niet aanpassen, en je hebt geen volledige toegang tot je systeem.</p>
-<p>Een ander enorm pluspunt aan Linux zijn de package managers. In Windows moet je, als je een programma wil installeren, naar de website van de fabrikant, een installer downloaden en draaien. En dan hopen dat je niet de verkeerde link in Google had genomen, of op een advertentie had geklikt. </p>
+<p>Een ander enorm pluspunt aan Linux zijn de package managers. In Windows moet je, als je een programma wil installeren, naar de website van de fabrikant, een installer downloaden en draaien. En dan hopen dat je niet de verkeerde link in Google had genomen, of op een advertentie had geklikt.</p>
 <p>In Linux is dat veel simpeler. Linux werkt namelijk met package managers. Dat zijn een soort programma&rsquo;s die automatisch de software voor jouw downloaden en installeren. Dit gaat met zogenaamde repo&rsquo;s. Repo&rsquo;s zijn collecties software samengesteld door de makers van je distro. De software in een officiële repo is meestal gecontroleerd en veilig. Het enige wat je als gebruiker dus nog hoeft te doen is de computer te vertellen wat je wil installeren. Als ik bijvoorbeeld Firefox wil installeren, hoe ik alleen maar mijn package manager (in dit geval <strong>apt</strong>) te vertellen wat ik wil installeren door dit in mn commandline te typen:</p>
 <p>sudo apt install firefox</p>
 <p>En voilla, 30 seconden later heb ik Firefox geïnstalleerd.</p>
@@ -51,45 +51,23 @@ De grootste reden voor de switch is dat ik zelf in beheer kan zijn van mijn eige
 <p>Dus dit zijn de redenen dat ik naar Linux switch. Ik zal over een paar weken laten weten hoe Linux me bevalt als ik het als mijn primaire besturingssysteem gebruik. En anders kan ik altijd nog terug naar Windows gaan.</p>
 <p>- Robin</p>
  ]]></content:encoded></item><item><title>Dit wil ik leren in 2021</title><link>https://blog.geheimesite.nl/2021/01/dit-wil-ik-leren-in-2021.html</link><pubDate>Sat, 30 Jan 2021 02:02:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/01/dit-wil-ik-leren-in-2021.html</guid><description>Misschien ben ik er een beetje laat mee omdat we al een maand in het nieuwe jaar zitten, maar dit zijn mijn doelen voor 2021. Dit zijn nieuwe dingen die ik graag wil leren of dingen waar ik me nog verder in wil verdiepen.
-React &amp;amp; React native. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/s720/1%2BLjR0UrFB2a__5h1DWqzstA.png"><img src="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/w200-h200/1%2BLjR0UrFB2a__5h1DWqzstA.png" alt=""></a></p>
+React &amp;amp; React native. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken Socket.</description><content:encoded><![CDATA[ <p><a href="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/s720/1%2BLjR0UrFB2a__5h1DWqzstA.png"><img src="https://1.bp.blogspot.com/-U2SAAPnhyb0/YA1LRpgPCaI/AAAAAAAAKE8/spplaDwmIdU23nLkGv9aDV54vNCGoUWaACLcBGAsYHQ/w200-h200/1%2BLjR0UrFB2a__5h1DWqzstA.png" alt=""></a></p>
 <p>Misschien ben ik er een beetje laat mee omdat we al een maand in het nieuwe jaar zitten, maar dit zijn mijn doelen voor 2021. Dit zijn nieuwe dingen die ik graag wil leren of dingen waar ik me nog verder in wil verdiepen.</p>
 <ul>
-<li>
-<p><a href="https://reactjs.org/">React</a> &amp; <a href="https://reactnative.dev/">React native</a>. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken</p>
-</li>
-<li>
-<p><a href="http://Socket.io">Socket.io</a> en websockets. Ik wil me verdiepen in multiplayer games en chatapps in Javascript en Node.js met websockets.</p>
-</li>
-<li>
-<p>Linux, Python en Bash. Ik wil leren hoe je commandline apps maakt voor Linux. Ik ben al bezig met een settingsmanager voor de commandline genaamd TermiTools, maar ik heb het nooit afgemaakt.</p>
-</li>
-<li>
-<p><a href="https://www.electronjs.org/">Electron</a>. Ik wil me verder verdiepen in het maken van goede apps met Node.js en ik wil me verdiepen in het gebruik van Electron.</p>
-</li>
-<li>
-<p><a href="https://expressjs.com/">Express</a>. Ik wil leren hoe je webapps met een Node.js backend maakt met Express. </p>
-</li>
-<li>
-<p>LocalStorage. Ik wil me verdiepen in het maken van apps met de LocalStorage API voor het opslaan van gegevens zoals highscores, instellingen en meer.</p>
-</li>
+<li><a href="https://reactjs.org/">React</a> &amp; <a href="https://reactnative.dev/">React native</a>. Ik wil leren hoe je met Javascript UIs (user interfaces) maakt. Misschien wil ik zelfs proberen een kleine app te maken</li>
+<li><a href="http://Socket.io">Socket.io</a> en websockets. Ik wil me verdiepen in multiplayer games en chatapps in Javascript en Node.js met websockets.</li>
+<li>Linux, Python en Bash. Ik wil leren hoe je commandline apps maakt voor Linux. Ik ben al bezig met een settingsmanager voor de commandline genaamd TermiTools, maar ik heb het nooit afgemaakt.</li>
+<li><a href="https://www.electronjs.org/">Electron</a>. Ik wil me verder verdiepen in het maken van goede apps met Node.js en ik wil me verdiepen in het gebruik van Electron.</li>
+<li><a href="https://expressjs.com/">Express</a>. Ik wil leren hoe je webapps met een Node.js backend maakt met Express.</li>
+<li>LocalStorage. Ik wil me verdiepen in het maken van apps met de LocalStorage API voor het opslaan van gegevens zoals highscores, instellingen en meer.</li>
 </ul>
 <p>Dit zijn een paar projecten die ik plan te maken:</p>
 <ul>
-<li>
-<p>Een commandline settingsmanager voor Linux (zoals ik hierboven al zei)</p>
-</li>
-<li>
-<p>Een Javascript terminal clone met LocalStorage. (ik wil mijn huidige <a href="https://www.geheimesite.nl/library/projects/package/cmd.php#2">CMD2</a> project herschrijven in Javascript)</p>
-</li>
-<li>
-<p>Een multiplayer game in Javascript gebaseerd op mijn huidige project <a href="https://github.com/RobinBoers/NinjaDO">NinjaDO</a>.</p>
-</li>
-<li>
-<p>Een password manager met MySQL database en een Python interface.</p>
-</li>
-<li>
-<p>Ik wil een simpele chatapp voor op mijn website maken als vervanger van <a href="https://github.com/RobinBoers/Nindo#nindo">Nindo</a>. De bedoeling is dat het gebruikt maakt van een React interface, een Node.js backend en websockets.</p>
-</li>
+<li>Een commandline settingsmanager voor Linux (zoals ik hierboven al zei)</li>
+<li>Een Javascript terminal clone met LocalStorage. (ik wil mijn huidige <a href="https://www.geheimesite.nl/library/projects/package/cmd.php#2">CMD2</a> project herschrijven in Javascript)</li>
+<li>Een multiplayer game in Javascript gebaseerd op mijn huidige project <a href="https://github.com/RobinBoers/NinjaDO">NinjaDO</a>.</li>
+<li>Een password manager met MySQL database en een Python interface.</li>
+<li>Ik wil een simpele chatapp voor op mijn website maken als vervanger van <a href="https://github.com/RobinBoers/Nindo#nindo">Nindo</a>. De bedoeling is dat het gebruikt maakt van een React interface, een Node.js backend en websockets.</li>
 </ul>
 <p>Dus ja, dit is wat ik dit jaar op het gebied van programmeren en webdevelopment ga doen.</p>
 <p>- Robin</p>
