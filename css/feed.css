@@ -50,7 +50,15 @@ pre {
     max-width: 100%;
 }
 
+.webmention__author__img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /* Tailwind patches */
+.mt-2 {
+    margin-top: 8px;
+}
 .justify-between {
     justify-content: space-between;
 }
