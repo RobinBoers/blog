@@ -40,6 +40,10 @@ pre {
     overflow-x: auto;
 }
 
+img {
+    max-width: 100%;
+}
+
 .highlight pre {
     padding: 15px;
     border-radius: 0.375rem;

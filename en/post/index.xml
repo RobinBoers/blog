@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on That Crazy Webdev</title><link>https://blog.geheimesite.nl/en/post/</link><description>Read the latest Posts on That Crazy Webdev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 03 May 2022 13:06:12 +0200</lastBuildDate><atom:link href="https://blog.geheimesite.nl/en/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Going IndieWeb</title><link>https://blog.geheimesite.nl/en/post/going-indieweb/</link><pubDate>Tue, 03 May 2022 13:06:12 +0200</pubDate><guid>https://blog.geheimesite.nl/en/post/going-indieweb/</guid><description>I recently moved this blog and its big dutch brother to my own site. I did this because I wanted to be in control of my content (and more importantly, its URL) and because I like to do hard stuff I guess. This blog is now hosted as a git repository over on GitHub, which means I can use version control. I can also host it using GitHub pages and deploy it using GitHub actions, which is pretty neat.</description><content:encoded><![CDATA[ <p>I recently moved this blog and <a href="https://blog.geheimesite.nl">its big dutch brother</a> to my own site. I did this because I wanted to be in control of my content (and more importantly, its URL) and because I like to do hard stuff I guess. This blog is now hosted as a git repository <a href="https://github.com/RobinBoers/blog">over on GitHub</a>, which means I can use version control. I can also host it using GitHub pages and deploy it using GitHub actions, which is pretty neat.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on That Crazy Webdev</title><link>https://blog.geheimesite.nl/en/post/</link><description>Read the latest Posts on That Crazy Webdev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 03 May 2022 16:27:18 +0200</lastBuildDate><atom:link href="https://blog.geheimesite.nl/en/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Show XYZ: neopub</title><link>https://blog.geheimesite.nl/en/post/show-xyz-neopub/</link><pubDate>Tue, 03 May 2022 16:27:18 +0200</pubDate><guid>https://blog.geheimesite.nl/en/post/show-xyz-neopub/</guid><description>This description from the IndieWeb wiki describes best what neopub is1. I built neopub as because I wanted to have a micropub endpoint to be able to like stuff in monocle, post from Micro.blog and because I like doing hard things.
+neopub is a blogging software developed by RobinBoers. It runs micro.geheimesite.nl and is written in PHP. It has a built-in micropub endpoint and sends webmentions. neopub is inspired by neofeed, publog and aaronparecki.</description><content:encoded><![CDATA[ <p>This description from the IndieWeb wiki describes best what neopub is<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. I built neopub as because I wanted to have a micropub endpoint to be able to like stuff in <a href="https://monocle.p3k.io">monocle</a>, post from <a href="https://micro.blog">Micro.blog</a> and because I like doing hard things.</p>
+<blockquote>
+<p><em><strong>neopub</strong> is a blogging software developed by <a href="https://indieweb.org/User:Geheimesite.nl">RobinBoers</a>. It runs <a href="https://micro.geheimesite.nl">micro.geheimesite.nl</a> and is written in PHP. It has a built-in micropub endpoint and sends webmentions. neopub is inspired by <a href="https://github.com/victoriadrake/neofeed-theme">neofeed</a>, <a href="https://p83.nl">publog</a> and <a href="https://aaronparecki.com">aaronparecki.com</a>.</em></p>
+</blockquote>
+<p>~ <a href="https://indieweb.org/neopub">https://indieweb.org/neopub</a></p>
+<p>If you want to learn more about neopub, check the IndieWeb wiki. This post is about how and why I made it.</p>
+<p>I wanted to set up some sort of micropub endpoint since I saw <a href="https://neofeed.dev">neofeed</a> while building this blog. Recently I came across <a href="https://p83.nl">p83.nl</a> when trying to export my subscriptions from aperture. It&rsquo;s a website built by Peter Stuifzand. I felt really inspired by the design<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and the fact that he built his own blogging software<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> to run the thing.</p>
+<p>So I started working on my own thingie. I decided to use PHP because I can run PHP applications on my webserver without the need for an external server/VPS. I found <a href="https://gist.github.com/adactio/8168e6b78da7b16a4644">this minimal micropub endpoint</a> by <a href="https://adactio.com">Jeremy Keith</a> and editted it with a bit of help from the IndieWeb wiki to write posts to a file: <code>feed.json</code>.</p>
+<p>In neopub, all posts are written to a JSON file in the content directory. Every year a new JSON file is created, so after a few years of use you&rsquo;ll have something like this in the content directory:</p>
+<ul>
+<li>2022.json</li>
+<li>2023.json</li>
+<li>2024.json</li>
+<li>etc.</li>
+</ul>
+<p>At most I post once per two days, some weeks once a day. That means that in one year I accumulate around 250-300 posts. I think the server will be able to handle rendering that, so I&rsquo;m not really woried about performance.</p>
+<p>On the pages for tags or post types only posts from the current year are visible. I wanted older posts to be hidden by default. You can of course still access them via their permalink or using for example: <a href="https://micro.geheimesite.nl/posts/2021">https://micro.geheimesite.nl/posts/2021</a><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p><img src="https://raw.githubusercontent.com/RobinBoers/neopub/master/screenshot.png" alt="Screenshot">
+<em>Screenshot of the homepage of my microblog running neopub</em></p>
+<p>That&rsquo;s about it. I&rsquo;m planning on adding some more features, like:</p>
+<ul>
+<li>Being able to change/delete posts</li>
+<li>A media endpoint for uploading photos</li>
+</ul>
+<p>If you want you can find the source code <a href="https://github.com/RobinBoers/neopub">on GitHub</a></p>
+<p><em>This was also posted to
+<a href="https://indieweb.xyz/en/indieweb" class="u-syndication">/en/indieweb</a>.</em></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>It&rsquo;s almost like I wrote it :D&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>You can definitely see that in the final design of neopub&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>It&rsquo;s called <a href="https://p83.nl/projects/publog">publog</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>I just started posting this year, so this page is empty, but you get the point.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+ ]]></content:encoded></item><item><title>Going IndieWeb</title><link>https://blog.geheimesite.nl/en/post/going-indieweb/</link><pubDate>Tue, 03 May 2022 13:06:12 +0200</pubDate><guid>https://blog.geheimesite.nl/en/post/going-indieweb/</guid><description>I recently moved this blog and its big dutch brother to my own site. I did this because I wanted to be in control of my content (and more importantly, its URL) and because I like to do hard stuff I guess. This blog is now hosted as a git repository over on GitHub, which means I can use version control. I can also host it using GitHub pages and deploy it using GitHub actions, which is pretty neat.</description><content:encoded><![CDATA[ <p>I recently moved this blog and <a href="https://blog.geheimesite.nl">its big dutch brother</a> to my own site. I did this because I wanted to be in control of my content (and more importantly, its URL) and because I like to do hard stuff I guess. This blog is now hosted as a git repository <a href="https://github.com/RobinBoers/blog">over on GitHub</a>, which means I can use version control. I can also host it using GitHub pages and deploy it using GitHub actions, which is pretty neat.</p>
 <p>This was the first step in <a href="https://indiewebify.me">indiewebifying</a> my website. I also set up <a href="https://indieweb.org/IndieAuth">IndieAuth</a>, <a href="https://indieweb.org/h-card">h-card</a>, I marked my posts up using <a href="https://microformats.io">microformats2</a> and I started sending <a href="https://webmention.net">webmentions</a>.</p>
 <p>So, what is this <a href="https://indieweb.org">IndieWeb</a>? Well, technically it is just a collection of APIs, guidelines, and principles to allow websites to interact with each other. It is about owning your online identity and content. Instead of being reliant on <a href="https://indieweb.org/silo">silos</a> like Facebook, Blogger, Instagram, or Twitter you self-host all of your content and optionally syndicate it to other platforms.</p>
 <p>For example, if I wanted to tweet something<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> I would publish the tweet <a href="https://micro.geheimesite.nl">on my own site</a> and then syndicate it to Twitter using <a href="https://brid.gy">Brid.gy</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. When people then reply to me on Twitter, those replies would get sent to my website using webmentions, so that I can show those comments on my site.</p>
