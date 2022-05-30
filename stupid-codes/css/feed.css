@@ -108,3 +108,8 @@ pre {
         color: rgb(255 236 214);
     }
 }
+@media print {
+    .print\:hidden {
+        display: none;
+    }
+}
