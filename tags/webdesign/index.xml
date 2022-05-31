@@ -66,7 +66,8 @@ https://api.github.com/users/RobinBoers Ik krijg dan een reactie (response) van 
 <p>PS: voordat ik de vraag krijg waarom ik op itch.io de username Robijntje heb, dat mijn bijnaam die mijn vrienden met hebben gegeven. Ik gebruik die bijnaam wel op meer plekken (zoals reddit bijvoorbeeld)</p>
  ]]></content:encoded></item><item><title>WebDev ToolKit: tools voor web- en gamedevelopment</title><link>https://blog.geheimesite.nl/2021/02/webdev-toolkit-tools-voor-web-en.html</link><pubDate>Sat, 20 Feb 2021 01:00:00 -0800</pubDate><guid>https://blog.geheimesite.nl/2021/02/webdev-toolkit-tools-voor-web-en.html</guid><description>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.
 Dit zijn de tools die ik tot nu toe heb.
-Javascript KeyCodes:</description><content:encoded><![CDATA[ <p>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.</p>
+Javascript KeyCodes:
+https://code.geheimesite.nl/tools/keycode/ Kleuren selector:</description><content:encoded><![CDATA[ <p>Ik ben begonnen met het maken van een set tools voor dingen die ik vaak gebruik bij het maken van websites en games. Zo moet ik vaak weten welke Javascript KeyCodes bij welke toets hoort, of ik moet bijvoorbeeld een kleur 25% lichter / donkerder maken. Ook moet ik weleens een kleur van hex naar rgb veranderen.</p>
 <p>Dit zijn de tools die ik tot nu toe heb.</p>
 <ul>
 <li>Javascript KeyCodes:<br>
