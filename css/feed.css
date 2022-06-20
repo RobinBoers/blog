@@ -36,16 +36,6 @@ body > header > div {
     text-decoration: none !important;
 }
 
-pre {
-    overflow-x: auto;
-}
-
-.highlight pre {
-    padding: 15px;
-    border-radius: 0.375rem;
-    scrollbar-color: #494949 #272822;
-}
-
 .post img {
     max-width: 100%;
 }

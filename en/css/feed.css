@@ -36,18 +36,8 @@ body > header > div {
     text-decoration: none !important;
 }
 
-pre {
-    overflow-x: auto;
-}
-
 img {
     max-width: 100%;
-}
-
-.highlight pre {
-    padding: 15px;
-    border-radius: 0.375rem;
-    scrollbar-color: #494949 #272822;
 }
 
 .webmention__author__img {
