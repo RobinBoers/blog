@@ -13,8 +13,12 @@ Durfkapitaal Bedrijven als Uber, Spotify en Thuisbezorgd.nl groeien razendsnel, 
 <p>Als je dingen naar je eigen site post is dit probleem er niet. Met een eigen domeinnaam en een Wordpress installatie kom je al best ver. Je hebt geen centraal platform nodig. Het is veiliger en je bent zelf in beheer over welke data je wel/niet weggeeft, en, niet onbelangrijk, je bent zelf in beheer van de permalink. Je kan naar wens van webhost of CSM switchen zonder dat de permalink stopt te werken. Probeer <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> te gebruiken in plaats van een <a href="https://indieweb.org/silo">silo</a>. Comment met <a href="https://indieweb.org/webmention">webmentions</a>. Deze kleine dingen helpen al een hele hoop.</p>
 <h2 id="breng-de-creativiteit-terug">Breng de creativiteit terug</h2>
 <p>Hoe vaak ben je niet op een website gekomen die ongeveer zo in elkaar zat: logo en menu bovenin, grote slogan en dan een felgekleurde knop waar ze willen dat je op klikt.</p>
-<p><img src="/images/basic-cta-webdesign-examples.jpg" alt="Examples of the basic layout with CTA. It&amp;rsquo;s overused to say the least."></p>
-<p><em>Voorbeelden van deze layout. Het is overused.</em></p>
+<figure><img src="/images/basic-cta-webdesign-examples.jpg"
+         alt="Een collage met voorbeelden van sites die deze layout met CTA gebruiken"/><figcaption>
+            <p>Voorbeelden van deze layout. Het is overused.</p>
+        </figcaption>
+</figure>
+
 <p>Dit is weer een symptoom van het willen geld verdienen met het internet. En ook bedrijven met betaalde producten hebben vaak dit soort pages. Het doel is om jou zo snel mogelijk op de gekleurde knop te laten klikken voor je weer wegklikt naar een andere site — en het werkt.</p>
 <p>Het probleem met deze standaard layout is dat het alle creativiteit uit het ontwerpproces haalt. Ja, je kan nog steeds een mooie site ontwerpen, maar je zit wel vast aan de layout. Tot op zekere hoogte geld dit ook voor social media. Je kan misschien wat kleuren aanpassen en een profielfoto of banner uploaden, maar daar houdt het ook op. Als je een eigen site hebt kan je juist die creativiteit terugbrengen die oudere websites zo kenmerkt.</p>
 <p>Er zijn geweldige communities ontstaan op bijvoorbeeld <a href="https://neocities.org/">Neocities</a>, een gratis webhost geïnspireerd door Geocities, die als missie heeft &ldquo;het terugbrengen van de creativiteit en expression op het world wide web, die het zo fantastisch maakte&rdquo;. Het is helemaal gratis, maar je kan ze ook sponsoren met een subscription. Het platform is volledig open-source en wordt betaald uit de inkomsten van de subscribers.</p>

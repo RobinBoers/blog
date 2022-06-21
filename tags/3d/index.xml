@@ -13,8 +13,12 @@ Maar je kan er naast coole 3D effecten ook games mee maken! Het is niet een game
 <li><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshPhongMaterial">MeshPhongMaterial</a>: voor glimmende objecten</li>
 <li><a href="https://threejs.org/docs/?q=material#api/en/materials/MeshToonMaterial">MeshToonMaterial</a>: hierdoor lijkt alles alsof het uit een stripboek komt</li>
 </ul>
-<p><a href="https://1.bp.blogspot.com/-_8hxbezxXwU/YN8kHPOJ3BI/AAAAAAAAK6Q/akWuxrMsFoo0Znm9cRd0aLmbaAyixNBJQCLcBGAsYHQ/s1393/materials.png"><img src="https://1.bp.blogspot.com/-_8hxbezxXwU/YN8kHPOJ3BI/AAAAAAAAK6Q/akWuxrMsFoo0Znm9cRd0aLmbaAyixNBJQCLcBGAsYHQ/w640-h158/materials.png" alt=""></a></p>
-<p>De materials die ik hierboven beschreef: Basic, Standard, Phong en Toon</p>
+<figure><img src="https://1.bp.blogspot.com/-_8hxbezxXwU/YN8kHPOJ3BI/AAAAAAAAK6Q/akWuxrMsFoo0Znm9cRd0aLmbaAyixNBJQCLcBGAsYHQ/w640-h158/materials.png"
+         alt="De materials die ik hierboven beschreef: Basic, Standard, Phong en Toon"/><figcaption>
+            <p>De materials die ik hierboven beschreef: Basic, Standard, Phong en Toon</p>
+        </figcaption>
+</figure>
+
 <p>Nu heb je een 3D object, maar het is nog helemaal donker. Dat komt omdat je nog geen lichten hebt toegevoegd. Je hebt veel verschillende soorten lichten. Een paar coole zijn:</p>
 <ul>
 <li><a href="https://threejs.org/docs/index.html?q=light#api/en/lights/SpotLight">SpotLight</a>: de naam zegt het al :)</li>
